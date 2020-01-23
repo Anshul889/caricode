@@ -1,0 +1,333 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: hsl(210, 34%, 13%);
+  color: #e0e0e0;
+  margin: 0;
+  /*secondarytext : #8899a6 */
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+button {
+  color: white;
+  background-color: rgb(29, 161, 242);
+  border-color: #f8f9fa;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  border-radius: 50px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(66, 134, 180);
+}
+
+.section2 {
+  margin-bottom: 50px;
+}
+
+.inner {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.banner {
+  height: calc(100vh - 150px);
+  position: relative;
+}
+
+.animo {
+  position: absolute;
+  top: 40%;
+  transform: translate(10%, -40%);
+  width: 270px;
+}
+
+.transitions-item {
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  will-change: transform, opacity, height;
+  white-space: nowrap;
+  cursor: pointer;
+  line-height: 80px;
+}
+
+.section2grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.section2grid h2:after {
+  content: '';
+  background-color: #fff;
+  display: block;
+  height: 1px;
+  margin: 0.5em 0 0.5em 0.1em;
+  width: 3rem;
+}
+
+#section3 {
+  border-top: solid 1px rgb(97, 97, 97);
+  margin-bottom: 50px;
+}
+
+.section3grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contentpost {
+  padding: 20px 0;
+}
+
+.postdiv h3 {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.postdiv h3::after {
+  border-bottom: solid 1px rgb(104, 104, 104);
+  bottom: 0;
+  content: '';
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  width: 3rem;
+}
+
+.postdiv {
+  border-bottom: 1px solid rgb(104, 104, 104);
+}
+
+.section4 {
+  background-color: hsl(210, 34%, 17%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section4 h3 {
+  width: 90%;
+  margin: 14px auto 20px auto;
+  max-width: 1080px;
+}
+
+.section4 h3:after {
+  content: '';
+  background-color: #fff;
+  display: block;
+  height: 1px;
+  margin: 0.5em 0 0.5em 0.1em;
+  width: 3rem;
+}
+
+.section4grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.infocontentdiv {
+  background-color: hsl(210, 34%, 13%);
+  margin-bottom: 35px;
+}
+
+.infocontentdiv h3 {
+  padding-top: 20px;
+}
+
+.infocontentdiv p {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.contact {
+  width: 90%;
+  margin: 0 auto 75px auto;
+  max-width: 1080px;
+  padding-top: 20px;
+}
+
+.contact h2::after {
+  content: '';
+  background-color: #fff;
+  display: block;
+  height: 1px;
+  margin: 0.5em 0 0.5em 0.1em;
+  width: 3rem;
+}
+
+.formitem {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.former {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+input {
+  transition: border-color 0.2s ease-in-out;
+  height: 2.75em;
+  border: 1px solid hsl(210, 34%, 10%);
+  border-radius: 0;
+  background-color: hsl(210, 34%, 10%);
+  color: inherit;
+  display: block;
+  padding: 0 calc(5% - 2px);
+  outline: 0;
+  text-decoration: none;
+  width: 90%;
+  margin: 0px;
+}
+
+input:focus {
+  border-color: rgb(224, 224, 224);
+}
+
+textarea {
+  transition: border-color 0.2s ease-in-out;
+  height: 5.5em;
+  border: 1px solid hsl(210, 34%, 10%);
+  border-radius: 0;
+  background-color: hsl(210, 34%, 10%);
+  color: inherit;
+  display: block;
+  padding: 10px calc(5% - 2px);
+  outline: 0;
+  text-decoration: none;
+  width: 90%;
+  margin-bottom: 10px;
+  margin-right: 0px;
+}
+
+textarea:focus {
+  border-color: rgb(224, 224, 224);
+}
+
+@media only screen and (min-width: 830px) {
+  .section2 {
+    margin-bottom: 90px;
+  }
+
+  .inner {
+    width: 85%;
+  }
+
+  .infocontentdiv p {
+    height: 140px;
+    width: 85%;
+  }
+
+  .section2grid {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+  }
+
+  .section3grid {
+    grid-template-columns: 1fr 1.1fr 1fr;
+  }
+
+  .section4grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  #section3 {
+    margin-bottom: 0px;
+    border-bottom: 1px solid rgb(97, 97, 97);
+  }
+
+  .postdiv {
+    border-bottom: none;
+  }
+
+  .section4 h3 {
+    width: 85%;
+    font-size: 18px;
+    padding-top: 30px;
+  }
+
+  .banner {
+    height: calc(100vh - 56px);
+    margin-bottom: 90px;
+  }
+
+  .animo {
+    position: absolute;
+    top: 40%;
+    transform: translate(40%, -50%);
+    width: 500px;
+  }
+  .contact {
+    width: 85%;
+    padding-top: 40px;
+  }
+
+  .textdiv {
+    grid-column: span 2;
+  }
+
+  textarea {
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    width: calc(100% - 20px);
+  }
+
+  input {
+    padding: 2px 5px;
+    width: calc(100% - 10px);
+  }
+
+  .former {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+
+  .contentpost {
+    padding: 30px;
+    border-right: 1px solid rgb(97, 97, 97);
+  }
+
+  .infocontentdiv{
+    margin-bottom: 0px;
+  }
+}
