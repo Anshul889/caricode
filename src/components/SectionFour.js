@@ -11,6 +11,41 @@ const getImages = graphql`
         }
       }
     }
+    image4: file(relativePath: { eq: "image4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image5: file(relativePath: { eq: "image5.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image6: file(relativePath: { eq: "image6.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image7: file(relativePath: { eq: "image7.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image8: file(relativePath: { eq: "image8.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -42,7 +77,7 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Image
-                fluid={data.image3.childImageSharp.fluid}
+                fluid={data.image4.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
               />
               <div className="infocontentdiv">
@@ -61,7 +96,7 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Image
-                fluid={data.image3.childImageSharp.fluid}
+                fluid={data.image5.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
               />
               <div className="infocontentdiv">
@@ -79,7 +114,7 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Image
-                fluid={data.image3.childImageSharp.fluid}
+                fluid={data.image6.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
               />
               <div className="infocontentdiv">
@@ -96,7 +131,7 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Image
-                fluid={data.image3.childImageSharp.fluid}
+                fluid={data.image7.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
               />
               <div className="infocontentdiv">
@@ -115,7 +150,7 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Image
-                fluid={data.image3.childImageSharp.fluid}
+                fluid={data.image8.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
               />
               <div className="infocontentdiv">
