@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+  color: rgb(29, 161, 242) ;
+}
+
 h1,
 h2,
 h3,
