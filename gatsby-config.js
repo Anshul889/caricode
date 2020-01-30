@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Caricode',
     description:
-      'Take your online presence ',
+      'Take your online presence to the next level',
     url: 'https://www.caricode.co', // No trailing slash allowed!
     image: '/images/image3.jpg', // Path to your image you placed in the 'static' folder
     twitterUsername: '@caricode',
