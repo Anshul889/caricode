@@ -1,4 +1,13 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Caricode',
+    description:
+      'Take your online presence ',
+    url: 'https://www.caricode.co', // No trailing slash allowed!
+    image: '/images/image3.jpg', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@caricode',
+    date: '2020-01-28'
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-mdx`,
@@ -24,6 +33,17 @@ module.exports = {
             variants: [`400`, `700`],
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Caricode`,
+        short_name: `Caricode`,
+        start_url: `/`,
+        background_color: `#16212c`,
+        theme_color: `#16212c`,
+        display: `standalone`,
       },
     },
   ],
