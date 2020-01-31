@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
+import VisibilitySensor from 'react-visibility-sensor'
+import { Spring, config } from 'react-spring/renderprops'
 
 const getImages = graphql`
   {
@@ -21,7 +23,21 @@ const SectionTwo = () => {
       <div className="inner">
         <div className="section2grid">
           <div>
-            <h2>Get an app that looks like something Google or Facebook made</h2>
+            <h2>
+              Get an app that looks like something Google or Facebook made
+            </h2>
+            <VisibilitySensor>
+                {({ isVisible }) => (
+            <Spring
+            from={{ width: '1px', marginBottom: '20px' }}
+            to={{ width: isVisible ?  '50px' : '1px', marginBottom: '20px' }}
+            config={config.slow}
+            delay={500}
+          >
+            {props => <div className="hero-feature-border" style={props}></div>}
+          </Spring>
+             )}
+             </VisibilitySensor>
             <p>
               Cloud Firestore is a fast, fully managed, serverless, cloud-native
               NoSQL document database that simplifies storing, syncing, and
@@ -33,7 +49,7 @@ const SectionTwo = () => {
             </p>
           </div>
           <div className="phone">
-          <Image fluid={data.fluid.childImageSharp.fluid}/>
+            <Image fluid={data.fluid.childImageSharp.fluid} />
           </div>
         </div>
       </div>

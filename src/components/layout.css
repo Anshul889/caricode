@@ -133,14 +133,6 @@ button:hover {
   margin: 0 auto;
 }
 
-.section2grid h2:after {
-  content: '';
-  background-color: #fff;
-  display: block;
-  height: 1px;
-  margin: 0.5em 0 0.5em 0.1em;
-  width: 3rem;
-}
 
 #section3 {
   border-top: solid 1px rgb(97, 97, 97);
@@ -161,14 +153,11 @@ button:hover {
   padding-bottom: 20px;
 }
 
-.postdiv h3::after {
-  border-bottom: solid 1px rgb(104, 104, 104);
-  bottom: 0;
-  content: '';
-  display: inline-block;
-  left: 0;
-  position: absolute;
-  width: 3rem;
+.postdiv img{
+  padding-bottom: 40px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 .postdiv {
