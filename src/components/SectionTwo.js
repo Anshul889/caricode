@@ -4,7 +4,7 @@ import Image from 'gatsby-image'
 
 const getImages = graphql`
   {
-    fluid: file(relativePath: { eq: "image2.jpg" }) {
+    fluid: file(relativePath: { eq: "image2.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
