@@ -32,7 +32,9 @@ const SectionTwo = () => {
               serverless apps.
             </p>
           </div>
-          <Image fluid={data.fluid.childImageSharp.fluid} />
+          <div className="phone">
+          <Image fluid={data.fluid.childImageSharp.fluid}/>
+          </div>
         </div>
       </div>
     </section>
