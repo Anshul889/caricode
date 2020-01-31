@@ -11,8 +11,8 @@ a {
   text-decoration: none;
 }
 
-a:hover{
-  color: rgb(29, 161, 242) ;
+a:hover {
+  color: rgb(29, 161, 242);
 }
 
 h1,
@@ -56,8 +56,9 @@ button:hover {
   background-color: rgb(66, 134, 180);
 }
 
-.section2 {
+#section2 {
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 .inner {
@@ -71,27 +72,54 @@ button:hover {
   position: relative;
 }
 
-.animo {
-  position: absolute;
-  top: 40%;
-  transform: translate(10%, -40%);
-  width: 270px;
+.banner image {
+  object-fit: contain;
 }
 
-.transitions-item {
-  overflow: hidden;
-  width: 100%;
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 2em;
-  font-weight: 800;
+.bannercontent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+}
+
+.hero-feature-border {
+  height: 1px;
+  background-color: white;
+  margin-left: 1px;
+}
+
+.banner p {
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  will-change: transform, opacity, height;
-  white-space: nowrap;
+}
+
+.banner button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 2px white;
+  color: white;
   cursor: pointer;
-  line-height: 80px;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 600;
+  height: 3.5em;
+  letter-spacing: 0.25em;
+  line-height: 3.5em;
+  padding: 0 1.75em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.banner button:hover {
+  box-shadow: inset 0 0 0 4px white;
 }
 
 .section2grid {
@@ -248,7 +276,7 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 830px) {
-  .section2 {
+  #section2 {
     margin-bottom: 90px;
   }
 
@@ -295,12 +323,6 @@ textarea:focus {
     margin-bottom: 90px;
   }
 
-  .animo {
-    position: absolute;
-    top: 40%;
-    transform: translate(40%, -50%);
-    width: 500px;
-  }
   .contact {
     width: 85%;
     padding-top: 40px;
@@ -331,7 +353,7 @@ textarea:focus {
     border-right: 1px solid rgb(97, 97, 97);
   }
 
-  .infocontentdiv{
+  .infocontentdiv {
     margin-bottom: 0px;
   }
 }

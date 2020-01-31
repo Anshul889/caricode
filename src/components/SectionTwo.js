@@ -17,11 +17,11 @@ const getImages = graphql`
 const SectionTwo = () => {
   const data = useStaticQuery(getImages)
   return (
-    <section className="section2">
+    <section id="section2">
       <div className="inner">
         <div className="section2grid">
           <div>
-            <h2>Powered By Google Cloud Platform</h2>
+            <h2>Get an app that looks like something Google or Facebook made</h2>
             <p>
               Cloud Firestore is a fast, fully managed, serverless, cloud-native
               NoSQL document database that simplifies storing, syncing, and

@@ -1,42 +1,60 @@
-import React, { useRef, useState, useEffect, useCallback } from 'react'
-import { useTransition, animated } from 'react-spring'
+import React from 'react'
+import { graphql, useStaticQuery, Link } from 'gatsby'
+import Image from 'gatsby-image'
+import { Spring, config } from 'react-spring/renderprops'
+
+const getImages = graphql`
+  {
+    banner: file(relativePath: { eq: "banner.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const Banner = () => {
-  const ref = useRef([])
-  const [items, set] = useState([])
-  const transitions = useTransition(items, null, {
-    from: { opacity: 0, height: 0, innerHeight: 0, transform: 'perspective(600px) rotateX(0deg)', color: '#8fa5b6' },
-    enter: [
-      { opacity: 1, height: 60, innerHeight: 60 },
-      { color: '#28d79f' }
-    ],
-    leave: [{ innerHeight: 0 ,transform: 'perspective(600px) rotateX(0deg)',  opacity: 0, height: 0 }],
-    update: { color: '#d9d9d9' },
-  })
-
-  const reset = useCallback(() => {
-    ref.current.map(clearTimeout)
-    ref.current = []
-    set([])
-    ref.current.push(setTimeout(() => set(['We', 'Design', 'Web', 'Applications']), 300))
-    ref.current.push(setTimeout(() => set(['We', 'Design', 'Build', 'Web', 'Applications']), 2300))
-    ref.current.push(setTimeout(() => set(['We', 'Design', 'Build', 'Deploy', 'Web', 'Applications']), 5300))
-    ref.current.push(setTimeout(() => set(['We', 'Design', 'Build', 'Deploy', 'And Manage', 'Web', 'Applications']), 8300))
-  }, [])
-
-  useEffect(() => void reset(), [])
-
+  const data = useStaticQuery(getImages)
   return (
     <div className="banner">
-      <div className='animo'>
-      {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
-        <animated.div className="transitions-item" key={key} style={rest} onClick={reset}>
-          <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
-        </animated.div>
-      ))}
+      <Image
+        fluid={data.banner.childImageSharp.fluid}
+        style={{ height: '100%', opacity: 0.3 }}
+      />
+      <div className="bannercontent">
+        <h2>Build, Deploy and Manage Progressive Web Apps</h2>
+        <Spring
+          from={{ width: '0px', marginBottom: '20px' }}
+          to={{ width: '100px', marginBottom: '20px' }}
+          config={config.slow}
+          delay={500}
+        >
+          {props => <div class="hero-feature-border" style={props}></div>}
+        </Spring>
+        <Spring
+          from={{ opacity: 0, transform: 'translateY(20px)' }}
+          to={{ opacity : 1,transform: 'translateY(0px)' }}
+          config={config.slow}
+          delay={1000}
+        >
+          {props => <p style={props}>
+          Take the online presence
+          <br />
+          of your business to the next level
+        </p>}
+        </Spring>
+        <Spring
+          from={{ opacity: 0, transform: 'translateY(30px)' }}
+          to={{ opacity : 1,transform: 'translateY(0px)' }}
+          config={config.gentle}
+          delay={1200}
+        >
+          {props => <Link to="/#section2"><button style={props}>Get Started</button></Link>}
+        </Spring>
       </div>
     </div>
   )
 }
-
 export default Banner

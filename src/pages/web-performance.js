@@ -28,7 +28,7 @@ const webperformance = () => {
               At CariCode we believe web performance is crucial for your
               business and fundamental to good user experience. It is crucial
               that your sites user experience is fast and responsive to
-              users.Performance is critical for users accessing your site using
+              users. Performance is critical for users accessing your site using
               their mobile device. Mobile users make up a large portion of
               global internet users. Many of these users access the web over
               varying networks.
