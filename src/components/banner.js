@@ -46,9 +46,9 @@ const Banner = () => {
         </p>}
         </Spring>
         <Spring
-          from={{ opacity: 0, transform: 'translateY(30px)' }}
+          from={{ opacity: 0, transform: 'translateY(20px)' }}
           to={{ opacity : 1,transform: 'translateY(0px)' }}
-          config={config.gentle}
+          config={config.slow}
           delay={1200}
         >
           {props => <Link to="/#section2"><button style={props}>Get Started</button></Link>}

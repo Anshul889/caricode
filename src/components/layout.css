@@ -150,7 +150,6 @@ button:hover {
 
 .postdiv h3 {
   position: relative;
-  padding-bottom: 20px;
 }
 
 .postdiv img{
@@ -158,6 +157,11 @@ button:hover {
   height: 100px;
   display: block;
   margin: 0 auto;
+}
+
+.postdiv svg{
+  margin: 0 auto;
+  display: block;
 }
 
 .postdiv {
