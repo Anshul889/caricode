@@ -141,11 +141,33 @@ const SectionThree = () => {
               <VisibilitySensor>
                 {({ isVisible }) => (
                   <Spring
-                    from={{ x : 0 }}
-                    to={{
-                      x: isVisible ? 1 : 0
+                    from={{
+                      a: '20',
+                      b: '350',
+                      c: '80',
+                      d: '250',
+                      e: '140',
+                      f: '275',
+                      g: '200',
+                      h: '200',
+                      i: '260',
+                      j: '250',
                     }}
-                    config={config.slow}
+                    to={
+                      {
+                        a: isVisible ? '80' : '20',
+                        b: isVisible ? '250'  : '350',
+                        c: isVisible ? '140' : '80',
+                        d: isVisible ? '275' : '250',
+                        e: isVisible ? '200': '140',
+                        f: isVisible ? '200' : '275',
+                        g: isVisible ?  '260' : '200',
+                        h: isVisible ? '250': '200',
+                        i: isVisible ? '280' : '260',
+                        j: isVisible ? '30': '250',
+                      }
+                    }
+                    config={config.molasses}
                     delay={800}
                   >
                     {props => (
@@ -158,7 +180,11 @@ const SectionThree = () => {
                         role="img"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 320 512"
-                        style={{paddingBottom: '33px', height: '100px', margin: '0 auto'}}
+                        style={{
+                          paddingBottom: '33px',
+                          height: '100px',
+                          margin: '0 auto',
+                        }}
                       >
                         <g class="fa-group">
                           <path
@@ -173,60 +199,55 @@ const SectionThree = () => {
                             d="M0 384V48A48 48 0 0 1 48 0h224a48 48 0 0 1 48 48v336z"
                           ></path>
                           <line
-                          x1="20"
-                          y1="350"
-                          x2='80'
-                          y2='250'
-                          style={{
-                            stroke: 'rgb(18, 147, 154)',
-                            strokeWidth: '4',
-                            opacity: props.x
-                          }}
-                        />
-                        <line
-                          x1="80"
-                          y1="250"
-                          x2='140'
-                          y2='275'
-                          style={{
-                            stroke: 'rgb(18, 147, 154)',
-                            strokeWidth: '4',
-                            opacity: props.x
-                          }}
-                        />
-                        <line
-                          x1="140"
-                          y1="275"
-                          x2='200'
-                          y2='200'
-                          style={{
-                            stroke: 'rgb(18, 147, 154)',
-                            strokeWidth: '4',
-                            opacity: props.x
-                          }}
-                        />
-                        <line
-                          x1="200"
-                          y1="200"
-                          x2='260'
-                          y2='250'
-                          style={{
-                            stroke: 'rgb(18, 147, 154)',
-                            strokeWidth: '4',
-                            opacity: props.x
-                          }}
-                        />
-                        <line
-                          x1="260"
-                          y1="250"
-                          x2='280'
-                          y2='30'
-                          style={{
-                            stroke: 'rgb(18, 147, 154)',
-                            strokeWidth: '4',
-                            opacity: props.x
-                          }}
-                        />
+                            x1="20"
+                            y1="350"
+                            x2={props.a}
+                            y2={props.b}
+                            style={{
+                              stroke: 'rgb(18, 147, 154)',
+                              strokeWidth: '4'
+                            }}
+                          />
+                          <line
+                            x1="80"
+                            y1="250"
+                            x2={props.c}
+                            y2={props.d}
+                            style={{
+                              stroke: 'rgb(18, 147, 154)',
+                              strokeWidth: '4',
+                            }}
+                          />
+                          <line
+                            x1="140"
+                            y1="275"
+                            x2={props.e}
+                            y2={props.f}
+                            style={{
+                              stroke: 'rgb(18, 147, 154)',
+                              strokeWidth: '4',
+                            }}
+                          />
+                          <line
+                            x1="200"
+                            y1="200"
+                            x2={props.g}
+                            y2={props.h}
+                            style={{
+                              stroke: 'rgb(18, 147, 154)',
+                              strokeWidth: '4',
+                            }}
+                          />
+                          <line
+                            x1="260"
+                            y1="250"
+                            x2={props.i}
+                            y2={props.j}
+                            style={{
+                              stroke: 'rgb(18, 147, 154)',
+                              strokeWidth: '4',
+                            }}
+                          />
                         </g>
                       </svg>
                     )}

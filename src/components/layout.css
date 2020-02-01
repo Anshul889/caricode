@@ -180,14 +180,6 @@ button:hover {
   max-width: 1080px;
 }
 
-.section4 h3:after {
-  content: '';
-  background-color: #fff;
-  display: block;
-  height: 1px;
-  margin: 0.5em 0 0.5em 0.1em;
-  width: 3rem;
-}
 
 .section4grid {
   display: grid;
