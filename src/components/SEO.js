@@ -49,7 +49,8 @@ const SEO = ({ title, description, image, pathname, article, date }) => (
               <meta name="twitter:description" content={seo.description} />
             )}
             {seo.image && <meta name="twitter:image" content={seo.image} />}
-            {seo.date && <meta name="date" content={seo.date} />} 
+            {seo.date && <meta name="date" content={seo.date} />}
+            <html lang="en" /> 
           </Helmet>
         </>
       )

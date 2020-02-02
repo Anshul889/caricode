@@ -181,7 +181,7 @@ const SectionThree = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 320 512"
                         style={{
-                          paddingBottom: '33px',
+                          paddingBottom: '38px',
                           height: '100px',
                           margin: '0 auto',
                         }}

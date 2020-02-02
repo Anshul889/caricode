@@ -65,7 +65,7 @@ const SectionFour = () => {
                         marginBottom: '20px',
                       }}
                       config={config.slow}
-                      delay={500}
+                      delay={800}
                     >
                       {props => (
                         <div
@@ -99,7 +99,7 @@ const SectionFour = () => {
                         marginBottom: '20px',
                       }}
                       config={config.slow}
-                      delay={500}
+                      delay={800}
                     >
                       {props => (
                         <div
@@ -137,7 +137,7 @@ const SectionFour = () => {
                         marginBottom: '20px',
                       }}
                       config={config.slow}
-                      delay={500}
+                      delay={800}
                     >
                       {props => (
                         <div
@@ -176,7 +176,7 @@ const SectionFour = () => {
                         marginBottom: '20px',
                       }}
                       config={config.slow}
-                      delay={500}
+                      delay={800}
                     >
                       {props => (
                         <div
@@ -214,7 +214,7 @@ const SectionFour = () => {
                         marginBottom: '20px',
                       }}
                       config={config.slow}
-                      delay={500}
+                      delay={800}
                     >
                       {props => (
                         <div
@@ -256,7 +256,7 @@ const SectionFour = () => {
                         marginBottom: '20px',
                       }}
                       config={config.slow}
-                      delay={500}
+                      delay={800}
                     >
                       {props => (
                         <div
@@ -293,7 +293,7 @@ const SectionFour = () => {
                         marginBottom: '20px',
                       }}
                       config={config.slow}
-                      delay={500}
+                      delay={800}
                     >
                       {props => (
                         <div
