@@ -81,13 +81,14 @@ const SectionFour = () => {
         <div className="section4grid">
           <div className="infopost">
             <div className="infodiv">
+            <Link to="/web-performance/">
               <Image
                 fluid={data.image3.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
-              />
+              /></Link>
               <div className="infocontentdiv">
                 <h3>
-                  <Link to="web-performance">Web Performance</Link>
+                  <Link to="/web-performance/">Web Performance</Link>
                 </h3>
                 <p>
                 <VisibilitySensor>

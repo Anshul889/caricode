@@ -1,27 +1,43 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import './pagelayout.css'
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 import { Spring, config } from 'react-spring/renderprops'
 import check from '../images/check.svg'
 import cross from '../images/cross.svg'
-import {
-  FlexibleWidthXYPlot,
-  XAxis,
-  YAxis,
-  LineMarkSeries
-} from 'react-vis'
+import { FlexibleWidthXYPlot, XAxis, YAxis, LineMarkSeries } from 'react-vis'
+import Image from 'gatsby-image'
+
+const getImages = graphql`
+  {
+    image4: file(relativePath: { eq: "image4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image5: file(relativePath: { eq: "image5.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const databounce = [
-  {x : 0, y: 0},
-  {x : 3, y : 32},
-  {x : 5, y : 90},
-  {x : 6, y : 106},
-  {x: 10, y : 123}
+  { x: 0, y: 0 },
+  { x: 3, y: 32 },
+  { x: 5, y: 90 },
+  { x: 6, y: 106 },
+  { x: 10, y: 123 },
 ]
 
-const webperformance = () => {
+const WebPerformance = () => {
+  const data = useStaticQuery(getImages)
   return (
     <Layout>
       <SEO
@@ -472,13 +488,14 @@ const webperformance = () => {
               success of any online venture, as high performing sites engage and
               retain users better than poorly performing ones.
             </p>
-            <FlexibleWidthXYPlot
-              margin={{ left: 60, right: 30 }}
-              height={300}
-            >
+            <FlexibleWidthXYPlot margin={{ left: 60, right: 30 }} height={300}>
               <XAxis title={'loading time(s)'} />
-              <YAxis title={'%increase in Bounce Rate'}/>
-              <LineMarkSeries animation={{damping : 20, stiffness: 40}} curve={'curveMonotoneX'} data={databounce} />
+              <YAxis title={'%increase in Bounce Rate'} />
+              <LineMarkSeries
+                animation={{ damping: 20, stiffness: 40 }}
+                curve={'curveMonotoneX'}
+                data={databounce}
+              />
             </FlexibleWidthXYPlot>
             <p>
               Because business is highly competitive, we want you to be
@@ -488,9 +505,6 @@ const webperformance = () => {
               viewability than sites taking nearly four times longer at 19
               seconds. To get a idea of how your site's performance compares
               with the competition, check out the Speed Scorecard tool.
-            </p>
-            <p>
-              Here's a snapshot of how our site Caricode scores on the same tool
             </p>
             <p>
               <b>Web Performance is key to improving conversions.</b> Retaining
@@ -507,48 +521,43 @@ const webperformance = () => {
                   of a website
                 </h4>
               </div>
-              <div className="pwaexamples">
-                <div className="pwaexample">
-                  <h5>Mobify</h5>
-                  <p>
-                    Every 100ms decrease in homepage load speed worked out to a
-                    1.11% increase in session-based conversion, yielding an
-                    average annual revenue increase of nearly $380,000.
-                    Additionally, a 100ms decrease in checkout page load speed
-                    amounted to a 1.55% increase in session-based conversion,
-                    which in turn yielded an average annual revenue increase of
-                    nearly $530,000.
-                  </p>
-                </div>
-                <div className="pwaexample">
-                  <h5>AutoAnything</h5>
-                  <p>
-                    When AutoAnything reduced page load time by half, they saw a
-                    boost of 12-13% in sales.
-                  </p>
-                </div>
-                <div className="pwaexample">
-                  <h5>Pinterest</h5>
-                  <p>
-                    Pinterest rebuilt their pages for performance realizing a
-                    40% reduction in perceived wait times, thus increasing both
-                    search engine traffic and sign-ups by 15%.
-                  </p>
-                </div>
-                <div className="pwaexample">
-                  <h5>COOK</h5>
-                  <p>
-                    By cutting average page load time by 850 milliseconds, COOK
-                    found they were able to increase conversions by 7%, decrease
-                    bounce rates by 7%, and increase pages per session by 10%.
-                  </p>
-                </div>
-              </div>
+              <h5>Mobify</h5>
+              <p>
+                Every 100ms decrease in homepage load speed worked out to a
+                1.11% increase in session-based conversion, yielding an average
+                annual revenue increase of nearly $380,000. Additionally, a
+                100ms decrease in checkout page load speed amounted to a 1.55%
+                increase in session-based conversion, which in turn yielded an
+                average annual revenue increase of nearly $530,000.
+              </p>
+
+              <h5>AutoAnything</h5>
+              <p>
+                When AutoAnything reduced page load time by half, they saw a
+                boost of 12-13% in sales.
+              </p>
+              <h5>Pinterest</h5>
+              <p>
+                Pinterest rebuilt their pages for performance realizing a 40%
+                reduction in perceived wait times, thus increasing both search
+                engine traffic and sign-ups by 15%.
+              </p>
+              <h5>COOK</h5>
+              <p>
+                By cutting average page load time by 850 milliseconds, COOK
+                found they were able to increase conversions by 7%, decrease
+                bounce rates by 7%, and increase pages per session by 10%.
+              </p>
             </div>
           </div>
           <div className="sidebar">
             <div className="side1">
-              {/* <Link to="/multi_device_support"><img src={pic03} alt=''/></Link> */}
+              <Link to="/multi_device_support">
+                <Image
+                  fluid={data.image4.childImageSharp.fluid}
+                  style={{ marginBottom: '14px' }}
+                />
+              </Link>
               <h3>
                 <Link to="/multi_device_support">Multi Device Support</Link>
               </h3>
@@ -558,7 +567,12 @@ const webperformance = () => {
               </p>
             </div>
             <div className="side1">
-              {/* <Link to="/base_technologies"><img src={pic04} alt='' /></Link> */}
+              <Link to="/base_technologies">
+                <Image
+                  fluid={data.image5.childImageSharp.fluid}
+                  style={{ marginBottom: '14px' }}
+                />
+              </Link>
               <h3>
                 <Link to="/base_technologies">Base Technologies</Link>
               </h3>
@@ -574,4 +588,4 @@ const webperformance = () => {
   )
 }
 
-export default webperformance
+export default WebPerformance
