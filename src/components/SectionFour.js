@@ -87,7 +87,7 @@ const SectionFour = () => {
               />
               <div className="infocontentdiv">
                 <h3>
-                  <Link to="/web-performance">Web Performance</Link>
+                  <Link to="web-performance">Web Performance</Link>
                 </h3>
                 <p>
                 <VisibilitySensor>

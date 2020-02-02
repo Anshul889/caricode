@@ -6,6 +6,20 @@ import SEO from '../components/SEO'
 import { Spring, config } from 'react-spring/renderprops'
 import check from '../images/check.svg'
 import cross from '../images/cross.svg'
+import {
+  FlexibleWidthXYPlot,
+  XAxis,
+  YAxis,
+  LineMarkSeries
+} from 'react-vis'
+
+const databounce = [
+  {x : 0, y: 0},
+  {x : 3, y : 32},
+  {x : 5, y : 90},
+  {x : 6, y : 106},
+  {x: 10, y : 123}
+]
 
 const webperformance = () => {
   return (
@@ -147,7 +161,7 @@ const webperformance = () => {
                     </svg>
                   )}
                 </Spring>
-                <img src={check} height={25} alt='' />
+                <img src={check} height={25} alt="" />
               </div>
               <div className="slow">
                 <svg
@@ -435,7 +449,7 @@ const webperformance = () => {
                     </rect>
                   </g>
                 </svg>
-                <img src={cross} height={25} alt=''/>
+                <img src={cross} height={25} alt="" />
               </div>
             </div>
             <p>
@@ -458,6 +472,14 @@ const webperformance = () => {
               success of any online venture, as high performing sites engage and
               retain users better than poorly performing ones.
             </p>
+            <FlexibleWidthXYPlot
+              margin={{ left: 60, right: 30 }}
+              height={300}
+            >
+              <XAxis title={'loading time(s)'} />
+              <YAxis title={'%increase in Bounce Rate'}/>
+              <LineMarkSeries animation={{damping : 20, stiffness: 40}} curve={'curveMonotoneX'} data={databounce} />
+            </FlexibleWidthXYPlot>
             <p>
               Because business is highly competitive, we want you to be
               knowledgeable of how your competitors are doing online. In a

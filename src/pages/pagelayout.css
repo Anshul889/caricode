@@ -17,6 +17,7 @@
 
 .headermajor h1 {
   margin: 0;
+  font-size: 18px;
 }
 
 .contentpage img {
@@ -29,6 +30,7 @@
 
 .contentpage p {
   margin-bottom: 1.5em;
+  font-size: 14.5px;
 }
 
 .contentpage li {
@@ -85,7 +87,7 @@
 
 @media screen and (max-width: 800px) {
   .maininside {
-    grid-gap: 2em;
+    grid-gap: 1em;
   }
   .main {
     padding: 2em 0 2em 0;

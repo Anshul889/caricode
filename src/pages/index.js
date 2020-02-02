@@ -6,6 +6,7 @@ import Contact from '../components/contact'
 import SectionThree from '../components/SectionThree'
 import SectionFour from '../components/SectionFour'
 import SEO from '../components/SEO'
+import 'react-vis/dist/style.css';
 
 export default () => (
  
