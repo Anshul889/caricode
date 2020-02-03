@@ -31,11 +31,11 @@ const CustomidedFunctionality = () => {
   return (
     <Layout>
       <SEO
-        title={'Clean Design'}
+        title={'Customised Functionality'}
         description="At CariCode we develop your website so it can be accessed seamlessly
        across different devices: phones, qphablets, tablets,
        laptops, desktops, and more."
-        pathname="/clean-design"
+        pathname="/customised-functionality"
         image="/images/image3.jpg"
         article={true}
         date={'2020-01-30'}
@@ -66,11 +66,11 @@ const CustomidedFunctionality = () => {
         </div>
         <div className="sidebar">
           <div className="side1">
-            <Link to="/progressive-web-app"><Image
+            <Link to="/progressive-web-apps"><Image
                   fluid={data.image8.childImageSharp.fluid}
                   style={{ marginBottom: '14px' }}
                 /></Link>
-            <h3><Link to="/progressive-web-app">Progressive Web Apps</Link></h3>
+            <h3><Link to="/progressive-web-apps">Progressive Web Apps</Link></h3>
             <p>A high-quality Progressive Web App has incredible benefits, making it easy to delight your users, grow engagement and increase conversions.</p>
           </div>
           <div className="side1">

@@ -32,10 +32,9 @@ const BaseTechnologies = () => {
     <Layout>
       <SEO
         title={'Base Technologies'}
-        description="At CariCode we develop your website so it can be accessed seamlessly
-       across different devices: phones, qphablets, tablets,
-       laptops, desktops, and more."
-        pathname="/multi-device-support"
+        description="At CariCode, we build all our web applications with React JS, a
+        scalable technology developed and maintained by Facebook."
+        pathname="/base-technologies"
         image="/images/image3.jpg"
         article={true}
         date={'2020-01-30'}
@@ -51,7 +50,7 @@ const BaseTechnologies = () => {
               At CariCode, we build all our web applications with React JS, a
               scalable technology developed and maintained by Facebook.
             </p>
-            <h3>Advantages of React JS versus a CMS system like Wordpress</h3>
+            <h3>Advantages of Reactjs versus a CMS system like Wordpress</h3>
             <p>
               <b>Design:</b> With Wordpress you are constrained in the design
               and the way you organize your website. That is why all Wordpress

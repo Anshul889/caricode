@@ -32,9 +32,10 @@ const CleanDesign = () => {
     <Layout>
       <SEO
         title={'Clean Design'}
-        description="At CariCode we develop your website so it can be accessed seamlessly
-       across different devices: phones, qphablets, tablets,
-       laptops, desktops, and more."
+        description="48% of people determine the
+        credibility of a business by its website design. Mobile users are
+        goal-oriented. Speed is important and they expect to get what they
+        need, instantaneously."
         pathname="/clean-design"
         image="/images/image3.jpg"
         article={true}
@@ -43,10 +44,10 @@ const CleanDesign = () => {
       <div className="main">
         <div className="maininside">
           <div className="headermajor">
-            <h1>CLEAN DESIGN</h1>
+            <h1>Clean Design</h1>
           </div>
           <div className="contentpage">
-            <img src={mobile} alt="" height={100}/>
+            <img src={mobile} alt="" height={100} />
             <p>
               At CariCode we believe simple designs are better. According to
               research published by Blue Corona, 48% of people determine the
@@ -88,7 +89,7 @@ const CleanDesign = () => {
           <div className="sidebar">
             <div className="side1">
               <Link to="/customised-functionality">
-              <Image
+                <Image
                   fluid={data.image7.childImageSharp.fluid}
                   style={{ marginBottom: '14px' }}
                 />
@@ -105,7 +106,7 @@ const CleanDesign = () => {
             </div>
             <div className="side1">
               <Link to="progressive-web-apps/">
-              <Image
+                <Image
                   fluid={data.image8.childImageSharp.fluid}
                   style={{ marginBottom: '14px' }}
                 />
