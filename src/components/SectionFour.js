@@ -126,7 +126,7 @@ const SectionFour = () => {
               />
               <div className="infocontentdiv">
                 <h3>
-                  <Link to="/multi-device-support">Multi Device Support</Link>
+                  <Link to="/multi-device-support/">Multi Device Support</Link>
                 </h3>
                 <p>
                 <VisibilitySensor>

@@ -559,7 +559,7 @@ const WebPerformance = () => {
                 />
               </Link>
               <h3>
-                <Link to="/multi_device_support">Multi Device Support</Link>
+                <Link to="/multi-device-support">Multi Device Support</Link>
               </h3>
               <p>
                 Our responsive designs work behind-the-scenes to give a user a
