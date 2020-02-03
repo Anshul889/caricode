@@ -9,14 +9,14 @@ import mobile from '../images/mobile-duotone.svg'
 
 const getImages = graphql`
   {
-    image7: file(relativePath: { eq: "image7.jpg" }) {
+    image8: file(relativePath: { eq: "image8.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    image8: file(relativePath: { eq: "image8.jpg" }) {
+    image3: file(relativePath: { eq: "image3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid
@@ -41,87 +41,49 @@ const CustomidedFunctionality = () => {
         date={'2020-01-30'}
       />
       <div className="main">
-        <div className="maininside">
-          <div className="headermajor">
-            <h1>CLEAN DESIGN</h1>
+      <div className="maininside">
+        <div className="headermajor">
+          <h1>Customised Functionality</h1>
+        </div>
+        <div className="contentpage">
+          <div className="customfuncicon">
           </div>
-          <div className="contentpage">
-            <img src={mobile} alt="" height={100}/>
-            <p>
-              At CariCode we believe simple designs are better. According to
-              research published by Blue Corona, 48% of people determine the
-              credibility of a business by its website design. Mobile users are
-              goal-oriented. Speed is important and they expect to get what they
-              need, instantaneously.
-            </p>
-            <h3>
-              At CariCode every website we create is based on these important
-              principles:
-            </h3>
-            <h4>1. Home page and site navigation</h4>
-            <p>
-              Make secondary tasks available through menus or “below the fold”
-              Your mobile homepage should be focused on connecting users to the
-              content they’re looking for. Our goal while designing navigation
-              us for new and returning users to be able to figure out how to
-              reach your digital product easily and efficiently.
-            </p>
-            <h4>2. Keep Menus Short and Sweet</h4>
-            <p>
-              Mobile users don’t like to scroll through a long list of options
-              to find what they want. Reorganize your menu to use as few items
-              as possible, while maintaining key functionality
-            </p>
-            <h4>3. Make it easy to get back to the home page</h4>
-            <p>
-              Users expect to go back to the homepage when they tap the logo in
-              the top-left of a mobile page
-            </p>
-            <h4>4. Commerce and Conversion</h4>
-            <p>
-              Understand your customer journeys and let users convert on their
-              own terms.Let users explore before they commit
-            </p>
-            <h4>5. Calls to Action</h4>
-            <p>Keep calls to action front and center.</p>
+          <div className="pees">
+            <h3>We want you to have a successful online presence which means more than just a website. We offer a range of additional solutions customised to suit your needs.</h3>
+            <h4>Two of our key features are detailed below:</h4>
+            <h5>Blogs</h5>
+            <p>1. Blogging Helps Your Business to Compete: blogging is important to let consumers know how you are different.</p>
+            <p>2. Blogging is Statistically Proven to Help Businesses<br /><br/> The custom content from blogs warms prospective customers up to your business. Businesses that blog generate more leads than businesses that don’t. Blogging can sometimes be just as effective in promoting your company than through advertisements.</p>
+            <p>3. A Blog Provides a Channel of Communication with Customers: Creates a two-way interaction with your target audience. You can personalize your content and create a conversation with your customer</p>
+            <p>4. A Blog Offers Insight Into Your Audience: Track user interaction such as likes, clicks, shares with your blog to get deeper insight on your customer. Customers can provide important feedback through your blog</p>
+            <p>5. A Blog Can Improve Your SEO: Blogs improve your search engine ranking</p>
+            <p>6. Blog Posts Provide Social Media Content</p>
+            <p>7. A Business Blog Can Generate Leads: The blog layout we offer is optimized for actions that are important to your business.</p>
+            <h5>Offline Support</h5>
+            <p>Offline support and reliable performance is a critical feature of all the websites we built. Progressive Web Apps offer the most reliable offline support. This provides a significantly better user experience no matter where your customer is accessing your website.</p>
+            <p>The quality of a network connection can be affected by a number of factors. Our goal is to provide a good experience that lessens the impact of changes in connectivity.</p>
           </div>
-          <div className="sidebar">
-            <div className="side1">
-              <Link to="/customised-functionality">
-              <Image
-                  fluid={data.image7.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
-                />
-              </Link>
-              <h3>
-                <Link to="/customised-functionality">
-                  Customised Functionality
-                </Link>
-              </h3>
-              <p>
-                Custom Navigation for the Web and Mobile, Authentications, Blog,
-                Offline support, Easily manage your content
-              </p>
-            </div>
-            <div className="side1">
-              <Link to="progressive-web-app">
-              <Image
+        </div>
+        <div className="sidebar">
+          <div className="side1">
+            <Link to="/progressive-web-app"><Image
                   fluid={data.image8.childImageSharp.fluid}
                   style={{ marginBottom: '14px' }}
-                />
-              </Link>
-              <h3>
-                <Link to="progressive-web-app">Progressive Web Apps</Link>
-              </h3>
-              <p>
-                A high-quality Progressive Web App has incredible benefits,
-                making it easy to delight your users, grow engagement and
-                increase conversions.
-              </p>
-            </div>
+                /></Link>
+            <h3><Link to="/progressive-web-app">Progressive Web Apps</Link></h3>
+            <p>A high-quality Progressive Web App has incredible benefits, making it easy to delight your users, grow engagement and increase conversions.</p>
+          </div>
+          <div className="side1">
+            <Link to="/web-performance"><Image
+                  fluid={data.image3.childImageSharp.fluid}
+                  style={{ marginBottom: '14px' }}
+                /></Link>
+            <h3><Link to="/web-performance">Web Performance</Link></h3>
+            <p>Performance plays a significant role in the success of any online venture, as highly performing sites engage and retain users better than poorly performing ones.</p>
           </div>
         </div>
       </div>
+    </div>
     </Layout>
   )
 }

@@ -104,14 +104,14 @@ const CleanDesign = () => {
               </p>
             </div>
             <div className="side1">
-              <Link to="progressive-web-app">
+              <Link to="progressive-web-apps/">
               <Image
                   fluid={data.image8.childImageSharp.fluid}
                   style={{ marginBottom: '14px' }}
                 />
               </Link>
               <h3>
-                <Link to="progressive-web-app">Progressive Web Apps</Link>
+                <Link to="progressive-web-apps/">Progressive Web Apps</Link>
               </h3>
               <p>
                 A high-quality Progressive Web App has incredible benefits,

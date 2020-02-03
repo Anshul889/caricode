@@ -242,7 +242,7 @@ const SectionFour = () => {
                 <h3>
                   <Link
                     style={{ fontSize: '16px' }}
-                    to="/customised-functionality"
+                    to="/customised-functionality/"
                   >
                     Customised Functionality
                   </Link>
@@ -282,7 +282,7 @@ const SectionFour = () => {
               />
               <div className="infocontentdiv">
                 <h3>
-                  <Link to="/progressive-web-app">Progressive Web Apps</Link>
+                  <Link to="/progressive-web-apps/">Progressive Web Apps</Link>
                 </h3>
                 <p>
                 <VisibilitySensor>
