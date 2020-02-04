@@ -104,14 +104,14 @@ const MultiDeviceSupport = () => {
               </p>
             </div>
             <div className="side1">
-              <Link to="/clean_design">
+              <Link to="/clean-design">
                 <Image
                   fluid={data.image6.childImageSharp.fluid}
                   style={{ marginBottom: '14px' }}
                 />
               </Link>
               <h3>
-                <Link to="/clean_design">Clean Design</Link>
+                <Link to="/clean-design">Clean Design</Link>
               </h3>
               <p>
                 Mobile users are very goal-oriented. They expect to be able to

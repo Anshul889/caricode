@@ -552,7 +552,7 @@ const WebPerformance = () => {
           </div>
           <div className="sidebar">
             <div className="side1">
-              <Link to="/multi_device_support">
+              <Link to="/multi-device-support">
                 <Image
                   fluid={data.image4.childImageSharp.fluid}
                   style={{ marginBottom: '14px' }}
@@ -567,14 +567,14 @@ const WebPerformance = () => {
               </p>
             </div>
             <div className="side1">
-              <Link to="/base_technologies">
+              <Link to="/base-technologies">
                 <Image
                   fluid={data.image5.childImageSharp.fluid}
                   style={{ marginBottom: '14px' }}
                 />
               </Link>
               <h3>
-                <Link to="/base_technologies">Base Technologies</Link>
+                <Link to="/base-technologies">Base Technologies</Link>
               </h3>
               <p>
                 At CariCode, we build all our web applications with React JS, a
