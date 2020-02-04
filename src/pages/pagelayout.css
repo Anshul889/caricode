@@ -104,6 +104,10 @@
 
 }
 
+.rv-xy-plot__series--label {
+  fill: white;
+}
+
 @media screen and (max-width: 600px) {
   .pwaexamples {
     grid-template-columns: 1fr;

@@ -1,5 +1,5 @@
 import SEO from '../components/SEO'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Layout from '../components/layout'
@@ -28,8 +28,11 @@ const getImages = graphql`
 `
 
 const MultiDeviceSupport = () => {
-  const data = useStaticQuery(getImages)
-  const myData = [{angle: 5.1, label:'Mobile'}, {angle: 4.7, label:'Desktop'}, {angle: 0.2, label:'Tablet'}]
+  const data = useStaticQuery(getImages);
+  const [myData, setData] = useState([{angle: 1, label:'Mobile'}, {angle: 1, label:'Desktop'}, {angle: 1, label:'Tablet'}]);
+  useEffect(() => {
+    setTimeout(() => setData([{angle: 5.1, label:'Mobile'}, {angle: 4.7, label:'Desktop'}, {angle: 0.2, label:'Tablet'}]), 300)
+  })
   return (
     <Layout>
       <SEO
@@ -48,7 +51,10 @@ const MultiDeviceSupport = () => {
             <h1>MULTI DEVICE SUPPORT</h1>
           </div>
           <div className="contentpage">
-          <RadialChart data={myData} width={300} height={300} animation showLabels labelsStyle={{color: '#fff'}}/>
+          <div style={{margin : '0 auto', maxWidth:"300px", textAlign:'center'}}>
+          <RadialChart data={myData} width={300} height={300} animation='gentle'  showLabels />
+          <p style={{fontSize: '12px', marginTop:'5px' }}>Web usage across devices</p>
+          </div>
             <p>
               At Caricode we offer multi-device support for your website. Users
               are increasingly accessing the web through their mobile, however
@@ -63,6 +69,8 @@ const MultiDeviceSupport = () => {
               its important to us that your site can adapt to any screen size,
               today or in the future.
             </p>
+
+            {/* image of phone and laptop */}
             <p>
               All our web applications are built using Responsive web design.
               Originally defined by Ethan Marcotte in A List Apart, Responsive
