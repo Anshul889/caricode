@@ -23,6 +23,20 @@ const getImages = graphql`
         }
       }
     }
+    image9: file(relativePath: { eq: "image9.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image10: file(relativePath: { eq: "image10.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -60,6 +74,12 @@ const CleanDesign = () => {
               principles:
             </h3>
             <h4>1. Home page and site navigation</h4>
+            <div className="designimages">
+            <Image
+                  fluid={data.image10.childImageSharp.fluid}
+                  style={{ marginBottom: '14px' }}
+                />
+            </div>
             <p>
               Make secondary tasks available through menus or “below the fold”
               Your mobile homepage should be focused on connecting users to the
@@ -68,12 +88,24 @@ const CleanDesign = () => {
               reach your digital product easily and efficiently.
             </p>
             <h4>2. Keep Menus Short and Sweet</h4>
+            <div className="designimages">
+            <Image
+                  fluid={data.image9.childImageSharp.fluid}
+                  style={{ marginBottom: '14px' }}
+                />
+            </div>
             <p>
               Mobile users don’t like to scroll through a long list of options
               to find what they want. Reorganize your menu to use as few items
               as possible, while maintaining key functionality
             </p>
             <h4>3. Make it easy to get back to the home page</h4>
+            <div className="designimages">
+            <Image
+                  fluid={data.image9.childImageSharp.fluid}
+                  style={{ marginBottom: '14px' }}
+                />
+            </div>
             <p>
               Users expect to go back to the homepage when they tap the logo in
               the top-left of a mobile page
