@@ -153,11 +153,11 @@ const CleanDesign = () => {
             <h4>5. Calls to Action</h4>
             <div className="designimages" style={{width: '70%'}}>
               <Image
-                fluid={data.image11.childImageSharp.fluid}
+                fluid={data.image13.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
               />
               <Image
-                fluid={data.image12.childImageSharp.fluid}
+                fluid={data.image14.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
               />
             </div>
