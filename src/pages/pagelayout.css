@@ -109,6 +109,13 @@ img.pwaappicon{
 .designimages{
   width: 30%;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.rv-xy-plot__series--label {
+  fill: white;
 }
 
 @media screen and (max-width: 800px) {
@@ -130,10 +137,6 @@ img.pwaappicon{
   
 }
 
-.rv-xy-plot__series--label {
-  fill: white;
-}
-
 @media screen and (max-width: 600px) {
   .pwaexamples {
     grid-template-columns: 1fr;
@@ -143,5 +146,7 @@ img.pwaappicon{
   }
   .designimages{
     width: 60% ;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
   }
 }

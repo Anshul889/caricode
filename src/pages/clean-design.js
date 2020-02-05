@@ -4,21 +4,18 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Layout from '../components/layout'
 
-import laptop from '../images/laptop.svg'
-import mobile from '../images/mobile-duotone.svg'
-
 const getImages = graphql`
   {
     image7: file(relativePath: { eq: "image7.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image8: file(relativePath: { eq: "image8.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -31,6 +28,34 @@ const getImages = graphql`
       }
     }
     image10: file(relativePath: { eq: "image10.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image11: file(relativePath: { eq: "image11.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image12: file(relativePath: { eq: "image12.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image13: file(relativePath: { eq: "image13.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image14: file(relativePath: { eq: "image14.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
@@ -61,7 +86,6 @@ const CleanDesign = () => {
             <h1>Clean Design</h1>
           </div>
           <div className="contentpage">
-            <img src={mobile} alt="" height={100} />
             <p>
               At CariCode we believe simple designs are better. According to
               research published by Blue Corona, 48% of people determine the
@@ -75,10 +99,10 @@ const CleanDesign = () => {
             </h3>
             <h4>1. Home page and site navigation</h4>
             <div className="designimages">
-            <Image
-                  fluid={data.image10.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
-                />
+              <Image
+                fluid={data.image10.childImageSharp.fluid}
+                style={{ marginBottom: '14px',  gridColumn: '1 / span 2' }}
+              />
             </div>
             <p>
               Make secondary tasks available through menus or “below the fold”
@@ -89,10 +113,10 @@ const CleanDesign = () => {
             </p>
             <h4>2. Keep Menus Short and Sweet</h4>
             <div className="designimages">
-            <Image
-                  fluid={data.image9.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
-                />
+              <Image
+                fluid={data.image9.childImageSharp.fluid}
+                style={{ marginBottom: '14px',  gridColumn: '1 / span 2' }}
+              />
             </div>
             <p>
               Mobile users don’t like to scroll through a long list of options
@@ -101,21 +125,43 @@ const CleanDesign = () => {
             </p>
             <h4>3. Make it easy to get back to the home page</h4>
             <div className="designimages">
-            <Image
-                  fluid={data.image9.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
-                />
+              <Image
+                fluid={data.image10.childImageSharp.fluid}
+                style={{ marginBottom: '14px', gridColumn: '1 / span 2' }}
+              />
             </div>
             <p>
               Users expect to go back to the homepage when they tap the logo in
-              the top-left of a mobile page
+              the top-left of a mobile page, and they become frustrated when it
+              isn’t available or doesn’t work.
             </p>
             <h4>4. Commerce and Conversion</h4>
+            <div className="designimages" style={{width: '70%'}}>
+              <Image
+                fluid={data.image11.childImageSharp.fluid}
+                style={{ marginBottom: '14px' }}
+              />
+              <Image
+                fluid={data.image12.childImageSharp.fluid}
+                style={{ marginBottom: '14px' }}
+              />
+            </div>
             <p>
               Understand your customer journeys and let users convert on their
               own terms.Let users explore before they commit
             </p>
             <h4>5. Calls to Action</h4>
+            <div className="designimages" style={{width: '70%'}}>
+              <Image
+                fluid={data.image11.childImageSharp.fluid}
+                style={{ marginBottom: '14px' }}
+              />
+              <Image
+                fluid={data.image12.childImageSharp.fluid}
+                style={{ marginBottom: '14px' }}
+              />
+            </div>
+
             <p>Keep calls to action front and center.</p>
           </div>
           <div className="sidebar">

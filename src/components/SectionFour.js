@@ -149,8 +149,7 @@ const SectionFour = () => {
                     </Spring>
                   )}
                 </VisibilitySensor>
-                  A multitude of different screen sizes exist across phones,
-                  tablets, and PC's. Screen sizes are always changing, so it's
+                   Screen sizes are always changing, so it's
                   important that your site can adapt to any screen size, today
                   or in the future.
                 </p>
