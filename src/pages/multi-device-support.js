@@ -12,14 +12,14 @@ const getImages = graphql`
   {
     image5: file(relativePath: { eq: "image5.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image6: file(relativePath: { eq: "image6.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -52,7 +52,7 @@ const MultiDeviceSupport = () => {
           </div>
           <div className="contentpage">
           <div style={{margin : '0 auto', maxWidth:"300px", textAlign:'center'}}>
-          <RadialChart data={myData} width={300} height={300} animation='gentle'  showLabels />
+          <RadialChart data={myData} width={300} height={300} animation={{ damping: 20, stiffness: 40 }}  showLabels />
           <p style={{fontSize: '12px', marginTop:'5px' }}>Web usage across devices</p>
           </div>
             <p>

@@ -13,14 +13,14 @@ const getImages = graphql`
   {
     image4: file(relativePath: { eq: "image4.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image5: file(relativePath: { eq: "image5.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 200) {
+        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
