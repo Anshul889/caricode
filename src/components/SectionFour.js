@@ -120,10 +120,10 @@ const SectionFour = () => {
           </div>
           <div className="infopost">
             <div className="infodiv">
-              <Image
+            <Link to="/multi-device-support/"><Image
                 fluid={data.image4.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
-              />
+              /></Link>
               <div className="infocontentdiv">
                 <h3>
                   <Link to="/multi-device-support/">Multi Device Support</Link>
@@ -158,10 +158,10 @@ const SectionFour = () => {
           </div>
           <div className="infopost">
             <div className="infodiv">
-              <Image
+            <Link to="/base-technologies"><Image
                 fluid={data.image5.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
-              />
+              /></Link>
               <div className="infocontentdiv">
                 <h3>
                   <Link to="/base-technologies">Base Technologies</Link>
@@ -196,10 +196,10 @@ const SectionFour = () => {
           </div>
           <div className="infopost">
             <div className="infodiv">
-              <Image
+            <Link to="/clean-design"><Image
                 fluid={data.image6.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
-              />
+              /></Link>
               <div className="infocontentdiv">
                 <h3>
                   <Link to="/clean-design">Clean Design</Link>
@@ -233,10 +233,10 @@ const SectionFour = () => {
           </div>
           <div className="infopost">
             <div className="infodiv">
-              <Image
+            <Link to="/customised-functionality/" ><Image
                 fluid={data.image7.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
-              />
+              /></Link>
               <div className="infocontentdiv">
                 <h3>
                   <Link
@@ -275,10 +275,10 @@ const SectionFour = () => {
           </div>
           <div className="infopost">
             <div className="infodiv">
-              <Image
+            <Link to="/progressive-web-apps/"><Image
                 fluid={data.image8.childImageSharp.fluid}
                 style={{ marginBottom: '14px' }}
-              />
+              /></Link>
               <div className="infocontentdiv">
                 <h3>
                   <Link to="/progressive-web-apps/">Progressive Web Apps</Link>

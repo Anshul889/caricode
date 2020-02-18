@@ -4,8 +4,6 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Layout from '../components/layout'
 
-import laptop from '../images/laptop.svg'
-import mobile from '../images/mobile-duotone.svg'
 import { RadialChart } from 'react-vis/dist'
 
 const getImages = graphql`
@@ -29,7 +27,7 @@ const getImages = graphql`
 
 const MultiDeviceSupport = () => {
   const data = useStaticQuery(getImages);
-  const [myData, setData] = useState([{angle: 1, label:'Mobile'}, {angle: 1, label:'Desktop'}, {angle: 1, label:'Tablet'}]);
+  const [myData, setData] = useState([{angle: 1.3, label:'Mobile'}, {angle: 1.3, label:'Desktop'}, {angle: 0.5, label:'Tablet'}]);
   useEffect(() => {
     setTimeout(() => setData([{angle: 5.1, label:'Mobile'}, {angle: 4.7, label:'Desktop'}, {angle: 0.2, label:'Tablet'}]), 300)
   })
@@ -52,7 +50,7 @@ const MultiDeviceSupport = () => {
           </div>
           <div className="contentpage">
           <div style={{margin : '0 auto', maxWidth:"300px", textAlign:'center'}}>
-          <RadialChart data={myData} width={300} height={300} animation={{ damping: 20, stiffness: 40 }}  showLabels />
+          <RadialChart data={myData} width={300} height={300} animation={{ damping: 20, stiffness: 120 }}  showLabels />
           <p style={{fontSize: '12px', marginTop:'5px' }}>Web usage across devices</p>
           </div>
             <p>
