@@ -153,20 +153,18 @@ const SectionThree = () => {
                       i: '260',
                       j: '250',
                     }}
-                    to={
-                      {
-                        a: isVisible ? '80' : '20',
-                        b: isVisible ? '250'  : '350',
-                        c: isVisible ? '140' : '80',
-                        d: isVisible ? '275' : '250',
-                        e: isVisible ? '200': '140',
-                        f: isVisible ? '200' : '275',
-                        g: isVisible ?  '260' : '200',
-                        h: isVisible ? '250': '200',
-                        i: isVisible ? '280' : '260',
-                        j: isVisible ? '30': '250',
-                      }
-                    }
+                    to={{
+                      a: isVisible ? '80' : '20',
+                      b: isVisible ? '250' : '350',
+                      c: isVisible ? '140' : '80',
+                      d: isVisible ? '275' : '250',
+                      e: isVisible ? '200' : '140',
+                      f: isVisible ? '200' : '275',
+                      g: isVisible ? '260' : '200',
+                      h: isVisible ? '250' : '200',
+                      i: isVisible ? '280' : '260',
+                      j: isVisible ? '30' : '250',
+                    }}
                     config={config.molasses}
                     delay={800}
                   >
@@ -205,7 +203,7 @@ const SectionThree = () => {
                             y2={props.b}
                             style={{
                               stroke: 'rgb(18, 147, 154)',
-                              strokeWidth: '4'
+                              strokeWidth: '4',
                             }}
                           />
                           <line

@@ -26,10 +26,22 @@ const getImages = graphql`
 `
 
 const MultiDeviceSupport = () => {
-  const data = useStaticQuery(getImages);
-  const [myData, setData] = useState([{angle: 1.3, label:'Mobile'}, {angle: 1.3, label:'Desktop'}, {angle: 0.5, label:'Tablet'}]);
+  const data = useStaticQuery(getImages)
+  const [myData, setData] = useState([
+    { angle: 1.3, label: 'Mobile' },
+    { angle: 1.3, label: 'Desktop' },
+    { angle: 0.5, label: 'Tablet' },
+  ])
   useEffect(() => {
-    setTimeout(() => setData([{angle: 5.1, label:'Mobile'}, {angle: 4.7, label:'Desktop'}, {angle: 0.2, label:'Tablet'}]), 300)
+    setTimeout(
+      () =>
+        setData([
+          { angle: 5.1, label: 'Mobile' },
+          { angle: 4.7, label: 'Desktop' },
+          { angle: 0.2, label: 'Tablet' },
+        ]),
+      300
+    )
   })
   return (
     <Layout>
@@ -49,10 +61,24 @@ const MultiDeviceSupport = () => {
             <h1>MULTI DEVICE SUPPORT</h1>
           </div>
           <div className="contentpage">
-          <div style={{margin : '0 auto', maxWidth:"300px", textAlign:'center'}}>
-          <RadialChart data={myData} width={300} height={300} animation={{ damping: 20, stiffness: 120 }}  showLabels />
-          <p style={{fontSize: '12px', marginTop:'5px' }}>Web usage across devices</p>
-          </div>
+            <div
+              style={{
+                margin: '0 auto',
+                maxWidth: '300px',
+                textAlign: 'center',
+              }}
+            >
+              <RadialChart
+                data={myData}
+                width={300}
+                height={300}
+                animation={{ damping: 20, stiffness: 120 }}
+                showLabels
+              />
+              <p style={{ fontSize: '12px', marginTop: '5px' }}>
+                Web usage across devices
+              </p>
+            </div>
             <p>
               At Caricode we offer multi-device support for your website. Users
               are increasingly accessing the web through their mobile, however
