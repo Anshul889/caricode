@@ -30,7 +30,7 @@ const Contact = () => {
             <textarea name="message"></textarea>
           </label>
         </div>
-        {message && inputField ? <button type="submit">Send</button> : <button type="submit" disabled>Send</button>}
+        {message && inputField ? <button type="submit">Send</button> : <button disabled style={{opacity: '0.5'}}>Send</button>}
       </form>
     </section>
   )
