@@ -34,8 +34,8 @@ const Banner = () => {
           {props => <div className="hero-feature-border" style={props}></div>}
         </Spring>
         <Spring
-          from={{ opacity: 0, transform: 'translateY(20px)' }}
-          to={{ opacity : 1,transform: 'translateY(0px)' }}
+          from={{ opacity: 0, transform: 'translateY(20px)', marginBottom: '20px' }}
+          to={{ opacity : 1,transform: 'translateY(0px)', marginBottom: '20px' }}
           config={config.slow}
           delay={1000}
         >

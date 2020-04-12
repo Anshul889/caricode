@@ -89,7 +89,7 @@ const SectionFour = () => {
                 <h3>
                   <Link to="/web-performance/">Web Performance</Link>
                 </h3>
-                <p>
+                <div className="acontent">
                   <VisibilitySensor>
                     {({ isVisible }) => (
                       <Spring
@@ -113,7 +113,7 @@ const SectionFour = () => {
                   Performance plays a significant role in the success of any
                   online venture, as highly performing sites engage and retain
                   users better than poorly performing ones.
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ const SectionFour = () => {
                 <h3>
                   <Link to="/multi-device-support/">Multi Device Support</Link>
                 </h3>
-                <p>
+                <div className="acontent">
                   <VisibilitySensor>
                     {({ isVisible }) => (
                       <Spring
@@ -152,7 +152,7 @@ const SectionFour = () => {
                   </VisibilitySensor>
                   Screen sizes are always changing, so it's important that your
                   site can adapt to any screen size, today or in the future.
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@ const SectionFour = () => {
                 <h3>
                   <Link to="/base-technologies">Base Technologies</Link>
                 </h3>
-                <p>
+                <div className="acontent">
                   <VisibilitySensor>
                     {({ isVisible }) => (
                       <Spring
@@ -192,7 +192,7 @@ const SectionFour = () => {
                   Built with React JS, a scalable technology developed and
                   maintained by Facebook. Used by all major technology firms,
                   Uber, Twitter, Netlfix and Airbnb.
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -208,7 +208,7 @@ const SectionFour = () => {
                 <h3>
                   <Link to="/clean-design">Clean Design</Link>
                 </h3>
-                <p>
+                <div className="acontent">
                   <VisibilitySensor>
                     {({ isVisible }) => (
                       <Spring
@@ -231,7 +231,7 @@ const SectionFour = () => {
                   </VisibilitySensor>
                   Mobile users are very goal-oriented. They expect to be able to
                   get what they need, immediately, and on their own terms.
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@ const SectionFour = () => {
                     Customised Functionality
                   </Link>
                 </h3>
-                <p>
+                <div className="acontent">
                   <VisibilitySensor>
                     {({ isVisible }) => (
                       <Spring
@@ -275,7 +275,7 @@ const SectionFour = () => {
                   </VisibilitySensor>
                   Custom Navigation for the Web and Mobile, Authentications,
                   Blog, Offline support, Easily manage your content
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -291,7 +291,7 @@ const SectionFour = () => {
                 <h3>
                   <Link to="/progressive-web-apps/">Progressive Web Apps</Link>
                 </h3>
-                <p>
+                <div className="acontent">
                   <VisibilitySensor>
                     {({ isVisible }) => (
                       <Spring
@@ -315,7 +315,7 @@ const SectionFour = () => {
                   A high-quality Progressive Web App has incredible benefits,
                   making it easy to delight your users, grow engagement and
                   increase conversions.
-                </p>
+                </div>
               </div>
             </div>
           </div>

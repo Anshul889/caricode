@@ -196,7 +196,7 @@ button:hover {
   padding-top: 20px;
 }
 
-.infocontentdiv p {
+.acontent {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 20px;
@@ -276,7 +276,7 @@ textarea:focus {
     width: 85%;
   }
 
-  .infocontentdiv p {
+  .acontent {
     height: 140px;
     width: 85%;
   }

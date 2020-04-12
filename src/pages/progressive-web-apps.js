@@ -65,30 +65,30 @@ const ProgressiveWebApp = () => {
               <div style={{ position: 'relative' }}>
                 <img src={mobile} alt="" height={100} />
                 <img className="pwaicon" src={check} alt="" />
-                <img className="pwaappicon" src={chrome} alt=""/>
+                <img className="pwaappicon" src={chrome} alt="" />
               </div>
               <div style={{ position: 'relative' }}>
                 <img src={mobile} alt="" height={100} />
                 <img className="pwaicon" src={cross} alt="" />
-                <img className="pwaappicon" src={playstore} alt=""/>
+                <img className="pwaappicon" src={playstore} alt="" />
               </div>
             </div>
 
             <p>
-              For businesses globally
+              For businesses globally {' '}
               <b>60-70 percent of traffic comes from mobile browsers</b>. Users
               don’t want to download and install a native app unless they feel
               they would use it every day. Globally businesses are transitioning
               from website to web apps which are being created on a daily basis
             </p>
             <p>
-              The term <b>Progressive Web apps</b> is used to describe
+              The term {' '}<b>Progressive Web apps</b> is used to describe {' '}
               <b>
                 web apps that use new features supported by modern browsers.
               </b>
             </p>
             <p>
-              At Caricode we build progressive web apps that deliver
+              At Caricode we build progressive web apps that deliver{' '}
               <b>
                 high performance, engaging, native-like experience, and the
                 ability to work offline
@@ -99,7 +99,7 @@ const ProgressiveWebApp = () => {
             <p>
               Transitioning your business from a website to a Progressive Web
               App offers major benefits, most importantly, superior performance
-              and increased conversions. Our Progressive Web Apps are
+              and increased conversions. Our Progressive Web Apps are {' '}
               <b>responsive, fast, and connection-independent.</b>
             </p>
             <p>
@@ -120,43 +120,42 @@ const ProgressiveWebApp = () => {
               </li>
               <li>Access to camera and Microphone</li>
             </ul>
-              <div className="pwaexampleheader">
-                <h4>
-                  A number of companies have succeeded with Progressive Web
-                  Apps:
-                </h4>
-                  <h5>Twitter</h5>
-                  <p>
-                    The Twitter Lite Progressive Web App became the default
-                    mobile web experience for all users globally in April 2017,
-                    which resulted in:
-                  </p>
-                  <ul>
-                    <li>65% increase in pages per session</li>
-                    <li>75% increase in Tweets sent</li>
-                    <li>20% decrease in bounce rate</li>
-                  </ul>
+            <div className="pwaexampleheader">
+              <h4>
+                A number of companies have succeeded with Progressive Web Apps:
+              </h4>
+              <h5>Twitter</h5>
+              <p>
+                The Twitter Lite Progressive Web App became the default mobile
+                web experience for all users globally in April 2017, which
+                resulted in:
+              </p>
+              <ul>
+                <li>65% increase in pages per session</li>
+                <li>75% increase in Tweets sent</li>
+                <li>20% decrease in bounce rate</li>
+              </ul>
 
-                  <h5>Flipkart</h5>
-                  <p>
-                    Flipkart, India’s largest e-commerce site, decided to
-                    combine their web presence and native app into a Progressive
-                    Web Application, resulting in a 70% increase in conversions.
-                  </p>
-                  <h5>Wego</h5>
-                  <p>
-                    After building a PWA, the travel company Wego noticed a 26%
-                    increase in the number of users, a 95% increase in
-                    conversions on Android, and a 50% increase on iOS.
-                  </p>
-                  <h5>BookMyShow</h5>
-                  <p>
-                    BookMyShow India’s largest ticketing firm, with 50+ million
-                    monthly visitors, developed an improved version of their
-                    mobile website using a Progressive Web App (PWA), delivering
-                    an 80+% increase in conversions, which means more users
-                    purchasing tickets.
-                  </p>
+              <h5>Flipkart</h5>
+              <p>
+                Flipkart, India’s largest e-commerce site, decided to combine
+                their web presence and native app into a Progressive Web
+                Application, resulting in a 70% increase in conversions.
+              </p>
+              <h5>Wego</h5>
+              <p>
+                After building a PWA, the travel company Wego noticed a 26%
+                increase in the number of users, a 95% increase in conversions
+                on Android, and a 50% increase on iOS.
+              </p>
+              <h5>BookMyShow</h5>
+              <p>
+                BookMyShow India’s largest ticketing firm, with 50+ million
+                monthly visitors, developed an improved version of their mobile
+                website using a Progressive Web App (PWA), delivering an 80+%
+                increase in conversions, which means more users purchasing
+                tickets.
+              </p>
             </div>
           </div>
           <div className="sidebar">
