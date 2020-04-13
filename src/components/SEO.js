@@ -1,8 +1,7 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
 
 const SEO = ({ title, description, image, pathname, article, date }) => (
   <StaticQuery
@@ -15,16 +14,16 @@ const SEO = ({ title, description, image, pathname, article, date }) => (
           siteUrl,
           defaultImage,
           twitterUsername,
-          defaultDate
-        }
-      }
+          defaultDate,
+        },
+      },
     }) => {
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || '/'}`,
-        date: date || defaultDate
+        date: date || defaultDate,
       }
       return (
         <>
@@ -50,7 +49,7 @@ const SEO = ({ title, description, image, pathname, article, date }) => (
             )}
             {seo.image && <meta name="twitter:image" content={seo.image} />}
             {seo.date && <meta name="date" content={seo.date} />}
-            <html lang="en" /> 
+            <html lang="en" />
           </Helmet>
         </>
       )
@@ -80,7 +79,7 @@ SEO.propTypes = {
   image: PropTypes.string,
   pathname: PropTypes.string,
   article: PropTypes.bool,
-  date: PropTypes.string
+  date: PropTypes.string,
 }
 SEO.defaultProps = {
   title: null,
@@ -88,5 +87,5 @@ SEO.defaultProps = {
   image: null,
   pathname: null,
   article: false,
-  date: '2020-01-28'
+  date: '2020-01-28',
 }
