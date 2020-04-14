@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 
 const Contact = () => {
-  const [message, setMessage] = useState(null)
-  const [inputField, setInputfield] = useState(null)
-  const [formError, setError] = useState(false)
-
+  const [message, setMessage] = useState(null);
+  const [inputField, setInputfield] = useState(null);
+  const [formError, setError] = useState(false);
   return (
     <section className="contact">
       <h2>SEND US A MESSAGE</h2>
@@ -33,7 +32,7 @@ const Contact = () => {
         {message && inputField ? (
           <button type="submit">Send</button>
         ) : (
-          <button disabled onMouseEnter={() => setError(true)} style={{ opacity: '0.5' }}>
+          <button onMouseOver={() => setError(true)} style={{ opacity: '0.5' }}>
             Send
           </button>
         )}

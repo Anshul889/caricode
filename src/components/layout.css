@@ -22,6 +22,7 @@ h5,
 h6 {
   text-transform: uppercase;
   margin-top: 0;
+  font-weight: 600;
 }
 
 button {
@@ -30,7 +31,7 @@ button {
   border-color: #f8f9fa;
   text-decoration: none;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -140,6 +141,7 @@ button:hover {
 }
 
 .section3grid {
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -268,7 +270,7 @@ textarea:focus {
 
 @media only screen and (min-width: 830px) {
   #section2 {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
   }
 
   .inner {
@@ -286,6 +288,7 @@ textarea:focus {
   }
 
   .section3grid {
+    padding-top: 0px;
     grid-template-columns: 1fr 1.1fr 1fr;
   }
 
@@ -311,7 +314,7 @@ textarea:focus {
 
   .banner {
     height: calc(100vh - 56px);
-    margin-bottom: 90px;
+    margin-bottom: 50px;
   }
 
   .contact {

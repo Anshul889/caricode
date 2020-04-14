@@ -14,8 +14,8 @@ export default () => (
     <SEO />
     <Banner />
     <SectionTwo />
-    <SectionThree />
     <SectionFour />
+    <SectionThree />
     <Contact />
   </Layout>
 )
