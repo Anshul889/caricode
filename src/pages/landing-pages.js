@@ -9,6 +9,8 @@ import logogoogle from '../images/google.svg'
 import logosearch from '../images/search.svg'
 import { useEffect } from 'react'
 import { useSpring, animated as a } from 'react-spring'
+import TextTransition from '../components/TextTransition'
+import DraggableList from '../components/DraggableList'
 
 const getImages = graphql`
   {
@@ -85,7 +87,7 @@ const LandingPages = () => {
           </a.div>
         </div>
         <div className={styles.mlandingheroimage}>
-        <a.div
+          <a.div
             style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
           >
             {!flipped && (
@@ -121,8 +123,14 @@ const LandingPages = () => {
           </div>
         </div>
       </div>
+      <div className={styles.sectionanimation}>
+        <div className={styles.inner}>
+          Get custom built animations and parallax effects
+          <TextTransition />
+          <DraggableList items={'Lorem ipsum dolor sit'.split(' ')} />
+        </div>
+      </div>
       <h3>Price &#x20B9; 5000 per month</h3>
-      <h3>animations and parallax effects</h3>
       <h3>Seo Features</h3>
       <h3>Comparison with competition</h3>
       <p>professional ui and ux(user exprience)</p>
