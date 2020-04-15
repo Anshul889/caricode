@@ -137,6 +137,12 @@ img.pwaappicon{
   
 }
 
+/* .gatsby-image-outer-wrapper, 
+.gatsby-image-wrapper {
+  height: 100%; 
+} */
+
+
 @media screen and (max-width: 600px) {
   .pwaexamples {
     grid-template-columns: 1fr;
