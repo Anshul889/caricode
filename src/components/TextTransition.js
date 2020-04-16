@@ -8,7 +8,7 @@ function TextTransition() {
   const transitions = useTransition(items, null, {
     from: { opacity: 0, height: 0, innerHeight: 0, transform: 'perspective(600px) rotateX(0deg)', color: '#8fa5b6' },
     enter: [
-      { opacity: 1, height: 80, innerHeight: 80 },
+      { opacity: 1, height: 40, innerHeight: 40 },
       { transform: 'perspective(600px) rotateX(180deg)', color: '#28d79f' },
       { transform: 'perspective(600px) rotateX(0deg)' },
     ],

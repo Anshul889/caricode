@@ -59,6 +59,7 @@ const LandingPages = () => {
   })
   return (
     <Layout>
+      <div className={styles.container}>
       <div className={styles.landinghero}>
         <h1>Landing Pages</h1>
         <p>Get up and running with everything you need in 5 days</p>
@@ -133,7 +134,8 @@ const LandingPages = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className={styles.parallaxsnap}>
+        <h2>Parallax</h2>
         <ParallaxComponent />
       </div>
       <div style={{position: 'relative', top: '100vh'}}>
@@ -141,6 +143,7 @@ const LandingPages = () => {
       <h3>Seo Features</h3>
       <h3>Comparison with competition</h3>
       <p>professional ui and ux(user exprience)</p>
+      </div>
       </div>
     </Layout>
   )
