@@ -11,6 +11,7 @@ import { useEffect } from 'react'
 import { useSpring, animated as a } from 'react-spring'
 import TextTransition from '../components/TextTransition'
 import DraggableList from '../components/DraggableList'
+import ParallaxLayer from '../components/ParallaxLayer'
 
 const getImages = graphql`
   {
@@ -127,9 +128,12 @@ const LandingPages = () => {
         <div className={styles.inner}>
           Get custom built animations and parallax effects
           <TextTransition />
-          <DraggableList items={'Lorem ipsum dolor sit'.split(' ')} />
+          <div className={styles.mblock}>
+            <DraggableList items={'Lorem ipsum dolor sit'.split(' ')} />
+          </div>
         </div>
       </div>
+      <ParallaxLayer />
       <h3>Price &#x20B9; 5000 per month</h3>
       <h3>Seo Features</h3>
       <h3>Comparison with competition</h3>

@@ -75,4 +75,7 @@
   .inner{
     width: 90%;
   }
+  .mblock{
+    display: none;
+  }
 }
