@@ -11,7 +11,7 @@ import { useEffect } from 'react'
 import { useSpring, animated as a } from 'react-spring'
 import TextTransition from '../components/TextTransition'
 import DraggableList from '../components/DraggableList'
-import ParallaxLayer from '../components/ParallaxLayer'
+import ParallaxComponent from '../components/ParallaxComponent'
 
 const getImages = graphql`
   {
@@ -133,11 +133,15 @@ const LandingPages = () => {
           </div>
         </div>
       </div>
-      <ParallaxLayer />
+      <div>
+        <ParallaxComponent />
+      </div>
+      <div style={{position: 'relative', top: '100vh'}}>
       <h3>Price &#x20B9; 5000 per month</h3>
       <h3>Seo Features</h3>
       <h3>Comparison with competition</h3>
       <p>professional ui and ux(user exprience)</p>
+      </div>
     </Layout>
   )
 }

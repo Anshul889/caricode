@@ -78,4 +78,7 @@
   .mblock{
     display: none;
   }
+  .sectionanimation {
+    height: 500px;
+  }
 }
