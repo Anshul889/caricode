@@ -5,11 +5,12 @@ import { useGesture } from 'react-with-gesture'
 import { useSprings, animated, interpolate } from 'react-spring'
 import './DraggableList.css'
 
+
 // Returns fitting styles for dragged/idle items
 const fn = (order, down, originalIndex, curIndex, y) => index =>
   down && index === originalIndex
-    ? { y: curIndex * 100 + y, scale: 1.1, zIndex: '1', shadow: 15, immediate: n => n === 'y' || n === 'zIndex' }
-    : { y: order.indexOf(index) * 100, scale: 1, zIndex: '0', shadow: 1, immediate: false }
+    ? { y: curIndex * 50 + y, scale: 1.1, zIndex: '1', shadow: 15, immediate: n => n === 'y' || n === 'zIndex' }
+    : { y: order.indexOf(index) * 50, scale: 1, zIndex: '0', shadow: 1, immediate: false }
 
 function DraggableList({ items }) {
   // Store indicies as a local ref, this represents the item order
@@ -28,7 +29,7 @@ function DraggableList({ items }) {
   })
   // Map resulting animated values to the actual items
   return (
-    <div className="content" style={{ height: items.length * 100 }}>
+    <div className="content" style={{ height: items.length * 50 }}>
       {springs.map(({ zIndex, shadow, y, scale }, i) => (
         <animated.div
           {...bind(i)}

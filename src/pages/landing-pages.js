@@ -22,6 +22,7 @@ import {
   TwitterIcon,
   WhatsappIcon
 } from 'react-share'
+import GesturesExample from '../components/GesturesExample'
 
 const getImages = graphql`
   {
@@ -157,6 +158,8 @@ const LandingPages = () => {
             </div>
           </div>
         </div>
+        <h3>Why good user experiences matter</h3>
+        <div style={{height: '400px'}}></div>
         <div className={styles.sectionanimation}>
           <div className={styles.inner}>
             Get custom built animations and parallax effects
@@ -165,6 +168,9 @@ const LandingPages = () => {
               <DraggableList items={'Lorem ipsum dolor sit'.split(' ')} />
             </div>
           </div>
+        </div>
+        <div>
+          <GesturesExample />
         </div>
         <div className={styles.parallaxsnap}>
           <h2>Parallax</h2>
