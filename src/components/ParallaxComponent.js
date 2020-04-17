@@ -12,7 +12,7 @@ const url = (name, wrap = false) =>
 class ParallaxComponent extends React.Component {
   render() {
     return (
-      <Parallax pages={3} className="parallaxcontainer" style={{width: '60%', height: '400px', marginleft: '10%'}}>
+      <Parallax pages={3} className="parallaxcontainer" style={{width: '70%', height: '500px', marginleft: '10%'}}>
         <ParallaxLayer
           offset={1}
           speed={1}
