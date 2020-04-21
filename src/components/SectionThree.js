@@ -111,7 +111,7 @@ const SectionThree = () => {
                 )}
               </VisibilitySensor>
               <h3>
-                <Link to="/landing-pages">Ecommerce</Link>
+                <Link to="/ecommerce">Ecommerce</Link>
               </h3>
               <VisibilitySensor>
                 {({ isVisible }) => (
