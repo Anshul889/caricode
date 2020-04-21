@@ -38,11 +38,12 @@ h6 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 30px 0;
 }
 
 .gestures-item {
   position: relative;
-  width: 180px;
+  width: 250px;
   height: 70px;
   pointer-events: auto;
   transform-origin: 50% 50% 0px;
@@ -58,17 +59,28 @@ h6 {
 }
 
 .gestures-fg {
-  background-color: #373737;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 4px;
-  cursor: move;
-  cursor: grab;
-  cursor: -moz-grab;
+  display: grid;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+  transform: translate3d(0px, 0px, 0px) scale(1);
   cursor: -webkit-grab;
+    background-color: #add8e6;
+    color: #fff;
+    position: absolute;
+    height: 70px;
+    width: 250px;
+    box-shadow: 0 10px 30px -5px rgba(0,0,0,.05);
+    font-size: 2em;
+    font-weight: 400;
+    -webkit-transition: box-shadow .75s;
+    transition: box-shadow .75s;
+    font-family: Chinese Quote,-apple-system,system-ui,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    text-transform: uppercase;
+    color: hsla(0,0%,100%,.85);
+    font-size: 19.9px;
+    font-weight: 500;
+    line-height: 19.9px;
 }
 
 .gestures-bubble {

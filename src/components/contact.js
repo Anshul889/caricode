@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
+import { Spring, config } from 'react-spring/renderprops'
 
 const Contact = () => {
-  const [message, setMessage] = useState(null);
-  const [inputField, setInputfield] = useState(null);
-  const [formError, setError] = useState(false);
+  const [message, setMessage] = useState(null)
+  const [inputField, setInputfield] = useState(null)
+  const [formError, setError] = useState(false)
   return (
     <section className="contact">
       <h2>SEND US A MESSAGE</h2>
@@ -36,7 +37,15 @@ const Contact = () => {
             Send
           </button>
         )}
-        {formError && !(message && inputField)  && <span style={{ color: 'red' }}>{' '}Form is incomplete!</span>}
+        {formError && !(message && inputField) && (
+          <Spring
+            config={config.slow}
+            from={{ opacity: 0, color: 'red' }}
+            to={{ opacity: 1, color: 'red' }}
+          >
+            {props => <span style={props}> Form is incomplete!</span>}
+          </Spring>
+        )}
       </form>
     </section>
   )
