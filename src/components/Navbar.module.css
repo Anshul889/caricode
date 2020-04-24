@@ -102,7 +102,8 @@
   font-size: 0.6rem;
   letter-spacing: 0.0075rem;
   text-decoration: none;
-  color:  #8899a6;
+  color: #1da1f2;
+  filter: grayscale(100%);
 }
  
 .mnavimg {

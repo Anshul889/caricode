@@ -29,7 +29,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className={styles.MobileNav}>
-        <Link className={styles.mItem} to="/">
+        <Link className={styles.mItem} activeStyle={{ filter: 'grayscale(0%)'}} to="/">
           <img className={styles.mnavimg} src={home} alt="logo" />
           <div className={styles.mText}>Home</div>
         </Link>
