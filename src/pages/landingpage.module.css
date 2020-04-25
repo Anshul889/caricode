@@ -21,7 +21,7 @@
   margin-bottom: 40px;
 }
 
-.heroicons{
+.heroicons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 70%;
@@ -31,11 +31,11 @@
   place-items: center;
 }
 
-.mlandingheroimage{
+.mlandingheroimage {
   display: none;
 }
 
-.icons{
+.icons {
   width: 30px;
   padding: 15px 15px;
   border: 1px solid white;
@@ -48,7 +48,7 @@
   height: 500px;
 }
 
-.inner{
+.inner {
   width: 80%;
   margin: 0 auto;
   max-width: 1080px;
@@ -68,17 +68,20 @@
   .landinghero p {
     margin-bottom: 40px;
   }
-  .dlandingheroimage{
+  .dlandingheroimage {
     display: none;
   }
-  .mlandingheroimage{
+  .mlandingheroimage {
     display: block;
     margin-bottom: 40px;
-  }
-  .inner{
+    margin-right: auto;
+    margin-left: auto;
     width: 90%;
   }
-  .mblock{
+  .inner {
+    width: 90%;
+  }
+  .mblock {
     display: none;
   }
   .sectionanimation {
