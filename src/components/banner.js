@@ -42,7 +42,7 @@ const Banner = () => {
           {props => <p style={props}>
           Take the online presence
           <br />
-          of your business to the next level
+          of your finance business to the next level
         </p>}
         </Spring>
         <Spring
