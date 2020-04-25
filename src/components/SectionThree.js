@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import VisibilitySensor from 'react-visibility-sensor'
-import { Spring, config, Keyframes } from 'react-spring/renderprops'
+import { Spring, config } from 'react-spring/renderprops'
 
 const SectionThree = () => {
   return (
@@ -101,7 +101,7 @@ const SectionThree = () => {
                       x: isVisible ? '1' : '0',
                     }}
                     config={config.slow}
-                    delay={1000}
+                    delay={1500}
                   >
                     {props => (
                       <svg viewBox="0 0 512 512" width="20%" height="auto">
@@ -125,7 +125,7 @@ const SectionThree = () => {
                 )}
               </VisibilitySensor>
               <h3>
-                <Link to="/ecommerce">Blogs</Link>
+                <Link to="/blogs">Blogs</Link>
               </h3>
               <VisibilitySensor>
                 {({ isVisible }) => (

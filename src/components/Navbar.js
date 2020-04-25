@@ -4,7 +4,8 @@ import { Link } from 'gatsby'
 import home from '../images/home.svg'
 import contact from '../images/contact.svg'
 import blog from '../images/blog.svg'
-import invest from '../images/invest.svg'
+import landingpage from '../images/landingpage.svg'
+import mobilenav from '../images/mobile-nav.svg'
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
         </Link>
         <ul className={styles.leftdnav}>
           <li className={styles.dItem}>
-            <Link to="/blog">Blog</Link>
+            <Link to="/landing-pages">Landing Pages</Link>
           </li>
           <li className={styles.dItem}>
             <a href="/#contact">Contact</a>
@@ -33,18 +34,22 @@ const Navbar = () => {
           <img className={styles.mnavimg} src={home} alt="logo" />
           <div className={styles.mText}>Home</div>
         </Link>
-        <Link className={styles.mItem} to="/blog">
-          <img className={styles.mnavimg} src={blog} alt="logo" />
-          <div className={styles.mText}>Blog</div>
+        <Link className={styles.mItem} activeStyle={{ filter: 'grayscale(0%)'}} to="/landing-pages">
+          <img className={styles.mnavimg} src={landingpage} alt="logo" />
+          <div className={styles.mText}>Landing</div>
+        </Link>
+        <Link className={styles.mItem} activeStyle={{ filter: 'grayscale(0%)'}} to="/blogs">
+          <img className={styles.mnavimg} src={blog} alt="blogs" />
+          <div className={styles.mText}>Blogs</div>
+        </Link>
+        <Link className={styles.mItem} activeStyle={{ filter: 'grayscale(0%)'}} to="/web-applications">
+          <img className={styles.mnavimg} src={mobilenav} alt="applications" />
+          <div className={styles.mText}>Apps</div>
         </Link>
         <a className={styles.mItem} href="/#contact">
           <img className={styles.mnavimg} src={contact} alt="logo" />
           <div className={styles.mText}>Contact</div>
         </a>
-        <Link className={styles.mItem} to="/cart">
-          <img className={styles.mnavimg} src={invest} alt="cart" />
-          <div className={styles.mText}>Start Investing</div>
-        </Link>
       </div>
     </div>
   )

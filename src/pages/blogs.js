@@ -34,13 +34,13 @@ const Ecommerce = () => {
           />
 
           <ParallaxLayer offset={0.2} speed={0.5} style={{textAlign: 'center'}}>
-            Heyo
+            Hey
           </ParallaxLayer>
           <ParallaxLayer offset={1.5} speed={0.1} style={{textAlign: 'center'}}>
-            Heyo 2
+            Hey 2
           </ParallaxLayer>
           <ParallaxLayer offset={2.5} speed={1} style={{textAlign: 'center'}}>
-            Heyo 3
+            Hey 3
           </ParallaxLayer>
         </Parallax>
       </div>
