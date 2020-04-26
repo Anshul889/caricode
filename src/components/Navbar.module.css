@@ -15,11 +15,10 @@
   grid-template-rows: 56px;
   background: 0 0;
   z-index: 1009;
-  color: white;
   font-weight: 600;
   font-size: 15px;
+  color: rgb(29, 161, 242);
 }
-
 
 .desktop {
   padding-right: 0.5rem;
@@ -32,17 +31,20 @@
   font-size: 13px;
 }
 
-.imglogo{
+.dItem a {
+  color: white;
+}
+
+.imglogo {
   height: 25px;
   padding-top: 5px;
 }
 
-.logo{
+.logo {
   font-size: 16px;
 }
 
 .dnavigation a {
-  color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -68,10 +70,9 @@
   text-transform: uppercase;
 }
 
-.rightdnav button{
+.rightdnav button {
   font-size: 13px;
 }
-
 
 @media screen and (max-width: 768px) {
   .leftdnav {
@@ -80,14 +81,14 @@
   .rightdnav {
     display: none;
   }
-  .after{
+  .after {
     display: none;
   }
-  .dnavigation{
+  .dnavigation {
     grid-template-columns: auto;
     justify-content: center;
   }
-  .logo{
+  .logo {
     font-size: 15px;
   }
 }
@@ -96,7 +97,7 @@
 
 .MobileNav {
   position: fixed;
-  background-color: hsl(210, 34%, 13%);;
+  background-color: hsl(210, 34%, 13%);
   width: 100%;
   z-index: 100;
   bottom: 0;
@@ -117,7 +118,7 @@
   color: #1da1f2;
   filter: grayscale(100%);
 }
- 
+
 .mnavimg {
   height: 20px;
   display: block;
