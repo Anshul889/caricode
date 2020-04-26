@@ -24,7 +24,7 @@ const SectionTwo = () => {
         <div className="section2grid">
           <div>
             <h2>
-              Get an app that looks like something Google or Facebook made
+              Why the customer needs a strong online presence
             </h2>
             <VisibilitySensor>
                 {({ isVisible }) => (
@@ -38,18 +38,12 @@ const SectionTwo = () => {
           </Spring>
              )}
              </VisibilitySensor>
-            <p>
-              Cloud Firestore is a fast, fully managed, serverless, cloud-native
-              NoSQL document database that simplifies storing, syncing, and
-              querying data for your mobile, web, and IoT apps at global scale.
-              Its client libraries provide live synchronization and offline
-              support, while its security features and integrations with
-              Firebase and Google Cloud Platform (GCP) accelerate building truly
-              serverless apps.
-            </p>
-          </div>
-          <div className="phone">
-            <Image fluid={data.fluid.childImageSharp.fluid} />
+              <ul>
+                <li>the whole first page is about how and why they're struggling online</li>
+                <li>solutions to the problem</li>
+                <li>high expactations of users of the web </li>
+                <li>slow dev time</li>
+              </ul>
           </div>
         </div>
       </div>

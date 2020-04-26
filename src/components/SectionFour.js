@@ -80,10 +80,12 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Link to="/web-performance/">
+              <div style={{margin: 0, overflow: 'hidden'}}>
                 <Image
                   fluid={data.image3.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  className="infodivimage"
                 />
+                </div>
               </Link>
               <div className="infocontentdiv">
                 <h3>
@@ -120,10 +122,12 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Link to="/multi-device-support/">
+                <div style={{margin: 0, overflow: 'hidden'}}>
                 <Image
                   fluid={data.image4.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  className="infodivimage"
                 />
+                </div>
               </Link>
               <div className="infocontentdiv">
                 <h3>
@@ -159,10 +163,12 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Link to="/base-technologies">
+              <div style={{margin: 0, overflow: 'hidden'}}>
                 <Image
                   fluid={data.image5.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  className="infodivimage"
                 />
+                </div>
               </Link>
               <div className="infocontentdiv">
                 <h3>
@@ -199,10 +205,12 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Link to="/clean-design">
+              <div style={{margin: 0, overflow: 'hidden'}}>
                 <Image
                   fluid={data.image6.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  className="infodivimage"
                 />
+                </div>
               </Link>
               <div className="infocontentdiv">
                 <h3>
@@ -238,10 +246,12 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Link to="/customised-functionality/">
+              <div style={{margin: 0, overflow: 'hidden'}}>
                 <Image
                   fluid={data.image7.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  className="infodivimage"
                 />
+                </div>
               </Link>
               <div className="infocontentdiv">
                 <h3>
@@ -282,10 +292,12 @@ const SectionFour = () => {
           <div className="infopost">
             <div className="infodiv">
               <Link to="/progressive-web-apps/">
+              <div style={{margin: 0, overflow: 'hidden'}}>
                 <Image
                   fluid={data.image8.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  className="infodivimage"
                 />
+                </div>
               </Link>
               <div className="infocontentdiv">
                 <h3>

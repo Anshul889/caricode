@@ -29,11 +29,16 @@
 
 .dItem {
   margin-left: 1.2em;
+  font-size: 13px;
 }
 
 .imglogo{
   height: 25px;
   padding-top: 5px;
+}
+
+.logo{
+  font-size: 16px;
 }
 
 .dnavigation a {
@@ -63,6 +68,10 @@
   text-transform: uppercase;
 }
 
+.rightdnav button{
+  font-size: 13px;
+}
+
 
 @media screen and (max-width: 768px) {
   .leftdnav {
@@ -77,6 +86,9 @@
   .dnavigation{
     grid-template-columns: auto;
     justify-content: center;
+  }
+  .logo{
+    font-size: 15px;
   }
 }
 

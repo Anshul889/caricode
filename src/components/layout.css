@@ -60,27 +60,29 @@ h6 {
 
 .gestures-fg {
   display: grid;
-    align-items: center;
-    text-align: center;
-    border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
   transform: translate3d(0px, 0px, 0px) scale(1);
   cursor: -webkit-grab;
-    background-color: #add8e6;
-    color: #fff;
-    position: absolute;
-    height: 70px;
-    width: 250px;
-    box-shadow: 0 10px 30px -5px rgba(0,0,0,.05);
-    font-size: 2em;
-    font-weight: 400;
-    -webkit-transition: box-shadow .75s;
-    transition: box-shadow .75s;
-    font-family: Chinese Quote,-apple-system,system-ui,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    text-transform: uppercase;
-    color: hsla(0,0%,100%,.85);
-    font-size: 19.9px;
-    font-weight: 500;
-    line-height: 19.9px;
+  background-color: #add8e6;
+  color: #fff;
+  position: absolute;
+  height: 70px;
+  width: 250px;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+  font-size: 2em;
+  font-weight: 400;
+  -webkit-transition: box-shadow 0.75s;
+  transition: box-shadow 0.75s;
+  font-family: Chinese Quote, -apple-system, system-ui, Segoe UI, PingFang SC,
+    Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.85);
+  font-size: 19.9px;
+  font-weight: 500;
+  line-height: 19.9px;
 }
 
 .gestures-bubble {
@@ -249,6 +251,20 @@ button:hover {
   grid-template-columns: 1fr;
 }
 
+.infodiv {
+  overflow: hidden;
+}
+
+.infodivimage {
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.infodivimage:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
 .infocontentdiv {
   background-color: hsl(210, 34%, 13%);
   margin-bottom: 35px;
@@ -339,12 +355,11 @@ textarea:focus {
   border: 1px solid gray;
 }
 
-
 .container > div > div {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-y:hidden
+  overflow-y: hidden;
 }
 
 .text {
@@ -383,7 +398,12 @@ textarea:focus {
 }
 
 .slopeEnd {
-  clip-path: polygon(70% 0, 100% 0, calc(100% - 20vw) 100%, calc(70% - 20vw) 100%);
+  clip-path: polygon(
+    70% 0,
+    100% 0,
+    calc(100% - 20vw) 100%,
+    calc(70% - 20vw) 100%
+  );
 }
 
 .slopeBegin,
@@ -405,7 +425,6 @@ textarea:focus {
 .tomato {
   background: linear-gradient(to right, tomato 0%, gold 100%);
 }
-
 
 @media only screen and (min-width: 830px) {
   #section2 {

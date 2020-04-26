@@ -104,7 +104,7 @@ const SectionThree = () => {
                     delay={1500}
                   >
                     {props => (
-                      <svg viewBox="0 0 512 512" width="20%" height="auto">
+                      <svg viewBox="0 0 512 512" height="100px" style={{paddingBottom: '38px'}}>
                         <g class="fa-group">
                           <path
                             class="fa-secondary"
