@@ -23,6 +23,7 @@ const Posttemplate = ({ data }) => {
     image,
     description,
     seoimage,
+    tags,
     slug,
   } = data.mdx.frontmatter
   const { body } = data.mdx
@@ -73,6 +74,11 @@ const Posttemplate = ({ data }) => {
               <TwitterIcon size={24} round bgStyle={{ fill: "lightgray" }} />
             </TwitterShareButton>
           </div>
+          <div className={styles.tags}>
+            Tags : {tags.map(tag => {
+              return <Link to={`/tags/${tag}`}className={styles.tag}>{tag}</Link>
+            })}
+          </div>
           <div className={styles.mdxcontainer}>
             <MDXRenderer>{body}</MDXRenderer>
           </div>
@@ -111,6 +117,7 @@ export const query = graphql`
         description
         date(formatString: "MMMM Do YYYY")
         author
+        tags
         image {
           childImageSharp {
             fluid {
