@@ -1,0 +1,84 @@
+.card {
+  background-color: white;
+}
+
+.inner {
+  width: 90%;
+  margin: 0 auto;
+  padding: 24px 0;
+  max-width: 1080px;
+}
+
+.cardimage {
+  margin-bottom: 20px;
+}
+
+.cardactions {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+.cardcontent h4 {
+  text-transform: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.cardcontent p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.carddate{
+  font-size: 13px;
+}
+
+.cardshare{
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  column-gap: 5px;
+  grid-column: 1 / span 3;
+}
+
+.cardbutton button{
+  width: 100%;
+}
+
+@media only screen and (max-width: 475px) {
+  .inner {
+    padding-top: 0;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .cardcontent{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cardcontent h4{
+    margin-bottom: 10px;
+  }
+
+  .cardcontent p {
+    margin-bottom: 10px;
+  }
+
+  .cardbutton {
+    justify-self: center;
+  }
+
+  .cardbutton button{
+    width: 90vw;
+    font-size: 11.2px;
+  }
+
+  .cardshare{
+    height: 24px;
+    font-size: 15px;
+    justify-items: center;
+  }
+  .cardshareshare{
+    place-self: center;
+  }
+}
