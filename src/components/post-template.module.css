@@ -1,0 +1,110 @@
+.main{
+  display: grid;
+  grid-template-columns: 3.25fr 1fr;
+  margin-bottom: 70px;
+}
+
+.post{
+  width: 90%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 30px 0;
+  border: 1px solid rgba(160, 160, 160, 0.3);
+}
+
+.titlearea {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  padding: 0 5%;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+}
+
+.title {
+  font-size: 24px;
+  letter-spacing: 0.25em;
+  padding-bottom: 20px;
+}
+
+.date{
+  font-size: 13px;
+  justify-self: center;
+  padding-top: 7px;
+}
+
+.mdxcontainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.imagecontainer{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sidebar{
+  margin-top: 20px;
+}
+
+.sidebaritem{
+  width: 90%;
+  background-color: white;
+  margin-bottom: 15px;
+  border: 1px solid rgba(160, 160, 160, 0.3);
+}
+.sidebartitle{
+  font-weight: 900;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.sidebardate{
+  font-size: 13px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.cardshare{
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  column-gap: 5px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 475px) {
+  .main{
+  grid-template-columns: 1fr;
+  }
+  .post{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+    margin-top: 0px;
+  }
+  .imagecontainer{
+    width: 100%;
+  }
+
+  .titlearea {
+    border-bottom: none;
+    margin-bottom: 0;
+    grid-template-columns: 1fr;
+  }
+  .title{
+    padding-bottom: 10px;
+  }
+  .date{
+    justify-self: start;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .sidebar{
+    margin-top: 0px;
+  }
+
+  .sidebaritem{
+    margin: 20px auto;
+  }
+}
