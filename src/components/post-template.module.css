@@ -7,10 +7,10 @@
 .post{
   width: 90%;
   margin: 20px auto;
-  background-color: white;
   padding: 30px 0;
   border: 1px solid rgba(160, 160, 160, 0.3);
 }
+
 
 .titlearea {
   display: grid;
@@ -22,8 +22,10 @@
 
 .title {
   font-size: 24px;
-  letter-spacing: 0.25em;
+  letter-spacing: normal;
   padding-bottom: 20px;
+  line-height: 22.9px;
+  font-weight: 700;
 }
 
 .date{
@@ -48,7 +50,6 @@
 
 .sidebaritem{
   width: 90%;
-  background-color: white;
   margin-bottom: 15px;
   border: 1px solid rgba(160, 160, 160, 0.3);
 }

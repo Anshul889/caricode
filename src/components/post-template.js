@@ -3,7 +3,7 @@ import { Link, graphql} from "gatsby"
 import Layout from "./layout"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Image from "gatsby-image"
-import SEO from "./seo"
+import SEO from "./SEO"
 import styles from "./post-template.module.css"
 import {
   EmailShareButton,
@@ -49,25 +49,25 @@ const Posttemplate = ({ data }) => {
           <div className={styles.cardshare}>
             <div className={styles.cardshareshare}>Share:</div>
             <FacebookShareButton
-              url={`https://mensfashion.netlify.app/${slug}`}
+              url={`https://www.caricode.co/${slug}`}
               style={{ height: "24px" }}
             >
               <FacebookIcon size={24} round bgStyle={{ fill: "lightgray" }} />
             </FacebookShareButton>
             <EmailShareButton
-              url={`https://mensfashion.netlify.app/${slug}`}
+              url={`https://www.caricode.co/${slug}`}
               style={{ height: "24px" }}
             >
               <EmailIcon size={24} round bgStyle={{ fill: "lightgray" }} />
             </EmailShareButton>
             <WhatsappShareButton
-              url={`https://mensfashion.netlify.app/${slug}`}
+              url={`https://www.caricode.co/${slug}`}
               style={{ height: "24px" }}
             >
               <WhatsappIcon size={24} round bgStyle={{ fill: "lightgray" }} />
             </WhatsappShareButton>
             <TwitterShareButton
-              url={`https://mensfashion.netlify.app/${slug}`}
+              url={`https://www.caricode.co/${slug}`}
               style={{ height: "24px" }}
             >
               <TwitterIcon size={24} round bgStyle={{ fill: "lightgray" }} />

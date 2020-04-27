@@ -5,7 +5,7 @@ import PostCard from "./PostCard"
 import styles from "./PostList.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const Blogs = props => {
+const Blog = props => {
   const { data } = props
   const { currentPage, numPages } = props.pageContext;
   const isFirst = currentPage === 1;
@@ -71,4 +71,4 @@ export const query = graphql`
   }
 `
 
-export default Blogs
+export default Blog

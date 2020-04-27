@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+.tl-edges{
+  overflow-x: visible;
+}
+
 a {
   color: #fff;
   text-decoration: none;

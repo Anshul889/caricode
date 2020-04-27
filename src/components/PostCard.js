@@ -20,7 +20,7 @@ const PostCard = ({ post }) => {
     <div className={styles.card}>
       <div className={styles.inner}>
         <div className={styles.cardimage}>
-          <Image fluid={img} />
+          <Link to={slug}><Image fluid={img} /></Link>
         </div>
         <div className={styles.cardcontent}>
           <h4>{title}</h4>
