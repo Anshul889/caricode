@@ -3,5 +3,17 @@
   margin: 0 auto;
 }
 
+.address{
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1080px;
+}
+
+.getdirections{
+  width: 90%;
+  max-width: 1080px;
+  margin: 20px auto;
+}
+
 @media only screen and (max-width: 475px) {
 }
