@@ -1,0 +1,13 @@
+.inner{
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+@media only screen and (max-width: 475px) {
+  .inner{
+    grid-template-columns: 1fr;
+  }
+}

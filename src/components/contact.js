@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Spring, config } from 'react-spring/renderprops'
+import VisibilitySensor from 'react-visibility-sensor'
 
 const Contact = () => {
   const [message, setMessage] = useState(null)
@@ -8,6 +9,21 @@ const Contact = () => {
   return (
     <section className="contact">
       <h2>SEND US A MESSAGE</h2>
+      <VisibilitySensor>
+        {({ isVisible }) => (
+          <Spring
+            from={{ width: '1px', marginBottom: '20px' }}
+            to={{
+              width: isVisible ? '50px' : '1px',
+              marginBottom: '20px',
+            }}
+            config={config.slow}
+            delay={800}
+          >
+            {props => <div className="hero-feature-border" style={props}></div>}
+          </Spring>
+        )}
+      </VisibilitySensor>
       <form
         id="contact"
         name="contact"

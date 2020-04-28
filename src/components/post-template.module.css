@@ -76,14 +76,16 @@
 .tag{
   border-radius: 10px;
   border: 1px solid gray;
-  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 4px;
   margin-right: 5px;
 }
 
 .tags{
   width: 90%;
   max-width: 1080px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 @media only screen and (max-width: 475px) {

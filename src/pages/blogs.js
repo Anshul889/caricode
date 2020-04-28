@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
-import styles from './ecommerce.module.css'
+import styles from './blogs.module.css'
 
 const Ecommerce = () => {
   return (

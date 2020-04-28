@@ -17,19 +17,31 @@ const Navbar = () => {
         </Link>
         <ul className={styles.leftdnav}>
           <li className={styles.dItem}>
-            <Link activeStyle={{color: 'rgb(29, 161, 242)'}} to="/landing-pages">Landing Pages</Link>
+            <Link
+              activeStyle={{ color: 'rgb(29, 161, 242)' }}
+              to="/landing-pages"
+            >
+              Landing Pages
+            </Link>
           </li>
           <li className={styles.dItem}>
-          <Link  activeStyle={{color: 'rgb(29, 161, 242)'}} to="/blogs">Blogs</Link>
+            <Link activeStyle={{ color: 'rgb(29, 161, 242)' }} to="/blogs">
+              Blogs
+            </Link>
           </li>
           <li className={styles.dItem}>
-            <Link activeStyle={{color: 'rgb(29, 161, 242)'}} to="/web-applications">Applications</Link>
+            <Link
+              activeStyle={{ color: 'rgb(29, 161, 242)' }}
+              to="/web-applications"
+            >
+              Applications
+            </Link>
           </li>
         </ul>
         <ul className={styles.rightdnav}>
-          <a href="/#contact">
+          <Link to="/contact">
             <button>Contact</button>
-          </a>
+          </Link>
         </ul>
       </div>
       <div className={styles.MobileNav}>
@@ -65,10 +77,14 @@ const Navbar = () => {
           <img className={styles.mnavimg} src={mobilenav} alt="applications" />
           <div className={styles.mText}>Apps</div>
         </Link>
-        <a className={styles.mItem} href="/#contact">
+        <Link
+          className={styles.mItem}
+          activeStyle={{ filter: 'grayscale(0%)' }}
+          to="/contact"
+        >
           <img className={styles.mnavimg} src={contact} alt="logo" />
           <div className={styles.mText}>Contact</div>
-        </a>
+        </Link>
       </div>
     </div>
   )
