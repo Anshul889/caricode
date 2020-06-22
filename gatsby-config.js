@@ -42,6 +42,16 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/static": ["cache-control: public, max-age=31536000, immutable"],
+          "/images": ["cache-control: public, max-age=31536000, immutable"],
+          "/page-data": ["cache-control: public, max-age=0, must-revalidate"],
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Caricode`,
