@@ -15,6 +15,8 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-mdx`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
