@@ -6,7 +6,8 @@ module.exports = {
     url: 'https://www.caricode.co', // No trailing slash allowed!
     image: '/images/image3.jpg', // Path to your image you placed in the 'static' folder
     twitterUsername: '@caricode',
-    date: '2020-01-28'
+    date: '2020-01-28',
+    siteUrl: `https://www.caricode.co`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
