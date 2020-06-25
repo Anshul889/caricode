@@ -19,7 +19,7 @@ const Navbar = () => {
           <li className={styles.dItem}>
             <Link
               activeStyle={{ color: 'rgb(29, 161, 242)' }}
-              to="/landing-pages"
+              to="/landing-pages/"
             >
               Landing Pages
             </Link>
@@ -32,14 +32,14 @@ const Navbar = () => {
           <li className={styles.dItem}>
             <Link
               activeStyle={{ color: 'rgb(29, 161, 242)' }}
-              to="/web-applications"
+              to="/web-applications/"
             >
               Applications
             </Link>
           </li>
         </ul>
         <ul className={styles.rightdnav}>
-          <Link to="/contact">
+          <Link to="/contact/">
             <button>Contact</button>
           </Link>
         </ul>
@@ -56,7 +56,7 @@ const Navbar = () => {
         <Link
           className={styles.mItem}
           activeStyle={{ filter: 'grayscale(0%)' }}
-          to="/landing-pages"
+          to="/landing-pages/"
         >
           <img className={styles.mnavimg} src={landingpage} alt="logo" />
           <div className={styles.mText}>Landing</div>
@@ -64,7 +64,7 @@ const Navbar = () => {
         <Link
           className={styles.mItem}
           activeStyle={{ filter: 'grayscale(0%)' }}
-          to="/blogs"
+          to="/blogs/"
         >
           <img className={styles.mnavimg} src={blog} alt="blogs" />
           <div className={styles.mText}>Blogs</div>
@@ -72,7 +72,7 @@ const Navbar = () => {
         <Link
           className={styles.mItem}
           activeStyle={{ filter: 'grayscale(0%)' }}
-          to="/web-applications"
+          to="/web-applications/"
         >
           <img className={styles.mnavimg} src={mobilenav} alt="applications" />
           <div className={styles.mText}>Apps</div>
@@ -80,7 +80,7 @@ const Navbar = () => {
         <Link
           className={styles.mItem}
           activeStyle={{ filter: 'grayscale(0%)' }}
-          to="/contact"
+          to="/contact/"
         >
           <img className={styles.mnavimg} src={contact} alt="logo" />
           <div className={styles.mText}>Contact</div>
