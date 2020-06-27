@@ -1,4 +1,23 @@
-.parallaxcontainer::-webkit-scrollbar {
-  display: none;
-  height: calc(100vh - 80px);
+.main h1{
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.main h2{
+  font-size: 18px;
+}
+
+.organicclicks{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main h1, h2 {
+  text-transform: none;
 }

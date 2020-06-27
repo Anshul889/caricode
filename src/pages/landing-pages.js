@@ -95,7 +95,7 @@ const LandingPages = () => {
       <div className={styles.container}>
         <div className={styles.landinghero}>
           <h1>Landing Pages</h1>
-          <p>Get up and running with everything you need in 5 days</p>
+          <p>Boost Conversions</p>
           <div className={styles.dlandingheroimage}>
             <a.div
               style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
