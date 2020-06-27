@@ -4,7 +4,13 @@ import SEO from '../components/SEO'
 import styles from './blogs.module.css'
 import { Spring, config } from 'react-spring/renderprops'
 import VisibilitySensor from 'react-visibility-sensor'
-import { RadialChart, LineSeries, FlexibleWidthXYPlot, XAxis, YAxis } from 'react-vis'
+import {
+  RadialChart,
+  LineSeries,
+  FlexibleWidthXYPlot,
+  XAxis,
+  YAxis,
+} from 'react-vis'
 
 const Ecommerce = () => {
   const myData = [
@@ -17,16 +23,16 @@ const Ecommerce = () => {
   ]
 
   const ctrdata = [
-    {x: 1, y: 31},
-    {x: 2, y: 24},
-    {x: 3, y: 18},
-    {x: 4, y: 13},
-    {x: 5, y: 9},
-    {x: 6, y: 6},
-    {x: 7, y: 4},
-    {x: 8, y: 3},
-    {x: 9, y: 2},
-    {x: 10, y: 2}
+    { x: 1, y: 31 },
+    { x: 2, y: 24 },
+    { x: 3, y: 18 },
+    { x: 4, y: 13 },
+    { x: 5, y: 9 },
+    { x: 6, y: 6 },
+    { x: 7, y: 4 },
+    { x: 8, y: 3 },
+    { x: 9, y: 2 },
+    { x: 10, y: 2 },
   ]
   return (
     <Layout>
@@ -69,18 +75,16 @@ const Ecommerce = () => {
               )}
             </VisibilitySensor>
           </div>
-          <h2>
-            95% of users don’t scroll past the 5th result.
-          </h2>
-          <FlexibleWidthXYPlot margin={{ left: 60, right: 30 }} height={300}>
+          <h2>95% of users don’t scroll past the 5th result.</h2>
+          <FlexibleWidthXYPlot margin={{ left: 30, right: 30 }} height={300}>
             <XAxis title="Position" />
-            <YAxis title={'Click Through Rate'}  yDomain={[0, 100]} />
-          <LineSeries
+            <YAxis title={'Click Through Rate'} yDomain={[0, 100]} />
+            <LineSeries
               curve={'curveMonotoneX'}
               yDomain={[0, 100]}
               data={ctrdata}
             />
-            </FlexibleWidthXYPlot>
+          </FlexibleWidthXYPlot>
           <h2>
             70-80% of people ignore paid search results, choosing to only click
             on organic listings.
@@ -110,8 +114,41 @@ const Ecommerce = () => {
               )}
             </VisibilitySensor>
           </div>
-          <h2>Organic search traffic is a sustainable approach</h2>
-          <h2>Search traffic converts 10x better than social media traffic </h2>
+          <h2>CTR changes based on position</h2>
+          <table>
+            <tr>
+              <th>Position Change</th>
+              <th>CTR Change</th>
+            </tr>
+            <tr>
+              <td>2 &#8594; 1</td>
+              <td className={styles.increase}>&#8593; 28.4%</td>
+            </tr>
+            <tr>
+              <td>3 &#8594; 2</td>
+              <td className={styles.increase}>&#8593; 32.4%</td>
+            </tr>
+            <tr>
+              <td>4 &#8594; 3</td>
+              <td className={styles.increase}>&#8593; 37.2%</td>
+            </tr>
+            <tr>
+              <td>5 &#8594; 4</td>
+              <td className={styles.increase}>&#8593; 43.1%</td>
+            </tr>
+            <tr>
+              <td>6 &#8594; 5</td>
+              <td className={styles.increase}>&#8593;  53.2%</td>
+            </tr>
+            <tr>
+              <td>7 &#8594; 6</td>
+              <td className={styles.increase}>&#8593; 49.3%</td>
+            </tr>
+            <tr>
+              <td>8 &#8594; 7</td>
+              <td className={styles.increase}>&#8593; 33%</td>
+            </tr>
+          </table>
         </div>
         <div>stats for content marketing</div>
         <div>How to keep users engaged</div>

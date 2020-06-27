@@ -18,6 +18,18 @@
   margin: 0 auto;
 }
 
+.main table{
+  text-align: center;
+  width: 100%;
+  background-color:hsl(210, 33%, 18%);
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.increase{
+  color: rgb(18, 147, 154)
+}
+
 .main h1, h2 {
   text-transform: none;
 }
