@@ -16,6 +16,7 @@
 .main{
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .main table{
@@ -40,4 +41,46 @@
 
 .main h3{
   padding-top: 15px;
+}
+
+.speed {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 30px;
+  padding-top: 15px;
+}
+
+.speed img{
+  display: block;
+  width: 25px;
+  margin: 0 auto;
+}
+
+.pwaimg{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 20px;
+}
+
+img.pwaicon{
+  display: block;
+  height: 25px;
+  width: 30px;
+  margin: 0 auto;
+}
+
+img.pwaappicon{
+  position: absolute;
+  height: 20px;
+  width: 21px;
+  top: 20%;
+  left: 39%;
+}
+
+.slow{
+  position: relative;
+}
+
+.algoData{
+  padding: 15px 0;
 }

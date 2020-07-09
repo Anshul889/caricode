@@ -5,6 +5,9 @@ import styles from './blogs.module.css'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { Spring, config } from 'react-spring/renderprops'
 import VisibilitySensor from 'react-visibility-sensor'
+import check from '../images/check.svg'
+import cross from '../images/cross.svg'
+import './pagelayout.css'
 import Image from 'gatsby-image'
 import {
   RadialChart,
@@ -12,6 +15,7 @@ import {
   FlexibleWidthXYPlot,
   XAxis,
   YAxis,
+  VerticalBarSeries,
 } from 'react-vis'
 
 const getImages = graphql`
@@ -34,6 +38,20 @@ const Ecommerce = () => {
   const mysearchData = [
     { angle: 1, label: 'Other' },
     { angle: 9, label: 'Search Engine' },
+  ]
+
+  const speedData = [
+    { x: 2, y: 9.6},
+    { x: 3, y: 13},
+    { x: 4, y: 17.1},
+    { x: 5, y: 22.2},
+    { x: 6, y: 27.4},
+    { x: 7, y: 32.3},
+  ]
+
+  const algoData = [
+    {x: new Date('Jan 1 2009').getTime(), y: 400},
+    {x: new Date('Jan 1 2018').getTime(), y: 3200}
   ]
 
   const ctrdata = [
@@ -169,9 +187,11 @@ const Ecommerce = () => {
         <div>
           Good content marketing provides the following: Ideas Inspiration Tips
           and tricks Education.
-                    <br />
-          Consumers want transparency. They want to see who you really are.<br />
-          Customers want to interact and get to know a brand. A company’s blog (or social accounts) can help show consumers who they really are.
+          <br />
+          Consumers want transparency. They want to see who you really are.
+          <br />
+          Customers want to interact and get to know a brand. A company’s blog
+          (or social accounts) can help show consumers who they really are.
         </div>
         <div className={styles.snippets}>
           <h3>Rich Snippets</h3>
@@ -183,9 +203,448 @@ const Ecommerce = () => {
           rates (CTR) by 677% and drive 20-40% more traffic than product links
           without them.
         </div>
+        <div>
+          Google has indicated site speed (and as a result, page speed) is one
+          of the signals used by its algorithm to rank pages. And research has
+          shown that Google might be specifically measuring time to first byte
+          as when it considers page speed. In addition, a slow page speed means
+          that search engines can crawl fewer pages using their allocated crawl
+          budget, and this could negatively affect your indexation.
+          <div className={styles.speed}>
+            <div className={styles.fast}>
+              <Spring
+                from={{
+                  a: '40',
+                  b: '40',
+                  c: '40',
+                  d: '100',
+                  e: '40',
+                  f: '160',
+                  g: '40',
+                  h: '220',
+                  i: '40',
+                  j: '280',
+                }}
+                to={{
+                  a: '150',
+                  b: '40',
+                  c: '250',
+                  d: '100',
+                  e: '200',
+                  f: '160',
+                  g: '260',
+                  h: '220',
+                  i: '280',
+                  j: '280',
+                }}
+                config={config.molasses}
+                delay={800}
+              >
+                {props => (
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fad"
+                    data-icon="mobile"
+                    class="svg-inline--fa fa-mobile fa-w-10"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                    style={{
+                      paddingBottom: '18px',
+                      height: '100px',
+                      margin: '0 auto',
+                    }}
+                  >
+                    <g class="fa-group">
+                      <path
+                        class="fa-secondary"
+                        fill="white"
+                        d="M0 384v80a48 48 0 0 0 48 48h224a48 48 0 0 0 48-48v-80zm160 96a32 32 0 1 1 32-32 32 32 0 0 1-32 32z"
+                        opacity="0.4"
+                      ></path>
+                      <path
+                        class="fa-primary"
+                        fill="currentColor"
+                        d="M0 384V48A48 48 0 0 1 48 0h224a48 48 0 0 1 48 48v336z"
+                      ></path>
+                      <line
+                        x1="40"
+                        y1="40"
+                        x2={props.a}
+                        y2={props.b}
+                        style={{
+                          stroke: 'rgb(18, 147, 154)',
+                          strokeWidth: '4',
+                        }}
+                      />
+                      <line
+                        x1="40"
+                        y1="100"
+                        x2={props.c}
+                        y2={props.d}
+                        style={{
+                          stroke: 'rgb(18, 147, 154)',
+                          strokeWidth: '4',
+                        }}
+                      />
+                      <line
+                        x1="40"
+                        y1="160"
+                        x2={props.e}
+                        y2={props.f}
+                        style={{
+                          stroke: 'rgb(18, 147, 154)',
+                          strokeWidth: '4',
+                        }}
+                      />
+                      <line
+                        x1="40"
+                        y1="220"
+                        x2={props.g}
+                        y2={props.h}
+                        style={{
+                          stroke: 'rgb(18, 147, 154)',
+                          strokeWidth: '4',
+                        }}
+                      />
+                      <line
+                        x1="40"
+                        y1="280"
+                        x2={props.i}
+                        y2={props.j}
+                        style={{
+                          stroke: 'rgb(18, 147, 154)',
+                          strokeWidth: '4',
+                        }}
+                      />
+                    </g>
+                  </svg>
+                )}
+              </Spring>
+              <img src={check} height={25} alt="" />
+            </div>
+            <div className={styles.slow}>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="mobile"
+                class="svg-inline--fa fa-mobile fa-w-10"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                style={{
+                  paddingBottom: '18px',
+                  height: '100px',
+                  margin: '0 auto',
+                }}
+              >
+                <g class="fa-group">
+                  <path
+                    class="fa-secondary"
+                    fill="white"
+                    d="M0 384v80a48 48 0 0 0 48 48h224a48 48 0 0 0 48-48v-80zm160 96a32 32 0 1 1 32-32 32 32 0 0 1-32 32z"
+                    opacity="0.4"
+                  ></path>
+                  <path
+                    class="fa-primary"
+                    fill="currentColor"
+                    d="M0 384V48A48 48 0 0 1 48 0h224a48 48 0 0 1 48 48v336z"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                style={{
+                  margin: 'auto',
+                  background: '#e0e0e0',
+                  display: 'block',
+                  'shape-rendering': 'auto',
+                  position: 'absolute',
+                  top: '10%',
+                  left: '12px',
+                }}
+                width="40px"
+                height="40px"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="xMidYMid"
+              >
+                <g transform="rotate(0 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.9166666666666666s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(30 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.8333333333333334s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(60 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.75s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(90 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.6666666666666666s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(120 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.5833333333333334s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(150 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.5s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(180 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.4166666666666667s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(210 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.3333333333333333s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(240 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.25s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(270 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.16666666666666666s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(300 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="-0.08333333333333333s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+                <g transform="rotate(330 50 50)">
+                  <rect
+                    x="47"
+                    y="24"
+                    rx="3"
+                    ry="6"
+                    width="6"
+                    height="12"
+                    fill="#fe718d"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      values="1;0"
+                      keyTimes="0;1"
+                      dur="1s"
+                      begin="0s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </rect>
+                </g>
+              </svg>
+              <img src={cross} height={25} alt="" />
+            </div>
+          </div>
+          <br />
+          Page speed is also important to user experience. Pages with a longer
+          load time tend to have higher bounce rates and lower average time on
+          page. Longer load times have also been shown to negatively affect
+          conversions.
+          <FlexibleWidthXYPlot height={300}>
+            <XAxis title={'Loading in seconds'}/>
+            <YAxis title={'Bounce Rate'}/>
+            <VerticalBarSeries
+              data={speedData}
+            />
+          </FlexibleWidthXYPlot>
+        </div>
         <div>Importance of social sharing</div>
-        <div>Blogs need constant updates to stay ahead of the competition</div>
-        <div>search algorithm updates</div>
+        <div className={styles.algodata}>
+          Each year, Google makes hundreds of changes to search. In 2018, they
+          reported an incredible 3,234 updates — an average of almost 9 per day,
+          and more than 8 times the number of updates in 2009. While most of
+          these changes are minor, Google occasionally rolls out a major
+          algorithmic update (such as Panda and Penguin) that affects search
+          results in significant ways. For search marketers, knowing when major
+          Google updates happened can help explain changes in rankings and
+          organic website traffic and ultimately improve search engine
+          optimization.
+          <FlexibleWidthXYPlot height={300}>
+            <XAxis title={'Year'} xType="time" />
+            <YAxis title={'Number of Changes'}/>
+            <LineSeries
+              data={algoData}
+            />
+          </FlexibleWidthXYPlot>
+        </div>
       </div>
     </Layout>
   )
