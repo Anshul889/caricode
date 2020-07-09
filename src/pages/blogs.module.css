@@ -33,3 +33,11 @@
 .main h1, h2 {
   text-transform: none;
 }
+
+.snippets{
+  padding: 15px 0;
+}
+
+.main h3{
+  padding-top: 15px;
+}

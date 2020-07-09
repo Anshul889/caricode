@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 import styles from './blogs.module.css'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import { Spring, config } from 'react-spring/renderprops'
 import VisibilitySensor from 'react-visibility-sensor'
+import Image from 'gatsby-image'
 import {
   RadialChart,
   LineSeries,
@@ -11,6 +13,18 @@ import {
   XAxis,
   YAxis,
 } from 'react-vis'
+
+const getImages = graphql`
+  {
+    image17: file(relativePath: { eq: "image17.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const Ecommerce = () => {
   const myData = [
@@ -34,6 +48,7 @@ const Ecommerce = () => {
     { x: 9, y: 2 },
     { x: 10, y: 2 },
   ]
+  const data = useStaticQuery(getImages)
   return (
     <Layout>
       <SEO
@@ -138,7 +153,7 @@ const Ecommerce = () => {
             </tr>
             <tr>
               <td>6 &#8594; 5</td>
-              <td className={styles.increase}>&#8593;  53.2%</td>
+              <td className={styles.increase}>&#8593; 53.2%</td>
             </tr>
             <tr>
               <td>7 &#8594; 6</td>
@@ -150,13 +165,27 @@ const Ecommerce = () => {
             </tr>
           </table>
         </div>
-        <div>stats for content marketing</div>
-        <div>How to keep users engaged</div>
+        <h3>5 things you can do for ranking higher on SEO</h3>
+        <div>
+          Good content marketing provides the following: Ideas Inspiration Tips
+          and tricks Education.
+                    <br />
+          Consumers want transparency. They want to see who you really are.<br />
+          Customers want to interact and get to know a brand. A company’s blog (or social accounts) can help show consumers who they really are.
+        </div>
+        <div className={styles.snippets}>
+          <h3>Rich Snippets</h3>
+          <Image
+            fluid={data.image17.childImageSharp.fluid}
+            style={{ borderRadius: '10px' }}
+          />
+          Studies show that having a rich snippet can increase click-through
+          rates (CTR) by 677% and drive 20-40% more traffic than product links
+          without them.
+        </div>
         <div>Importance of social sharing</div>
-        <div>3 biggest mistakes with SEO</div>
         <div>Blogs need constant updates to stay ahead of the competition</div>
-        <div>search alogerithm updates</div>
-        <div>repeat earlier points</div>
+        <div>search algorithm updates</div>
       </div>
     </Layout>
   )

@@ -40,6 +40,7 @@ class ParallaxComponent extends React.Component {
           style={{ pointerEvents: 'none' }}
         >
           <img
+            alt=''
             src={url('satellite4')}
             style={{ width: '15%', marginLeft: '70%' }}
           />
@@ -47,10 +48,12 @@ class ParallaxComponent extends React.Component {
 
         <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '20%', marginLeft: '55%' }}
           />
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '10%', marginLeft: '15%' }}
           />
@@ -58,10 +61,12 @@ class ParallaxComponent extends React.Component {
 
         <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '20%', marginLeft: '70%' }}
           />
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '20%', marginLeft: '40%' }}
           />
@@ -69,10 +74,12 @@ class ParallaxComponent extends React.Component {
 
         <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '10%', marginLeft: '10%' }}
           />
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '20%', marginLeft: '75%' }}
           />
@@ -80,14 +87,17 @@ class ParallaxComponent extends React.Component {
 
         <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '20%', marginLeft: '60%' }}
           />
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '25%', marginLeft: '30%' }}
           />
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '10%', marginLeft: '80%' }}
           />
@@ -95,10 +105,12 @@ class ParallaxComponent extends React.Component {
 
         <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.6 }}>
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '20%', marginLeft: '5%' }}
           />
           <img
+            alt=''
             src={url('cloud')}
             style={{ display: 'block', width: '15%', marginLeft: '75%' }}
           />
@@ -114,7 +126,8 @@ class ParallaxComponent extends React.Component {
             pointerEvents: 'none',
           }}
         >
-          <img src={url('earth')} style={{ width: '60%' }} />
+          <img
+            alt='' src={url('earth')} style={{ width: '60%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -136,7 +149,8 @@ class ParallaxComponent extends React.Component {
             justifyContent: 'center',
           }}
         >
-          <img src={url('server')} style={{ width: '20%' }} />
+          <img
+            alt='' src={url('server')} style={{ width: '20%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -148,7 +162,8 @@ class ParallaxComponent extends React.Component {
             justifyContent: 'center',
           }}
         >
-          <img src={url('bash')} style={{ width: '40%' }} />
+          <img
+            alt='' src={url('bash')} style={{ width: '40%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -160,7 +175,8 @@ class ParallaxComponent extends React.Component {
             justifyContent: 'center',
           }}
         >
-          <img src={url('clients-main')} style={{ width: '40%' }} />
+          <img
+            alt='' src={url('clients-main')} style={{ width: '40%' }} />
         </ParallaxLayer>
       </Parallax>
     )

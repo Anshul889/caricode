@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SEO from '../components/SEO'
 import Layout from '../components/layout'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import styles from './landingpage.module.css'
 import logoreact from '../images/react.svg'
@@ -117,6 +117,7 @@ const LandingPages = () => {
                 <Image
                   fluid={data.image9.childImageSharp.fluid}
                   style={{ borderRadius: '4px' }}
+                  alt=''
                 />
               )}
             </a.div>
@@ -142,19 +143,20 @@ const LandingPages = () => {
                 <Image
                   fluid={data.image15.childImageSharp.fluid}
                   style={{ borderRadius: '4px' }}
+                  alt=''
                 />
               )}
             </a.div>
           </div>
           <div className={styles.heroicons}>
             <div className={styles.icons}>
-              <img src={logoreact} />
+              <img src={logoreact} alt=''/>
             </div>
             <div className={styles.icons}>
-              <img src={logogoogle} style={{ height: '30px', width: '30px' }} />
+              <img src={logogoogle} style={{ height: '30px', width: '30px' }} alt='' />
             </div>
             <div className={styles.icons}>
-              <img src={logosearch} style={{ height: '30px', width: '30px' }} />
+              <img src={logosearch} style={{ height: '30px', width: '30px' }} alt='' />
             </div>
           </div>
         </div>
@@ -184,6 +186,7 @@ const LandingPages = () => {
               <Image
                 fluid={data.image16.childImageSharp.fluid}
                 style={{ borderRadius: '4px' }}
+                alt=''
               />
               <h3>Social media meta tags</h3>
               <Image

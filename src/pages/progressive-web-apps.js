@@ -3,7 +3,6 @@ import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Layout from '../components/layout'
-import { Spring, config } from 'react-spring/renderprops'
 
 import mobile from '../images/mobile-duotone.svg'
 import check from '../images/check.svg'
