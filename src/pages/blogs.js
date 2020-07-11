@@ -244,37 +244,6 @@ const Ecommerce = () => {
             </FlexibleWidthXYPlot>
           </div>
         </div>
-        <div className={styles.organicclicks}>
-          <div className={styles.inner}>
-            <h2>
-              70-80% of people ignore paid search results, choosing to only
-              click on organic listings.
-            </h2>
-            <VisibilitySensor>
-              {({ isVisible }) => (
-                <Spring
-                  from={{ opacity: 0 }}
-                  to={{
-                    opacity: isVisible ? 1 : 0,
-                  }}
-                  config={config.molasses}
-                  delay={800}
-                >
-                  {props => (
-                    <RadialChart
-                      data={myData}
-                      animation={{ damping: 40, stiffness: 120 }}
-                      width={325}
-                      height={325}
-                      showLabels
-                      style={props}
-                    />
-                  )}
-                </Spring>
-              )}
-            </VisibilitySensor>
-          </div>
-        </div>
         <div className={styles.contentmarketing}>
           <div className={styles.inner}>
             Good content marketing provides the following: Ideas Inspiration
@@ -300,8 +269,6 @@ const Ecommerce = () => {
             rates (CTR) by 677% and drive 20-40% more traffic than product links
             without them.
           </div>
-        </div>
-        <div className={styles.sitespeed}>
           <div className={styles.inner}>
             <h3>Site Speed</h3>
             <a
