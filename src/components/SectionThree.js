@@ -63,7 +63,7 @@ const SectionThree = () => {
                 Boost Sales
               </div>
               <h3>
-                <Link to="/landing-pages">Landing Pages</Link>
+                <Link to="/landing-pages/">Landing Pages</Link>
               </h3>
               <VisibilitySensor>
                 {({ isVisible }) => (
@@ -125,7 +125,7 @@ const SectionThree = () => {
                 )}
               </VisibilitySensor>
               <h3>
-                <Link to="/blogs">Blogs</Link>
+                <Link to="/blogs/">Blogs</Link>
               </h3>
               <VisibilitySensor>
                 {({ isVisible }) => (

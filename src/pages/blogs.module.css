@@ -8,20 +8,21 @@
 }
 
 .organicclicks{
-  width: 90%;
-  margin: 0 auto;
   text-align: center;
 }
 
-.main{
+.inner{
   width: 90%;
   margin: 0 auto;
+}
+
+.main{
   margin-bottom: 50px;
 }
 
 .ctrposition{
   padding: 15px 0;
-  border-bottom: 1px solid #38444d;
+  background-color: hsl(210, 34%, 17%);
 }
 
 .mainorganic{
@@ -31,12 +32,15 @@
 
 .startonline{
   padding: 15px 0;
-  border-bottom: 1px solid #38444d;
 }
 
 .contentmeasure{
   padding: 15px 0;
-  border-bottom: 1px solid #38444d;
+  background-color: hsl(210, 34%, 17%);
+}
+
+.organicclicks{
+  padding: 15px 0;
 }
 
 .main table{
@@ -59,9 +63,24 @@
   text-transform: none;
 }
 
+.contentmarketing{
+  padding: 15px 0;
+  background-color: hsl(210, 34%, 17%);
+}
+
 .ctrtable{
   padding: 15px 0;
-  border-bottom: 1px solid #38444d;
+  width: 90%;
+  margin: 0 auto; 
+}
+
+.snippets{
+  padding: 15px 0;
+}
+
+.sitespeed{
+  background-color: hsl(210, 34%, 17%);
+  padding: 15px 0;
 }
 
 .speed {
@@ -69,6 +88,7 @@
   grid-template-columns: max-content max-content;
   grid-gap: 30px;
   padding-top: 15px;
+  justify-content: center;
 }
 
 .speed img{
@@ -100,4 +120,19 @@ img.pwaappicon{
 
 .slow{
   position: relative;
+}
+
+.hero{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.socialsharing{
+  padding: 15px 0;
+  
+}
+
+.algodata{
+  padding: 15px 0;
+  background-color: hsl(210, 34%, 17%);
 }
