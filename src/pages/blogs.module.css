@@ -18,6 +18,26 @@
   margin: 0 auto;
 }
 
+.ctrposition{
+  padding: 15px 0;
+  border-bottom: 1px solid #38444d;
+}
+
+.mainorganic{
+  padding: 15px 0;
+  border-bottom: 1px solid #38444d;
+}
+
+.startonline{
+  padding: 15px 0;
+  border-bottom: 1px solid #38444d;
+}
+
+.contentmeasure{
+  padding: 15px 0;
+  border-bottom: 1px solid #38444d;
+}
+
 .main table{
   text-align: center;
   width: 100%;
@@ -26,10 +46,19 @@
   padding: 10px 0;
 }
 
+.main th {
+  width: 50%;
+}
+
 .increase{
   color: rgb(18, 147, 154)
 }
 
 .main h1, h2 {
   text-transform: none;
+}
+
+.ctrtable{
+  padding: 15px 0;
+  border-bottom: 1px solid #38444d;
 }
