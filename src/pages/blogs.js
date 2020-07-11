@@ -284,8 +284,7 @@ const Ecommerce = () => {
               <td className={styles.increase}>&#8593; 33%</td>
             </tr>
           </table>
-        </div>
-        <h3>5 things you can do for ranking higher on SEO</h3>
+          <h3>5 things you can do for ranking higher on SEO</h3>
         <div>
           Good content marketing provides the following: Ideas Inspiration Tips
           and tricks Education.
@@ -740,7 +739,7 @@ const Ecommerce = () => {
           organic website traffic and ultimately improve search engine
           optimization.
           <FlexibleWidthXYPlot height={300}>
-            <XAxis title={'Year'} xType="time" />
+            <XAxis title={'Year'} xType="time" tickTotal={6} />
             <YAxis title={'Number of Changes'} yDomain={[0, 4000]} />
             <LineSeries
               data={algoData}
@@ -748,7 +747,8 @@ const Ecommerce = () => {
             />
           </FlexibleWidthXYPlot>
         </div>
-    </Layout>
+        </div>
+        </Layout>
   )
 }
 
