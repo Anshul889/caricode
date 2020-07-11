@@ -204,7 +204,7 @@ const Ecommerce = () => {
           without them.
         </div>
         <div>
-          Google has indicated site speed (and as a result, page speed) is one
+        <a href="https://developers.google.com/web/updates/2018/07/search-ads-speed" target="_blank" style={{color: 'rgb(18, 147, 154)', textDecoration:"underline"}}> Google has indicated site speed</a> (and as a result, page speed) is one
           of the signals used by its algorithm to rank pages. And research has
           shown that Google might be specifically measuring time to first byte
           as when it considers page speed. In addition, a slow page speed means
@@ -619,14 +619,13 @@ const Ecommerce = () => {
           page. Longer load times have also been shown to negatively affect
           conversions.
           <FlexibleWidthXYPlot height={300}>
-            <XAxis title={'Loading in seconds'}/>
+            <XAxis title={'Loading in seconds'} tickTotal={6}/>
             <YAxis title={'Bounce Rate'}/>
             <VerticalBarSeries
               data={speedData}
             />
           </FlexibleWidthXYPlot>
         </div>
-        <div>Importance of social sharing</div>
         <div className={styles.algodata}>
           Each year, Google makes hundreds of changes to search. In 2018, they
           reported an incredible 3,234 updates — an average of almost 9 per day,
@@ -639,9 +638,10 @@ const Ecommerce = () => {
           optimization.
           <FlexibleWidthXYPlot height={300}>
             <XAxis title={'Year'} xType="time" />
-            <YAxis title={'Number of Changes'}/>
+            <YAxis title={'Number of Changes'} yDomain={[0, 4000]} />
             <LineSeries
               data={algoData}
+              yDomain={[0, 4000]}
             />
           </FlexibleWidthXYPlot>
         </div>

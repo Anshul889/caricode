@@ -155,4 +155,7 @@ img.pwaappicon{
     grid-template-columns: 1fr;
     grid-gap: 0px;
   }
+  table th:first-child{
+    width: 47.5%;
+  }
 }
