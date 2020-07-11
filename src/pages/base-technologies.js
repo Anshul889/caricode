@@ -4,7 +4,6 @@ import { Link, useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Layout from '../components/layout'
 
-import laptop from '../images/laptop.svg'
 import mobile from '../images/mobile-duotone.svg'
 
 const getImages = graphql`
