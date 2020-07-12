@@ -213,10 +213,13 @@ button:hover {
   padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .contentpost {
   padding: 20px 0;
+  border-bottom: 1px solid rgb(104, 104, 104);
 }
 
 .postdiv h3 {
@@ -236,7 +239,8 @@ button:hover {
 }
 
 .postdiv {
-  border-bottom: 1px solid rgb(104, 104, 104);
+  width: 90%;
+  margin: 0 auto;
 }
 
 .section4 {
