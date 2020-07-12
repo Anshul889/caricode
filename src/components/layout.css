@@ -507,6 +507,7 @@ textarea:focus {
   .contentpost {
     padding: 30px;
     border-right: 1px solid rgb(97, 97, 97);
+    border-bottom: none;
   }
 
   .infocontentdiv {
