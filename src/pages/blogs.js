@@ -2,12 +2,14 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/SEO'
 import styles from './blogs.module.css'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import { Spring, config } from 'react-spring/renderprops'
 import VisibilitySensor from 'react-visibility-sensor'
 import check from '../images/check.svg'
 import cross from '../images/cross.svg'
 import './pagelayout.css'
+import window from '../images/window.svg'
+import user from '../images/user.svg'
 import Image from 'gatsby-image'
 import {
   RadialChart,
@@ -92,11 +94,67 @@ const Ecommerce = () => {
       />
       <div className={styles.main}>
         <div className={styles.hero}>
-          <h1>
-            Want more traffic to your website ? Organic search is the golden
-            ticket.
-          </h1>
+          <h1>Want more traffic to your website ?</h1>
+          <div className={styles.heroimg}>
+            <Spring
+              from={{ transform: 'translate(-30px, -30px)' }}
+              to={{ transform: 'translate(0, 0)' }}
+              config={config.molasses}
+              delay={800}
+            >
+              {props => (
+                <img className={styles.usersvg} src={user} style={props} />
+              )}
+            </Spring>
+            <Spring
+              from={{ transform: 'translate(0px, -50px)' }}
+              to={{ transform: 'translate(0, -20px)' }}
+              config={config.molasses}
+              delay={800}
+            >{props => (
+            <img className={styles.usersvg} src={user} style={props} />
+            )}
+            </Spring>
+            <Spring
+              from={{ transform: 'translate(30px, -30px)' }}
+              to={{ transform: 'translate(0, 0px)' }}
+              config={config.molasses}
+              delay={800}
+            >{props => (
+            <img className={styles.usersvg} src={user} style={props}/>
+            )}
+            </Spring>
+            <img className={styles.windowsvg} src={window} />
+            <Spring
+              from={{ transform: 'translate(-30px, 30px)' }}
+              to={{ transform: 'translate(0, 0px)' }}
+              config={config.molasses}
+              delay={800}
+            >{props => (
+            <img className={styles.usersvg} src={user} style={props}/>
+            )}
+            </Spring>
+            <Spring
+              from={{ transform: 'translate(0px, 50px)' }}
+              to={{ transform: 'translate(0, 20px)' }}
+              config={config.molasses}
+              delay={800}
+            >{props => (
+            <img className={styles.usersvg} src={user} style={props}/>
+            )}
+            </Spring>
+            <Spring
+              from={{ transform: 'translate(30px, 30px)' }}
+              to={{ transform: 'translate(0, 0px)' }}
+              config={config.molasses}
+              delay={800}
+            >{props => (
+            <img className={styles.usersvg} src={user} style={props}/>
+            )}
+            </Spring>
+          </div>
         </div>
+        <div><div className={styles.inner}> Organic search is the golden ticket.</div></div>
         <div className={styles.startonline}>
           <div className={styles.inner}>
             <h2>93% of online experiences begin with a search engine.</h2>
@@ -274,6 +332,7 @@ const Ecommerce = () => {
             <a
               href="https://developers.google.com/web/updates/2018/07/search-ads-speed"
               target="_blank"
+              rel="noreferrer"
               style={{
                 color: 'rgb(18, 147, 154)',
                 textDecoration: 'underline',

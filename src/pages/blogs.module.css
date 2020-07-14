@@ -127,6 +127,27 @@ img.pwaappicon{
   margin: 0 auto;
 }
 
+.heroimg{
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 60vh;
+  grid-template-rows: 80px 151px 80px;
+  align-content: center;
+}
+
+.usersvg{
+  height: 40px;
+}
+
+.windowsvg{
+  grid-column: 1 / span 3 ;
+  width: 50%;
+}
+
 .socialsharing{
   padding: 15px 0;
   
