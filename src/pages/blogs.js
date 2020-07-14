@@ -111,18 +111,20 @@ const Ecommerce = () => {
               to={{ transform: 'translate(0, -20px)' }}
               config={config.molasses}
               delay={800}
-            >{props => (
-            <img className={styles.usersvg} src={user} style={props} />
-            )}
+            >
+              {props => (
+                <img className={styles.usersvg} src={user} style={props} />
+              )}
             </Spring>
             <Spring
               from={{ transform: 'translate(30px, -30px)' }}
               to={{ transform: 'translate(0, 0px)' }}
               config={config.molasses}
               delay={800}
-            >{props => (
-            <img className={styles.usersvg} src={user} style={props}/>
-            )}
+            >
+              {props => (
+                <img className={styles.usersvg} src={user} style={props} />
+              )}
             </Spring>
             <img className={styles.windowsvg} src={window} />
             <Spring
@@ -130,35 +132,42 @@ const Ecommerce = () => {
               to={{ transform: 'translate(0, 0px)' }}
               config={config.molasses}
               delay={800}
-            >{props => (
-            <img className={styles.usersvg} src={user} style={props}/>
-            )}
+            >
+              {props => (
+                <img className={styles.usersvg} src={user} style={props} />
+              )}
             </Spring>
             <Spring
               from={{ transform: 'translate(0px, 50px)' }}
               to={{ transform: 'translate(0, 20px)' }}
               config={config.molasses}
               delay={800}
-            >{props => (
-            <img className={styles.usersvg} src={user} style={props}/>
-            )}
+            >
+              {props => (
+                <img className={styles.usersvg} src={user} style={props} />
+              )}
             </Spring>
             <Spring
               from={{ transform: 'translate(30px, 30px)' }}
               to={{ transform: 'translate(0, 0px)' }}
               config={config.molasses}
               delay={800}
-            >{props => (
-            <img className={styles.usersvg} src={user} style={props}/>
-            )}
+            >
+              {props => (
+                <img className={styles.usersvg} src={user} style={props} />
+              )}
             </Spring>
           </div>
         </div>
-        <div><div className={styles.inner}> Organic search is the golden ticket.</div></div>
         <div className={styles.startonline}>
           <div className={styles.inner}>
+            <h2>Organic search is the golden ticket.</h2>
+            <div className={styles.searchbar}>
+              <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" />
+              <input placeholder="Search"></input>
+            </div>
             <h2>93% of online experiences begin with a search engine.</h2>
-            <div className={styles.organicclicks}>
+            <div>
               <VisibilitySensor>
                 {({ isVisible }) => (
                   <Spring
@@ -206,29 +215,68 @@ const Ecommerce = () => {
               click on organic listings.
             </h2>
             <div className={styles.organicclicks}>
-              <VisibilitySensor>
-                {({ isVisible }) => (
-                  <Spring
-                    from={{ opacity: 0 }}
-                    to={{
-                      opacity: isVisible ? 1 : 0,
-                    }}
-                    config={config.molasses}
-                    delay={800}
-                  >
-                    {props => (
-                      <RadialChart
-                        data={myData}
-                        animation={{ damping: 40, stiffness: 120 }}
-                        width={325}
-                        height={325}
-                        showLabels
-                        style={props}
-                      />
-                    )}
-                  </Spring>
-                )}
-              </VisibilitySensor>
+              <div className={styles.searchresultred}>
+              <div className={styles.inner}>
+                <div className={styles.adwarning}>
+                  <div className={styles.ad}>Ad</div>
+                  <div className={styles.dot}>‎•‎‎</div>
+                  <div className={styles.webaddress}>www.ad.com</div>
+                </div>
+                <div className={styles.title}>The Best Ad on the internet</div>
+                <div className={styles.description}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </div>
+                </div>
+              </div>
+              <div className={styles.searchresultgreen}>
+              <div className={styles.inner}>
+                <div className={styles.adwarning}>
+                  <div className={styles.webaddress}>www.organiclisting.com</div>
+                </div>
+                <div className={styles.title}>The Best Organic Result</div>
+                <div className={styles.description}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </div>
+                </div>
+              </div>
+              <div className={styles.searchresultgreen}>
+              <div className={styles.inner}>
+                <div className={styles.adwarning}>
+                  <div className={styles.webaddress}>www.organiclisting.com</div>
+                </div>
+                <div className={styles.title}>Result 2</div>
+                <div className={styles.description}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </div>
+                </div>
+              </div>
+              <div className={styles.searchresultgreen}>
+              <div className={styles.inner}>
+                <div className={styles.adwarning}>
+                  <div className={styles.webaddress}>www.organiclisting.com</div>
+                </div>
+                <div className={styles.title}>Result 3</div>
+                <div className={styles.description}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </div>
+                </div>
+              </div>
+              <div className={styles.searchresultgreen}>
+              <div className={styles.inner}>
+                <div className={styles.adwarning}>
+                  <div className={styles.webaddress}>www.organiclisting.com</div>
+                </div>
+                <div className={styles.title}>Result 4</div>
+                <div className={styles.description}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -323,10 +371,12 @@ const Ecommerce = () => {
               fluid={data.image17.childImageSharp.fluid}
               style={{ borderRadius: '10px' }}
             />
-            Studies show that having a rich snippet can increase click-through
-            rates (CTR) by 677% and drive 20-40% more traffic than product links
+            Studies show that having a rich snippet can <b>increase click-through
+            rates (CTR) by 677%</b> and drive 20-40% more traffic than product links
             without them.
           </div>
+          </div>
+          <div className={styles.spee}>
           <div className={styles.inner}>
             <h3>Site Speed</h3>
             <a
@@ -761,7 +811,7 @@ const Ecommerce = () => {
               <VerticalBarSeries data={speedData} />
             </FlexibleWidthXYPlot>
           </div>
-        </div>
+          </div>
         <div className={styles.socialsharing}>
           <div className={styles.inner}>
             <h3>Importance of social sharing</h3>Social media is built for mass
