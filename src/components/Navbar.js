@@ -56,18 +56,18 @@ const Navbar = () => {
         <Link
           className={styles.mItem}
           activeStyle={{ filter: 'grayscale(0%)' }}
-          to="/landing-pages/"
-        >
-          <img className={styles.mnavimg} src={landingpage} alt="logo" />
-          <div className={styles.mText}>Landing</div>
-        </Link>
-        <Link
-          className={styles.mItem}
-          activeStyle={{ filter: 'grayscale(0%)' }}
           to="/blogs/"
         >
           <img className={styles.mnavimg} src={blog} alt="blogs" />
           <div className={styles.mText}>Blogs</div>
+        </Link>
+        <Link
+          className={styles.mItem}
+          activeStyle={{ filter: 'grayscale(0%)' }}
+          to="/landing-pages/"
+        >
+          <img className={styles.mnavimg} src={landingpage} alt="logo" />
+          <div className={styles.mText}>Landing</div>
         </Link>
         <Link
           className={styles.mItem}
