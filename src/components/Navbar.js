@@ -17,16 +17,16 @@ const Navbar = () => {
         </Link>
         <ul className={styles.leftdnav}>
           <li className={styles.dItem}>
+            <Link activeStyle={{ color: 'rgb(29, 161, 242)' }} to="/blogs">
+              Blogs
+            </Link>
+          </li>
+          <li className={styles.dItem}>
             <Link
               activeStyle={{ color: 'rgb(29, 161, 242)' }}
               to="/landing-pages/"
             >
               Landing Pages
-            </Link>
-          </li>
-          <li className={styles.dItem}>
-            <Link activeStyle={{ color: 'rgb(29, 161, 242)' }} to="/blogs">
-              Blogs
             </Link>
           </li>
           <li className={styles.dItem}>

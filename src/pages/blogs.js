@@ -824,6 +824,7 @@ const Ecommerce = () => {
         </div>
         <div className={styles.algodata}>
           <div className={styles.inner}>
+            <h3>Search algorithm updates</h3>
             Each year, Google makes hundreds of changes to search. In 2018, they
             reported an incredible 3,234 updates — an average of almost 9 per
             day, and more than 8 times the number of updates in 2009. While most
