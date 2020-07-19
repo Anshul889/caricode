@@ -29,6 +29,10 @@ h6 {
   font-weight: 600;
 }
 
+.rv-discrete-color-legend-item {
+  color: lightgrey !important;
+}
+
 .gestures-main {
   background-color: hsl(210, 34%, 17%);
   color: #fff;

@@ -64,7 +64,7 @@ const WebApplications = () => {
               revenue by 25-95%.
               <FlexibleWidthXYPlot margin={{left: 70, right: 30 }} height={300}>
               <DiscreteColorLegend
-            style={{position: 'absolute', left: '100px', top: '10px'}}
+            style={{position: 'absolute', left: '100px', top: '10px', opacity: '1'}}
             orientation="horizontal"
             items={[
               {
