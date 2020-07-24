@@ -167,11 +167,11 @@ const Ecommerce = () => {
               <input placeholder="Search"></input>
             </div>
             <h2>93% of online experiences begin with a search engine.</h2>
-            <div>
+            <div className={styles.pieouter}>
               <VisibilitySensor>
                 {({ isVisible }) => (
                   <Spring
-                    from={{ opacity: 0 }}
+                    from={{ opacity: 0}}
                     to={{
                       opacity: isVisible ? 1 : 0,
                     }}
@@ -182,10 +182,11 @@ const Ecommerce = () => {
                       <RadialChart
                         data={mysearchData}
                         animation={{ damping: 40, stiffness: 120 }}
-                        width={300}
                         height={300}
+                        width={300}
                         showLabels
                         style={props}
+                        margin={{left: 10}}
                       />
                     )}
                   </Spring>
@@ -369,7 +370,7 @@ const Ecommerce = () => {
             <h3>Rich Snippets</h3>
             <Image
               fluid={data.image17.childImageSharp.fluid}
-              style={{ borderRadius: '10px' }}
+              style={{ borderRadius: '10px', margin: '15px 0' }}
             />
             Studies show that having a rich snippet can <b>increase click-through
             rates (CTR) by 677%</b> and drive 20-40% more traffic than product links

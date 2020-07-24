@@ -21,6 +21,11 @@
   background-color: hsl(210, 34%, 17%);
 }
 
+.pieouter{
+  display: grid;
+  place-content: center;
+}
+
 .mainorganic{
   padding: 15px 0;
   border-bottom: 1px solid #38444d;
@@ -148,6 +153,11 @@
   margin-bottom: 10px;
 }
 
+.spee{
+  background-color: hsl(210, 34%, 17%);
+  padding: 15px 0;
+}
+
 .sitespeed{
   background-color: hsl(210, 34%, 17%);
   padding: 15px 0;
@@ -216,6 +226,7 @@ img.pwaappicon{
 .windowsvg{
   grid-column: 1 / span 3 ;
   width: 50%;
+  max-width: 200px;
 }
 
 .socialsharing{
