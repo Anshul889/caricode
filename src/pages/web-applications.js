@@ -7,6 +7,7 @@ import usertie from '../images/user-tie.svg'
 import cashregister from '../images/register.svg'
 import thumbs from '../images/thumbsup.svg'
 import users from '../images/users.svg'
+import comment from '../images/comment.svg'
 import VisibilitySensor from 'react-visibility-sensor'
 import { Spring, config } from 'react-spring/renderprops'
 import {
@@ -129,7 +130,7 @@ const WebApplications = () => {
               keep coming back, again and again.
             </div>
             <div className={styles.loyalty}>
-              <VisibilitySensor>
+              <VisibilitySensor offset={{bottom: 250}}>
                 {({ isVisible }) => (
                   <Spring
                     from={{ transform: 'translate(-100px, 0px)' }}
@@ -139,7 +140,7 @@ const WebApplications = () => {
                         : 'translate(-100px, 0px)',
                     }}
                     config={config.molasses}
-                    delay={1500}
+                    delay={500}
                   >
                     {props => (
                       <div className={styles.usercart} style={props}>
@@ -157,14 +158,15 @@ const WebApplications = () => {
         </div>
         <div className={styles.why}>
           <div className={styles.inner}>
+            <h2>Referrals</h2>
             <div>
-              <b>Referrals</b>: Satisfied, loyal customers are more likely to
+              Satisfied, loyal customers are more likely to
               sing a company's praises and refer their friends and family —
               bringing in new customers, free of charge.
             </div>
             <div className={styles.referralanimation}>
               <img src={users} />
-              <VisibilitySensor>
+              <VisibilitySensor offset={{bottom: 250}}>
                 {({ isVisible }) => (
                   <Spring
                     from={{ opacity: 0 }}
@@ -172,7 +174,7 @@ const WebApplications = () => {
                       opacity: isVisible ? 1 : 0,
                     }}
                     config={config.molasses}
-                    delay={3000}
+                    delay={2800}
                   >
                     {props => (
                       <img
@@ -184,17 +186,33 @@ const WebApplications = () => {
                   </Spring>
                 )}
               </VisibilitySensor>
-              <VisibilitySensor>
+              <VisibilitySensor offset={{bottom: 250}}>
+                {({ isVisible }) => (
+                  <Spring
+                    from={{ opacity: 0 }}
+                    to={{
+                      opacity: isVisible
+                        ? 1
+                        : 0,
+                    }}
+                    config={config.molasses}
+                    delay={1700}
+                  >
+                    {props => <img src={comment} style={props} className={styles.comment}/>}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+              <VisibilitySensor offset={{bottom: 250}}>
                 {({ isVisible }) => (
                   <Spring
                     from={{ transform: 'translate(100px, 0px)' }}
                     to={{
                       transform: isVisible
-                        ? 'translate(10px, 0)'
+                        ? 'translate(0px, 0)'
                         : 'translate(100px, 0px)',
                     }}
                     config={config.molasses}
-                    delay={1500}
+                    delay={500}
                   >
                     {props => <img src={user} style={props} />}
                   </Spring>
@@ -205,7 +223,7 @@ const WebApplications = () => {
         </div>
         <div>
           <div className={styles.inner}>
-            <h2>how you can implement customer retention in theory</h2>
+            <h2>how I will implement customer retention</h2>
             <ul>
               <li>subscription based with free 6 months</li>
               <li>incentivise customers to login and keep coming back</li>
