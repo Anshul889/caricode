@@ -2,3 +2,47 @@
   width: 90%;
   margin: 0 auto;
 }
+
+.loyalty{
+  display: grid;
+  grid-template-rows: 30px;
+  margin: 15px 0;
+  grid-template-columns: repeat(3, max-content);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.usercart{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  margin-right: 10px;
+}
+
+.loyalty img {
+  height: 30px;
+}
+
+.why{
+  border-bottom: 1px solid rgb(104, 104, 104);
+  padding: 15px 0;
+}
+
+.referralanimation{
+  display: grid;
+  grid-template-rows: 30px;
+  margin: 15px 0;
+  grid-template-columns: repeat(3, max-content);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.referralanimation img {
+  height: 30px;
+}
+
+.refthumb{
+  height: 15px!important;
+}
