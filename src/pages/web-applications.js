@@ -47,6 +47,7 @@ const WebApplications = () => {
         <div className={styles.why}>
           <div className={styles.inner}>
             <div>
+              <h2>Cost Effective</h2>
               It's{' '}
               <a
                 href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers"
@@ -79,7 +80,7 @@ const WebApplications = () => {
         </div>
         <div className={styles.why}>
           <div className={styles.inner}>
-            ROI: A{' '}
+            <h2>ROI</h2>A{' '}
             <a
               href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers"
               target="_blank"
@@ -121,10 +122,11 @@ const WebApplications = () => {
         </div>
         <div className={styles.why}>
           <div className={styles.inner}>
+            <h2>Loyalty</h2>
             <div>
-              <b>Loyalty</b>: Retained customers buy more often and spend more
-              than newer customers. They've learned the value of a product or
-              service and keep coming back, again and again.
+              Retained customers buy more often and spend more than newer
+              customers. They've learned the value of a product or service and
+              keep coming back, again and again.
             </div>
             <div className={styles.loyalty}>
               <VisibilitySensor>
@@ -142,13 +144,13 @@ const WebApplications = () => {
                     {props => (
                       <div className={styles.usercart} style={props}>
                         <img src={user} />
-                        <img src={shoppingcart} />
+                        <img className={styles.refcart} src={shoppingcart} />
                       </div>
                     )}
                   </Spring>
                 )}
               </VisibilitySensor>
-              <img src={cashregister} />
+              <img className={styles.refcart} src={cashregister} />
               <img src={usertie} />
             </div>
           </div>
@@ -156,48 +158,48 @@ const WebApplications = () => {
         <div className={styles.why}>
           <div className={styles.inner}>
             <div>
-            <b>Referrals</b>: Satisfied, loyal customers are more likely to sing
-            a company's praises and refer their friends and family — bringing in
-            new customers, free of charge.
+              <b>Referrals</b>: Satisfied, loyal customers are more likely to
+              sing a company's praises and refer their friends and family —
+              bringing in new customers, free of charge.
             </div>
             <div className={styles.referralanimation}>
-            <VisibilitySensor>
-                {({ isVisible }) => (
-                  <Spring
-                    from={{ transform: 'translate(-100px, 0px)' }}
-                    to={{
-                      transform: isVisible
-                        ? 'translate(-10px, 0)'
-                        : 'translate(-100px, 0px)',
-                    }}
-                    config={config.molasses}
-                    delay={1500}
-                  >
-                    {props => (
-              <img src={user} style={props}/>
-              )}
-              </Spring>
-            )}
-          </VisibilitySensor>
               <img src={users} />
               <VisibilitySensor>
                 {({ isVisible }) => (
                   <Spring
                     from={{ opacity: 0 }}
                     to={{
-                      opacity: isVisible
-                        ? 1
-                        : 0,
+                      opacity: isVisible ? 1 : 0,
                     }}
                     config={config.molasses}
                     delay={3000}
                   >
                     {props => (
-              <img className={styles.refthumb} src={thumbs} style={props}/>
-              )}
-              </Spring>
-            )}
-          </VisibilitySensor>
+                      <img
+                        className={styles.refthumb}
+                        src={thumbs}
+                        style={props}
+                      />
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    from={{ transform: 'translate(100px, 0px)' }}
+                    to={{
+                      transform: isVisible
+                        ? 'translate(10px, 0)'
+                        : 'translate(100px, 0px)',
+                    }}
+                    config={config.molasses}
+                    delay={1500}
+                  >
+                    {props => <img src={user} style={props} />}
+                  </Spring>
+                )}
+              </VisibilitySensor>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@
 
 .loyalty{
   display: grid;
-  grid-template-rows: 30px;
+  grid-template-rows: 50px;
   margin: 15px 0;
   grid-template-columns: repeat(3, max-content);
   align-items: center;
@@ -20,7 +20,7 @@
 }
 
 .loyalty img {
-  height: 30px;
+  height: 50px;
 }
 
 .why{
@@ -30,7 +30,7 @@
 
 .referralanimation{
   display: grid;
-  grid-template-rows: 30px;
+  grid-template-rows: 50px;
   margin: 15px 0;
   grid-template-columns: repeat(3, max-content);
   align-items: center;
@@ -40,9 +40,14 @@
 }
 
 .referralanimation img {
-  height: 30px;
+  height: 50px;
 }
 
 .refthumb{
-  height: 15px!important;
+  height: 25px!important;
+}
+
+.refcart{
+  height: 30px!important;
+  align-self: end;
 }
