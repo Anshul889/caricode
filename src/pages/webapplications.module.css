@@ -6,7 +6,7 @@
 .loyalty{
   display: grid;
   grid-template-rows: 50px;
-  margin: 15px 0;
+  margin: 38px 0;
   grid-template-columns: repeat(3, max-content);
   align-items: center;
   justify-items: center;
@@ -25,13 +25,13 @@
 
 .why{
   border-bottom: 1px solid rgb(104, 104, 104);
-  padding: 15px 0;
+  padding: 38px 0;
 }
 
 .referralanimation{
   display: grid;
   grid-template-rows: 50px;
-  margin: 15px 0;
+  margin: 38px 0;
   grid-template-columns: repeat(4, max-content);
   align-items: center;
   justify-items: center;
@@ -47,6 +47,10 @@
   height: 25px!important;
 }
 
+.emailauto img{
+  width: 100%;
+}
+
 .refcart{
   height: 30px!important;
   align-self: end;
@@ -57,3 +61,80 @@
   align-self: start;
   margin-left: 8px;
 }
+
+.customerexperience{
+  padding: 20px 0;
+}
+
+.customerimage{
+  background-color: white;
+  border-radius: 4px;
+  padding: 45px 15px;
+  margin-bottom: 38px;
+}
+
+.emailimage{
+  background-color: white;
+  border-radius: 4px;
+  padding: 0px 15px;
+  margin-bottom: 38px;
+}
+
+.how h4{
+  font-size: 17.6px;
+  margin-bottom: 17px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.how p{
+  margin-bottom: 38px;
+  font-weight: 300;
+  line-height: 29.12px;
+  text-align: center;
+}
+
+.how{
+  background-color: hsl(210, 34%, 17%);
+}
+
+.loyaltyimage{
+  margin-bottom: 38px;
+}
+
+.googleauth{
+  border-radius: 4px;
+  background-color: red;
+  text-transform: none;
+  width: 200px;
+}
+
+.googleauth:hover{
+  background-color: red;
+}
+
+.facebookauth{
+  border-radius: 4px;
+  background-color: #4C69BA;
+  text-transform: none;
+  width: 200px;
+}
+
+.facebookauth:hover{
+  background-color: #4C69BA;
+}
+
+.auth{
+  display: grid;
+  grid-template-columns: max-content;
+  gap: 10px;
+  place-content: center;
+  margin-bottom: 38px;
+  background-color: white;
+  padding: 37px 0;
+  border-radius: 4px;
+}
+

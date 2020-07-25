@@ -88,7 +88,7 @@ const Ecommerce = () => {
       <SEO
         title={'Blog Development and Best SEO practices'}
         description="At CariCode, we build blazing fast blogs to delight and retain users."
-        pathname="/ecommerce/"
+        pathname="/blogs/"
         image="/images/image4.jpg"
         date={'2020-01-30'}
       />
