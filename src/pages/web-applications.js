@@ -40,6 +40,20 @@ const getImages = graphql`
         }
       }
     }
+    image2: file(relativePath: { eq: "payment.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image3: file(relativePath: { eq: "functions.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -299,10 +313,17 @@ const WebApplications = () => {
                 />
               </div>
               <h4>Loyalty Programme</h4>
-              <p>Create a loyalty programme</p>
+              <p>
+                Reward your customers for continuing to shop with you. Give them
+                the option to sign up for a loyalty program. However you want to
+                structure the program is fine, just make sure the rules are
+                clear. Common programs include one point for every dollar spent,
+                points earned for sharing on social media, or points earned for
+                referring friends.
+              </p>
             </div>
           </div>
-          <div>
+          <div className={styles.emailauto}>
             <div className={styles.inner}>
               <div className={styles.loyaltyimage}>
                 <Image
@@ -318,19 +339,135 @@ const WebApplications = () => {
               </p>
             </div>
           </div>
-          <div><div className={styles.inner}>
+          <div className={styles.emailauto}>
+            <div className={styles.inner}>
               <div className={styles.auth}>
                 <button className={styles.googleauth}>Login with Google</button>
-                <button className={styles.facebookauth}>Login with Facebook</button>
+                <button className={styles.facebookauth}>
+                  Login with Facebook
+                </button>
               </div>
               <h4>Authentication</h4>
-            <p>incentivise customers to login and keep coming back</p>
+              <p>incentivise customers to login and keep coming back</p>
             </div>
           </div>
-          <li>offer incentives to share your product</li>
-          <li>customers want value</li>
-          <li>customers want to use their preffered payment system</li>
-          <li>security</li>
+          <div className={styles.emailauto}>
+            <div className={styles.inner}>
+              <div className={styles.howrefer}>
+                <VisibilitySensor offset={{ bottom: 150 }}>
+                  {({ isVisible }) => (
+                    <Spring
+                      from={{ opacity: 0 }}
+                      to={{
+                        opacity: isVisible ? 1 : 0,
+                      }}
+                      delay={800}
+                    >
+                      {props => (
+                        <div className={styles.reftext} style={props}>
+                          Refer a friend
+                        </div>
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
+                <VisibilitySensor offset={{ bottom: 250 }}>
+                  {({ isVisible }) => (
+                    <Spring
+                      from={{ opacity: 0 }}
+                      to={{
+                        opacity: isVisible ? 1 : 0,
+                      }}
+                      delay={1500}
+                    >
+                      {props => (
+                        <div style={props}>
+                          Get 10% off on your next purchase
+                        </div>
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
+                <VisibilitySensor offset={{ bottom: 250 }}>
+                  {({ isVisible }) => (
+                    <Spring
+                      from={{ opacity: 0 }}
+                      to={{
+                        opacity: isVisible ? 1 : 0,
+                      }}
+                      delay={2000}
+                    >
+                      {props => (
+                        <div className={styles.refform} style={props}>
+                          <input
+                            placeholder={'Email'}
+                            className={styles.referralinput}
+                          />
+                          <button className={styles.refinvite}>Invite</button>
+                        </div>
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
+              </div>
+              <h4>Reward you Referrals</h4>
+              <p>
+                <a
+                  href="https://www.disruptiveadvertising.com/marketing/referral-marketing/#:~:text=Consumers%20are%204x%20more%20likely,than%20those%20who%20don't."
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    color: 'rgb(18, 147, 154)',
+                    textDecoration: 'underline',
+                  }}
+                >
+                  Consumers are 4x more likely
+                </a>{' '}
+                to purchase something when referred by a friend. Word of mouth
+                marketing is believed to be behind 20-50% of all purchasing
+                decisions. B2B businesses with referral programs have 69% faster
+                closing times on sales and approximately 70% higher conversion
+                rates than those who don't.
+              </p>
+            </div>
+          </div>
+          <div className={styles.emailauto}>
+            <div className={styles.inner}>
+              <div className={styles.loyaltyimage}>
+                <Image
+                  fluid={data.image2.childImageSharp.fluid}
+                  style={{ borderRadius: '4px' }}
+                />
+              </div>
+              <h4>Payments</h4>
+              <p>
+                Making it as easy as possible for your customers to pay is
+                essential for increasing conversions and sales. This is why your
+                checkout page is critical. It’s the final stop for people
+                shopping on your website. It’s the place where they hand over
+                their credit card information and finally part with their
+                hard-earned cash.
+              </p>
+            </div>
+          </div>
+          <div className={styles.emailauto}>
+            <div className={styles.inner}>
+              <div className={styles.loyaltyimage}>
+                <Image
+                  fluid={data.image3.childImageSharp.fluid}
+                  style={{ borderRadius: '4px' }}
+                />
+              </div>
+              <h4>Security</h4>
+              <p>
+                In many cases, application logic is best controlled on the
+                server to avoid tampering on the client side. Cloud Functions is
+                fully insulated from the client, so you can be sure its
+                functions are private and secure and can’t be reverse
+                engineered.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div>
