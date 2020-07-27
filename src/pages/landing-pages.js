@@ -4,6 +4,14 @@ import Layout from '../components/layout'
 import chart from '../images/chart-line.svg'
 import question from '../images/question.svg'
 import user from '../images/user.svg'
+import addresscard from '../images/address-card-duotone.svg'
+import briefcase from '../images/briefcase-duotone.svg'
+import building from '../images/building-duotone.svg'
+import chartbar from '../images/chart-bar-duotone.svg'
+import coffee from '../images/coffee-duotone.svg'
+import pencil from '../images/pencil-duotone.svg'
+import phoneoffice from '../images/phone-office-duotone.svg'
+import usertie from '../images/user-tie-duotone.svg'
 import { useStaticQuery, graphql } from 'gatsby'
 import styles from './landingpage.module.css'
 import { useEffect } from 'react'
@@ -99,31 +107,88 @@ const LandingPages = () => {
             will often hinder people from making a choice.”
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.0} speed={0.1}>
-          <img
-            src={question}
+        <ParallaxLayer offset={2.0} speed={0.5}>
+          <div
             style={{
-              display: 'block',
-              width: '9%',
+              width: '90%',
               margin: '0 auto',
-              transform: 'translateY(-95px)',
+              display: 'grid',
+              transform: 'translateY(-130px)',
+              gridTemplateColumns: '1fr 1fr 1fr 1fr',
+              gap: '20px',
+              placeItems: 'end',
+              gridTemplateRows: '100px',
             }}
-          />
+          >
+            <img
+              src={addresscard}
+              style={{
+                display: 'block',
+                width: '100%',
+              }}
+            />
+            <img
+              src={briefcase}
+              style={{
+                display: 'block',
+                width: '100%',
+              }}
+            />
+            <img
+              src={building}
+              style={{
+                display: 'block',
+                width: '100%',
+              }}
+            />
+            <img
+              src={chartbar}
+              style={{
+                display: 'block',
+                width: '100%',
+              }}
+            />
+            <img
+              src={coffee}
+              style={{
+                display: 'block',
+                width: '100%',
+              }}
+            />
+            <img
+              src={pencil}
+              style={{
+                display: 'block',
+                width: '100%',
+              }}
+            />
+            <img
+              src={phoneoffice}
+              style={{
+                display: 'block',
+                width: '100%',
+              }}
+            />
+            <img
+              src={usertie}
+              style={{
+                display: 'block',
+                width: '100%',
+              }}
+            />
+          </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.07} speed={0.1}>
-          <img
-            src={user}
-            style={{
-              display: 'block',
-              width: '10%',
-              margin: '0 auto',
-              transform: 'translateY(-100px)',
-            }}
-          />
+        <ParallaxLayer offset={2.09} speed={0.3}>
+          <h3 style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
+            High quality visuals
+          </h3>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.07} speed={0.2}>
+        <ParallaxLayer offset={2.23} speed={0.4}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
-            “Use Relevant Visuals”
+            The design of a website is what drives our first impression 94% of
+            the time. Because it only takes us fractions of a second to take it
+            all in. We subconsciously decide whether we want to stick around or
+            not in the blink of an eye.
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={3.0} speed={0.1}>
@@ -177,7 +242,8 @@ const LandingPages = () => {
         </ParallaxLayer>
         <ParallaxLayer offset={4.07} speed={0.2}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
-            “Use High quality images. People are visual creatures. The design of a website is what drives our first impression 94% of the time.”
+            “Use High quality images. People are visual creatures. The design of
+            a website is what drives our first impression 94% of the time.”
           </div>
         </ParallaxLayer>
       </Parallax>
