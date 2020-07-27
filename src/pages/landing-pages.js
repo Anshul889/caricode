@@ -187,19 +187,27 @@ const LandingPages = () => {
             not in the blink of an eye.
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={3.5} speed={0.1}>
+        <ParallaxLayer offset={3.2} speed={0.1}>
           <div className={styles.testimonial1}>
-              <img src={user}/>
-              <h3>Arti Anand</h3>
-              <p>Great website ! The parallax effect is so good</p>
+            <img src={user} />
+            <h3>Arti Anand</h3>
+            <p>Great website ! The parallax effect is so good</p>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={3.27} speed={0.2}>
+        <ParallaxLayer offset={3.6} speed={0.2}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             “Use testimonials ”
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.0} speed={0.1}>
+        <ParallaxLayer  offset={3.65} speed={0.4}>
+          <p style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
+            People don’t go looking for testimonials. Instead, they want to see
+            them when making a critical decision. That means testimonials should
+            be everywhere. They should be one of the first things people see on
+            your homepage.
+          </p>
+        </ParallaxLayer>
+        <ParallaxLayer offset={4.2} speed={0.1}>
           <img
             src={question}
             style={{
@@ -209,7 +217,7 @@ const LandingPages = () => {
             }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={4.07} speed={0.1}>
+        <ParallaxLayer offset={4.27} speed={0.1}>
           <img
             src={user}
             style={{
@@ -219,7 +227,7 @@ const LandingPages = () => {
             }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={4.07} speed={0.2}>
+        <ParallaxLayer offset={4.27} speed={0.2}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             “Use High quality images. People are visual creatures. The design of
             a website is what drives our first impression 94% of the time.”

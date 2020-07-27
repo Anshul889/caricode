@@ -46,8 +46,13 @@
 .testimonial1{
   border-radius: 14px;
   border: 1px solid white;
-  width: 35%;
-  transform: translateY(-100px);
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+  z-index: 1000;
+  background-color: #673AB7;
+  position: relative;
+  display: block;
 }
 
 .testimonial1 img {
@@ -55,6 +60,8 @@
   display: block;
   margin: 0 auto;
 }
+
+
 
 .sectionanimation {
   background-color: hsl(210, 34%, 17%);
