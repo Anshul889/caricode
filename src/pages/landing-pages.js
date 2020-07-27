@@ -30,7 +30,7 @@ const LandingPages = () => {
       />
       <Parallax
         className="parallaxcontainer"
-        style={{ width: '100%', height: '100vh' }}
+        style={{ width: '100%', height: '90vh' }}
         pages={5}
       >
         <ParallaxLayer
@@ -57,63 +57,59 @@ const LandingPages = () => {
 
         {/* svgs and text */}
 
-        <ParallaxLayer offset={0} speed={0.5}>
+        <ParallaxLayer offset={0.2} speed={0.5}>
           <img
             src={chart}
             style={{
               display: 'block',
               width: '40%',
               margin: '0 auto',
-              transform: 'translateY(-130px)',
             }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={0.15} speed={0.3}>
+        <ParallaxLayer offset={0.6} speed={0.3}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             Boost Conversions - Get more sales with a pro landing page
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.75} speed={0.3}>
+        <ParallaxLayer offset={0.95} speed={0.3}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             Your landing page web design has only one purpose: To get people to
             act, usually with a CTA button or by filling in your opt-in-form.
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.0} speed={0.1}>
+        <ParallaxLayer offset={1.2} speed={0.1}>
           <img
             src={question}
             style={{
               display: 'block',
               width: '9%',
               margin: '0 auto',
-              transform: 'translateY(-95px)',
             }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.07} speed={0.1}>
+        <ParallaxLayer offset={1.27} speed={0.1}>
           <img
             src={user}
             style={{
               display: 'block',
               width: '10%',
               margin: '0 auto',
-              transform: 'translateY(-100px)',
             }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.07} speed={0.2}>
+        <ParallaxLayer offset={1.47} speed={0.2}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             “The paradox of choice reveals that less is more. Too many options
             will often hinder people from making a choice.”
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.0} speed={0.5}>
+        <ParallaxLayer offset={2.1} speed={0.5}>
           <div
             style={{
               width: '90%',
               margin: '0 auto',
               display: 'grid',
-              transform: 'translateY(-130px)',
               gridTemplateColumns: '1fr 1fr 1fr 1fr',
               gap: '40px',
               placeItems: 'end',
@@ -178,12 +174,12 @@ const LandingPages = () => {
             />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.09} speed={0.3}>
+        <ParallaxLayer offset={2.5} speed={0.3}>
           <h3 style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             High quality visuals
           </h3>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.23} speed={0.4}>
+        <ParallaxLayer offset={2.6} speed={0.4}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             The design of a website is what drives our first impression 94% of
             the time. Because it only takes us fractions of a second to take it
@@ -191,7 +187,7 @@ const LandingPages = () => {
             not in the blink of an eye.
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={3.0} speed={0.1}>
+        <ParallaxLayer offset={3.5} speed={0.1}>
           <div className={styles.testimonial1}>
               <img src={user}/>
               <h3>Arti Anand</h3>
@@ -210,7 +206,6 @@ const LandingPages = () => {
               display: 'block',
               width: '9%',
               margin: '0 auto',
-              transform: 'translateY(-95px)',
             }}
           />
         </ParallaxLayer>
@@ -221,7 +216,6 @@ const LandingPages = () => {
               display: 'block',
               width: '10%',
               margin: '0 auto',
-              transform: 'translateY(-100px)',
             }}
           />
         </ParallaxLayer>

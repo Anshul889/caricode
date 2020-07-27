@@ -357,13 +357,6 @@ textarea:focus {
   -ms-overflow-style: none;
 }
 
-.container > div > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: hidden;
-}
-
 .text {
   pointer-events: none;
   justify-content: start !important;
