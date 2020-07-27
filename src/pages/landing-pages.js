@@ -29,7 +29,7 @@ const LandingPages = () => {
         date={'2020-04-17'}
       />
       <Parallax
-        className="container"
+        className="parallaxcontainer"
         style={{ width: '100%', height: '100vh' }}
         pages={5}
       >
@@ -192,28 +192,13 @@ const LandingPages = () => {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={3.0} speed={0.1}>
-          <img
-            src={question}
-            style={{
-              display: 'block',
-              width: '9%',
-              margin: '0 auto',
-              transform: 'translateY(-95px)',
-            }}
-          />
+          <div className={styles.testimonial1}>
+              <img src={user}/>
+              <h3>Arti Anand</h3>
+              <p>Great website ! The parallax effect is so good</p>
+          </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={3.07} speed={0.1}>
-          <img
-            src={user}
-            style={{
-              display: 'block',
-              width: '10%',
-              margin: '0 auto',
-              transform: 'translateY(-100px)',
-            }}
-          />
-        </ParallaxLayer>
-        <ParallaxLayer offset={3.07} speed={0.2}>
+        <ParallaxLayer offset={3.27} speed={0.2}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             “Use testimonials ”
           </div>

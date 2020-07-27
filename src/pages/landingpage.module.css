@@ -43,8 +43,17 @@
   height: 30px;
 }
 
-.icontext{
+.testimonial1{
+  border-radius: 14px;
+  border: 1px solid white;
+  width: 35%;
+  transform: translateY(-100px);
+}
 
+.testimonial1 img {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
 }
 
 .sectionanimation {
