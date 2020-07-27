@@ -115,7 +115,7 @@ const LandingPages = () => {
               display: 'grid',
               transform: 'translateY(-130px)',
               gridTemplateColumns: '1fr 1fr 1fr 1fr',
-              gap: '20px',
+              gap: '40px',
               placeItems: 'end',
               gridTemplateRows: '100px',
             }}
