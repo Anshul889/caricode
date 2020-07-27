@@ -23,6 +23,7 @@ import {
   DiscreteColorLegend,
 } from 'react-vis'
 import SEO from '../components/SEO'
+import Webappbanner from '../components/webappbanner'
 
 const getImages = graphql`
   {
@@ -90,6 +91,7 @@ const WebApplications = () => {
         date={'2020-01-30'}
       />
       <div>
+        <Webappbanner />
         <h2>why you need customer retention</h2>
         <div className={styles.why}>
           <div className={styles.inner}>

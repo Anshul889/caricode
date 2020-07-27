@@ -355,8 +355,6 @@ textarea:focus {
 
 .parallaxcontainer {
   -ms-overflow-style: none;
-  margin-left: 15%;
-  border: 1px solid gray;
 }
 
 .container > div > div {

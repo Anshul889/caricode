@@ -26,9 +26,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   width: 70%;
   margin: 0 auto;
-  height: 60px;
   place-content: center;
   place-items: center;
+  row-gap: 10px;
 }
 
 .mlandingheroimage {
@@ -41,6 +41,10 @@
   border: 1px solid white;
   border-radius: 50%;
   height: 30px;
+}
+
+.icontext{
+
 }
 
 .sectionanimation {
