@@ -80,6 +80,24 @@
   height: 50px;
 }
 
+.leadmagnet{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 14px;
+  border: 1px solid #ffffffa8;
+  padding: 20px 0;
+}
+
+.freecourse{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.leadmagnetimg{
+  width: 80%;
+  margin: 0 auto;
+}
+
 .sectionanimation {
   background-color: hsl(210, 34%, 17%);
   height: 500px;
@@ -93,6 +111,19 @@
 
 .parallaxsnap h2 {
   text-align: center;
+}
+
+.refform{
+  display: grid;
+  grid-template-columns: 6fr max-content;
+  padding: 10px;
+  gap: 10px;
+}
+
+.referralinput{
+  background-color: white;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
 }
 
 @media screen and (max-width: 600px) {

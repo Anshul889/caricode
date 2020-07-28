@@ -13,6 +13,7 @@ import pencil from '../images/pencil-duotone.svg'
 import phoneoffice from '../images/phone-office-duotone.svg'
 import usertie from '../images/user-tie-duotone.svg'
 import { useStaticQuery, graphql } from 'gatsby'
+import Image from 'gatsby-image'
 import styles from './landingpage.module.css'
 import { useEffect } from 'react'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
@@ -23,7 +24,20 @@ import watch from '../images/watch.svg'
 import VisibilitySensor from 'react-visibility-sensor'
 import { Spring, config } from 'react-spring/renderprops'
 
+const getImages = graphql`
+  {
+    image: file(relativePath: { eq: "book.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
 const LandingPages = () => {
+  const data = useStaticQuery(getImages)
   return (
     <Layout>
       <SEO
@@ -84,7 +98,7 @@ const LandingPages = () => {
             act, usually with a CTA button or by filling in your opt-in-form.
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.20} speed={0.4}>
+        <ParallaxLayer offset={1.2} speed={0.4}>
           <div className={styles.products}>
             <img src={product} />
             <img src={mobile} />
@@ -126,12 +140,14 @@ const LandingPages = () => {
           />
         </ParallaxLayer>
         <ParallaxLayer offset={1.58} speed={0.2}>
-            <h3 className={styles.choice}>Be specific</h3>
+          <h3 className={styles.choice}>Be specific</h3>
         </ParallaxLayer>
         <ParallaxLayer offset={1.65} speed={0.2}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             “The paradox of choice reveals that less is more. Too many options
-            will often hinder people from making a choice. If your landing page design is focused on a single purpose, you’re helping your customers make the right decisions and you will increase conversion rates.”
+            will often hinder people from making a choice. If your landing page
+            design is focused on a single purpose, you’re helping your customers
+            make the right decisions and you will increase conversion rates.”
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={2.1} speed={0.5}>
@@ -224,10 +240,10 @@ const LandingPages = () => {
             <p>Great website ! The parallax effect is so good</p>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={3.6} speed={0.2}>
-          <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
-            “Use testimonials ”
-          </div>
+        <ParallaxLayer offset={3.57} speed={0.2}>
+          <h3 style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
+            Use testimonials
+          </h3>
         </ParallaxLayer>
         <ParallaxLayer offset={3.65} speed={0.4}>
           <p style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
@@ -237,30 +253,46 @@ const LandingPages = () => {
             your homepage.
           </p>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.2} speed={0.1}>
-          <img
-            src={question}
-            style={{
-              display: 'block',
-              width: '9%',
-              margin: '0 auto',
-            }}
-          />
+        <ParallaxLayer offset={4.07} speed={0.1}>
+          <div className={styles.leadmagnet}>
+            <div className={styles.leadmagnetimg}>
+              <Image
+                fluid={data.image.childImageSharp.fluid}
+                style={{ borderRadius: '4px' }}
+              />
+            </div>
+            <div className={styles.freecourse}>
+              <i>Get our full course 100% free</i>
+            </div>
+            <VisibilitySensor offset={{ bottom: 250 }}>
+                  {({ isVisible }) => (
+                    <Spring
+                      from={{ opacity: 0 }}
+                      to={{
+                        opacity: isVisible ? 1 : 0,
+                      }}
+                      delay={2000}
+                    >
+                      {props => (
+                        <div className={styles.refform} style={props}>
+                          <input
+                            placeholder={'Email'}
+                            className={styles.referralinput}
+                          />
+                          <button className={styles.refinvite}>SIGN UP</button>
+                        </div>
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
+          </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.27} speed={0.1}>
-          <img
-            src={user}
-            style={{
-              display: 'block',
-              width: '10%',
-              margin: '0 auto',
-            }}
-          />
+        <ParallaxLayer offset={4.57} speed={0.2}>
+          <h3 className={styles.choice}>Create a lead magnet</h3>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.27} speed={0.2}>
-          <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
-            “Use High quality images. People are visual creatures. The design of
-            a website is what drives our first impression 94% of the time.”
+        <ParallaxLayer offset={4.65} speed={0.2}>
+          <div className={styles.choice}>
+            You need to give away valuable content for free
           </div>
         </ParallaxLayer>
       </Parallax>
