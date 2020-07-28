@@ -1,3 +1,29 @@
+.windowsvg{
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+
+.usersvg{
+  height: 70px;
+  grid-column-start: 2;
+}
+
+.userhappy{
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+}
+
+.commentsvg{
+  height: 25px;
+  grid-column-start: 3;
+}
+
+.empty{
+  width: 20px;
+}
+
 .landinghero {
   text-align: center;
   padding-top: 40px;
@@ -34,7 +60,6 @@
 .mlandingheroimage {
   display: none;
 }
-
 .icons {
   width: 30px;
   padding: 15px 15px;

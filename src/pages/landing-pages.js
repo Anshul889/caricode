@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import chart from '../images/chart-line.svg'
 import question from '../images/question.svg'
 import user from '../images/user.svg'
+import commentsmile from '../images/comment-smile.svg'
 import addresscard from '../images/address-card-duotone.svg'
 import briefcase from '../images/briefcase-duotone.svg'
 import building from '../images/building-duotone.svg'
@@ -22,6 +23,7 @@ import tv from '../images/tv.svg'
 import mobile from '../images/mobileproduct.svg'
 import watch from '../images/watch.svg'
 import VisibilitySensor from 'react-visibility-sensor'
+import window from '../images/window.svg'
 import { Spring, config } from 'react-spring/renderprops'
 
 const getImages = graphql`
@@ -54,9 +56,14 @@ const LandingPages = () => {
         pages={5}
       >
         <ParallaxLayer
-          offset={1}
+          offset={0}
           speed={1}
           style={{ backgroundColor: '#3F51B5' }}
+        />
+        <ParallaxLayer
+          offset={1}
+          speed={1}
+          style={{ backgroundColor: '#FF7043' }}
         />
         <ParallaxLayer
           offset={2}
@@ -77,19 +84,33 @@ const LandingPages = () => {
 
         {/* svgs and text */}
 
-        <ParallaxLayer offset={0.2} speed={0.5}>
-          <img
-            src={chart}
-            style={{
-              display: 'block',
-              width: '40%',
-              margin: '0 auto',
-            }}
-          />
+        <ParallaxLayer offset={0.12} speed={0.5}>
+          <div>
+            <img className={styles.windowsvg} src={window}/>
+            <div className={styles.userhappy}>
+              <div className={styles.empty}>
+
+              </div>
+            <Spring
+              from={{ transform: 'translate(0px, 100px)' }}
+              to={{ transform: 'translate(0, 20px)' }}
+              delay={800}
+            >{props => (
+              <img className={styles.usersvg} src={user} style={props} />
+            )}</Spring>
+            <Spring
+              from={{ opacity: 0 }}
+              to={{ opacity: 1 }}
+              delay={1800}
+            >{props => (
+              <img className={styles.commentsvg} src={commentsmile} style={props} />
+            )}</Spring>
+            </div>
+          </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.6} speed={0.3}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
-            Boost Conversions - Get more sales with a pro landing page
+          this message tells the cumtomer i'll help them create an optimsed landing page
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.95} speed={0.3}>
