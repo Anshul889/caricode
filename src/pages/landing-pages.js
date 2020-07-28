@@ -264,14 +264,14 @@ const LandingPages = () => {
             <div className={styles.freecourse}>
               <i>Get our full course 100% free</i>
             </div>
-            <VisibilitySensor offset={{ bottom: 250 }}>
+            <VisibilitySensor offset={{ bottom:350 }}>
                   {({ isVisible }) => (
                     <Spring
                       from={{ opacity: 0 }}
                       to={{
                         opacity: isVisible ? 1 : 0,
                       }}
-                      delay={2000}
+                      delay={500}
                     >
                       {props => (
                         <div className={styles.refform} style={props}>
