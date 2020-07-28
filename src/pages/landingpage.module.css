@@ -43,6 +43,10 @@
   height: 30px;
 }
 
+.choice{
+  text-align: center;
+}
+
 .testimonial1{
   border-radius: 14px;
   border: 1px solid white;
@@ -53,15 +57,28 @@
   background-color: #673AB7;
   position: relative;
   display: block;
+  text-align: center;
 }
 
 .testimonial1 img {
   width: 20%;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
+  border-radius: 50%;
 }
 
+.products{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  justify-items: center;
+}
 
+.products img{
+  height: 50px;
+}
 
 .sectionanimation {
   background-color: hsl(210, 34%, 17%);

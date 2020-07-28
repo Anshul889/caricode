@@ -16,6 +16,12 @@ import { useStaticQuery, graphql } from 'gatsby'
 import styles from './landingpage.module.css'
 import { useEffect } from 'react'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+import product from '../images/gift.svg'
+import tv from '../images/tv.svg'
+import mobile from '../images/mobileproduct.svg'
+import watch from '../images/watch.svg'
+import VisibilitySensor from 'react-visibility-sensor'
+import { Spring, config } from 'react-spring/renderprops'
 
 const LandingPages = () => {
   return (
@@ -78,17 +84,38 @@ const LandingPages = () => {
             act, usually with a CTA button or by filling in your opt-in-form.
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.2} speed={0.1}>
-          <img
-            src={question}
-            style={{
-              display: 'block',
-              width: '9%',
-              margin: '0 auto',
-            }}
-          />
+        <ParallaxLayer offset={1.20} speed={0.4}>
+          <div className={styles.products}>
+            <img src={product} />
+            <img src={mobile} />
+            <img src={tv} />
+            <img src={watch} />
+          </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.27} speed={0.1}>
+        <ParallaxLayer offset={1.35} speed={0.3}>
+          <VisibilitySensor offset={{ bottom: 375 }}>
+            {({ isVisible }) => (
+              <Spring
+                from={{ opacity: 0 }}
+                to={{ opacity: isVisible ? 1 : 0 }}
+                delay={1000}
+              >
+                {props => (
+                  <img
+                    src={question}
+                    style={{
+                      ...props,
+                      display: 'block',
+                      width: '9%',
+                      margin: '0 auto',
+                    }}
+                  />
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
+        </ParallaxLayer>
+        <ParallaxLayer offset={1.42} speed={0.3}>
           <img
             src={user}
             style={{
@@ -98,10 +125,13 @@ const LandingPages = () => {
             }}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.47} speed={0.2}>
+        <ParallaxLayer offset={1.58} speed={0.2}>
+            <h3 className={styles.choice}>Be specific</h3>
+        </ParallaxLayer>
+        <ParallaxLayer offset={1.65} speed={0.2}>
           <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             “The paradox of choice reveals that less is more. Too many options
-            will often hinder people from making a choice.”
+            will often hinder people from making a choice. If your landing page design is focused on a single purpose, you’re helping your customers make the right decisions and you will increase conversion rates.”
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={2.1} speed={0.5}>
@@ -189,8 +219,8 @@ const LandingPages = () => {
         </ParallaxLayer>
         <ParallaxLayer offset={3.2} speed={0.1}>
           <div className={styles.testimonial1}>
-            <img src={user} />
-            <h3>Arti Anand</h3>
+            <img src="https://randomuser.me/api/portraits/women/71.jpg" />
+            <h3>Elaine Ryan</h3>
             <p>Great website ! The parallax effect is so good</p>
           </div>
         </ParallaxLayer>
@@ -199,7 +229,7 @@ const LandingPages = () => {
             “Use testimonials ”
           </div>
         </ParallaxLayer>
-        <ParallaxLayer  offset={3.65} speed={0.4}>
+        <ParallaxLayer offset={3.65} speed={0.4}>
           <p style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             People don’t go looking for testimonials. Instead, they want to see
             them when making a critical decision. That means testimonials should
