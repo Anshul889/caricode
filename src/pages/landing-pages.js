@@ -161,27 +161,19 @@ const LandingPages = () => {
           />
         </ParallaxLayer>
         <ParallaxLayer offset={1.58} speed={0.2}>
-          <h3 className={styles.choice}>Be specific</h3>
+          <h3 className={styles.paragraph}>Be specific</h3>
         </ParallaxLayer>
         <ParallaxLayer offset={1.65} speed={0.2}>
-          <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
+          <p className={styles.paragraph}>
             “The paradox of choice reveals that less is more. Too many options
             will often hinder people from making a choice. If your landing page
             design is focused on a single purpose, you’re helping your customers
             make the right decisions and you will increase conversion rates.”
-          </div>
+          </p>
         </ParallaxLayer>
         <ParallaxLayer offset={2.1} speed={0.5}>
           <div
-            style={{
-              width: '90%',
-              margin: '0 auto',
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr 1fr 1fr',
-              gap: '40px',
-              placeItems: 'end',
-              gridTemplateRows: '100px',
-            }}
+            className={styles.visuals}
           >
             <img
               src={addresscard}
@@ -247,7 +239,7 @@ const LandingPages = () => {
           </h3>
         </ParallaxLayer>
         <ParallaxLayer offset={2.6} speed={0.4}>
-          <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
+          <div className={styles.paragraph}>
             The design of a website is what drives our first impression 94% of
             the time. Because it only takes us fractions of a second to take it
             all in. We subconsciously decide whether we want to stick around or
@@ -267,7 +259,7 @@ const LandingPages = () => {
           </h3>
         </ParallaxLayer>
         <ParallaxLayer offset={3.65} speed={0.4}>
-          <p style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
+          <p className={styles.paragraph}>
             People don’t go looking for testimonials. Instead, they want to see
             them when making a critical decision. That means testimonials should
             be everywhere. They should be one of the first things people see on
@@ -309,12 +301,12 @@ const LandingPages = () => {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={4.57} speed={0.2}>
-          <h3 className={styles.choice}>Create a lead magnet</h3>
+          <h3 className={styles.paragraph}>Create a lead magnet</h3>
         </ParallaxLayer>
         <ParallaxLayer offset={4.65} speed={0.2}>
-          <div className={styles.choice}>
+          <p className={styles.paragraph}>
             You need to give away valuable content for free
-          </div>
+          </p>
         </ParallaxLayer>
       </Parallax>
     </Layout>

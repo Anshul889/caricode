@@ -1,26 +1,26 @@
-.windowsvg{
+.windowsvg {
   width: 40%;
   margin: 0 auto;
   display: block;
 }
 
-.usersvg{
+.usersvg {
   height: 70px;
   grid-column-start: 2;
 }
 
-.userhappy{
+.userhappy {
   display: grid;
   grid-template-columns: repeat(3, max-content);
   justify-content: center;
 }
 
-.commentsvg{
+.commentsvg {
   height: 25px;
   grid-column-start: 3;
 }
 
-.empty{
+.empty {
   width: 20px;
 }
 
@@ -68,18 +68,14 @@
   height: 30px;
 }
 
-.choice{
-  text-align: center;
-}
-
-.testimonial1{
+.testimonial1 {
   border-radius: 14px;
   border: 1px solid white;
   width: 75%;
   margin: 0 auto;
   padding: 10px;
   z-index: 1000;
-  background-color: #673AB7;
+  background-color: #673ab7;
   position: relative;
   display: block;
   text-align: center;
@@ -92,7 +88,7 @@
   border-radius: 50%;
 }
 
-.products{
+.products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -101,11 +97,11 @@
   justify-items: center;
 }
 
-.products img{
+.products img {
   height: 50px;
 }
 
-.leadmagnet{
+.leadmagnet {
   width: 90%;
   margin: 0 auto;
   border-radius: 14px;
@@ -113,12 +109,12 @@
   padding: 20px 0;
 }
 
-.freecourse{
+.freecourse {
   margin-top: 15px;
   text-align: center;
 }
 
-.leadmagnetimg{
+.leadmagnetimg {
   width: 80%;
   margin: 0 auto;
 }
@@ -138,21 +134,37 @@
   text-align: center;
 }
 
-.refform{
+.refform {
   display: grid;
   grid-template-columns: 6fr max-content;
   padding: 10px;
   gap: 10px;
 }
 
-.referralinput{
+.referralinput {
   background-color: white;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
 }
 
+.visuals {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  place-items: end;
+  grid-template-rows: 100px;
+}
+
+.paragraph {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
 @media screen and (max-width: 600px) {
-  .landinghero {
+  /* .landinghero {
     padding-top: 80px;
   }
   .landinghero h1 {
@@ -179,5 +191,36 @@
   }
   .sectionanimation {
     height: 500px;
+  } */
+}
+
+@media screen and (min-width: 600px) {
+  .windowsvg {
+    width: 20%;
+  }
+
+  .products {
+    width: 500px;
+  }
+  .visuals {
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    place-items: end;
+    grid-template-rows: 100px;
+    transform: translateY(50px);
+  }
+  .paragraph {
+    width: 500px;
+  }
+
+  .testimonial1 {
+    width: 500px;
+  }
+
+  .leadmagnet {
+    width: 500px;
   }
 }
