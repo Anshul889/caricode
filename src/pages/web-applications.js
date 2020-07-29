@@ -357,6 +357,7 @@ const WebApplications = () => {
         </div>
         <h2 style={{textAlign: 'center'}}><div className={styles.inner}>How customer retention can be implemented for the web</div></h2>
         <div className={styles.howcontainer}>
+          <div className={styles.howinner}>
           <div className={styles.customerexperience}>
             <div className={styles.inner}>
               <div className={styles.customerimage}>
@@ -548,6 +549,7 @@ const WebApplications = () => {
               </p>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <div>

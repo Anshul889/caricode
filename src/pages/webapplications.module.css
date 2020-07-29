@@ -150,9 +150,8 @@
   place-content: center;
   margin-bottom: 38px;
   background-color: white;
-  padding: 37px 0;
+  height: 44.8vw;
   border-radius: 4px;
-  height: 7.91vw;
 }
 
 .howrefer {
@@ -217,8 +216,36 @@
     display: none;
   }
   .howcontainer {
+    border-top: 1px solid #616161;
+  }
+  .howinner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid #616161;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .loyaltyhow{
+    border-bottom: none;
+  }
+  .customerexperience{
+    border-bottom: none;
+    padding-top: 38px;
+  }
+  .emailauto{
+    border-bottom: none;
+  }
+  .auth{
+    height: 162px;
+  }
+  .emailimage{
+    height: 162px;
+  }
+  .customerimage{
+    padding-top: 56px;
+    padding-bottom: 56px ;
+  }
+  .howrefer{
+    padding: 26px 0;
   }
 }
