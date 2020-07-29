@@ -29,28 +29,28 @@ const getImages = graphql`
   {
     image: file(relativePath: { eq: "handshake.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image1: file(relativePath: { eq: "calendar.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image2: file(relativePath: { eq: "payment.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     image3: file(relativePath: { eq: "functions.png" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -92,12 +92,114 @@ const WebApplications = () => {
       />
       <div>
         <Webappbanner />
-        <h2>why you need customer retention</h2>
-        <div className={styles.why}>
-          <div className={styles.inner}>
-            <div>
-              <h2>Cost Effective</h2>
-              It's{' '}
+        <h2 style={{ textAlign: 'center' }}>
+          Customer retention is a strong predictor of a firm's financial success
+        </h2>
+        <div className={styles.whycontainer}>
+          <div className={styles.whyinner}>
+          <div className={styles.why}>
+            <div className={styles.inner}>
+              <div>
+                <FlexibleWidthXYPlot
+                  margin={{ left: 70, right: 30}}
+                  height={100}
+                  yType="ordinal"
+                >
+                  <XAxis xDomain={[0, 120]} title={'Cost'} />
+                  <YAxis tickTotal={2} />
+                  <HorizontalBarSeries
+                    barWidth={0.7}
+                    xDomain={[0, 120]}
+                    data={retentioncost}
+                  />
+                </FlexibleWidthXYPlot>
+                <h2 className={styles.costeffectiveh}>Cost Effective</h2>
+                <VisibilitySensor>
+                  {({ isVisible }) => (
+                    <Spring
+                      from={{ width: '1px', marginBottom: '20px' }}
+                      to={{
+                        width: isVisible ? '50px' : '1px',
+                        marginBottom: '20px',
+                      }}
+                      config={config.slow}
+                      delay={500}
+                    >
+                      {props => (
+                        <div
+                          className="hero-feature-border"
+                          style={props}
+                        ></div>
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
+                It's{' '}
+                <a
+                  href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    color: 'rgb(18, 147, 154)',
+                    textDecoration: 'underline',
+                  }}
+                >
+                  5-25X more expensive
+                </a>{' '}
+                to acquire a new customer than it is to retain an existing
+                customer.
+              </div>
+            </div>
+          </div>
+          <div className={styles.why2}>
+            <div className={styles.inner}>
+              <FlexibleWidthXYPlot
+                margin={{ left: 70, right: 30 }}
+                height={300}
+              >
+                <DiscreteColorLegend
+                  style={{
+                    position: 'absolute',
+                    left: '100px',
+                    top: '10px',
+                    opacity: '1',
+                  }}
+                  orientation="horizontal"
+                  items={[
+                    {
+                      title: 'Repeat Customers',
+                      color: '#12939A',
+                    },
+                    {
+                      title: 'Without',
+                      color: '#79C7E3',
+                    },
+                  ]}
+                />
+                <XAxis title={'Time(months)'} />
+                <YAxis title={'Revenue'} yDomain={[0, 300000]} tickTotal={6} />
+                <LineSeries curve={'curveMonotoneX'} data={retentionrevenue} />
+                <LineSeries data={acquisitionrevenue} />
+              </FlexibleWidthXYPlot>
+              <h2>ROI</h2>
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    from={{ width: '1px', marginBottom: '20px' }}
+                    to={{
+                      width: isVisible ? '50px' : '1px',
+                      marginBottom: '20px',
+                    }}
+                    config={config.slow}
+                    delay={500}
+                  >
+                    {props => (
+                      <div className="hero-feature-border" style={props}></div>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+              A{' '}
               <a
                 href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers"
                 target="_blank"
@@ -107,178 +209,154 @@ const WebApplications = () => {
                   textDecoration: 'underline',
                 }}
               >
-                5-25X more expensive
+                5% increase in customer retention
               </a>{' '}
-              to acquire a new customer than it is to retain an existing
-              customer.
-            </div>
-            <FlexibleWidthXYPlot
-              margin={{ left: 70, right: 30 }}
-              height={100}
-              yType="ordinal"
-            >
-              <XAxis xDomain={[0, 120]} title={'Cost'} />
-              <YAxis tickTotal={2} />
-              <HorizontalBarSeries
-                barWidth={0.7}
-                xDomain={[0, 120]}
-                data={retentioncost}
-              />
-            </FlexibleWidthXYPlot>
-          </div>
-        </div>
-        <div className={styles.why}>
-          <div className={styles.inner}>
-            <h2>ROI</h2>A{' '}
-            <a
-              href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers"
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                color: 'rgb(18, 147, 154)',
-                textDecoration: 'underline',
-              }}
-            >
-              5% increase in customer retention
-            </a>{' '}
-            can increase company revenue by 25-95%.
-            <FlexibleWidthXYPlot margin={{ left: 70, right: 30 }} height={300}>
-              <DiscreteColorLegend
-                style={{
-                  position: 'absolute',
-                  left: '100px',
-                  top: '10px',
-                  opacity: '1',
-                }}
-                orientation="horizontal"
-                items={[
-                  {
-                    title: 'Repeat Customers',
-                    color: '#12939A',
-                  },
-                  {
-                    title: 'Without',
-                    color: '#79C7E3',
-                  },
-                ]}
-              />
-              <XAxis title={'Time(months)'} />
-              <YAxis title={'Revenue'} yDomain={[0, 300000]} tickTotal={6} />
-              <LineSeries curve={'curveMonotoneX'} data={retentionrevenue} />
-              <LineSeries data={acquisitionrevenue} />
-            </FlexibleWidthXYPlot>
-          </div>
-        </div>
-        <div className={styles.why}>
-          <div className={styles.inner}>
-            <h2>Loyalty</h2>
-            <div className={styles.loyalty}>
-              <VisibilitySensor offset={{ bottom: 250 }}>
-                {({ isVisible }) => (
-                  <Spring
-                    from={{ transform: 'translate(-100px, 0px)' }}
-                    to={{
-                      transform: isVisible
-                        ? 'translate(0, 0)'
-                        : 'translate(-100px, 0px)',
-                    }}
-                    config={config.molasses}
-                    delay={500}
-                  >
-                    {props => (
-                      <div className={styles.usercart} style={props}>
-                        <img src={user} />
-                        <img className={styles.refcart} src={shoppingcart} />
-                      </div>
-                    )}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-              <img className={styles.refcart} src={cashregister} />
-              <img src={usertie} />
-            </div>
-            <div>
-              Retained customers buy more often and spend more than newer
-              customers. They've learned the value of a product or service and
-              keep coming back, again and again.
+              can increase company revenue by 25-95%.
             </div>
           </div>
-        </div>
-        <div className={styles.why}>
-          <div className={styles.inner}>
-            <h2>Referrals</h2>
-            <div className={styles.referralanimation}>
-              <img src={users} />
-              <VisibilitySensor offset={{ bottom: 250 }}>
-                {({ isVisible }) => (
-                  <Spring
-                    from={{ opacity: 0 }}
-                    to={{
-                      opacity: isVisible ? 1 : 0,
-                    }}
-                    config={config.molasses}
-                    delay={2800}
-                  >
-                    {props => (
-                      <img
-                        className={styles.refthumb}
-                        src={thumbs}
-                        style={props}
-                      />
-                    )}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-              <VisibilitySensor offset={{ bottom: 250 }}>
-                {({ isVisible }) => (
-                  <Spring
-                    from={{ opacity: 0 }}
-                    to={{
-                      opacity: isVisible ? 1 : 0,
-                    }}
-                    config={config.molasses}
-                    delay={1700}
-                  >
-                    {props => (
-                      <img
-                        src={comment}
-                        style={props}
-                        className={styles.comment}
-                      />
-                    )}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-              <VisibilitySensor offset={{ bottom: 250 }}>
-                {({ isVisible }) => (
-                  <Spring
-                    from={{ transform: 'translate(100px, 0px)' }}
-                    to={{
-                      transform: isVisible
-                        ? 'translate(0px, 0)'
-                        : 'translate(100px, 0px)',
-                    }}
-                    config={config.molasses}
-                    delay={500}
-                  >
-                    {props => <img src={user} style={props} />}
-                  </Spring>
-                )}
-              </VisibilitySensor>
-            </div>
-            <div>
-              Satisfied, loyal customers are more likely to sing a company's
-              praises and refer their friends and family — bringing in new
-              customers, free of charge.
-            </div>
-          </div>
-        </div>
-        <div className={styles.how}>
-          <div>
+          <div className={styles.why}>
             <div className={styles.inner}>
-              <h2>how I will implement customer retention</h2>
+              <div className={styles.loyalty}>
+                <VisibilitySensor offset={{ bottom: 250 }}>
+                  {({ isVisible }) => (
+                    <Spring
+                      from={{ transform: 'translate(-100px, 0px)' }}
+                      to={{
+                        transform: isVisible
+                          ? 'translate(0, 0)'
+                          : 'translate(-100px, 0px)',
+                      }}
+                      config={config.molasses}
+                      delay={500}
+                    >
+                      {props => (
+                        <div className={styles.usercart} style={props}>
+                          <img src={user} />
+                          <img className={styles.refcart} src={shoppingcart} />
+                        </div>
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
+                <img className={styles.refcart} src={cashregister} />
+                <img src={usertie} />
+              </div>
+              <h2>Loyalty</h2>
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    from={{ width: '1px', marginBottom: '20px' }}
+                    to={{
+                      width: isVisible ? '50px' : '1px',
+                      marginBottom: '20px',
+                    }}
+                    config={config.slow}
+                    delay={500}
+                  >
+                    {props => (
+                      <div className="hero-feature-border" style={props}></div>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+              <div>
+                Retained customers buy more often and spend more than newer
+                customers. They've learned the value of a product or service and
+                keep coming back, again and again.
+              </div>
             </div>
           </div>
+          <div className={styles.why}>
+            <div className={styles.inner}>
+              <div className={styles.referralanimation}>
+                <img src={users} />
+                <VisibilitySensor offset={{ bottom: 250 }}>
+                  {({ isVisible }) => (
+                    <Spring
+                      from={{ opacity: 0 }}
+                      to={{
+                        opacity: isVisible ? 1 : 0,
+                      }}
+                      config={config.molasses}
+                      delay={2800}
+                    >
+                      {props => (
+                        <img
+                          className={styles.refthumb}
+                          src={thumbs}
+                          style={props}
+                        />
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
+                <VisibilitySensor offset={{ bottom: 250 }}>
+                  {({ isVisible }) => (
+                    <Spring
+                      from={{ opacity: 0 }}
+                      to={{
+                        opacity: isVisible ? 1 : 0,
+                      }}
+                      config={config.molasses}
+                      delay={1700}
+                    >
+                      {props => (
+                        <img
+                          src={comment}
+                          style={props}
+                          className={styles.comment}
+                        />
+                      )}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
+                <VisibilitySensor offset={{ bottom: 250 }}>
+                  {({ isVisible }) => (
+                    <Spring
+                      from={{ transform: 'translate(100px, 0px)' }}
+                      to={{
+                        transform: isVisible
+                          ? 'translate(0px, 0)'
+                          : 'translate(100px, 0px)',
+                      }}
+                      config={config.molasses}
+                      delay={500}
+                    >
+                      {props => <img src={user} style={props} />}
+                    </Spring>
+                  )}
+                </VisibilitySensor>
+              </div>
+              <h2>Referrals</h2>
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring
+                    from={{ width: '1px', marginBottom: '20px' }}
+                    to={{
+                      width: isVisible ? '50px' : '1px',
+                      marginBottom: '20px',
+                    }}
+                    config={config.slow}
+                    delay={500}
+                  >
+                    {props => (
+                      <div className="hero-feature-border" style={props}></div>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+
+              <div>
+                Satisfied, loyal customers are more likely to sing a company's
+                praises and refer their friends and family — bringing in new
+                customers, free of charge.
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <h2 style={{textAlign: 'center'}}><div className={styles.inner}>How customer retention can be implemented for the web</div></h2>
+        <div className={styles.howcontainer}>
           <div className={styles.customerexperience}>
             <div className={styles.inner}>
               <div className={styles.customerimage}>

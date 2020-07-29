@@ -1,9 +1,9 @@
-.inner{
+.inner {
   width: 90%;
   margin: 0 auto;
 }
 
-.loyalty{
+.loyalty {
   display: grid;
   grid-template-rows: 50px;
   margin: 38px 0;
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.usercart{
+.usercart {
   display: grid;
   grid-template-columns: max-content max-content;
   margin-right: 10px;
@@ -23,12 +23,17 @@
   height: 50px;
 }
 
-.why{
+.why {
   border-bottom: 1px solid rgb(104, 104, 104);
   padding: 38px 0;
 }
 
-.referralanimation{
+.why2 {
+  border-bottom: 1px solid rgb(104, 104, 104);
+  padding: 38px 0;
+}
+
+.referralanimation {
   display: grid;
   grid-template-rows: 50px;
   margin: 38px 0;
@@ -43,45 +48,45 @@
   height: 50px;
 }
 
-.refthumb{
-  height: 25px!important;
+.refthumb {
+  height: 25px !important;
 }
 
-.emailauto img{
+.emailauto img {
   width: 100%;
 }
 
-.refcart{
-  height: 30px!important;
+.refcart {
+  height: 30px !important;
   align-self: end;
 }
 
-.comment{
-  height: 25px!important;
+.comment {
+  height: 25px !important;
   align-self: start;
   margin-left: 8px;
 }
 
-.customerexperience{
+.customerexperience {
   padding-top: 20px;
   border-bottom: 1px solid rgb(104, 104, 104);
 }
 
-.customerimage{
+.customerimage {
   background-color: white;
   border-radius: 4px;
   padding: 45px 15px;
   margin-bottom: 38px;
 }
 
-.emailimage{
+.emailimage {
   background-color: white;
   border-radius: 4px;
   padding: 0px 15px;
   margin-bottom: 38px;
 }
 
-.how h4{
+.how h4 {
   font-size: 17.6px;
   margin-bottom: 17px;
   font-weight: 400;
@@ -91,54 +96,54 @@
   text-align: center;
 }
 
-.how p{
+.how p {
   margin-bottom: 38px;
   font-weight: 300;
   line-height: 29.12px;
   text-align: center;
 }
 
-.emailauto{
+.emailauto {
   padding-top: 38px;
   border-bottom: 1px solid rgb(104, 104, 104);
 }
 
-.loyaltyhow{
+.loyaltyhow {
   padding-top: 38px;
   border-bottom: 1px solid rgb(104, 104, 104);
 }
 
-.how{
+.how {
   background-color: hsl(210, 34%, 17%);
 }
 
-.loyaltyimage{
+.loyaltyimage {
   margin-bottom: 38px;
 }
 
-.googleauth{
+.googleauth {
   border-radius: 4px;
   background-color: red;
   text-transform: none;
   width: 200px;
 }
 
-.googleauth:hover{
+.googleauth:hover {
   background-color: red;
 }
 
-.facebookauth{
+.facebookauth {
   border-radius: 4px;
-  background-color: #4C69BA;
+  background-color: #4c69ba;
   text-transform: none;
   width: 200px;
 }
 
-.facebookauth:hover{
-  background-color: #4C69BA;
+.facebookauth:hover {
+  background-color: #4c69ba;
 }
 
-.auth{
+.auth {
   display: grid;
   grid-template-columns: max-content;
   gap: 10px;
@@ -147,9 +152,10 @@
   background-color: white;
   padding: 37px 0;
   border-radius: 4px;
+  height: 7.91vw;
 }
 
-.howrefer{
+.howrefer {
   padding: 25px 0;
   background-color: white;
   color: black;
@@ -158,20 +164,61 @@
   margin-bottom: 38px;
 }
 
-.reftext{
+.reftext {
   font-size: 20px;
 }
 
-.refform{
+.refform {
   display: grid;
   grid-template-columns: 7fr 1fr;
   padding: 10px;
   gap: 10px;
 }
 
-.referralinput{
+.referralinput {
   background-color: white;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
 }
 
+@media screen and (min-width: 600px) {
+  .whycontainer {
+    border-top: 1px solid #616161;
+    border-bottom: 1px solid #616161;
+  }
+  .whyinner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .why {
+    border-bottom: none;
+  }
+  .why:nth-child(-n + 3) {
+    border-right: 1px solid #616161;
+  }
+  .why:nth-child(1) {
+    padding-right: 30px;
+    padding-top: 40px;
+  }
+  .why:nth-child(3) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .why:nth-child(4) {
+    padding-left: 30px;
+  }
+  .costeffectiveh {
+    margin-top: 27px;
+  }
+  .why2 {
+    display: none;
+  }
+  .howcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #616161;
+  }
+}
