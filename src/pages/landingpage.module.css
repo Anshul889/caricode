@@ -179,6 +179,7 @@
 @media screen and (min-width: 600px) {
   .landinghero {
     margin-top: 80px;
+    min-height: 900px;
   }
   .landinghero h1 {
     margin-bottom: 40px;
@@ -189,7 +190,7 @@
     font-size: 24px;
   }
   .heroicons{
-    margin: 58px auto;
+    margin: 58px auto
   }
   .dlandingheroimage {
     display: block;

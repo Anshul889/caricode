@@ -313,11 +313,11 @@ const WebApplications = () => {
                 <VisibilitySensor offset={{ bottom: 250 }}>
                   {({ isVisible }) => (
                     <Spring
-                      from={{ transform: 'translate(100px, 0px)' }}
+                      from={{ transform: 'translate(80px, 0px)' }}
                       to={{
                         transform: isVisible
                           ? 'translate(0px, 0)'
-                          : 'translate(100px, 0px)',
+                          : 'translate(80px, 0px)',
                       }}
                       config={config.molasses}
                       delay={500}

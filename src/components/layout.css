@@ -210,7 +210,7 @@ button:hover {
 
 #section3 {
   border-top: solid 1px rgb(97, 97, 97);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .section3grid {
@@ -224,6 +224,10 @@ button:hover {
 .contentpost {
   padding: 20px 0;
   border-bottom: 1px solid rgb(104, 104, 104);
+}
+
+.contentpost:nth-child(3){
+  border-bottom: none;
 }
 
 .postdiv h3 {
@@ -452,7 +456,7 @@ textarea:focus {
 
   #section3 {
     margin-bottom: 0px;
-    border-bottom: 1px solid rgb(97, 97, 97);
+    border-bottom: none;
   }
 
   .postdiv {
