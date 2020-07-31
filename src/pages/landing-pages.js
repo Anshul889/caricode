@@ -86,35 +86,38 @@ const LandingPages = () => {
 
         <ParallaxLayer offset={0.12} speed={0.5}>
           <div>
-            <img className={styles.windowsvg} src={window}/>
+            <img className={styles.windowsvg} src={window} />
             <div className={styles.userhappy}>
-              <div className={styles.empty}>
-
-              </div>
-            <Spring
-              from={{ transform: 'translate(0px, 100px)' }}
-              to={{ transform: 'translate(0, 20px)' }}
-              delay={800}
-            >{props => (
-              <img className={styles.usersvg} src={user} style={props} />
-            )}</Spring>
-            <Spring
-              from={{ opacity: 0 }}
-              to={{ opacity: 1 }}
-              delay={1800}
-            >{props => (
-              <img className={styles.commentsvg} src={commentsmile} style={props} />
-            )}</Spring>
+              <div className={styles.empty}></div>
+              <Spring
+                from={{ transform: 'translate(0px, 100px)' }}
+                to={{ transform: 'translate(0, 20px)' }}
+                delay={800}
+              >
+                {props => (
+                  <img className={styles.usersvg} src={user} style={props} />
+                )}
+              </Spring>
+              <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={1800}>
+                {props => (
+                  <img
+                    className={styles.commentsvg}
+                    src={commentsmile}
+                    style={props}
+                  />
+                )}
+              </Spring>
             </div>
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.6} speed={0.3}>
-          <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
-          this message tells the cumtomer i'll help them create an optimsed landing page
+          <div className={styles.paragraph}>
+            this message tells the cumtomer i'll help them create an optimsed
+            landing page
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.95} speed={0.3}>
-          <div style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
+          <div className={styles.casestudy}>
             Your landing page web design has only one purpose: To get people to
             act, usually with a CTA button or by filling in your opt-in-form.
           </div>
@@ -138,12 +141,8 @@ const LandingPages = () => {
                 {props => (
                   <img
                     src={question}
-                    style={{
-                      ...props,
-                      display: 'block',
-                      width: '9%',
-                      margin: '0 auto',
-                    }}
+                    className={styles.questionimg}
+                    style={props}
                   />
                 )}
               </Spring>
@@ -161,20 +160,27 @@ const LandingPages = () => {
           />
         </ParallaxLayer>
         <ParallaxLayer offset={1.58} speed={0.2}>
-          <h3 className={styles.paragraph}>Be specific</h3>
+          <h3 className={`${styles.paragraph} ${styles.specific}`}>
+            Be specific
+          </h3>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.65} speed={0.2}>
-          <p className={styles.paragraph}>
+        <ParallaxLayer offset={1.65} speed={0.4}>
+          <p className={`${styles.paragraph} ${styles.specific}`}>
             “The paradox of choice reveals that less is more. Too many options
             will often hinder people from making a choice. If your landing page
             design is focused on a single purpose, you’re helping your customers
             make the right decisions and you will increase conversion rates.”
           </p>
         </ParallaxLayer>
+        <ParallaxLayer offset={1.95} speed={0.3}>
+          <div className={styles.casestudy}>
+            Your landing page web design has only one purpose: To get people to
+            act, usually with a CTA button or by filling in your opt-in-form.
+          </div>
+        </ParallaxLayer>
+
         <ParallaxLayer offset={2.1} speed={0.5}>
-          <div
-            className={styles.visuals}
-          >
+          <div className={styles.visuals}>
             <img
               src={addresscard}
               style={{
@@ -246,6 +252,13 @@ const LandingPages = () => {
             not in the blink of an eye.
           </div>
         </ParallaxLayer>
+        <ParallaxLayer offset={2.95} speed={0.3}>
+          <div className={styles.casestudy}>
+            Your landing page web design has only one purpose: To get people to
+            act, usually with a CTA button or by filling in your opt-in-form.
+          </div>
+        </ParallaxLayer>
+
         <ParallaxLayer offset={3.2} speed={0.1}>
           <div className={styles.testimonial1}>
             <img src="https://randomuser.me/api/portraits/women/71.jpg" />
@@ -266,7 +279,14 @@ const LandingPages = () => {
             your homepage.
           </p>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.07} speed={0.1}>
+        <ParallaxLayer offset={3.95} speed={0.3}>
+          <div className={styles.casestudy}>
+            Your landing page web design has only one purpose: To get people to
+            act, usually with a CTA button or by filling in your opt-in-form.
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={4.07} speed={0.3}>
           <div className={styles.leadmagnet}>
             <div className={styles.leadmagnetimg}>
               <Image
@@ -277,27 +297,27 @@ const LandingPages = () => {
             <div className={styles.freecourse}>
               <i>Get our full course 100% free</i>
             </div>
-            <VisibilitySensor offset={{ bottom:350 }}>
-                  {({ isVisible }) => (
-                    <Spring
-                      from={{ opacity: 0 }}
-                      to={{
-                        opacity: isVisible ? 1 : 0,
-                      }}
-                      delay={500}
-                    >
-                      {props => (
-                        <div className={styles.refform} style={props}>
-                          <input
-                            placeholder={'Email'}
-                            className={styles.referralinput}
-                          />
-                          <button className={styles.refinvite}>SIGN UP</button>
-                        </div>
-                      )}
-                    </Spring>
+            <VisibilitySensor offset={{ bottom: 350 }}>
+              {({ isVisible }) => (
+                <Spring
+                  from={{ opacity: 0 }}
+                  to={{
+                    opacity: isVisible ? 1 : 0,
+                  }}
+                  delay={500}
+                >
+                  {props => (
+                    <div className={styles.refform} style={props}>
+                      <input
+                        placeholder={'Email'}
+                        className={styles.referralinput}
+                      />
+                      <button className={styles.refinvite}>SIGN UP</button>
+                    </div>
                   )}
-                </VisibilitySensor>
+                </Spring>
+              )}
+            </VisibilitySensor>
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={4.57} speed={0.2}>

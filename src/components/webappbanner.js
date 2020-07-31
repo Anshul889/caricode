@@ -126,18 +126,10 @@ const Webappbanner = () => {
           <img src={logoreact} alt="" />
         </div>
         <div className={styles.icons}>
-          <img
-            src={logogoogle}
-            style={{ height: '30px', width: '30px' }}
-            alt=""
-          />
+          <img src={logogoogle} alt="" />
         </div>
         <div className={styles.icons}>
-          <img
-            src={logosearch}
-            style={{ height: '30px', width: '30px' }}
-            alt=""
-          />
+          <img src={logosearch} alt="" />
         </div>
         <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={1500}>
           {props => (

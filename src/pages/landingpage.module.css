@@ -45,27 +45,30 @@
 .dlandingheroimage {
   border-radius: 4px;
   margin-bottom: 40px;
+  display: none;
 }
 
 .heroicons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 70%;
-  margin: 0 auto;
+  margin: 38px auto;
   place-content: center;
   place-items: center;
   row-gap: 10px;
 }
 
-.mlandingheroimage {
-  display: none;
-}
 .icons {
   width: 30px;
   padding: 15px 15px;
   border: 1px solid white;
   border-radius: 50%;
   height: 30px;
+}
+
+.icons img{
+  height: 30px;
+  width: 30px;
 }
 
 .testimonial1 {
@@ -163,25 +166,37 @@
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-  /* .landinghero {
-    padding-top: 80px;
+.questionimg{
+    display: block;
+    width: 9%;
+    margin: 0 auto;
+}
+
+.casestudy{
+  transform: translateY(100px);
+}
+
+@media screen and (min-width: 600px) {
+  .landinghero {
+    margin-top: 80px;
   }
   .landinghero h1 {
     margin-bottom: 40px;
+    font-size: 64px;
   }
   .landinghero p {
-    margin-bottom: 40px;
+    margin-bottom: 140px;
+    font-size: 24px;
   }
   .dlandingheroimage {
-    display: none;
-  }
-  .mlandingheroimage {
     display: block;
     margin-bottom: 40px;
     margin-right: auto;
     margin-left: auto;
     width: 90%;
+  }
+  .mlandingheroimage {
+    display: none;
   }
   .inner {
     width: 90%;
@@ -191,12 +206,21 @@
   }
   .sectionanimation {
     height: 500px;
-  } */
+  }
+  .icons{
+    width: 50px;
+    padding: 25px;
+    height: 50px;
+  }
+  .icons img{
+    height: 50px;
+    width: 50px;
+  }
 }
 
 @media screen and (min-width: 600px) {
   .windowsvg {
-    width: 20%;
+    width: 270px;
   }
 
   .products {
@@ -222,5 +246,12 @@
 
   .leadmagnet {
     width: 500px;
+  }
+
+  .questionimg{
+    width: 50px
+  }
+  .specific{
+    transform: translateY(50px);
   }
 }

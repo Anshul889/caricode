@@ -12,7 +12,6 @@ const Contact = () => {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
-    config: config.slow,
   })
   return (
     <section className="contact">
@@ -64,7 +63,7 @@ const Contact = () => {
     {transitions.map(
             ({ item, key, props }) =>
               item && (
-                <animated.span key={key} style={{...props, color: 'red'}}>
+                <animated.span key={key} style={{...props, color: 'red', marginLeft: '7px'}}>
                   Form is Incomplete
                 </animated.span>
               )
