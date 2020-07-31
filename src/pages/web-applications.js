@@ -355,7 +355,8 @@ const WebApplications = () => {
           </div>
         </div>
         </div>
-        <h2 style={{textAlign: 'center'}}><div className={styles.inner}>How customer retention can be implemented for the web</div></h2>
+        <h2 style={{textAlign: 'center', padding: '38px 0', borderBottom: '1px solid white'}}><div className={styles.inner}>Single case study of why</div></h2>
+        <h2 style={{textAlign: 'center', margin: '38px 0'}}><div className={styles.inner}>How customer retention can be implemented for the web</div></h2>
         <div className={styles.howcontainer}>
           <div className={styles.howinner}>
           <div className={styles.customerexperience}>
