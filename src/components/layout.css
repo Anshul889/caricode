@@ -33,6 +33,7 @@ h4{
   font-weight: 400;
   line-height: 26.4px;
   letter-spacing: 3.52px;
+  text-align: center;
 }
 
 p{
@@ -341,7 +342,7 @@ input {
 }
 
 input:focus {
-  border: 2px solid rgb(66, 134, 180);
+  border: 2px solid #7c759a;
 }
 
 textarea {
@@ -361,7 +362,7 @@ textarea {
 }
 
 textarea:focus {
-  border: 2px solid rgb(66, 134, 180);
+  border: 2px solid #7c759a;
 }
 
 .parallaxcontainer::-webkit-scrollbar {
@@ -551,5 +552,10 @@ textarea:focus {
   .pdheading{
     text-align: center;
     color: green;
+  }
+  h4{
+    font-size: 21.6333px;
+    letter-spacing: 4.32667px;
+    line-height: 32.45px;
   }
 }
