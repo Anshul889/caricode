@@ -58,27 +58,27 @@ const LandingPages = () => {
         <ParallaxLayer
           offset={0}
           speed={0}
-          style={{ backgroundColor: '#3F51B5' }}
+          style={{ backgroundColor: '#484459' }}
         />
         <ParallaxLayer
           offset={1}
           speed={0}
-          style={{ backgroundColor: '#FF7043' }}
+          style={{ backgroundColor: '#5eadbb' }}
         />
         <ParallaxLayer
           offset={2}
           speed={0}
-          style={{ backgroundColor: '#00897B' }}
+          style={{ backgroundColor: '#757575' }}
         />
         <ParallaxLayer
           offset={3}
           speed={0}
-          style={{ backgroundColor: '#673AB7' }}
+          style={{ backgroundColor: '#5eadbb' }}
         />
         <ParallaxLayer
           offset={4}
           speed={0}
-          style={{ backgroundColor: '#3F51B5' }}
+          style={{ backgroundColor: '#7b749a' }}
         />
         <ParallaxLayer offset={0} speed={0} factor={5} />
 
@@ -111,10 +111,10 @@ const LandingPages = () => {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.6} speed={0.1}>
-          <div className={styles.paragraph}>
+          <p className={styles.paragraph}>
             this message tells the cumtomer i'll help them create an optimsed
             landing page
-          </div>
+          </p>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.2} speed={-0.2}>
@@ -151,16 +151,16 @@ const LandingPages = () => {
           />
         </ParallaxLayer>
         <ParallaxLayer offset={1.58} speed={0}>
-          <h3 className={`${styles.paragraph} ${styles.specific}`}>
+          <h4 className={`${styles.paragraph} ${styles.specific}`}>
             Be specific
-          </h3>
+          </h4>
         </ParallaxLayer>
         <ParallaxLayer offset={1.65} speed={0}>
           <p className={`${styles.paragraph} ${styles.specific}`}>
-            “The paradox of choice reveals that less is more. Too many options
+            The paradox of choice reveals that less is more. Too many options
             will often hinder people from making a choice. If your landing page
             design is focused on a single purpose, you’re helping your customers
-            make the right decisions and you will increase conversion rates.”
+            make the right decisions and you will increase conversion rates.
           </p>
         </ParallaxLayer>
 
@@ -225,30 +225,30 @@ const LandingPages = () => {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={2.5} speed={0}>
-          <h3 style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
+          <h4 style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             High quality visuals
-          </h3>
+          </h4>
         </ParallaxLayer>
         <ParallaxLayer offset={2.6} speed={0}>
-          <div className={styles.paragraph}>
+          <p className={styles.paragraph}>
             The design of a website is what drives our first impression 94% of
             the time. Because it only takes us fractions of a second to take it
             all in. We subconsciously decide whether we want to stick around or
             not in the blink of an eye.
-          </div>
+          </p>
         </ParallaxLayer>
 
         <ParallaxLayer offset={3.2} speed={0.1}>
           <div className={styles.testimonial1}>
             <img src="https://randomuser.me/api/portraits/women/71.jpg" />
-            <h3>Elaine Ryan</h3>
+            <h4>Elaine Ryan</h4>
             <p>Great website ! The parallax effect is so good</p>
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={3.57} speed={0}>
-          <h3 style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
+          <h4 style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             Use testimonials
-          </h3>
+          </h4>
         </ParallaxLayer>
         <ParallaxLayer offset={3.65} speed={0}>
           <p className={styles.paragraph}>
@@ -294,7 +294,7 @@ const LandingPages = () => {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={4.57} speed={0}>
-          <h3 className={styles.paragraph}>Create a lead magnet</h3>
+          <h4 className={styles.paragraph}>Create a lead magnet</h4>
         </ParallaxLayer>
         <ParallaxLayer offset={4.65} speed={0}>
           <p className={styles.paragraph}>

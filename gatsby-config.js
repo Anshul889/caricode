@@ -55,6 +55,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `source sans pro\:300,400,700,900` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Caricode`,

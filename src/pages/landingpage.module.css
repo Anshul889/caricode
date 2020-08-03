@@ -78,7 +78,7 @@
   margin: 0 auto;
   padding: 10px;
   z-index: 1000;
-  background-color: #673ab7;
+  background-color: #4ba4b4;
   position: relative;
   display: block;
   text-align: center;
@@ -110,6 +110,7 @@
   border-radius: 14px;
   border: 1px solid #ffffffa8;
   padding: 20px 0;
+  background-color: #6e678e;
 }
 
 .freecourse {
@@ -147,7 +148,7 @@
 .referralinput {
   background-color: white;
   border: 1px solid #dfe1e5;
-  border-radius: 24px;
+  border-radius: 4px;
 }
 
 .visuals {

@@ -12,18 +12,18 @@ const Navbar = () => {
     <div className={styles.Navigation}>
       <div className={styles.dnavigation}>
         <Link to="/" className={styles.logo}>
-          <span style={{ color: 'hsla(210, 33%, 55%, 1)' }}>CARI</span>
+          <span style={{ color: '#7c759a' }}>CARI</span>
           <span style={{ color: 'hsla(0, 0%, 75%, 1)' }}>CODE</span>
         </Link>
         <ul className={styles.leftdnav}>
           <li className={styles.dItem}>
-            <Link activeStyle={{ color: 'rgb(29, 161, 242)' }} to="/blogs">
+            <Link activeStyle={{ color: '#7c759a' }} to="/blogs">
               Blogs
             </Link>
           </li>
           <li className={styles.dItem}>
             <Link
-              activeStyle={{ color: 'rgb(29, 161, 242)' }}
+              activeStyle={{ color: '#7c759a' }}
               to="/landing-pages/"
             >
               Landing Pages
@@ -31,7 +31,7 @@ const Navbar = () => {
           </li>
           <li className={styles.dItem}>
             <Link
-              activeStyle={{ color: 'rgb(29, 161, 242)' }}
+              activeStyle={{ color: '#7c759a' }}
               to="/web-applications/"
             >
               Applications

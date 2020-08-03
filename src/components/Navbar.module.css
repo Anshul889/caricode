@@ -17,7 +17,7 @@
   z-index: 1009;
   font-weight: 600;
   font-size: 15px;
-  color: rgb(29, 161, 242);
+  color: #7c759a;
 }
 
 .desktop {
@@ -32,7 +32,7 @@
 }
 
 .dItem a {
-  color: white;
+  color: black;
 }
 
 .imglogo {
@@ -97,13 +97,13 @@
 
 .MobileNav {
   position: fixed;
-  background-color: hsl(210, 34%, 13%);
+  background-color: white;
   width: 100%;
   z-index: 100;
   bottom: 0;
   left: 0;
   right: 0;
-  border-top: 1px solid rgb(78, 78, 78);
+  border-top: 1px solid rgba(144, 144, 144, 0.15);
   height: 50px;
   text-align: center;
   display: grid;
@@ -115,7 +115,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.0075rem;
   text-decoration: none;
-  color: #1da1f2;
+  color: #7c759a;
   filter: grayscale(100%);
 }
 
