@@ -57,27 +57,27 @@ const LandingPages = () => {
       >
         <ParallaxLayer
           offset={0}
-          speed={1}
+          speed={0}
           style={{ backgroundColor: '#3F51B5' }}
         />
         <ParallaxLayer
           offset={1}
-          speed={1}
+          speed={0}
           style={{ backgroundColor: '#FF7043' }}
         />
         <ParallaxLayer
           offset={2}
-          speed={1}
+          speed={0}
           style={{ backgroundColor: '#00897B' }}
         />
         <ParallaxLayer
           offset={3}
-          speed={1}
+          speed={0}
           style={{ backgroundColor: '#673AB7' }}
         />
         <ParallaxLayer
           offset={4}
-          speed={1}
+          speed={0}
           style={{ backgroundColor: '#3F51B5' }}
         />
         <ParallaxLayer offset={0} speed={0} factor={5} />
@@ -110,19 +110,14 @@ const LandingPages = () => {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.6} speed={0.3}>
+        <ParallaxLayer offset={0.6} speed={0.1}>
           <div className={styles.paragraph}>
             this message tells the cumtomer i'll help them create an optimsed
             landing page
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.95} speed={0.3}>
-          <div className={styles.casestudy}>
-            Your landing page web design has only one purpose: To get people to
-            act, usually with a CTA button or by filling in your opt-in-form.
-          </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.2} speed={0.4}>
+
+        <ParallaxLayer offset={1.2} speed={-0.2}>
           <div className={styles.products}>
             <img src={product} />
             <img src={mobile} />
@@ -130,7 +125,7 @@ const LandingPages = () => {
             <img src={watch} />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.35} speed={0.3}>
+        <ParallaxLayer offset={1.35} speed={0.1}>
           <VisibilitySensor offset={{ bottom: 375 }}>
             {({ isVisible }) => (
               <Spring
@@ -149,22 +144,18 @@ const LandingPages = () => {
             )}
           </VisibilitySensor>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.42} speed={0.3}>
+        <ParallaxLayer offset={1.42} speed={0.1}>
           <img
             src={user}
-            style={{
-              display: 'block',
-              width: '10%',
-              margin: '0 auto',
-            }}
+            className={styles.specificuser}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.58} speed={0.2}>
+        <ParallaxLayer offset={1.58} speed={0}>
           <h3 className={`${styles.paragraph} ${styles.specific}`}>
             Be specific
           </h3>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.65} speed={0.4}>
+        <ParallaxLayer offset={1.65} speed={0}>
           <p className={`${styles.paragraph} ${styles.specific}`}>
             “The paradox of choice reveals that less is more. Too many options
             will often hinder people from making a choice. If your landing page
@@ -172,14 +163,8 @@ const LandingPages = () => {
             make the right decisions and you will increase conversion rates.”
           </p>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.95} speed={0.3}>
-          <div className={styles.casestudy}>
-            Your landing page web design has only one purpose: To get people to
-            act, usually with a CTA button or by filling in your opt-in-form.
-          </div>
-        </ParallaxLayer>
 
-        <ParallaxLayer offset={2.1} speed={0.5}>
+        <ParallaxLayer offset={2.1} speed={0.2}>
           <div className={styles.visuals}>
             <img
               src={addresscard}
@@ -239,23 +224,17 @@ const LandingPages = () => {
             />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.5} speed={0.3}>
+        <ParallaxLayer offset={2.5} speed={0}>
           <h3 style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             High quality visuals
           </h3>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.6} speed={0.4}>
+        <ParallaxLayer offset={2.6} speed={0}>
           <div className={styles.paragraph}>
             The design of a website is what drives our first impression 94% of
             the time. Because it only takes us fractions of a second to take it
             all in. We subconsciously decide whether we want to stick around or
             not in the blink of an eye.
-          </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={2.95} speed={0.3}>
-          <div className={styles.casestudy}>
-            Your landing page web design has only one purpose: To get people to
-            act, usually with a CTA button or by filling in your opt-in-form.
           </div>
         </ParallaxLayer>
 
@@ -266,12 +245,12 @@ const LandingPages = () => {
             <p>Great website ! The parallax effect is so good</p>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={3.57} speed={0.2}>
+        <ParallaxLayer offset={3.57} speed={0}>
           <h3 style={{ width: '90%', margin: '0 auto', textAlign: 'center' }}>
             Use testimonials
           </h3>
         </ParallaxLayer>
-        <ParallaxLayer offset={3.65} speed={0.4}>
+        <ParallaxLayer offset={3.65} speed={0}>
           <p className={styles.paragraph}>
             People don’t go looking for testimonials. Instead, they want to see
             them when making a critical decision. That means testimonials should
@@ -279,14 +258,8 @@ const LandingPages = () => {
             your homepage.
           </p>
         </ParallaxLayer>
-        <ParallaxLayer offset={3.95} speed={0.3}>
-          <div className={styles.casestudy}>
-            Your landing page web design has only one purpose: To get people to
-            act, usually with a CTA button or by filling in your opt-in-form.
-          </div>
-        </ParallaxLayer>
 
-        <ParallaxLayer offset={4.07} speed={0.3}>
+        <ParallaxLayer offset={4.07} speed={-0.1}>
           <div className={styles.leadmagnet}>
             <div className={styles.leadmagnetimg}>
               <Image
@@ -320,14 +293,61 @@ const LandingPages = () => {
             </VisibilitySensor>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.57} speed={0.2}>
+        <ParallaxLayer offset={4.57} speed={0}>
           <h3 className={styles.paragraph}>Create a lead magnet</h3>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.65} speed={0.2}>
+        <ParallaxLayer offset={4.65} speed={0}>
           <p className={styles.paragraph}>
             You need to give away valuable content for free
           </p>
         </ParallaxLayer>
+      </Parallax>
+      <Parallax className="parallaxdesktop"
+        style={{ height: '90vh', width: '100vw' }}
+        pages={5}>
+          <ParallaxLayer speed={1} offset={0} className={'pd1'}>
+            <div style={{height: '100vh'}}>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer speed={0.5} offset={0.5}>
+            <h2 className={'pdheading'}>howdy</h2>
+          </ParallaxLayer>
+          <ParallaxLayer offset={0} speed={0} factor={6} />
+          <ParallaxLayer speed={1} offset={1} className={'pd1'}>
+            <div style={{height: '100vh'}}>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer speed={0.5} offset={1.5}>
+            <h2 className={'pdheading'}>howdy</h2>
+          </ParallaxLayer>
+          <ParallaxLayer speed={1} offset={2} className={'pd1'}>
+            <div style={{height: '100vh'}}>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer speed={0.5} offset={2.5}>
+            <h2 className={'pdheading'}>howdy</h2>
+          </ParallaxLayer>
+          <ParallaxLayer speed={1} offset={3} className={'pd1'}>
+            <div style={{height: '100vh'}}>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer speed={0.5} offset={3.5}>
+            <h2 className={'pdheading'}>howdy</h2>
+          </ParallaxLayer>
+          <ParallaxLayer speed={1} offset={4} className={'pd1'}>
+            <div style={{height: '100vh'}}>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer speed={0.5} offset={4.5}>
+            <h2 className={'pdheading'}>howdy</h2>
+          </ParallaxLayer>
+          <ParallaxLayer speed={1} offset={5} className={'pd1'}>
+            <div style={{height: '100vh'}}>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer speed={0.5} offset={5.5}>
+            <h2 className={'pdheading'}>howdy</h2>
+          </ParallaxLayer>
       </Parallax>
     </Layout>
   )

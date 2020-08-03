@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-.tl-edges{
+.tl-edges {
   overflow-x: visible;
 }
 
@@ -226,7 +226,7 @@ button:hover {
   border-bottom: 1px solid rgb(104, 104, 104);
 }
 
-.contentpost:nth-child(3){
+.contentpost:nth-child(3) {
   border-bottom: none;
 }
 
@@ -361,6 +361,15 @@ textarea:focus {
   -ms-overflow-style: none;
 }
 
+.parallaxdesktop {
+  display: none;
+  -ms-overflow-style: none;
+}
+
+.parallaxdesktop::-webkit-scrollbar {
+  display: none;
+}
+
 .text {
   pointer-events: none;
   justify-content: start !important;
@@ -474,7 +483,7 @@ textarea:focus {
     margin-bottom: 50px;
   }
 
-  .banner img{
+  .banner img {
     display: block;
   }
 
@@ -511,5 +520,24 @@ textarea:focus {
 
   .infocontentdiv {
     margin-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .parallaxcontainer {
+    display: none;
+  }
+  .parallaxdesktop {
+    display: block;
+  }
+  .pd1 {
+    background-image: url('https://www.caricode.co/images/image4.jpg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+  }
+  .pdheading{
+    text-align: center;
+    color: green;
   }
 }

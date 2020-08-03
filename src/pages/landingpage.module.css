@@ -176,6 +176,13 @@
   transform: translateY(100px);
 }
 
+.specificuser{
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+    max-width: 75px;
+}
+
 @media screen and (min-width: 600px) {
   .landinghero {
     margin-top: 80px;
@@ -224,20 +231,20 @@
 
 @media screen and (min-width: 600px) {
   .windowsvg {
-    width: 270px;
+    width: 30vh;
   }
 
   .products {
-    width: 500px;
+    width: 70vh;
   }
   .visuals {
-    width: 500px;
+    width: 70vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
     place-items: end;
-    grid-template-rows: 100px;
+    grid-template-rows: 10vh;
     transform: translateY(50px);
   }
   .paragraph {
