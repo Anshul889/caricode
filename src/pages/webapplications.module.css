@@ -180,33 +180,35 @@
   border-radius: 4px;
 }
 
-.firstheader{
-  background-color: rgb(94, 173, 187);
-  color: white;
-  padding: 38px 0;
-}
 
-.firstheader h4{
-  width: 90%;
-  margin: 0 auto;
-  text-transform: none;
-}
 
-.secondheader{
+.secondheader {
   background-color: #484459;
   color: white;
   padding: 38px 0;
 }
 
-.secondheader h4{
+.secondheader h4 {
   width: 90%;
   margin: 0 auto;
   text-transform: none;
 }
 
-.howcontainer{
+.howcontainer {
   background-color: #484459;
   color: white;
+  text-align: center;
+}
+
+.whycontainer {
+  text-align: center;
+  background-color: white;
+}
+
+.webbody {
+  background-image: url('https://pixelarity.com/items/demos/hologram/purple/assets/css/images/angular-lines-up.svg');
+  background-position: center top, center bottom, center top;
+  background-size: auto, auto, cover;
 }
 
 @media screen and (min-width: 600px) {
@@ -254,27 +256,27 @@
     max-width: 1080px;
     margin: 0 auto;
   }
-  .loyaltyhow{
+  .loyaltyhow {
     border-bottom: none;
   }
-  .customerexperience{
+  .customerexperience {
     border-bottom: none;
     padding-top: 38px;
   }
-  .emailauto{
+  .emailauto {
     border-bottom: none;
   }
-  .auth{
+  .auth {
     height: 162px;
   }
-  .emailimage{
+  .emailimage {
     height: 162px;
   }
-  .customerimage{
+  .customerimage {
     padding-top: 56px;
-    padding-bottom: 56px ;
+    padding-bottom: 56px;
   }
-  .howrefer{
+  .howrefer {
     padding: 26px 0;
   }
 }

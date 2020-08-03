@@ -28,6 +28,12 @@ h6 {
   margin-top: 0;
 }
 
+h1{
+  font-size: 30.4px;
+  letter-spacing: 6.08px;
+  line-height: 45.6px;
+}
+
 h4{
   font-size: 17.6px!important;
   font-weight: 400;
@@ -445,6 +451,19 @@ textarea:focus {
 
 .tomato {
   background: linear-gradient(to right, tomato 0%, gold 100%);
+}
+
+#firstheader {
+  background-color: rgb(94, 173, 187);
+  color: white;
+  padding: 38px 0;
+  margin: 20px 0;
+}
+
+#firstheader h4 {
+  width: 90%;
+  margin: 0px auto;
+  text-transform: none;
 }
 
 @media only screen and (min-width: 830px) {

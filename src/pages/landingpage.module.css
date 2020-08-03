@@ -29,13 +29,17 @@
   padding-top: 40px;
   width: 90%;
   margin: 0 auto;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 140px);
   max-width: 800px;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  transform: translateY(-50px);
 }
 
 .landinghero h1 {
-  margin-bottom: 60px;
-  text-transform: none;
+  margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .landinghero p {
@@ -182,6 +186,18 @@
     width: 10%;
     margin: 0 auto;
     max-width: 75px;
+}
+
+.browser{
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 20px auto;
+}
+
+.landinghero button{
+  width: 200px;
+  padding: 10px 16px;
 }
 
 @media screen and (min-width: 600px) {

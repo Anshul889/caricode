@@ -90,9 +90,9 @@ const WebApplications = () => {
         image="/images/image4.jpg"
         date={'2020-01-30'}
       />
-      <div>
+      <div className={styles.webbody}>
         <Webappbanner />
-        <div className={styles.firstheader}>
+        <div id="firstheader">
           <h4>
             Customer retention is a strong predictor of a firm's financial
             success

@@ -6,6 +6,7 @@ import { useSpring, animated as a } from 'react-spring'
 import logoreact from '../images/react.svg'
 import logogoogle from '../images/googlefa.svg'
 import logosearch from '../images/search.svg'
+import browser from '../images/browser.svg'
 import styles from '../pages/landingpage.module.css'
 import { Spring, config } from 'react-spring/renderprops'
 
@@ -69,9 +70,11 @@ const Webappbanner = () => {
   })
   return (
     <div className={styles.landinghero}>
+      <img src={browser} className={styles.browser} />
       <h1>Web applications</h1>
       <p>(Line about retention using apps)</p>
-      <div className={styles.dlandingheroimage}>
+      <Link to="#firstheader"><button >Get Started</button></Link>
+      {/* <div className={styles.dlandingheroimage}>
         <a.div style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>
           {!flipped && (
             <Image
@@ -95,8 +98,8 @@ const Webappbanner = () => {
             />
           )}
         </a.div>
-      </div>
-      <div className={styles.mlandingheroimage}>
+      </div> */}
+      {/* <div className={styles.mlandingheroimage}>
         <a.div style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>
           {!flipped && (
             <Image
@@ -152,7 +155,7 @@ const Webappbanner = () => {
             </div>
           )}
         </Spring>
-      </div>
+      </div> */}
     </div>
   )
 }
