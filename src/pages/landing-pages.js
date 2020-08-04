@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import SEO from '../components/SEO'
 import Layout from '../components/layout'
-import chart from '../images/chart-line.svg'
 import question from '../images/question.svg'
 import user from '../images/user-white.svg'
 import commentsmile from '../images/comment-smile.svg'
@@ -16,7 +15,6 @@ import usertie from '../images/user-tie-duotone.svg'
 import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import styles from './landingpage.module.css'
-import { useEffect } from 'react'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 import product from '../images/gift.svg'
 import tv from '../images/tv.svg'
@@ -24,13 +22,21 @@ import mobile from '../images/mobileproduct.svg'
 import watch from '../images/watch.svg'
 import VisibilitySensor from 'react-visibility-sensor'
 import window from '../images/window.svg'
-import { Spring, config } from 'react-spring/renderprops'
+import { Spring } from 'react-spring/renderprops'
+import Banner from '../components/banner'
 
 const getImages = graphql`
   {
     image: file(relativePath: { eq: "book.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image2: file(relativePath: { eq: "pic01.jpg" }) {
+      childImageSharp {
+        fluid {
           ...GatsbyImageSharpFluid
         }
       }
@@ -145,10 +151,7 @@ const LandingPages = () => {
           </VisibilitySensor>
         </ParallaxLayer>
         <ParallaxLayer offset={1.42} speed={0.1}>
-          <img
-            src={user}
-            className={styles.specificuser}
-          />
+          <img src={user} className={styles.specificuser} />
         </ParallaxLayer>
         <ParallaxLayer offset={1.58} speed={0}>
           <h4 className={`${styles.paragraph} ${styles.specific}`}>
@@ -302,53 +305,57 @@ const LandingPages = () => {
           </p>
         </ParallaxLayer>
       </Parallax>
-      <Parallax className="parallaxdesktop"
-        style={{ height: '90vh', width: '100vw' }}
-        pages={5}>
-          <ParallaxLayer speed={1} offset={0} className={'pd1'}>
-            <div style={{height: '100vh'}}>
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer speed={0.5} offset={0.5}>
-            <h2 className={'pdheading'}>howdy</h2>
-          </ParallaxLayer>
-          <ParallaxLayer offset={0} speed={0} factor={6} />
-          <ParallaxLayer speed={1} offset={1} className={'pd1'}>
-            <div style={{height: '100vh'}}>
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer speed={0.5} offset={1.5}>
-            <h2 className={'pdheading'}>howdy</h2>
-          </ParallaxLayer>
-          <ParallaxLayer speed={1} offset={2} className={'pd1'}>
-            <div style={{height: '100vh'}}>
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer speed={0.5} offset={2.5}>
-            <h2 className={'pdheading'}>howdy</h2>
-          </ParallaxLayer>
-          <ParallaxLayer speed={1} offset={3} className={'pd1'}>
-            <div style={{height: '100vh'}}>
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer speed={0.5} offset={3.5}>
-            <h2 className={'pdheading'}>howdy</h2>
-          </ParallaxLayer>
-          <ParallaxLayer speed={1} offset={4} className={'pd1'}>
-            <div style={{height: '100vh'}}>
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer speed={0.5} offset={4.5}>
-            <h2 className={'pdheading'}>howdy</h2>
-          </ParallaxLayer>
-          <ParallaxLayer speed={1} offset={5} className={'pd1'}>
-            <div style={{height: '100vh'}}>
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer speed={0.5} offset={5.5}>
-            <h2 className={'pdheading'}>howdy</h2>
-          </ParallaxLayer>
-      </Parallax>
+      <div className={styles.dlanding}>
+        <Banner />
+        <div className={styles.odditem}>
+          <div className={styles.colorbg1}>
+            <h4>INTEGIS VITAE UNON LIBETUE</h4>
+          </div>
+          <div className={styles.oddimage}>
+            <Image fluid={data.image2.childImageSharp.fluid} />
+          </div>
+          <div className={styles.oddcontent}>
+            <h4>Morbi purus sed libero faucibus adipiscing</h4>
+            <p>
+              Sed egestas, ante et vulputate lorem ipsum dolor sit amet nullam
+              pede semper est, vitae luctus metus libero eu augue. Morbi purus
+              sed libero, faucibus adipiscing, gravida lorem ipsum.
+            </p>
+          </div>
+        </div>
+        <div className={styles.evenitem}>
+        <div className={styles.evenimage}>
+            <Image fluid={data.image2.childImageSharp.fluid} />
+          </div>
+          <div className={styles.colorbg2}>
+            <h4>INTEGIS VITAE UNON LIBETUE</h4>
+          </div>
+          <div className={styles.evencontent}>
+            <h4>Morbi purus sed libero faucibus adipiscing</h4>
+            <p>
+              Sed egestas, ante et vulputate lorem ipsum dolor sit amet nullam
+              pede semper est, vitae luctus metus libero eu augue. Morbi purus
+              sed libero, faucibus adipiscing, gravida lorem ipsum.
+            </p>
+          </div>
+        </div>
+        <div className={styles.odditem}>
+          <div className={styles.colorbg1}>
+            <h4>INTEGIS VITAE UNON LIBETUE</h4>
+          </div>
+          <div className={styles.oddimage}>
+            <Image fluid={data.image2.childImageSharp.fluid} />
+          </div>
+          <div className={styles.oddcontent}>
+            <h4>Morbi purus sed libero faucibus adipiscing</h4>
+            <p>
+              Sed egestas, ante et vulputate lorem ipsum dolor sit amet nullam
+              pede semper est, vitae luctus metus libero eu augue. Morbi purus
+              sed libero, faucibus adipiscing, gravida lorem ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }
