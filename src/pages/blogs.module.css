@@ -1,6 +1,5 @@
 .main h1 {
-  font-size: 24px;
-  line-height: 1.1;
+  font-weight: 400;
 }
 
 .main h2 {
@@ -18,7 +17,8 @@
 
 .ctrposition {
   padding: 38px 0;
-  background-color: hsl(210, 34%, 17%);
+  background-color: #484459;
+  color: white;
 }
 
 .pieouter {
@@ -46,6 +46,8 @@
   padding-right: 5px;
   grid-gap: 7px;
   margin-bottom: 15px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .searchbar input {
@@ -62,7 +64,8 @@
 .contentmeasure {
   padding-top: 38px;
   padding-bottom: 15px;
-  background-color: hsl(210, 34%, 17%);
+  background-color: #484459;
+  color: white;
 }
 
 .organicclicks {
@@ -120,9 +123,10 @@
 .main table {
   text-align: center;
   width: 100%;
-  background-color: hsl(210, 33%, 18%);
+  background-color: #484459;
   border-radius: 10px;
   padding: 10px 0;
+  color: white;
 }
 
 .main th {
@@ -130,7 +134,7 @@
 }
 
 .increase {
-  color: rgb(18, 147, 154);
+  color: #2ddde6;
 }
 
 .main h1,
@@ -141,7 +145,8 @@ h2 {
 .contentmarketing {
   padding-bottom: 38px;
   padding-top: 15px;
-  background-color: hsl(210, 34%, 17%);
+  background-color: #484459;
+  color: white;
 }
 
 .ctrtable {
@@ -156,12 +161,14 @@ h2 {
 }
 
 .spee {
-  background-color: hsl(210, 34%, 17%);
+  background-color: #484459;
+  color: white;
   padding: 38px 0;
 }
 
 .sitespeed {
-  background-color: hsl(210, 34%, 17%);
+  background-color: #484459;
+  color: white;
   padding: 38px 0;
 }
 
@@ -238,13 +245,24 @@ img.pwaappicon {
 
 .algodata {
   padding: 38px 0;
-  background-color: hsl(210, 34%, 17%);
+  background-color: #484459;
+  color: white;
 }
 
 .hero h1 {
   text-align: center;
   text-transform: uppercase;
   margin-top: 50px;
+}
+
+.firstheader {
+  background-color: rgb(94, 173, 187);
+  color: white;
+  padding: 38px 0;
+}
+
+.ninetythree{
+  margin-top: 38px;
 }
 
 @media screen and (min-width: 600px) {

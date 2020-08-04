@@ -40,14 +40,14 @@ const SectionThree = () => {
                     y1="0"
                     x2="0"
                     y2="100"
-                    style={{ stroke: 'rgb(255, 255, 255)', strokeWidth: '2' }}
+                    style={{ stroke: 'rgb(0, 0, 0)', strokeWidth: '2' }}
                   />
                   <line
                     x1="0"
                     y1="100"
                     x2="100%"
                     y2="100"
-                    style={{ stroke: 'rgb(255, 255, 255)', strokeWidth: '2' }}
+                    style={{ stroke: 'rgb(0, 0, 0)', strokeWidth: '2' }}
                   />
                 </svg>
               )}
@@ -61,9 +61,9 @@ const SectionThree = () => {
             >
               Boost Sales
             </div>
-            <h3>
+            <h4>
               <Link to="/landing-pages/">Landing Pages</Link>
-            </h3>
+            </h4>
             <VisibilitySensor>
               {({ isVisible }) => (
                 <Spring
@@ -117,7 +117,7 @@ const SectionThree = () => {
                         ></path>
                         <path
                           class="fa-primary"
-                          fill="white"
+                          fill="black"
                           d="M172.2 226.82c75.5 15 129.9 89.3 112.5 172.2-11.4 54.3-55.3 98.3-109.7 109.7C82.1 528.22 0 457.52 0 368V120a23.94 23.94 0 0 1 24-24h48a23.94 23.94 0 0 1 24 24v248a48 48 0 1 0 64.7-45c-9.6-3.6-16.7-11.8-16.7-22v-50.4c0-14.9 13.6-26.7 28.2-23.8z"
                           opacity="0.7"
                         ></path>
@@ -127,9 +127,9 @@ const SectionThree = () => {
                 </Spring>
               )}
             </VisibilitySensor>
-            <h3>
+            <h4>
               <Link to="/blogs/">Blogs</Link>
-            </h3>
+            </h4>
             <VisibilitySensor>
               {({ isVisible }) => (
                 <Spring
@@ -210,14 +210,15 @@ const SectionThree = () => {
                       <g className="fa-group">
                         <path
                           className="fa-secondary"
-                          fill="white"
+                          fill="black"
                           d="M0 384v80a48 48 0 0 0 48 48h224a48 48 0 0 0 48-48v-80zm160 96a32 32 0 1 1 32-32 32 32 0 0 1-32 32z"
                           opacity="0.4"
                         ></path>
                         <path
                           className="fa-primary"
-                          fill="currentColor"
+                          fill="black"
                           d="M0 384V48A48 48 0 0 1 48 0h224a48 48 0 0 1 48 48v336z"
+                          opacity='0.9'
                         ></path>
                         <line
                           x1="20"
@@ -275,7 +276,7 @@ const SectionThree = () => {
                 </Spring>
               )}
             </VisibilitySensor>
-            <h3>Web Applications</h3>
+            <h4>Web Applications</h4>
             <VisibilitySensor>
               {({ isVisible }) => (
                 <Spring

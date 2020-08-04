@@ -55,7 +55,7 @@ const SectionFour = () => {
   const data = useStaticQuery(getImages)
   return (
     <div className="section4">
-      <h3>
+      <h4>
         ETIAM SED TELLUS
         <VisibilitySensor>
           {({ isVisible }) => (
@@ -74,7 +74,7 @@ const SectionFour = () => {
             </Spring>
           )}
         </VisibilitySensor>
-      </h3>
+      </h4>
       <div className="inner">
         <div className="section4grid">
           <div className="infopost">
@@ -88,34 +88,15 @@ const SectionFour = () => {
                 </div>
               </Link>
               <div className="infocontentdiv">
-                <h3>
+                <h4>
                   <Link to="/web-performance/">Web Performance</Link>
-                </h3>
-                <div className="acontent">
-                  <VisibilitySensor>
-                    {({ isVisible }) => (
-                      <Spring
-                        from={{ width: '1px', marginBottom: '20px' }}
-                        to={{
-                          width: isVisible ? '50px' : '1px',
-                          marginBottom: '20px',
-                        }}
-                        config={config.slow}
-                        delay={800}
-                      >
-                        {props => (
-                          <div
-                            className="hero-feature-border"
-                            style={props}
-                          ></div>
-                        )}
-                      </Spring>
-                    )}
-                  </VisibilitySensor>
+                </h4>
+                <p className="acontent">
+                  
                   Performance plays a significant role in the success of any
                   online venture, as highly performing sites engage and retain
                   users better than poorly performing ones.
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -130,33 +111,13 @@ const SectionFour = () => {
                 </div>
               </Link>
               <div className="infocontentdiv">
-                <h3>
+                <h4>
                   <Link to="/multi-device-support/">Multi Device Support</Link>
-                </h3>
-                <div className="acontent">
-                  <VisibilitySensor>
-                    {({ isVisible }) => (
-                      <Spring
-                        from={{ width: '1px', marginBottom: '20px' }}
-                        to={{
-                          width: isVisible ? '50px' : '1px',
-                          marginBottom: '20px',
-                        }}
-                        config={config.slow}
-                        delay={800}
-                      >
-                        {props => (
-                          <div
-                            className="hero-feature-border"
-                            style={props}
-                          ></div>
-                        )}
-                      </Spring>
-                    )}
-                  </VisibilitySensor>
+                </h4>
+                <p className="acontent">
                   Screen sizes are always changing, so it's important that your
                   site can adapt to any screen size, today or in the future.
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -171,34 +132,15 @@ const SectionFour = () => {
                 </div>
               </Link>
               <div className="infocontentdiv">
-                <h3>
+                <h4>
                   <Link to="/base-technologies">Base Technologies</Link>
-                </h3>
-                <div className="acontent">
-                  <VisibilitySensor>
-                    {({ isVisible }) => (
-                      <Spring
-                        from={{ width: '1px', marginBottom: '20px' }}
-                        to={{
-                          width: isVisible ? '50px' : '1px',
-                          marginBottom: '20px',
-                        }}
-                        config={config.slow}
-                        delay={800}
-                      >
-                        {props => (
-                          <div
-                            className="hero-feature-border"
-                            style={props}
-                          ></div>
-                        )}
-                      </Spring>
-                    )}
-                  </VisibilitySensor>
+                </h4>
+                <p className="acontent">
+                 
                   Built with React JS, a scalable technology developed and
                   maintained by Facebook. Used by all major technology firms,
                   Uber, Twitter, Netlfix and Airbnb.
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -213,33 +155,14 @@ const SectionFour = () => {
                 </div>
               </Link>
               <div className="infocontentdiv">
-                <h3>
+                <h4>
                   <Link to="/clean-design">Clean Design</Link>
-                </h3>
-                <div className="acontent">
-                  <VisibilitySensor>
-                    {({ isVisible }) => (
-                      <Spring
-                        from={{ width: '1px', marginBottom: '20px' }}
-                        to={{
-                          width: isVisible ? '50px' : '1px',
-                          marginBottom: '20px',
-                        }}
-                        config={config.slow}
-                        delay={800}
-                      >
-                        {props => (
-                          <div
-                            className="hero-feature-border"
-                            style={props}
-                          ></div>
-                        )}
-                      </Spring>
-                    )}
-                  </VisibilitySensor>
+                </h4>
+                <p className="acontent">
+                  
                   Mobile users are very goal-oriented. They expect to be able to
                   get what they need, immediately, and on their own terms.
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -254,38 +177,19 @@ const SectionFour = () => {
                 </div>
               </Link>
               <div className="infocontentdiv">
-                <h3>
+                <h4>
                   <Link
                     style={{ fontSize: '16px' }}
                     to="/customised-functionality/"
                   >
                     Customised Functionality
                   </Link>
-                </h3>
-                <div className="acontent">
-                  <VisibilitySensor>
-                    {({ isVisible }) => (
-                      <Spring
-                        from={{ width: '1px', marginBottom: '20px' }}
-                        to={{
-                          width: isVisible ? '50px' : '1px',
-                          marginBottom: '20px',
-                        }}
-                        config={config.slow}
-                        delay={800}
-                      >
-                        {props => (
-                          <div
-                            className="hero-feature-border"
-                            style={props}
-                          ></div>
-                        )}
-                      </Spring>
-                    )}
-                  </VisibilitySensor>
+                </h4>
+                <p className="acontent">
+                  
                   Custom Navigation for the Web and Mobile, Authentications,
                   Blog, Offline support, Easily manage your content
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -300,34 +204,14 @@ const SectionFour = () => {
                 </div>
               </Link>
               <div className="infocontentdiv">
-                <h3>
+                <h4>
                   <Link to="/progressive-web-apps/">Progressive Web Apps</Link>
-                </h3>
-                <div className="acontent">
-                  <VisibilitySensor>
-                    {({ isVisible }) => (
-                      <Spring
-                        from={{ width: '1px', marginBottom: '20px' }}
-                        to={{
-                          width: isVisible ? '50px' : '1px',
-                          marginBottom: '20px',
-                        }}
-                        config={config.slow}
-                        delay={800}
-                      >
-                        {props => (
-                          <div
-                            className="hero-feature-border"
-                            style={props}
-                          ></div>
-                        )}
-                      </Spring>
-                    )}
-                  </VisibilitySensor>
+                </h4>
+                <p className="acontent">
                   A high-quality Progressive Web App has incredible benefits,
                   making it easy to delight your users, grow engagement and
                   increase conversions.
-                </div>
+                </p>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ a:hover {
 
 h1,
 h2,
-h3,
+h4,
 h4,
 h5,
 h6 {
@@ -144,7 +144,7 @@ button:focus {
 }
 
 button:hover {
-  background-color: rgb(66, 134, 180);
+  background-color: #605b76;
 }
 
 #section2 {
@@ -192,29 +192,8 @@ button:hover {
   line-height: 26.4px;
 }
 
-.banner button {
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  box-shadow: inset 0 0 0 2px white;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 0.8em;
-  font-weight: 600;
-  height: 3.5em;
-  letter-spacing: 0.25em;
-  line-height: 3.5em;
-  padding: 0 1.75em;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
 
-.banner button:hover {
-  box-shadow: inset 0 0 0 4px white;
-}
+
 
 .section2grid {
   display: grid;
@@ -248,8 +227,17 @@ button:hover {
   border-bottom: none;
 }
 
-.postdiv h3 {
+.postdiv h4 {
   position: relative;
+  color: black;
+}
+
+.postdiv a{
+  color: black
+}
+
+.postdiv p{
+  text-align: center;
 }
 
 .postdiv img {
@@ -270,12 +258,12 @@ button:hover {
 }
 
 .section4 {
-  background-color: hsl(210, 34%, 17%);
+  background-color: #484459;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.section4 h3 {
+.section4 h4 {
   width: 90%;
   margin: 14px auto 20px auto;
   max-width: 1080px;
@@ -301,18 +289,21 @@ button:hover {
 }
 
 .infocontentdiv {
-  background-color: hsl(210, 34%, 13%);
+  background-color: #3d3a4b;
   margin-bottom: 35px;
 }
 
-.infocontentdiv h3 {
+.infocontentdiv h4 {
   padding-top: 20px;
 }
+
 
 .acontent {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 20px;
+  color: white;
+  text-align: center;
 }
 
 .contact {
@@ -466,6 +457,10 @@ textarea:focus {
   text-transform: none;
 }
 
+.rv-xy-plot__series--label-text{
+  fill: black!important;
+}
+
 @media only screen and (min-width: 830px) {
   #section2 {
     margin-bottom: 50px;
@@ -504,7 +499,7 @@ textarea:focus {
     border-bottom: none;
   }
 
-  .section4 h3 {
+  .section4 h4 {
     width: 85%;
     font-size: 18px;
     padding-top: 30px;
@@ -552,6 +547,10 @@ textarea:focus {
 
   .infocontentdiv {
     margin-bottom: 0px;
+  }
+
+  .infopost:nth-child(5) h4{
+    padding-top: 10px;
   }
 }
 

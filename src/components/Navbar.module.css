@@ -6,7 +6,7 @@
 .dnavigation {
   padding: 0;
   box-sizing: content-box;
-  margin: 0 auto;
+  margin: 10px auto;
   max-width: 65rem;
   width: 90%;
   align-items: center;
@@ -15,7 +15,7 @@
   grid-template-rows: 56px;
   background: 0 0;
   z-index: 1009;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 15px;
   color: #7c759a;
 }
@@ -28,7 +28,9 @@
 
 .dItem {
   margin-left: 1.2em;
-  font-size: 13px;
+  font-size: 14.75px;
+  letter-spacing: 1.9175px;
+  line-height: 28px;
 }
 
 .dItem a {
@@ -71,7 +73,7 @@
 }
 
 .rightdnav button {
-  font-size: 13px;
+  font-size: 14.75px;
 }
 
 @media screen and (max-width: 768px) {
@@ -87,6 +89,7 @@
   .dnavigation {
     grid-template-columns: auto;
     justify-content: center;
+    margin: 0 auto;
   }
   .logo {
     font-size: 15px;
