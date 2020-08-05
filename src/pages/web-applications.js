@@ -593,7 +593,7 @@ const WebApplications = () => {
       </div>
       <div>
         <div className={styles.inner}>
-          <h4>what i'll offer</h4>
+          <h4>Call to action</h4>
           <table></table>
         </div>
       </div>
