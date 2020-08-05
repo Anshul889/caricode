@@ -206,16 +206,20 @@
 
 @media screen and (min-width: 600px) {
   .landinghero {
-    margin-top: 80px;
-    min-height: 900px;
+    min-height: 700px;
+    padding-top: 10px;
+    align-content: start;
+    transform: translateY(100px);
   }
   .landinghero h1 {
     margin-bottom: 40px;
-    font-size: 64px;
   }
   .landinghero p {
-    margin-bottom: 140px;
-    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 14px;
+    letter-spacing: 2.88px;
+
   }
   .heroicons{
     margin: 58px auto
@@ -248,6 +252,10 @@
     height: 50px;
     width: 50px;
   }
+  .browser{
+    width: 120px;
+    height: 120px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -265,8 +273,11 @@
     grid-template-columns: 1fr;
   }
 
-  .colorbg1 h4{
+  .colorbg1 h3{
     place-self: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
   }
   
   .oddcontent{
@@ -275,10 +286,9 @@
     grid-row: 1;
     z-index: 1000;
     background-color: white;
-    padding: 5rem 5rem 2.5rem 5rem;
+    padding: 5rem 5rem 5rem 5rem;
     border-radius: 4px;
     width: 55%;
-    transform: translateX(-30%);
   }
   .oddimage{
     grid-column: 2;
@@ -295,10 +305,9 @@
     grid-row: 1;
     z-index: 1000;
     background-color: white;
-    padding: 5rem 5rem 2.5rem 5rem;
+    padding: 5rem 5rem 5rem 5rem;
     border-radius: 4px;
     width: 55%;
-    transform: translateX(30%);
   }
   .evenimage{
     grid-column: 1;
@@ -309,8 +318,11 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .colorbg2 h4{
+  .colorbg2 h3{
     place-self: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
   }
 }
 
