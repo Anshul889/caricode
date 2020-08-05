@@ -161,7 +161,7 @@ const Ecommerce = () => {
         </div>
         <div className={styles.section2}>
           <div className={styles.firstheader}>
-            <h4>Organic search is the golden ticket.</h4>
+            <h4>Organic search is the golden ticket</h4>
             <div className={styles.searchbar}>
               <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" />
               <input placeholder="Search"></input>

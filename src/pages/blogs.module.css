@@ -327,4 +327,12 @@ img.pwaappicon {
   .mainorganic{
     border-bottom: none;
   }
+  .searchbar{
+    grid-gap: 30px;
+    padding: 20px;
+  }
+
+  .searchbar input{
+    padding-left: 20px;
+  }
 }
