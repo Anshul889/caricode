@@ -389,9 +389,7 @@ const WebApplications = () => {
           <div className={styles.inner}>Single case study of why</div>
         </h4>
         <div className={styles.secondheader}>
-        <h4>
-            How customer retention can be implemented for the web
-        </h4>
+          <h4>At CariCode we implement all the following features which are critical to customer retention taking your web app to the next level</h4>
         </div>
         <div className={styles.howcontainer}>
           <div className={styles.howinner}>
@@ -403,8 +401,9 @@ const WebApplications = () => {
                 <h4>Improve customer experience</h4>
                 <p>
                   Delight users with a fast, responsive and visually stable
-                  website built with React and Google Cloud Platform. make it
-                  easy for them to get what they want quickly
+                  website built with React and Google Cloud Platform. At
+                  Caricode all our web app are built so that your customes get
+                  what they want quickly.
                 </p>
               </div>
             </div>
@@ -415,10 +414,10 @@ const WebApplications = () => {
                 </div>
                 <h4>Email Automation</h4>
                 <p>
-                  Automate email newsletters, promotional emails, shipping
-                  notifications with send grid. Partner with the email service
-                  trusted by developers and marketers for time-savings,
-                  scalability, and delivery expertise.
+                  We use Send Grid to automate email newsletters, promotional
+                  emails, shipping notifications with send grid. Partner with
+                  the email service trusted by developers and marketers for
+                  time-savings, scalability, and delivery expertise.
                 </p>
               </div>
             </div>
@@ -432,6 +431,7 @@ const WebApplications = () => {
                 </div>
                 <h4>Loyalty Programme</h4>
                 <p>
+                  We help you design and implement your loyalty programme.
                   Reward your customers for continuing to shop with you. Give
                   them the option to sign up for a loyalty program. However you
                   want to structure the program is fine, just make sure the
@@ -449,11 +449,12 @@ const WebApplications = () => {
                     style={{ borderRadius: '4px' }}
                   />
                 </div>
-                <h4>Subscription based with 6 months trial</h4>
+                <h4>Dynamic Subcsription Model</h4>
                 <p>
-                  Automate email newsletters, promotional emails, shipping
-                  notifications with send grid. Partner with the email service
-                  trusted by deve
+                  We can implement a flexible user access to the web
+                  application, so you can give your customer free access for a
+                  limited time period before converting them into paid
+                  customers.
                 </p>
               </div>
             </div>
@@ -468,7 +469,7 @@ const WebApplications = () => {
                   </button>
                 </div>
                 <h4>Authentication</h4>
-                <p>incentivise customers to login and keep coming back</p>
+                <p>We help you design and implement action points to incentivise your customers to login and keep coming back</p>
               </div>
             </div>
             <div className={styles.emailauto}>

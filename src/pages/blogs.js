@@ -19,6 +19,7 @@ import {
   YAxis,
   VerticalBarSeries,
 } from 'react-vis'
+import BlogSlide from '../components/BlogSlide'
 
 const getImages = graphql`
   {
@@ -895,6 +896,9 @@ const Ecommerce = () => {
                   <LineSeries data={algoData} yDomain={[0, 4000]} />
                 </FlexibleWidthXYPlot>
               </div>
+            </div>
+            <div className={styles.dslide}>
+                    <BlogSlide />
             </div>
           </div>
         </div>

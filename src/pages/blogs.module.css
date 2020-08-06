@@ -274,6 +274,10 @@ img.pwaappicon {
   margin-top: 38px;
 }
 
+.dslide{
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   .hero {
     width: 600px;
@@ -311,13 +315,13 @@ img.pwaappicon {
     color: black;
   }
   .socialsharing{
-    color: white
+    display: none
   }
   .snippets{
-    color: white
+    display: none;
   }
   .howblog{
-    background-color: #484459;;
+    background-color: #484459;
   }
   .howblog h4{
     color: white;
@@ -334,5 +338,16 @@ img.pwaappicon {
 
   .searchbar input{
     padding-left: 20px;
+  }
+  .spee{
+    display: none;
+  }
+  .algodata{
+    display: none;
+  }
+  .dslide{
+    display: block;
+    overflow-x: hidden;
+    width: 600px;
   }
 }
