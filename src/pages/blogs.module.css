@@ -348,6 +348,6 @@ img.pwaappicon {
   .dslide{
     display: block;
     overflow-x: hidden;
-    width: 600px;
+    width: 100%;
   }
 }
