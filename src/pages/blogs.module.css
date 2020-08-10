@@ -301,9 +301,16 @@ img.pwaappicon {
   .ninetythree {
     margin-top: 0;
   }
+
+  .organicclicks{
+    width: 600px;
+    margin: 0 auto;
+    font-weight: 400;
+    text-shadow: none;
+  }
   
   .ctrposition{
-    background-color: white;
+    background-color: lightblue;
     color: black;
   }
   .contentmeasure{
@@ -314,22 +321,22 @@ img.pwaappicon {
     background-color: white;
     color: black;
   }
-  .socialsharing{
-    display: none
-  }
-  .snippets{
-    display: none;
-  }
+
   .howblog{
     background-color: #484459;
+    position: relative;
+    top: 600px;
+    color: white;
   }
   .howblog h4{
     color: white;
     margin: 0;
-    padding: 38px 0;
+    padding: 18px 0;
   }
   .mainorganic{
     border-bottom: none;
+    width: 600px;
+    margin: 0 auto
   }
   .searchbar{
     grid-gap: 30px;
@@ -339,9 +346,6 @@ img.pwaappicon {
   .searchbar input{
     padding-left: 20px;
   }
-  .spee{
-    display: none;
-  }
   .algodata{
     display: none;
   }
@@ -349,5 +353,23 @@ img.pwaappicon {
     display: block;
     overflow-x: hidden;
     width: 100%;
+    background-color: #484459;
+  }
+  .ctrtable{
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px;
+    justify-items: center;
+  }
+
+  .ctrtable h4{
+    padding: 18px 0;
+    color: black;
+    place-self: center;
+  }
+  .whyonline{
+    display: none;
   }
 }

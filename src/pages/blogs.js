@@ -399,8 +399,10 @@ const Ecommerce = () => {
               </div>
             </div>
           </div>
+          <div className={styles.dslide}>
+            <BlogSlide />
+          </div>
           <div className={styles.howblog}>
-            <h4>Features that i'll implement for you</h4>
             <div className={styles.snippets}>
               <div className={styles.inner}>
                 <h4>Rich Snippets</h4>
@@ -896,9 +898,6 @@ const Ecommerce = () => {
                   <LineSeries data={algoData} yDomain={[0, 4000]} />
                 </FlexibleWidthXYPlot>
               </div>
-            </div>
-            <div className={styles.dslide}>
-                    <BlogSlide />
             </div>
           </div>
         </div>
