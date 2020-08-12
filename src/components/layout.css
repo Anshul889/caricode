@@ -339,14 +339,24 @@ input:focus {
   border: 2px solid #7c759a;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"]:not(:checked){
   background: rgba(144, 144, 144, 0.15);
   border: 2px solid rgba(144, 144, 144, 0.25);
-  font-size: 0.8em;
   height: 2.0625em;
-  padding-left: 3px;
+  margin: 0;
+  padding: 0;
+  width:2.0625em;
+  appearance: none;
+}
+
+input[type="checkbox"]:checked{
+  height: 2.0625em;
   width: 2.0625em;
   border-radius: 4px;
+  margin: 0;
+  padding: 0;
+  background: purple;
+  appearance: checkbox;
 }
 
 textarea {

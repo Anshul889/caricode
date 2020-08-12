@@ -15,29 +15,29 @@ const Ecommerce = () => {
         <input
           type="checkbox"
           isChecked={isMorningChecked}
-					onClick={() => setIsMorningChecked(!isMorningChecked)}
-					name="scales"
-					id="scales"
+          onChange={() => setIsMorningChecked(!isMorningChecked)}
+          name="scales"
+          id="scales"
         />
         <label for="scales"> Morning</label>
         <input
           type="checkbox"
           isChecked={isAfternoonChecked}
-					onClick={() => setIsAfternoonChecked(!isAfternoonChecked)}
+          onChange={() => setIsAfternoonChecked(!isAfternoonChecked)}
         />
-        <label >Afternoon</label>
+        <label>Afternoon</label>
         <input
           type="checkbox"
           isChecked={isEveningChecked}
-					onClick={() => setIsEveningChecked(!isEveningChecked)}
+          onChange={() => setIsEveningChecked(!isEveningChecked)}
         />
-        <label >Evening</label>
+        <label>Evening </label>
       </div>
-			<div>
-			{isMorningChecked && <span>Morning</span>}
-			{isAfternoonChecked && <span>Afternoon</span>}
-			{isEveningChecked && <span>Evening</span>}
-			</div>
+      <div>
+        {isMorningChecked && <span>Morning</span>}
+        {isAfternoonChecked && <span>Afternoon</span>}
+        {isEveningChecked && <span>Evening</span>}
+      </div>
     </Layout>
   )
 }
