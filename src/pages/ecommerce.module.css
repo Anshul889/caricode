@@ -4,3 +4,17 @@
   row-gap: 20px;
   justify-items: center;
 }
+
+.ecommvp{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.inner{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.ecommvp h4{
+  margin-top: 30px;
+}
