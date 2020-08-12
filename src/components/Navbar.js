@@ -6,6 +6,7 @@ import contact from '../images/contact.svg'
 import blog from '../images/blog.svg'
 import landingpage from '../images/landingpage.svg'
 import mobilenav from '../images/mobile-nav.svg'
+import shopping from '../images/shopping-cart-purple.svg'
 
 const Navbar = () => {
   return (
@@ -35,6 +36,14 @@ const Navbar = () => {
               to="/web-applications/"
             >
               Applications
+            </Link>
+          </li>
+          <li className={styles.dItem}>
+            <Link
+              activeStyle={{ color: '#7c759a' }}
+              to="/ecommerce/"
+            >
+              Ecommerce
             </Link>
           </li>
         </ul>
@@ -80,10 +89,10 @@ const Navbar = () => {
         <Link
           className={styles.mItem}
           activeStyle={{ filter: 'grayscale(0%)' }}
-          to="/contact/"
+          to="/ecommerce/"
         >
-          <img className={styles.mnavimg} src={contact} alt="logo" />
-          <div className={styles.mText}>Contact</div>
+          <img className={styles.mnavimg} src={shopping} alt="logo" />
+          <div className={styles.mText}>Ecommerce</div>
         </Link>
       </div>
     </div>
