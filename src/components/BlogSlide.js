@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react'
-import { useTransition, animated } from 'react-spring'
+import { useTransition, animated, config } from 'react-spring'
 import './styles.css'
 import styles from '../pages/blogs.module.css'
 import {
@@ -16,7 +16,7 @@ const pages = [
     <animated.div
       style={{
         ...style,
-        background: 'lightpink',
+        background: 'rgb(94, 173, 187)',
         display: 'grid',
         gridTemplateColumns: '1fr',
         gridTemplateRows: '100px 500px',
@@ -47,7 +47,7 @@ const pages = [
     <animated.div
       style={{
         ...style,
-        background: 'lightblue',
+        background: 'rgb(94, 173, 187)',
         display: 'grid',
         gridTemplateColumns: '1fr',
         gridTemplateRows: '100px 500px',
@@ -87,13 +87,13 @@ const pages = [
     <animated.div
       style={{
         ...style,
-        background: 'white',
+        background: 'rgb(94, 173, 187)',
         display: 'grid',
         gridTemplateColumns: '1fr',
         gridTemplateRows: '100px 500px',
       }}
     >
-      <h4 style={{ color: 'black' }}>
+      <h4>
         70-80% of people ignore paid search results, choosing to only click on
         organic listings
       </h4>
@@ -167,13 +167,13 @@ const pages = [
     <animated.div
       style={{
         ...style,
-        background: 'lightred',
+        background: 'rgb(94, 173, 187)',
         display: 'grid',
         gridTemplateColumns: '1fr',
         gridTemplateRows: '100px 500px',
       }}
     >
-      <h4 style={{ color: 'black' }}>
+      <h4>
         Click through rate changes based on position
       </h4>
       <table style={{ width: '600px', margin: '0 auto' }}>
@@ -232,7 +232,7 @@ const pages = [
     <animated.div
       style={{
         ...style,
-        background: 'lightgreen',
+        background: 'rgb(94, 173, 187)',
         display: 'grid',
         gridTemplateColumns: '1fr',
         gridTemplateRows: '100px 500px',
@@ -277,6 +277,7 @@ const BlogSlide = () => {
     from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
     leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
+    config: config
   })
   return (
     <div className="simple-trans-main">
