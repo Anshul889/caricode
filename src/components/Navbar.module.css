@@ -54,7 +54,7 @@
 .leftdnav {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(4, max-content);
   justify-content: center;
   line-height: 1.9;
   list-style: none;
