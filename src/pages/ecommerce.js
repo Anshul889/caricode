@@ -275,14 +275,19 @@ const Ecommerce = () => {
           </p>
         </div>
       </div>
-      <div style={{ marginBottom: '50px' }}>
-        {isOneChecked && <div>Signup forms</div>}
-        {isTwoChecked && <div>Custom Email Design</div>}
-        {isThreeChecked && <div>Email Statistics</div>}
-        {isFourChecked && <div> Email Testing</div>}
-        {isFiveChecked && <div> Email Marketing Automation</div>}
-        {isSixChecked && <div> List Management</div>}
+      <div className={styles.ordereditems}>
+        {isOneChecked && <p>Signup forms</p>}
+        {isTwoChecked && <p>Custom Email Design</p>}
+        {isThreeChecked && <p>Email Statistics</p>}
+        {isFourChecked && <p> Email Testing</p>}
+        {isFiveChecked && <p> Email Marketing Automation</p>}
+        {isSixChecked && <p> List Management</p>}
       </div>
+      <div className={styles.total}>
+        Total: Rs {(isOneChecked && 750) + (isTwoChecked && 750)+ (isThreeChecked && 750)+ (isFourChecked && 750)+ (isFiveChecked && 750)+ (isSixChecked && 750)}
+      </div>
+      <p className={styles.warning}>(You will only be charged once the site goes live)</p>
+      <button style={{ margin: '50px' }}>Submit</button>
     </Layout>
   )
 }
