@@ -42,13 +42,17 @@ const getImages = graphql`
 
 const Ecommerce = () => {
   const data = useStaticQuery(getImages)
-  const [isMorningChecked, setIsMorningChecked] = useState(false)
-  const [isAfternoonChecked, setIsAfternoonChecked] = useState(false)
-  const [isEveningChecked, setIsEveningChecked] = useState(false)
+  const [isOneChecked, setIsOneChecked] = useState(false)
+  const [isTwoChecked, setIsTwoChecked] = useState(false)
+  const [isThreeChecked, setIsThreeChecked] = useState(false)
+  const [isFourChecked, setIsFourChecked] = useState(false)
+  const [isFiveChecked, setIsFiveChecked] = useState(false)
+  const [isSixChecked, setIsSixChecked] = useState(false)
+
   return (
     <Layout>
-      <div className={styles.ecommvp}>
-        <div className={styles.inner}>
+      {/* <div className={styles.ecommvp}> */}
+      {/* <div className={styles.inner}>
           <div className={styles.feature}>
             <Image
               fluid={data.image.childImageSharp.fluid}
@@ -178,17 +182,106 @@ const Ecommerce = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className={styles.form}>
-        <div className={styles.inner}>
-        <input type="checkbox" id="copy" name="copy" style={{padding: '0px'}}></input>
-        <label onClick={() => setIsEveningChecked(!isEveningChecked)} for="copy">Featuree 1</label>
+        <h4>Email Marketing</h4>
+        <div className={styles.formitem}>
+          <input
+            type="checkbox"
+            id="five"
+            name="five"
+            style={{ padding: '0px' }}
+          ></input>
+          <label onClick={() => setIsFiveChecked(!isFiveChecked)} for="five">
+            Email Marketing Automation
+          </label>
+          <p>
+            Engage contacts with automated, recurring emails or drip series in
+            the time it takes to create 1-to-many emails.
+          </p>
+        </div>
+        <div className={styles.formitem}>
+          <input
+            type="checkbox"
+            id="one"
+            name="one"
+            style={{ padding: '0px' }}
+          ></input>
+          <label onClick={() => setIsOneChecked(!isOneChecked)} for="one">
+            Signup Forms
+          </label>
+          <p>
+            Capture new signups, confirm opt-in, and add them directly to lists
+            in Marketing Campaigns.
+          </p>
+        </div>
+        <div className={styles.formitem}>
+          <input
+            type="checkbox"
+            id="two"
+            name="two"
+            style={{ padding: '0px' }}
+          ></input>
+          <label onClick={() => setIsTwoChecked(!isTwoChecked)} for="two">
+            Custom Email Design
+          </label>
+          <p>
+            Beautiful, responsive campaigns with drag & drop, HTML, or both!
+          </p>
+        </div>
+        <div className={styles.formitem}>
+          <input
+            type="checkbox"
+            id="three"
+            name="three"
+            style={{ padding: '0px' }}
+          ></input>
+          <label onClick={() => setIsThreeChecked(!isThreeChecked)} for="three">
+            Email Statistics
+          </label>
+          <p>
+            Get a complete picture of each email’s performance with analytics
+            that help you make informed, data-based decisions.
+          </p>
+        </div>
+        <div className={styles.formitem}>
+          <input
+            type="checkbox"
+            id="four"
+            name="four"
+            style={{ padding: '0px' }}
+          ></input>
+          <label onClick={() => setIsFourChecked(!isFourChecked)} for="four">
+            Email Testing
+          </label>
+          <p>
+            Run inbox rendering previews, spam testing, and link validation so
+            you know every email is ready before you ‘Send.’
+          </p>
+        </div>
+        <div className={styles.formitem}>
+          <input
+            type="checkbox"
+            id="six"
+            name="six"
+            style={{ padding: '0px' }}
+          ></input>
+          <label onClick={() => setIsSixChecked(!isSixChecked)} for="six">
+            List Management
+          </label>
+          <p>
+            Segment your recipients to send targeted, personal messages that
+            improve engagement and deliverability.
+          </p>
         </div>
       </div>
-      <div style={{marginBottom: '50px'}}>
-        {isMorningChecked && <span>Morning</span>}
-        {isAfternoonChecked && <span>Afternoon</span>}
-        {isEveningChecked && <span>Evening</span>}
+      <div style={{ marginBottom: '50px' }}>
+        {isOneChecked && <div>Signup forms</div>}
+        {isTwoChecked && <div>Custom Email Design</div>}
+        {isThreeChecked && <div>Email Statistics</div>}
+        {isFourChecked && <div> Email Testing</div>}
+        {isFiveChecked && <div> Email Marketing Automation</div>}
+        {isSixChecked && <div> List Management</div>}
       </div>
     </Layout>
   )

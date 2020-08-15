@@ -361,7 +361,7 @@ input[type='checkbox'] + label {
   cursor: pointer;
   display: inline-block;
   font-weight: 300;
-  margin-bottom: 2.16em;
+  margin-bottom: 0.16em;
   padding-left: 2.4em;
   padding-right: 0.75em;
   position: relative;
