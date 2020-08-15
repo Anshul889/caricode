@@ -6,6 +6,8 @@ body {
   overflow-x: hidden; /* Hide scrollbars */
 }
 
+*:focus {outline:none !important}
+
 .tl-edges {
   overflow-x: visible;
 }
@@ -354,6 +356,7 @@ input[type='checkbox'] {
   opacity: 0;
   width: 1em;
   z-index: -1;
+  outline: 0;
 }
 
 input[type='checkbox'] + label {
@@ -365,12 +368,17 @@ input[type='checkbox'] + label {
   padding-left: 2.4em;
   padding-right: 0.75em;
   position: relative;
+  outline: 0;
 }
 
 label {
   letter-spacing: 0.2em;
   margin: 0 0 1em 0;
   text-transform: uppercase;
+}
+
+label:focus {
+  outline: 0!important;
 }
 
 input[type='checkbox'] + label:before {
@@ -389,13 +397,15 @@ input[type='checkbox'] + label:before {
   text-align: center;
   top: 0px;
   width: 16px;
+  outline: none;
 }
 
-input[type="checkbox"]:checked + label:before{
+input[type='checkbox']:checked + label:before {
   background-color: #484459;
-    border-color: #484459;
-    color: #fff;
-    content: '\2713';
+  border-color: #484459;
+  color: #fff;
+  content: '\2713';
+  outline: none;
 }
 
 textarea {
