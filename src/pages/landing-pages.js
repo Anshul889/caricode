@@ -117,10 +117,9 @@ const LandingPages = () => {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.6} speed={0.1}>
-          <p className={styles.paragraph}>
-            this message tells the cumtomer i'll help them create an optimsed
-            landing page
-          </p>
+          <h4 className={styles.paragraph}>
+            Want to improve conversions on your website ?
+          </h4>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.2} speed={-0.2}>
