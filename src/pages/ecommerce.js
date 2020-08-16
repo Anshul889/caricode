@@ -612,7 +612,6 @@ const Ecommerce = () => {
           </button>
         )}
       </div>
-      {submitted && <div style={{marginLeft:"5%", marginBottom: '75px'}}>Thank you!</div>}
     </Layout>
   )
 }
