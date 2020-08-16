@@ -59,6 +59,8 @@ const Ecommerce = () => {
   const [isFifteenChecked, setIsFifteenChecked] = useState(false)
   const [isSixteenChecked, setIsSixteenChecked] = useState(false)
   const [isSeventeenChecked, setIsSeventeenChecked] = useState(false)
+  const [isEighteenChecked, setIsEighteenChecked] = useState(false)
+  const [inputField, setInputfield] = useState(null)
 
   return (
     <Layout>
@@ -475,13 +477,13 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
-            id="fourteen"
-            name="fourteen"
+            id="eighteen"
+            name="eighteen"
             style={{ padding: '0px' }}
           ></input>
           <label
-            onClick={() => setIsFourteenChecked(!isFourteenChecked)}
-            for="fourteen"
+            onClick={() => setIsEighteenChecked(!isEighteenChecked)}
+            for="eighteen"
           >
             Social Sharing
           </label>
@@ -525,10 +527,11 @@ const Ecommerce = () => {
         {isElevenChecked && <p> Wishlist</p>}
         {isTwelveChecked && <p> One Click Upsell</p>}
         {isThirteenChecked && <p> Related Items</p>}
-        {isFourteenChecked && <p> Social Sharing</p>}
+        {isFourteenChecked && <p> Social Login</p>}
         {isFifteenChecked && <p> Loyalty Program</p>}
         {isSixteenChecked && <p> Referral Program</p>}
         {isSeventeenChecked && <p> Countdown Timer</p>}
+        {isEighteenChecked && <p> Social Sharing</p>}
       </div>
       <div className={styles.total}>
         Total: Rs{' '}
@@ -547,14 +550,31 @@ const Ecommerce = () => {
           (isThirteenChecked && 750) +
           (isFourteenChecked && 750) +
           (isFifteenChecked && 750) +
-          (isSixteenChecked && 750)+
-          (isSeventeenChecked && 750)}
-          /mo
+          (isSixteenChecked && 750) +
+          (isSeventeenChecked && 750) +
+          (isEighteenChecked && 750)}
+        /mo
       </div>
       <p className={styles.warning}>
         (You will only be charged once the site goes live)
       </p>
-      <button className={styles.submitecom}>Submit</button>
+      <div className="former" style={{ width: '90%', margin: '0 auto' }}>
+        <label onSelect={() => setInputfield(true)}>
+          <div className="formitem">Name</div>
+          <input type="text" name="name" />
+        </label>
+        <label onSelect={() => setInputfield(true)}>
+          <div className="formitem">Email</div>
+          <input type="email" name="email" />
+        </label>
+      </div>
+      <div>
+      {inputField ? (
+        <button className={styles.submitecom}>Submit</button>
+      ) : (
+        <button className={styles.submitecom} style={{ opacity: '0.5' }}>Submit</button>
+      )}
+      </div>
     </Layout>
   )
 }
