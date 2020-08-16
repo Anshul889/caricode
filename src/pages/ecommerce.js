@@ -62,18 +62,23 @@ const Ecommerce = () => {
   const [isSeventeenChecked, setIsSeventeenChecked] = useState(false)
   const [isEighteenChecked, setIsEighteenChecked] = useState(false)
   const [inputField, setInputfield] = useState(null)
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
 
   const handleSubmit = async () => {
-    try{
-      axios.post(`https://us-central1-annies-recipes.cloudfunctions.net/app/api/caricode`,
-          {
-            name,
-            email,
-            message: `one: ${isOneChecked}, two: ${isTwoChecked}, three: ${isThreeChecked}`
-          })
-    } catch(e){
+    try {
+      await axios.post(
+        `https://us-central1-annies-recipes.cloudfunctions.net/app/api/caricode`,
+        {
+          name,
+          email,
+          message:`one: ${isOneChecked}, two: ${isTwoChecked}, three: ${isThreeChecked}, four: ${isFourChecked}, five: ${isFiveChecked}, six: ${isSixChecked}, seven: ${isSevenChecked}, eight: ${isEightChecked}, nine: ${isNineChecked}, ten: ${isTenChecked}, eleven: ${isElevenChecked}, twelve: ${isTwelveChecked}, thirteen: ${isThirteenChecked}, fourteen: ${isFourteenChecked}, fifteen: ${isFifteenChecked}, sixteen: ${isSixteenChecked}, seventeen: ${isSeventeenChecked}, eighteen: ${isEighteenChecked}`,
+        }
+      )
+      console.log(
+        `one: ${isOneChecked}, two: ${isTwoChecked}, three: ${isThreeChecked}, four: ${isFourChecked}, five: ${isFiveChecked}, six: ${isSixChecked}, seven: ${isSevenChecked}, eight: ${isEightChecked}, nine: ${isNineChecked}, ten: ${isTenChecked}, eleven: ${isElevenChecked}, twelve: ${isTwelveChecked}, thirteen: ${isThirteenChecked}, fourteen: ${isFourteenChecked}, fifteen: ${isFifteenChecked}, sixteen: ${isSixteenChecked}, seventeen: ${isSeventeenChecked}, eighteen: ${isEighteenChecked}`
+      )
+    } catch (e) {
       console.log(e)
     }
   }
@@ -577,19 +582,33 @@ const Ecommerce = () => {
       <div className="former" style={{ width: '90%', margin: '0 auto' }}>
         <label onSelect={() => setInputfield(true)}>
           <div className="formitem">Name</div>
-          <input type="text" name="name" autoComplete="name"  onChange={e => setEmail(e.target.value)}/>
+          <input
+            type="text"
+            name="name"
+            autoComplete="name"
+            onChange={e => setEmail(e.target.value)}
+          />
         </label>
         <label onSelect={() => setInputfield(true)}>
           <div className="formitem">Email</div>
-          <input type="email" name="email" autoComplete="email"  onChange={e => setName(e.target.value)}/>
+          <input
+            type="email"
+            name="email"
+            autoComplete="email"
+            onChange={e => setName(e.target.value)}
+          />
         </label>
       </div>
       <div>
-      {inputField ? (
-        <button onClick={() => handleSubmit()} className={styles.submitecom}>Submit</button>
-      ) : (
-        <button className={styles.submitecom} style={{ opacity: '0.5' }}>Submit</button>
-      )}
+        {inputField ? (
+          <button onClick={() => handleSubmit()} className={styles.submitecom}>
+            Submit
+          </button>
+        ) : (
+          <button className={styles.submitecom} style={{ opacity: '0.5' }}>
+            Submit
+          </button>
+        )}
       </div>
     </Layout>
   )
