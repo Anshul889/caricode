@@ -62,22 +62,23 @@ const Ecommerce = () => {
   const [isSeventeenChecked, setIsSeventeenChecked] = useState(false)
   const [isEighteenChecked, setIsEighteenChecked] = useState(false)
   const [inputField, setInputfield] = useState(null)
+  const [submitted, setSubmitted] = useState(false)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
 
   const handleSubmit = async () => {
     try {
-      await axios.post(
+      const response = await axios.post(
         `https://us-central1-annies-recipes.cloudfunctions.net/app/api/caricode`,
         {
           name,
           email,
-          message:`one: ${isOneChecked}, two: ${isTwoChecked}, three: ${isThreeChecked}, four: ${isFourChecked}, five: ${isFiveChecked}, six: ${isSixChecked}, seven: ${isSevenChecked}, eight: ${isEightChecked}, nine: ${isNineChecked}, ten: ${isTenChecked}, eleven: ${isElevenChecked}, twelve: ${isTwelveChecked}, thirteen: ${isThirteenChecked}, fourteen: ${isFourteenChecked}, fifteen: ${isFifteenChecked}, sixteen: ${isSixteenChecked}, seventeen: ${isSeventeenChecked}, eighteen: ${isEighteenChecked}`,
+          message: `one: ${isOneChecked}, two: ${isTwoChecked}, three: ${isThreeChecked}, four: ${isFourChecked}, five: ${isFiveChecked}, six: ${isSixChecked}, seven: ${isSevenChecked}, eight: ${isEightChecked}, nine: ${isNineChecked}, ten: ${isTenChecked}, eleven: ${isElevenChecked}, twelve: ${isTwelveChecked}, thirteen: ${isThirteenChecked}, fourteen: ${isFourteenChecked}, fifteen: ${isFifteenChecked}, sixteen: ${isSixteenChecked}, seventeen: ${isSeventeenChecked}, eighteen: ${isEighteenChecked}`,
         }
       )
-      console.log(
-        `one: ${isOneChecked}, two: ${isTwoChecked}, three: ${isThreeChecked}, four: ${isFourChecked}, five: ${isFiveChecked}, six: ${isSixChecked}, seven: ${isSevenChecked}, eight: ${isEightChecked}, nine: ${isNineChecked}, ten: ${isTenChecked}, eleven: ${isElevenChecked}, twelve: ${isTwelveChecked}, thirteen: ${isThirteenChecked}, fourteen: ${isFourteenChecked}, fifteen: ${isFifteenChecked}, sixteen: ${isSixteenChecked}, seventeen: ${isSeventeenChecked}, eighteen: ${isEighteenChecked}`
-      )
+      if (response.data === 'SUbmitted') {
+        setSubmitted(true)
+      }
     } catch (e) {
       console.log(e)
     }
@@ -599,6 +600,7 @@ const Ecommerce = () => {
           />
         </label>
       </div>
+      {submitted && <p style={{marginLeft:"5%", marginBottom: '20px'}}>Thank you!</p>}
       <div>
         {inputField ? (
           <button onClick={() => handleSubmit()} className={styles.submitecom}>
@@ -610,6 +612,7 @@ const Ecommerce = () => {
           </button>
         )}
       </div>
+      {submitted && <div style={{marginLeft:"5%", marginBottom: '75px'}}>Thank you!</div>}
     </Layout>
   )
 }
