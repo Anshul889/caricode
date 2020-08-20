@@ -30,6 +30,13 @@ const getImages = graphql`
         }
       }
     }
+    links: file(relativePath: { eq: "links.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -867,6 +874,10 @@ const Ecommerce = () => {
             <div className={styles.socialsharing}>
               <div className={styles.inner}>
                 <h4>Importance of social sharing</h4>
+                <Image
+                  fluid={data.links.childImageSharp.fluid}
+                  style={{ marginBottom: '14px', borderRadius: '4px'}}
+                />
                 <p>
                   Social media is built for mass sharing. That's how social
                   media affects SEO because all of this sharing adds up to more
