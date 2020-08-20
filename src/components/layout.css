@@ -6,8 +6,12 @@ body {
   overflow-x: hidden; /* Hide scrollbars */
 }
 
-*:focus {outline:none !important}
-
+*:focus {
+  outline: none !important;
+}
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 .tl-edges {
   overflow-x: visible;
 }
@@ -378,7 +382,7 @@ label {
 }
 
 label:focus {
-  outline: 0!important;
+  outline: 0 !important;
 }
 
 input[type='checkbox'] + label:before {
