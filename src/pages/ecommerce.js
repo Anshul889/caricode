@@ -84,58 +84,58 @@ const Ecommerce = () => {
     }
   }
 
-  const checkOne = async() => {
+  const checkOne = async () => {
     await setIsOneChecked(!isOneChecked)
   }
-  const checkTwo = async() => {
+  const checkTwo = async () => {
     await setIsTwoChecked(!isTwoChecked)
   }
-  const checkThree = async() => {
+  const checkThree = async () => {
     await setIsThreeChecked(!isThreeChecked)
   }
-  const checkFour = async() => {
+  const checkFour = async () => {
     await setIsFourChecked(!isFourChecked)
   }
-  const checkFive = async() => {
+  const checkFive = async () => {
     await setIsFiveChecked(!isFiveChecked)
   }
-  const checkSix = async() => {
+  const checkSix = async () => {
     await setIsSixChecked(!isSixChecked)
   }
-  const checkSeven = async() => {
+  const checkSeven = async () => {
     await setIsSevenChecked(!isSevenChecked)
   }
-  const checkEight = async() => {
+  const checkEight = async () => {
     await setIsEightChecked(!isEightChecked)
   }
-  const checkNine = async() => {
+  const checkNine = async () => {
     await setIsNineChecked(!isNineChecked)
   }
-  const checkTen = async() => {
+  const checkTen = async () => {
     await setIsTenChecked(!isTenChecked)
   }
-  const checkEleven = async() => {
+  const checkEleven = async () => {
     await setIsElevenChecked(!isElevenChecked)
   }
-  const checkTwelve = async() => {
+  const checkTwelve = async () => {
     await setIsTwelveChecked(!isTwelveChecked)
   }
-  const checkThirteen = async() => {
+  const checkThirteen = async () => {
     await setIsThirteenChecked(!isThirteenChecked)
   }
-  const checkFourteen = async() => {
+  const checkFourteen = async () => {
     await setIsFourteenChecked(!isFourteenChecked)
   }
-  const checkFifteen = async() => {
+  const checkFifteen = async () => {
     await setIsFifteenChecked(!isFifteenChecked)
   }
-  const checkSixteen = async() => {
+  const checkSixteen = async () => {
     await setIsSixteenChecked(!isSixteenChecked)
   }
-  const checkSeventeen = async() => {
+  const checkSeventeen = async () => {
     await setIsSeventeenChecked(!isSevenChecked)
   }
-  const checkEighteen = async() => {
+  const checkEighteen = async () => {
     await setIsEighteenChecked(!isEighteenChecked)
   }
 
@@ -441,10 +441,7 @@ const Ecommerce = () => {
             name="eleven"
             style={{ padding: '0px' }}
           ></input>
-          <label
-            onClick={() => checkEleven()}
-            for="eleven"
-          >
+          <label onClick={() => checkEleven()} for="eleven">
             Wishlist
           </label>
           <p>
@@ -460,10 +457,7 @@ const Ecommerce = () => {
             name="twelve"
             style={{ padding: '0px' }}
           ></input>
-          <label
-            onClick={() => checkTwelve()}
-            for="twelve"
-          >
+          <label onClick={() => checkTwelve()} for="twelve">
             One Click Upsell
           </label>
           <p>
@@ -479,10 +473,7 @@ const Ecommerce = () => {
             name="thirteen"
             style={{ padding: '0px' }}
           ></input>
-          <label
-            onClick={() => checkThirteen()}
-            for="thirteen"
-          >
+          <label onClick={() => checkThirteen()} for="thirteen">
             Related Items
           </label>
           <p>
@@ -499,10 +490,7 @@ const Ecommerce = () => {
             name="fifteen"
             style={{ padding: '0px' }}
           ></input>
-          <label
-            onClick={() => checkFifteen()}
-            for="fifteen"
-          >
+          <label onClick={() => checkFifteen()} for="fifteen">
             Loyalty Program
           </label>
           <p>
@@ -519,10 +507,7 @@ const Ecommerce = () => {
             name="sixteen"
             style={{ padding: '0px' }}
           ></input>
-          <label
-            onClick={() => checkSixteen()}
-            for="sixteen"
-          >
+          <label onClick={() => checkSixteen()} for="sixteen">
             Referral Program
           </label>
           <p>
@@ -538,16 +523,12 @@ const Ecommerce = () => {
             name="seventeen"
             style={{ padding: '0px' }}
           ></input>
-          <label
-            onClick={() => checkSeventeen()}
-            for="seventeen"
-          >
+          <label onClick={() => checkSeventeen()} for="seventeen">
             Countdown Timer
           </label>
           <p>
-            Consumers are 4x more likely to purchase something when referred by
-            a friend. Word of mouth marketing is believed to be behind 20-50% of
-            all purchasing decisions.
+            Build urgency, boost conversions, and get customers to the checkout
+            faster by adding a promotion bar that counts down in real time.
           </p>
         </div>
         <h4>Social</h4>
@@ -558,10 +539,7 @@ const Ecommerce = () => {
             name="eighteen"
             style={{ padding: '0px' }}
           ></input>
-          <label
-            onClick={() => checkEighteen()}
-            for="eighteen"
-          >
+          <label onClick={() => checkEighteen()} for="eighteen">
             Social Sharing
           </label>
           <p>
@@ -577,10 +555,7 @@ const Ecommerce = () => {
             name="fourteen"
             style={{ padding: '0px' }}
           ></input>
-          <label
-            onClick={() => checkFourteen()}
-            for="fourteen"
-          >
+          <label onClick={() => checkFourteen()} for="fourteen">
             Social Login
           </label>
           <p>
@@ -655,7 +630,9 @@ const Ecommerce = () => {
           />
         </label>
       </div>
-      {submitted && <p style={{marginLeft:"5%", marginBottom: '20px'}}>Thank you!</p>}
+      {submitted && (
+        <p style={{ marginLeft: '5%', marginBottom: '20px' }}>Thank you!</p>
+      )}
       <div>
         {inputField ? (
           <button onClick={() => handleSubmit()} className={styles.submitecom}>
