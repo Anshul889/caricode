@@ -850,15 +850,15 @@ const Ecommerce = () => {
                   average time on page. Longer load times have also been shown
                   to negatively affect conversions.
                 </p>
-                <div>
-                <FlexibleWidthXYPlot
-                  height={300}
-                  style={{ paddingTop: '10px' }}
-                >
-                  <XAxis title={'Loading in seconds'} tickTotal={6} />
-                  <YAxis title={'Bounce Rate'} />
-                  <VerticalBarSeries data={speedData} />
-                </FlexibleWidthXYPlot>
+                <div className={styles.bloggraph}>
+                  <FlexibleWidthXYPlot
+                    height={300}
+                    style={{ paddingTop: '10px' }}
+                  >
+                    <XAxis title={'Loading in seconds'} tickTotal={6} />
+                    <YAxis title={'Bounce Rate'} />
+                    <VerticalBarSeries data={speedData} />
+                  </FlexibleWidthXYPlot>
                 </div>
               </div>
             </div>
