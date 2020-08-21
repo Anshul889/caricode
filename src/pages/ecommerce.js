@@ -133,7 +133,7 @@ const Ecommerce = () => {
     await setIsSixteenChecked(!isSixteenChecked)
   }
   const checkSeventeen = async () => {
-    await setIsSeventeenChecked(!isSevenChecked)
+    await setIsSeventeenChecked(!isSeventeenChecked)
   }
   const checkEighteen = async () => {
     await setIsEighteenChecked(!isEighteenChecked)
@@ -279,6 +279,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isFiveChecked}
             id="five"
             name="five"
             style={{ padding: '0px' }}
@@ -294,6 +295,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isOneChecked}
             id="one"
             name="one"
             style={{ padding: '0px' }}
@@ -309,6 +311,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isTwoChecked}
             id="two"
             name="two"
             style={{ padding: '0px' }}
@@ -323,6 +326,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isThreeChecked}
             id="three"
             name="three"
             style={{ padding: '0px' }}
@@ -338,6 +342,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isFourChecked}
             id="four"
             name="four"
             style={{ padding: '0px' }}
@@ -353,6 +358,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isSixChecked}
             id="six"
             name="six"
             style={{ padding: '0px' }}
@@ -369,6 +375,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isSevenChecked}
             id="seven"
             name="seven"
             style={{ padding: '0px' }}
@@ -385,6 +392,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isEightChecked}
             id="eight"
             name="eight"
             style={{ padding: '0px' }}
@@ -401,6 +409,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isNineChecked}
             id="nine"
             name="nine"
             style={{ padding: '0px' }}
@@ -419,6 +428,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isTenChecked}
             id="ten"
             name="ten"
             style={{ padding: '0px' }}
@@ -437,6 +447,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isElevenChecked}
             id="eleven"
             name="eleven"
             style={{ padding: '0px' }}
@@ -453,6 +464,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isTwelveChecked}
             id="twelve"
             name="twelve"
             style={{ padding: '0px' }}
@@ -469,6 +481,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isThirteenChecked}
             id="thirteen"
             name="thirteen"
             style={{ padding: '0px' }}
@@ -486,6 +499,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isFifteenChecked}
             id="fifteen"
             name="fifteen"
             style={{ padding: '0px' }}
@@ -503,6 +517,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isSixteenChecked}
             id="sixteen"
             name="sixteen"
             style={{ padding: '0px' }}
@@ -519,6 +534,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isSeventeenChecked}
             id="seventeen"
             name="seventeen"
             style={{ padding: '0px' }}
@@ -535,6 +551,7 @@ const Ecommerce = () => {
         <div className={styles.formitem}>
           <input
             type="checkbox"
+            checked={isEighteenChecked}
             id="eighteen"
             name="eighteen"
             style={{ padding: '0px' }}
