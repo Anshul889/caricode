@@ -1,57 +1,89 @@
+.ecombody {
+  background-color: #f4f7f9;
+}
+
+.card {
+  width: 90%;
+  margin: 38px auto;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+.card p{
+  width: 90%;
+  margin: 15px auto;
+}
+
+.card h4{
+  padding-top: 20px;
+}
+
+.card button{
+  margin: 20px auto;
+  display: block;
+  width: 80%;
+  height: 45px;
+}
+
+.formupper{
+  background-color: white;
+  clip-path: polygon(100% 0.5%, 100% 100%, 0 100%, 0 0);
+}
+
 .form {
   display: grid;
-  grid-template-columns:  1fr;
+  grid-template-columns: 1fr;
   row-gap: 20px;
-  justify-items: center;
   margin-bottom: 50px;
   width: 90%;
   margin: 0 auto;
+  padding-top: 58px;
 }
 
-.ecommvp{
-    display: grid;
-    grid-template-columns: 1fr;
+.ecommvp {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.inner{
+.inner {
   margin: 0 auto;
   width: 90%;
 }
 
-.ecommvp h4{
+.ecommvp h4 {
   margin-top: 30px;
 }
 
-.ordereditems{
+.ordereditems {
   margin: 0 auto;
   width: 90%;
 }
 
-.total{
+.total {
   width: 90%;
   margin: 0 auto;
 }
 
-.warning{
+.warning {
   font-size: 13px;
   color: green;
   width: 90%;
   margin: 0 auto;
 }
 
-.submitecom{
+.submitecom {
   margin-left: 5%;
   margin-bottom: 75px;
   margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .form{
+  .form {
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
   }
 
-  .form h4{
+  .form h4 {
     grid-column: 1 / span 2;
   }
 }
