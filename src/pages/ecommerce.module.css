@@ -5,7 +5,14 @@
 .carouselcontainer {
   width: 100%;
   margin: 0 auto;
-  padding: 25px 0;
+  padding: 45px 0;
+  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 95%);
+  background-color: rgb(94, 173, 187);
+  transform: translateY(-70px);
+  color: white
+}
+.carouselcontainer h4{
+  padding-top: 15px;
 }
 
 .ecomcarousel {
@@ -21,6 +28,10 @@
 
 .ecomcarousel::-webkit-scrollbar {
   display: none;
+}
+
+.cardsection{
+  transform: translateY(-20px);
 }
 
 .card {
@@ -49,7 +60,7 @@
 
 .formupper {
   background-color: white;
-  clip-path: polygon(100% 0.5%, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0.9%, 100% 100%, 0 100%, 0 0);
 }
 
 .form {
