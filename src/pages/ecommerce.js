@@ -169,27 +169,27 @@ const Ecommerce = () => {
           <h4>Get a Pixel Perfect Website tailored to your needs</h4>
           <div className={styles.ecomcarousel}>
             <div className={styles.carouselitem}>
-              <Image fluid={data.fashion.childImageSharp.fluid} />
+              <Image fluid={data.fashion.childImageSharp.fluid} style={{borderRadius: '4px'}} />
               <p>Fashion</p>
             </div>
             <div className={styles.carouselitem}>
-              <Image fluid={data.jewellery.childImageSharp.fluid} />
+              <Image fluid={data.jewellery.childImageSharp.fluid}  style={{borderRadius: '4px'}}/>
               <p>Jewellery</p>
             </div>
             <div className={styles.carouselitem}>
-              <Image fluid={data.beauty.childImageSharp.fluid} />
+              <Image fluid={data.beauty.childImageSharp.fluid}  style={{borderRadius: '4px'}}/>
               <p>Beauty</p>
             </div>
             <div className={styles.carouselitem}>
-              <Image fluid={data.food.childImageSharp.fluid} />
+              <Image fluid={data.food.childImageSharp.fluid} style={{borderRadius: '4px'}} />
               <p>Food</p>
             </div>
             <div className={styles.carouselitem}>
-              <Image fluid={data.home.childImageSharp.fluid} />
+              <Image fluid={data.home.childImageSharp.fluid} style={{borderRadius: '4px'}} />
               <p>Home</p>
             </div>
             <div className={styles.carouselitem}>
-              <Image fluid={data.sports.childImageSharp.fluid} />
+              <Image fluid={data.sports.childImageSharp.fluid} style={{borderRadius: '4px'}} />
               <p>Sports</p>
             </div>
             <div></div>
@@ -197,6 +197,15 @@ const Ecommerce = () => {
         </div>
         <div className={styles.cardsection}>
           <h4>Get started with 3 easy steps</h4>
+          <div className={styles.card}>
+            <h4>Dolor sit amet vivamus</h4>
+            <p>
+              Phasellus in ante vitae nibh porttitor tempus vitae ut ante.
+              Vestibulum blandit ex a elementum viverra. Sed quat diam, aliquet
+              tempus felis nisl at lacus.
+            </p>
+            <button>More</button>
+          </div>
           <div className={styles.card}>
             <h4>Dolor sit amet vivamus</h4>
             <p>
@@ -574,7 +583,7 @@ const Ecommerce = () => {
           <p className={styles.warning}>
             (You will only be charged once the site goes live)
           </p>
-          <div className="former" style={{ width: '90%', margin: '0 auto' }}>
+          <div className="former" style={{ width: '90%', margin: '0 auto', maxWidth:"1080px"}}>
             <label onSelect={() => setInputfield(true)}>
               <div className="formitem">Name</div>
               <input
@@ -595,9 +604,9 @@ const Ecommerce = () => {
             </label>
           </div>
           {submitted && (
-            <p style={{ marginLeft: '5%', marginBottom: '20px' }}>Thank you!</p>
+            <p style={{ marginLeft: '5%', marginBottom: '20px', maxWidth: '1080px'}}>Thank you!</p>
           )}
-          <div>
+          <div style={{maxWidth: '1080px' , margin: '0 auto'}}>
             {inputField ? (
               <button
                 onClick={() => handleSubmit()}
