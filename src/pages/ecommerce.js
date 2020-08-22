@@ -18,21 +18,42 @@ const getImages = graphql`
         }
       }
     }
-    image1: file(relativePath: { eq: "calendar.jpg" }) {
+    fashion: file(relativePath: { eq: "fashion.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    image2: file(relativePath: { eq: "payment.jpg" }) {
+    jewellery: file(relativePath: { eq: "jewellery.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    image3: file(relativePath: { eq: "functions.png" }) {
+    beauty: file(relativePath: { eq: "beauty.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    food: file(relativePath: { eq: "food.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    home: file(relativePath: { eq: "home.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    sports: file(relativePath: { eq: "sports.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
@@ -144,7 +165,38 @@ const Ecommerce = () => {
     <Layout>
       <div className={styles.ecombody}>
         <EcommerceHero />
+        <div className={styles.carouselcontainer}>
+          <h4>Get a Pixel Perfect Website tailored to your needs</h4>
+          <div className={styles.ecomcarousel}>
+            <div className={styles.carouselitem}>
+              <Image fluid={data.fashion.childImageSharp.fluid} />
+              <p>Fashion</p>
+            </div>
+            <div className={styles.carouselitem}>
+              <Image fluid={data.jewellery.childImageSharp.fluid} />
+              <p>Jewellery</p>
+            </div>
+            <div className={styles.carouselitem}>
+              <Image fluid={data.beauty.childImageSharp.fluid} />
+              <p>Beauty</p>
+            </div>
+            <div className={styles.carouselitem}>
+              <Image fluid={data.food.childImageSharp.fluid} />
+              <p>Food</p>
+            </div>
+            <div className={styles.carouselitem}>
+              <Image fluid={data.home.childImageSharp.fluid} />
+              <p>Home</p>
+            </div>
+            <div className={styles.carouselitem}>
+              <Image fluid={data.sports.childImageSharp.fluid} />
+              <p>Sports</p>
+            </div>
+            <div></div>
+          </div>
+        </div>
         <div className={styles.cardsection}>
+          <h4>Get started with 3 easy steps</h4>
           <div className={styles.card}>
             <h4>Dolor sit amet vivamus</h4>
             <p>

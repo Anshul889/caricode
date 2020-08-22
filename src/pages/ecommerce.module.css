@@ -2,30 +2,52 @@
   background-color: #f4f7f9;
 }
 
+.carouselcontainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.ecomcarousel {
+  display: grid;
+  grid-template-columns:  66% 66% 66% 66% 66% 66% 5px;
+  overflow: scroll;
+  grid-gap: 30px;
+}
+
+.carouselitem{
+  transform: translateX(5%);
+}
+
+.ecomcarousel::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
   width: 90%;
   margin: 38px auto;
   background-color: white;
   padding-bottom: 10px;
+  box-shadow: 0 1em 5em rgba(0, 0, 0, 0.05);
 }
 
-.card p{
+.card p {
   width: 90%;
   margin: 15px auto;
 }
 
-.card h4{
+.card h4 {
   padding-top: 20px;
 }
 
-.card button{
+.card button {
   margin: 20px auto;
   display: block;
   width: 80%;
   height: 45px;
 }
 
-.formupper{
+.formupper {
   background-color: white;
   clip-path: polygon(100% 0.5%, 100% 100%, 0 100%, 0 0);
 }
@@ -86,29 +108,29 @@
   .form h4 {
     grid-column: 1 / span 2;
   }
-  .cardsection{
+  .cardsection {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 900px;
     margin: 0 auto;
     padding-bottom: 30px;
   }
-  .card p{
+  .card p {
     width: 90%;
     margin: 35px auto;
   }
-  
-  .card h4{
+
+  .card h4 {
     padding-top: 30px;
   }
-  
-  .card button{
+
+  .card button {
     margin: 35px auto;
     display: block;
     width: 80%;
     height: 45px;
   }
-  .formupper{
+  .formupper {
     clip-path: polygon(100% 2.5%, 100% 100%, 0 100%, 0 0);
     padding-top: 35px;
   }
