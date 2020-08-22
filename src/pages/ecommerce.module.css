@@ -86,4 +86,30 @@
   .form h4 {
     grid-column: 1 / span 2;
   }
+  .cardsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  .card p{
+    width: 90%;
+    margin: 35px auto;
+  }
+  
+  .card h4{
+    padding-top: 30px;
+  }
+  
+  .card button{
+    margin: 35px auto;
+    display: block;
+    width: 80%;
+    height: 45px;
+  }
+  .formupper{
+    clip-path: polygon(100% 2.5%, 100% 100%, 0 100%, 0 0);
+    padding-top: 35px;
+  }
 }

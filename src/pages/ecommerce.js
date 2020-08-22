@@ -144,7 +144,7 @@ const Ecommerce = () => {
     <Layout>
       <div className={styles.ecombody}>
         <EcommerceHero />
-        <div>
+        <div className={styles.cardsection}>
           <div className={styles.card}>
             <h4>Dolor sit amet vivamus</h4>
             <p>

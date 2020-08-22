@@ -21,3 +21,9 @@
   width: 80%;
   max-width: 600px;
 }
+
+@media screen and (min-width: 600px) {
+ .banner{
+  clip-path: polygon(100% 0, 100% 100%, 0 92%, 0 0);;
+ }
+}
