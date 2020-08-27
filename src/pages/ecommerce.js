@@ -192,7 +192,7 @@ const Ecommerce = () => {
               <Image fluid={data.sports.childImageSharp.fluid} style={{borderRadius: '4px'}} />
               <p>Sports</p>
             </div>
-            <div></div>
+            <div className={styles.nothing}></div>
           </div>
         </div>
         <div className={styles.cardsection}>

@@ -306,126 +306,132 @@ const LandingPages = () => {
       </Parallax>
       <div className={styles.dlanding}>
         <Banner />
-        <div className={styles.odditem}>
-          <div className={styles.colorbg1}>
-            <h3>Be specific</h3>
+        <div className={styles.landingTwo}>
+          <div className={styles.odditem}>
+            <div className={styles.colorbg1}>
+              <h3>Be specific</h3>
+            </div>
+            <div className={styles.oddimage}>
+              <Image fluid={data.image2.childImageSharp.fluid} />
+            </div>
+            <VisibilitySensor>
+              {({ isVisible }) => (
+                <Spring
+                  from={{ transform: 'translateX(-10%)' }}
+                  to={{
+                    transform: isVisible
+                      ? 'translateX(-30%)'
+                      : 'translateX(-10%)',
+                  }}
+                  delay={800}
+                >
+                  {props => (
+                    <div className={styles.oddcontent} style={props}>
+                      <p>
+                        The paradox of choice reveals that less is more. Too
+                        many options will often hinder people from making a
+                        choice. If your landing page design is focused on a
+                        single purpose, you’re helping your customers make the
+                        right decisions and you will increase conversion rates.
+                      </p>
+                    </div>
+                  )}
+                </Spring>
+              )}
+            </VisibilitySensor>
           </div>
-          <div className={styles.oddimage}>
-            <Image fluid={data.image2.childImageSharp.fluid} />
+          <div className={styles.evenitem}>
+            <div className={styles.evenimage}>
+              <Image fluid={data.image2.childImageSharp.fluid} />
+            </div>
+            <div className={styles.colorbg2}>
+              <h3>High quality visuals</h3>
+            </div>
+            <VisibilitySensor>
+              {({ isVisible }) => (
+                <Spring
+                  from={{ transform: 'translateX(10%)' }}
+                  to={{
+                    transform: isVisible
+                      ? 'translateX(30%)'
+                      : 'translateX(10%)',
+                  }}
+                  delay={800}
+                >
+                  {props => (
+                    <div className={styles.evencontent} style={props}>
+                      <p>
+                        The design of a website is what drives our first
+                        impression 94% of the time. Because it only takes us
+                        fractions of a second to take it all in. We
+                        subconsciously decide whether we want to stick around or
+                        not in the blink of an eye.
+                      </p>
+                    </div>
+                  )}
+                </Spring>
+              )}
+            </VisibilitySensor>
           </div>
-          <VisibilitySensor>
-            {({ isVisible }) => (
-              <Spring
-                from={{ transform: 'translateX(-10%)' }}
-                to={{
-                  transform: isVisible
-                    ? 'translateX(-30%)'
-                    : 'translateX(-10%)',
-                }}
-                delay={800}
-              >
-                {props => (
-                  <div className={styles.oddcontent} style={props}>
-                    <p>
-                      The paradox of choice reveals that less is more. Too many
-                      options will often hinder people from making a choice. If
-                      your landing page design is focused on a single purpose,
-                      you’re helping your customers make the right decisions and
-                      you will increase conversion rates.
-                    </p>
-                  </div>
-                )}
-              </Spring>
-            )}
-          </VisibilitySensor>
-        </div>
-        <div className={styles.evenitem}>
-          <div className={styles.evenimage}>
-            <Image fluid={data.image2.childImageSharp.fluid} />
+          <div className={styles.odditem}>
+            <div className={styles.colorbg1}>
+              <h3>Testimonials</h3>
+            </div>
+            <div className={styles.oddimage}>
+              <Image fluid={data.image2.childImageSharp.fluid} />
+            </div>
+            <VisibilitySensor>
+              {({ isVisible }) => (
+                <Spring
+                  from={{ transform: 'translateX(-10%)' }}
+                  to={{
+                    transform: isVisible
+                      ? 'translateX(-30%)'
+                      : 'translateX(-10%)',
+                  }}
+                  delay={800}
+                >
+                  {props => (
+                    <div className={styles.oddcontent} style={props}>
+                      <p>
+                        People don’t go looking for testimonials. Instead, they
+                        want to see them when making a critical decision. That
+                        means testimonials should be everywhere. They should be
+                        one of the first things people see on your homepage.
+                      </p>
+                    </div>
+                  )}
+                </Spring>
+              )}
+            </VisibilitySensor>
           </div>
-          <div className={styles.colorbg2}>
-            <h3>High quality visuals</h3>
+          <div className={styles.evenitem}>
+            <div className={styles.evenimage}>
+              <Image fluid={data.image2.childImageSharp.fluid} />
+            </div>
+            <div className={styles.colorbg2}>
+              <h3>Lead Magnet</h3>
+            </div>
+            <VisibilitySensor>
+              {({ isVisible }) => (
+                <Spring
+                  from={{ transform: 'translateX(10%)' }}
+                  to={{
+                    transform: isVisible
+                      ? 'translateX(30%)'
+                      : 'translateX(10%)',
+                  }}
+                  delay={800}
+                >
+                  {props => (
+                    <div className={styles.evencontent} style={props}>
+                      <p>You need to give away valuable content for free</p>
+                    </div>
+                  )}
+                </Spring>
+              )}
+            </VisibilitySensor>
           </div>
-          <VisibilitySensor>
-            {({ isVisible }) => (
-              <Spring
-                from={{ transform: 'translateX(10%)' }}
-                to={{
-                  transform: isVisible ? 'translateX(30%)' : 'translateX(10%)',
-                }}
-                delay={800}
-              >
-                {props => (
-                  <div className={styles.evencontent} style={props}>
-                    <p>
-                      The design of a website is what drives our first
-                      impression 94% of the time. Because it only takes us
-                      fractions of a second to take it all in. We subconsciously
-                      decide whether we want to stick around or not in the blink
-                      of an eye.
-                    </p>
-                  </div>
-                )}
-              </Spring>
-            )}
-          </VisibilitySensor>
-        </div>
-        <div className={styles.odditem}>
-          <div className={styles.colorbg1}>
-            <h3>Testimonials</h3>
-          </div>
-          <div className={styles.oddimage}>
-            <Image fluid={data.image2.childImageSharp.fluid} />
-          </div>
-          <VisibilitySensor>
-            {({ isVisible }) => (
-              <Spring
-                from={{ transform: 'translateX(-10%)' }}
-                to={{
-                  transform: isVisible
-                    ? 'translateX(-30%)'
-                    : 'translateX(-10%)',
-                }}
-                delay={800}
-              >
-                {props => (
-                  <div className={styles.oddcontent} style={props}>
-                    <p>
-                      People don’t go looking for testimonials. Instead, they
-                      want to see them when making a critical decision. That
-                      means testimonials should be everywhere. They should be
-                      one of the first things people see on your homepage.
-                    </p>
-                  </div>
-                )}
-              </Spring>
-            )}
-          </VisibilitySensor>
-        </div>
-        <div className={styles.evenitem}>
-          <div className={styles.evenimage}>
-            <Image fluid={data.image2.childImageSharp.fluid} />
-          </div>
-          <div className={styles.colorbg2}>
-            <h3>Lead Magnet</h3>
-          </div>
-          <VisibilitySensor>
-            {({ isVisible }) => (
-              <Spring
-                from={{ transform: 'translateX(10%)' }}
-                to={{
-                  transform: isVisible ? 'translateX(30%)' : 'translateX(10%)',
-                }}
-                delay={800}
-              >
-                {props => (
-                  <div className={styles.evencontent} style={props}>
-                    <p>You need to give away valuable content for free</p>
-                  </div>
-                )}
-              </Spring>
-            )}
-          </VisibilitySensor>
         </div>
       </div>
     </Layout>
