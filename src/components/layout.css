@@ -518,6 +518,7 @@ textarea:focus {
   background-color: rgb(94, 173, 187);
   color: white;
   padding: 38px 0;
+  content-visibility: auto;
 }
 
 #firstheader h4 {

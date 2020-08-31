@@ -198,11 +198,13 @@
   background-color: #484459;
   color: white;
   text-align: center;
+  content-visibility: auto;
 }
 
 .whycontainer {
   text-align: center;
   background-color: white;
+  content-visibility: auto;
 }
 
 .webbody {
