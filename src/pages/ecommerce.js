@@ -604,7 +604,7 @@ const Ecommerce = () => {
             </label>
           </div>
           {submitted && (
-            <p style={{ marginLeft: '5%', marginBottom: '20px', maxWidth: '1080px'}}>Thank you!</p>
+            <p style={{ marginLeft: '5%', marginBottom: '20px', maxWidth: '1080px'}}>Thank you! We will get back to you shortly</p>
           )}
           <div style={{maxWidth: '1080px' , margin: '0 auto'}}>
             {inputField ? (

@@ -68,11 +68,24 @@
 .form {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 20px;
+  row-gap: 0px;
   margin-bottom: 50px;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 58px;
+}
+
+.form h4{
+  margin-top: 20px;
+}
+
+.formitem:nth-child(2n+1){
+  background-color: rgba(144, 144, 144, 0.15);
+}
+
+.formitem{
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .ecommvp {
@@ -117,6 +130,13 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
     max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+    row-gap: 50px;
+  }
+
+  .formitem:nth-child(2n+1){
+    background-color: transparent
   }
 
   .form h4 {
