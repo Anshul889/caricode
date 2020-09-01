@@ -198,7 +198,7 @@ const Ecommerce = () => {
         <div className={styles.cardsection}>
           <h4>Get started with 3 easy steps</h4>
           <div className={styles.card}>
-            <h4>Dolor sit amet vivamus</h4>
+            <h4>Base Features</h4>
             <p>
               Phasellus in ante vitae nibh porttitor tempus vitae ut ante.
               Vestibulum blandit ex a elementum viverra. Sed quat diam, aliquet
@@ -207,7 +207,7 @@ const Ecommerce = () => {
             <button>More</button>
           </div>
           <div className={styles.card}>
-            <h4>Dolor sit amet vivamus</h4>
+            <h4>Choose the features below</h4>
             <p>
               Phasellus in ante vitae nibh porttitor tempus vitae ut ante.
               Vestibulum blandit ex a elementum viverra. Sed quat diam, aliquet
@@ -216,7 +216,7 @@ const Ecommerce = () => {
             <button>More</button>
           </div>
           <div className={styles.card}>
-            <h4>Dolor sit amet vivamus</h4>
+            <h4>Hit Submit</h4>
             <p>
               Phasellus in ante vitae nibh porttitor tempus vitae ut ante.
               Vestibulum blandit ex a elementum viverra. Sed quat diam, aliquet

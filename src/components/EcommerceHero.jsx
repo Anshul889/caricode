@@ -6,7 +6,7 @@ import { Spring, config } from 'react-spring/renderprops'
 
 const getImages = graphql`
   {
-    banner: file(relativePath: { eq: "banner.jpg" }) {
+    banner: file(relativePath: { eq: "ebanner.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
