@@ -21,30 +21,26 @@ const EcommerceHero = () => {
   // const data = useStaticQuery(getImages)
   const Container = Keyframes.Spring({
     back: async next => {
-      await next({ backgroundColor: 'white', height: '60vh' })
-      await delay(2000)
+      await next({ backgroundColor: 'white' })
+      await delay(3000)
       await next({ backgroundColor: 'rgba(71, 46, 104, 0.9)' })
     },
     colorh: async next => {
       await next({ color: 'black' })
-      await delay(2000)
+      await delay(3000)
       await next({ color: 'white' })
     },
     colorp: async next => {
       await next({ opacity: 0, color: 'black' })
-      await delay(850)
+      await delay(1250)
       await next({ opacity: 1 })
-      await delay(400)
+      await delay(860)
       await next({ color: 'white' })
-    },
-    colorb: async next => {
-      await next({ x: 0 })
-      await delay(2000)
-      await next({ x: 1 })
     },
   })
 
   return (
+    <div className={styles.upperbanner}>
     <Container state="back">
       {stylish => (
         <div className={styles.banner} style={stylish}>
@@ -64,7 +60,7 @@ const EcommerceHero = () => {
                 </p>
               )}
             </Container>
-            <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={3500}>
+            <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={5000}>
               {props =>
               <button style={props}>Get Started</button>}
             </Spring>
@@ -72,6 +68,7 @@ const EcommerceHero = () => {
         </div>
       )}
     </Container>
+    </div>
   )
 }
 
