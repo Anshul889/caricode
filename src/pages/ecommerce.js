@@ -207,7 +207,7 @@ const Ecommerce = () => {
             <button>More</button>
           </div>
           <div className={styles.card}>
-            <h4>Choose the features below</h4>
+            <h4>Choose the features</h4>
             <p>
               Phasellus in ante vitae nibh porttitor tempus vitae ut ante.
               Vestibulum blandit ex a elementum viverra. Sed quat diam, aliquet
