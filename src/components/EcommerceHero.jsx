@@ -2,69 +2,76 @@ import React from 'react'
 import styles from './EcommerceHero.module.css'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Image from 'gatsby-image'
-import { Spring, config } from 'react-spring/renderprops'
+import { Keyframes, Spring, config } from 'react-spring/renderprops'
+import delay from 'delay'
 
-const getImages = graphql`
-  {
-    banner: file(relativePath: { eq: "ebanner.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+// const getImages = graphql`
+//   {
+//     banner: file(relativePath: { eq: "ebanner.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 2000) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `
 
 const EcommerceHero = () => {
-  const data = useStaticQuery(getImages)
+  // const data = useStaticQuery(getImages)
+  const Container = Keyframes.Spring({
+    back: async next => {
+      await next({ backgroundColor: 'white', height: '60vh' })
+      await delay(2000)
+      await next({ backgroundColor: 'rgba(71, 46, 104, 0.9)' })
+    },
+    colorh: async next => {
+      await next({ color: 'black' })
+      await delay(2000)
+      await next({ color: 'white' })
+    },
+    colorp: async next => {
+      await next({ opacity: 0, color: 'black' })
+      await delay(850)
+      await next({ opacity: 1 })
+      await delay(400)
+      await next({ color: 'white' })
+    },
+    colorb: async next => {
+      await next({ x: 0 })
+      await delay(2000)
+      await next({ x: 1 })
+    },
+  })
+
   return (
-    <div className={styles.banner}>
-      <Image
-        fluid={data.banner.childImageSharp.fluid}
-        style={{ height: '100%', opacity: 0.3 }}
-      />
-      <div className={styles.bannercontent}>
-        <h2>Build an online business—no matter what business you’re in</h2>
-        <Spring
-          from={{ width: '0px', marginBottom: '20px' }}
-          to={{ width: '100px', marginBottom: '20px' }}
-          delay={500}
-        >
-          {props => <div className="hero-feature-border" style={props}></div>}
-        </Spring>
-        <Spring
-          from={{
-            opacity: 0,
-            transform: 'translateY(20px)',
-            marginBottom: '20px',
-          }}
-          to={{
-            opacity: 1,
-            transform: 'translateY(0px)',
-            marginBottom: '20px',
-          }}
-          delay={1000}
-        >
-          {props => (
-            <p style={props}>
-              Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.
-            </p>
-          )}
-        </Spring>
-        <Spring
-          from={{ opacity: 0, transform: 'translateY(10px)' }}
-          to={{ opacity: 1, transform: 'translateY(0px)' }}
-          delay={1200}
-        >
-          {props => (
-            <Link to="/#section2">
-              <button style={props}>Get Started</button>
-            </Link>
-          )}
-        </Spring>
-      </div>
-    </div>
+    <Container state="back">
+      {stylish => (
+        <div className={styles.banner} style={stylish}>
+          <div className={styles.bannercontent}>
+            <Container state="colorh">
+              {styles => (
+                <h2 style={styles}>
+                  Build an online business—no matter what business you’re in
+                </h2>
+              )}
+            </Container>
+            <Container state="colorp">
+              {styles => (
+                <p style={styles}>
+                  Create an ecommerce website backed by powerful tools that help
+                  you find customers, drive sales, and manage your day-to-day.
+                </p>
+              )}
+            </Container>
+            <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={3500}>
+              {props =>
+              <button style={props}>Get Started</button>}
+            </Spring>
+          </div>
+        </div>
+      )}
+    </Container>
   )
 }
 
