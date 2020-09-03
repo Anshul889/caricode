@@ -86,11 +86,13 @@ const Ecommerce = () => {
   const [isFeatureSelected, setPopup] = useState(false)
   const [inputField, setInputfield] = useState(null)
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
 
   const handleSubmit = async () => {
     try {
+      setLoading(true)
       const response = await axios.post(
         `https://us-central1-annies-recipes.cloudfunctions.net/app/api/caricode`,
         {
@@ -100,7 +102,9 @@ const Ecommerce = () => {
         }
       )
       if (response.data === 'SUbmitted') {
+        setLoading(false)
         setSubmitted(true)
+        setInputfield(false)
       }
     } catch (e) {
       console.log(e)
@@ -643,6 +647,17 @@ const Ecommerce = () => {
               />
             </label>
           </div>
+          {loading && (
+            <p
+              style={{
+                marginLeft: '5%',
+                marginBottom: '20px',
+                maxWidth: '1080px',
+              }}
+            >
+              Loading...
+            </p>
+          )}
           {submitted && (
             <p
               style={{
@@ -669,67 +684,64 @@ const Ecommerce = () => {
             )}
           </div>
           {isFeatureSelected && (
-            <Spring from={{bottom: 0}} to={{bottom: 50}}>
-              {props =>
-            <div className={styles.featureupper} style={props}>
-            <div className={styles.featureselected}>
-              <div className={styles.mfeatures}>
-                Features :{' '}
-                {(isOneChecked && 1) +
-                  (isTwoChecked && 1) +
-                  (isThreeChecked && 1) +
-                  (isFourChecked && 1) +
-                  (isFiveChecked && 1) +
-                  (isSixChecked && 1) +
-                  (isSevenChecked && 1) +
-                  (isEightChecked && 1) +
-                  (isNineChecked && 1) +
-                  (isTenChecked && 1) +
-                  (isElevenChecked && 1) +
-                  (isTwelveChecked && 1) +
-                  (isThirteenChecked && 1) +
-                  (isFourteenChecked && 1) +
-                  (isFifteenChecked && 1) +
-                  (isSixteenChecked && 1) +
-                  (isSeventeenChecked && 1) +
-                  (isEighteenChecked && 1)}
-              </div>
-              <div className={styles.mtotal}>
-                Total: Rs{' '}
-                {(isOneChecked && 750) +
-                  (isTwoChecked && 750) +
-                  (isThreeChecked && 750) +
-                  (isFourChecked && 750) +
-                  (isFiveChecked && 750) +
-                  (isSixChecked && 750) +
-                  (isSevenChecked && 750) +
-                  (isEightChecked && 750) +
-                  (isNineChecked && 750) +
-                  (isTenChecked && 750) +
-                  (isElevenChecked && 750) +
-                  (isTwelveChecked && 750) +
-                  (isThirteenChecked && 750) +
-                  (isFourteenChecked && 750) +
-                  (isFifteenChecked && 750) +
-                  (isSixteenChecked && 750) +
-                  (isSeventeenChecked && 750) +
-                  (isEighteenChecked && 750)}
-                /mo
-              </div>
-              <div
-                onClick={() =>
-                  window.scrollTo(
-                   {top: 9000,
-                  behavior: 'smooth'}
-                  )
-                }
-                className={styles.checkout}
-              >
-                Checkout
-              </div>
-            </div>
-            </div>
-             }
+            <Spring from={{ bottom: 0 }} to={{ bottom: 50 }}>
+              {props => (
+                <div className={styles.featureupper} style={props}>
+                  <div className={styles.featureselected}>
+                    <div className={styles.mfeatures}>
+                      Features :{' '}
+                      {(isOneChecked && 1) +
+                        (isTwoChecked && 1) +
+                        (isThreeChecked && 1) +
+                        (isFourChecked && 1) +
+                        (isFiveChecked && 1) +
+                        (isSixChecked && 1) +
+                        (isSevenChecked && 1) +
+                        (isEightChecked && 1) +
+                        (isNineChecked && 1) +
+                        (isTenChecked && 1) +
+                        (isElevenChecked && 1) +
+                        (isTwelveChecked && 1) +
+                        (isThirteenChecked && 1) +
+                        (isFourteenChecked && 1) +
+                        (isFifteenChecked && 1) +
+                        (isSixteenChecked && 1) +
+                        (isSeventeenChecked && 1) +
+                        (isEighteenChecked && 1)}
+                    </div>
+                    <div className={styles.mtotal}>
+                      Total: Rs{' '}
+                      {(isOneChecked && 750) +
+                        (isTwoChecked && 750) +
+                        (isThreeChecked && 750) +
+                        (isFourChecked && 750) +
+                        (isFiveChecked && 750) +
+                        (isSixChecked && 750) +
+                        (isSevenChecked && 750) +
+                        (isEightChecked && 750) +
+                        (isNineChecked && 750) +
+                        (isTenChecked && 750) +
+                        (isElevenChecked && 750) +
+                        (isTwelveChecked && 750) +
+                        (isThirteenChecked && 750) +
+                        (isFourteenChecked && 750) +
+                        (isFifteenChecked && 750) +
+                        (isSixteenChecked && 750) +
+                        (isSeventeenChecked && 750) +
+                        (isEighteenChecked && 750)}
+                      /mo
+                    </div>
+                    <div
+                      onClick={() =>
+                        window.scrollTo({ top: 9000, behavior: 'smooth' })
+                      }
+                      className={styles.checkout}
+                    >
+                      Checkout
+                    </div>
+                  </div>
+                </div>
+              )}
             </Spring>
           )}
         </div>
