@@ -130,7 +130,6 @@
   display: grid;
   grid-auto-rows: 50px;
   align-items: center;
-  column-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
   place-content: center;
@@ -139,7 +138,7 @@
 .featureupper{
   position: fixed;
   background-color: white;
-  z-index: 100;
+  z-index: 99;
   bottom: 50px;
   border: 1px solid rgba(144, 144, 144, 0.15);
   height: 50px;

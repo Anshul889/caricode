@@ -669,7 +669,9 @@ const Ecommerce = () => {
             )}
           </div>
           {isFeatureSelected && (
-            <div className={styles.featureupper}>
+            <Spring from={{bottom: 0}} to={{bottom: 50}}>
+              {props =>
+            <div className={styles.featureupper} style={props}>
             <div className={styles.featureselected}>
               <div className={styles.mfeatures}>
                 Features :{' '}
@@ -727,6 +729,8 @@ const Ecommerce = () => {
               </div>
             </div>
             </div>
+             }
+            </Spring>
           )}
         </div>
       </div>
