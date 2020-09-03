@@ -21,10 +21,25 @@
   width: 90%;
   margin: 0 auto;
   max-width: 1080px;
+  transform: translateY(-50px);
+}
+
+.getmbutton{
+  display: block;
+}
+
+.getdbutton{
+  display: none;
 }
 
 @media screen and (min-width: 600px) {
  .banner{
   clip-path: polygon(100% 0, 100% 100%, 0 92%, 0 0);;
+ }
+ .getmbutton{
+   display: none;
+ }
+ .getdbutton{
+   display: block;
  }
 }

@@ -41,33 +41,64 @@ const EcommerceHero = () => {
 
   return (
     <div className={styles.upperbanner}>
-    <Container state="back">
-      {stylish => (
-        <div className={styles.banner} style={stylish}>
-          <div className={styles.bannercontent}>
-            <Container state="colorh">
-              {styles => (
-                <h2 style={styles}>
-                  Build an online business—no matter what business you’re in
-                </h2>
-              )}
-            </Container>
-            <Container state="colorp">
-              {styles => (
-                <p style={styles}>
-                  Create an ecommerce website backed by powerful tools that help
-                  you find customers, drive sales, and manage your day-to-day.
-                </p>
-              )}
-            </Container>
-            <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={5000}>
-              {props =>
-              <button style={props}>Get Started</button>}
-            </Spring>
+      <Container state="back">
+        {stylish => (
+          <div className={styles.banner} style={stylish}>
+            <div className={styles.bannercontent}>
+              <Container state="colorh">
+                {styles => (
+                  <h2 style={styles}>
+                    Build an online business—no matter what business you’re in
+                  </h2>
+                )}
+              </Container>
+              <Container state="colorp">
+                {styles => (
+                  <p style={styles}>
+                    Create an ecommerce website backed by powerful tools that
+                    help you find customers, drive sales, and manage your
+                    day-to-day.
+                  </p>
+                )}
+              </Container>
+              <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={5000}>
+                {props => (
+                  // <Link to='#ecomecarousel'>
+                  <div>
+                    <button
+                      onClick={() =>
+                        window.scrollTo({
+                          top: 450,
+                          left: 0,
+                          behavior: 'smooth',
+                        })
+                      }
+                      className={styles.getmbutton}
+                      style={props}
+                    >
+                      Get Started
+                    </button>
+                    <button
+                      onClick={() =>
+                        window.scrollTo({
+                          top: 400,
+                          left: 0,
+                          behavior: 'smooth',
+                        })
+                      }
+                      className={styles.getdbutton}
+                      style={props}
+                    >
+                      Get Started
+                    </button>
+                  </div>
+                  // </Link>
+                )}
+              </Spring>
+            </div>
           </div>
-        </div>
-      )}
-    </Container>
+        )}
+      </Container>
     </div>
   )
 }
