@@ -124,25 +124,40 @@
   margin-top: 20px;
 }
 .featureselected{
-  position: fixed;
   background-color: white;
-  width: 100%;
-  z-index: 100;
-  bottom: 50px;
-  left: 0;
-  right: 0;
-  border: 1px solid rgba(144, 144, 144, 0.15);
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-auto-rows: 50px;
   align-items: center;
-  justify-items: center;
+  column-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
+  place-content: center;
+}
+
+.featureupper{
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  bottom: 50px;
+  border: 1px solid rgba(144, 144, 144, 0.15);
+  height: 50px;
+  width: 100%;
 }
 
 .checkout{
   text-decoration: underline;
   font-weight: bold;
+  justify-self: end;
+}
+
+.mfeatures{
+  justify-self: start;
+}
+
+.mtotal{
+  justify-self: center;
 }
 
 @media screen and (min-width: 768px) {

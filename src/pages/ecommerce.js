@@ -669,9 +669,10 @@ const Ecommerce = () => {
             )}
           </div>
           {isFeatureSelected && (
+            <div className={styles.featureupper}>
             <div className={styles.featureselected}>
-              <div>
-                Features Selected :{' '}
+              <div className={styles.mfeatures}>
+                Features :{' '}
                 {(isOneChecked && 1) +
                   (isTwoChecked && 1) +
                   (isThreeChecked && 1) +
@@ -691,7 +692,7 @@ const Ecommerce = () => {
                   (isSeventeenChecked && 1) +
                   (isEighteenChecked && 1)}
               </div>
-              <div>
+              <div className={styles.mtotal}>
                 Total: Rs{' '}
                 {(isOneChecked && 750) +
                   (isTwoChecked && 750) +
@@ -724,6 +725,7 @@ const Ecommerce = () => {
               >
                 Checkout
               </div>
+            </div>
             </div>
           )}
         </div>
