@@ -634,7 +634,7 @@ const Ecommerce = () => {
                 type="text"
                 name="name"
                 autoComplete="name"
-                onChange={e => setEmail(e.target.value)}
+                onChange={e => setName(e.target.value)}
               />
             </label>
             <label onSelect={() => setInputfield(true)}>
@@ -643,7 +643,7 @@ const Ecommerce = () => {
                 type="email"
                 name="email"
                 autoComplete="email"
-                onChange={e => setName(e.target.value)}
+                onChange={e => setEmail(e.target.value)}
               />
             </label>
           </div>
