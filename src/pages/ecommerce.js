@@ -96,7 +96,7 @@ const Ecommerce = () => {
         {
           name,
           email,
-          message: `one: ${isOneChecked}, two: ${isTwoChecked}, three: ${isThreeChecked}, four: ${isFourChecked}, five: ${isFiveChecked}, six: ${isSixChecked}, seven: ${isSevenChecked}, eight: ${isEightChecked}, nine: ${isNineChecked}, ten: ${isTenChecked}, eleven: ${isElevenChecked}, twelve: ${isTwelveChecked}, thirteen: ${isThirteenChecked}, fourteen: ${isFourteenChecked}, fifteen: ${isFifteenChecked}, sixteen: ${isSixteenChecked}, seventeen: ${isSeventeenChecked}, eighteen: ${isEighteenChecked}`,
+          message: `signup forms: ${isOneChecked}, custom email design: ${isTwoChecked}, email statistics: ${isThreeChecked}, email testing: ${isFourChecked}, email marketing automation: ${isFiveChecked}, list management: ${isSixChecked}, rich snippets: ${isSevenChecked}, eight: ${isEightChecked}, nine: ${isNineChecked}, ten: ${isTenChecked}, eleven: ${isElevenChecked}, twelve: ${isTwelveChecked}, thirteen: ${isThirteenChecked}, fourteen: ${isFourteenChecked}, fifteen: ${isFifteenChecked}, sixteen: ${isSixteenChecked}, seventeen: ${isSeventeenChecked}, eighteen: ${isEighteenChecked}`,
         }
       )
       if (response.data === 'SUbmitted') {
