@@ -83,6 +83,7 @@ const Ecommerce = () => {
   const [isSixteenChecked, setIsSixteenChecked] = useState(false)
   const [isSeventeenChecked, setIsSeventeenChecked] = useState(false)
   const [isEighteenChecked, setIsEighteenChecked] = useState(false)
+  const [isFeatureSelected, setPopup] = useState(false)
   const [inputField, setInputfield] = useState(null)
   const [submitted, setSubmitted] = useState(false)
   const [name, setName] = useState('')
@@ -108,57 +109,75 @@ const Ecommerce = () => {
 
   const checkOne = async () => {
     await setIsOneChecked(!isOneChecked)
+    await setPopup(true)
   }
   const checkTwo = async () => {
     await setIsTwoChecked(!isTwoChecked)
+    await setPopup(true)
   }
   const checkThree = async () => {
     await setIsThreeChecked(!isThreeChecked)
+    await setPopup(true)
   }
   const checkFour = async () => {
     await setIsFourChecked(!isFourChecked)
+    await setPopup(true)
   }
   const checkFive = async () => {
     await setIsFiveChecked(!isFiveChecked)
+    await setPopup(true)
   }
   const checkSix = async () => {
     await setIsSixChecked(!isSixChecked)
+    await setPopup(true)
   }
   const checkSeven = async () => {
     await setIsSevenChecked(!isSevenChecked)
+    await setPopup(true)
   }
   const checkEight = async () => {
     await setIsEightChecked(!isEightChecked)
+    await setPopup(true)
   }
   const checkNine = async () => {
     await setIsNineChecked(!isNineChecked)
+    await setPopup(true)
   }
   const checkTen = async () => {
     await setIsTenChecked(!isTenChecked)
+    await setPopup(true)
   }
   const checkEleven = async () => {
     await setIsElevenChecked(!isElevenChecked)
+    await setPopup(true)
   }
   const checkTwelve = async () => {
     await setIsTwelveChecked(!isTwelveChecked)
+    await setPopup(true)
   }
   const checkThirteen = async () => {
     await setIsThirteenChecked(!isThirteenChecked)
+    await setPopup(true)
   }
   const checkFourteen = async () => {
     await setIsFourteenChecked(!isFourteenChecked)
+    await setPopup(true)
   }
   const checkFifteen = async () => {
     await setIsFifteenChecked(!isFifteenChecked)
+    await setPopup(true)
   }
   const checkSixteen = async () => {
     await setIsSixteenChecked(!isSixteenChecked)
+    await setPopup(true)
   }
   const checkSeventeen = async () => {
     await setIsSeventeenChecked(!isSeventeenChecked)
+    await setPopup(true)
   }
   const checkEighteen = async () => {
     await setIsEighteenChecked(!isEighteenChecked)
+    await setPopup(true)
   }
 
   return (
@@ -169,27 +188,45 @@ const Ecommerce = () => {
           <h4>Get a Pixel Perfect Website tailored to your needs</h4>
           <div className={styles.ecomcarousel}>
             <div className={styles.carouselitem}>
-              <Image fluid={data.fashion.childImageSharp.fluid} style={{borderRadius: '4px'}} />
+              <Image
+                fluid={data.fashion.childImageSharp.fluid}
+                style={{ borderRadius: '4px' }}
+              />
               <p>Fashion</p>
             </div>
             <div className={styles.carouselitem}>
-              <Image fluid={data.jewellery.childImageSharp.fluid}  style={{borderRadius: '4px'}}/>
+              <Image
+                fluid={data.jewellery.childImageSharp.fluid}
+                style={{ borderRadius: '4px' }}
+              />
               <p>Jewellery</p>
             </div>
             <div className={styles.carouselitem}>
-              <Image fluid={data.beauty.childImageSharp.fluid}  style={{borderRadius: '4px'}}/>
+              <Image
+                fluid={data.beauty.childImageSharp.fluid}
+                style={{ borderRadius: '4px' }}
+              />
               <p>Beauty</p>
             </div>
             <div className={styles.carouselitem}>
-              <Image fluid={data.food.childImageSharp.fluid} style={{borderRadius: '4px'}} />
+              <Image
+                fluid={data.food.childImageSharp.fluid}
+                style={{ borderRadius: '4px' }}
+              />
               <p>Food</p>
             </div>
             <div className={styles.carouselitem}>
-              <Image fluid={data.home.childImageSharp.fluid} style={{borderRadius: '4px'}} />
+              <Image
+                fluid={data.home.childImageSharp.fluid}
+                style={{ borderRadius: '4px' }}
+              />
               <p>Home</p>
             </div>
             <div className={styles.carouselitem}>
-              <Image fluid={data.sports.childImageSharp.fluid} style={{borderRadius: '4px'}} />
+              <Image
+                fluid={data.sports.childImageSharp.fluid}
+                style={{ borderRadius: '4px' }}
+              />
               <p>Sports</p>
             </div>
             <div className={styles.nothing}></div>
@@ -583,7 +620,10 @@ const Ecommerce = () => {
           <p className={styles.warning}>
             (You will only be charged once the site goes live)
           </p>
-          <div className="former" style={{ width: '90%', margin: '0 auto', maxWidth:"1080px"}}>
+          <div
+            className="former"
+            style={{ width: '90%', margin: '0 auto', maxWidth: '1080px' }}
+          >
             <label onSelect={() => setInputfield(true)}>
               <div className="formitem">Name</div>
               <input
@@ -604,9 +644,17 @@ const Ecommerce = () => {
             </label>
           </div>
           {submitted && (
-            <p style={{ marginLeft: '5%', marginBottom: '20px', maxWidth: '1080px'}}>Thank you! We will get back to you shortly</p>
+            <p
+              style={{
+                marginLeft: '5%',
+                marginBottom: '20px',
+                maxWidth: '1080px',
+              }}
+            >
+              Thank you! We will get back to you shortly
+            </p>
           )}
-          <div style={{maxWidth: '1080px' , margin: '0 auto'}}>
+          <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
             {inputField ? (
               <button
                 onClick={() => handleSubmit()}
@@ -620,6 +668,64 @@ const Ecommerce = () => {
               </button>
             )}
           </div>
+          {isFeatureSelected && (
+            <div className={styles.featureselected}>
+              <div>
+                Features Selected :{' '}
+                {(isOneChecked && 1) +
+                  (isTwoChecked && 1) +
+                  (isThreeChecked && 1) +
+                  (isFourChecked && 1) +
+                  (isFiveChecked && 1) +
+                  (isSixChecked && 1) +
+                  (isSevenChecked && 1) +
+                  (isEightChecked && 1) +
+                  (isNineChecked && 1) +
+                  (isTenChecked && 1) +
+                  (isElevenChecked && 1) +
+                  (isTwelveChecked && 1) +
+                  (isThirteenChecked && 1) +
+                  (isFourteenChecked && 1) +
+                  (isFifteenChecked && 1) +
+                  (isSixteenChecked && 1) +
+                  (isSeventeenChecked && 1) +
+                  (isEighteenChecked && 1)}
+              </div>
+              <div>
+                Total: Rs{' '}
+                {(isOneChecked && 750) +
+                  (isTwoChecked && 750) +
+                  (isThreeChecked && 750) +
+                  (isFourChecked && 750) +
+                  (isFiveChecked && 750) +
+                  (isSixChecked && 750) +
+                  (isSevenChecked && 750) +
+                  (isEightChecked && 750) +
+                  (isNineChecked && 750) +
+                  (isTenChecked && 750) +
+                  (isElevenChecked && 750) +
+                  (isTwelveChecked && 750) +
+                  (isThirteenChecked && 750) +
+                  (isFourteenChecked && 750) +
+                  (isFifteenChecked && 750) +
+                  (isSixteenChecked && 750) +
+                  (isSeventeenChecked && 750) +
+                  (isEighteenChecked && 750)}
+                /mo
+              </div>
+              <div
+                onClick={() =>
+                  window.scrollTo(
+                   {top: 9000,
+                  behavior: 'smooth'}
+                  )
+                }
+                className={styles.checkout}
+              >
+                Checkout
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </Layout>
