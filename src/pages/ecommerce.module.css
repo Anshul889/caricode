@@ -136,14 +136,13 @@
   grid-auto-rows: 50px;
   align-items: center;
   justify-items: center;
-  grid-template-columns: 1fr 1fr max-content;
+  grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
 }
 
 .checkout{
   text-decoration: underline;
   font-weight: bold;
-  padding-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
