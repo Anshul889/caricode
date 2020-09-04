@@ -90,6 +90,26 @@ const Ecommerce = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
 
+  let message =
+    (isOneChecked && `Sign up forms` + ` `) +
+    (isTwoChecked && `, custom email design` + ` `) +
+    (isThreeChecked && `, email statistics` + ` `) +
+    (isFourChecked && `, email testing`) +
+    (isFiveChecked && `, email marketing automation` + ` `) +
+    (isSixChecked && `, list management` + ` `) +
+    (isSevenChecked && `, rich snippets`+ ` `) +
+    (isEightChecked && `, google analytics` + ` `) +
+    (isNineChecked && `, blog` + ` `) +
+    (isTenChecked && `, review prompt` + ` `) +
+    (isElevenChecked && `, wishlist`) +
+    (isTwelveChecked && `, one click upsell` +  ` `) +
+    (isThirteenChecked && `, related items` + ` `) +
+    (isFourteenChecked && `, social login` + ` `) +
+    (isFifteenChecked && `, loyalty program` + ` `) +
+    (isSixteenChecked && `, referral program` + ` `) +
+    (isSeventeenChecked && `, countdown timer`  + ` `) +
+    (isEighteenChecked && `, social sharing`  + ` `)
+
   const handleSubmit = async () => {
     try {
       setLoading(true)
@@ -98,7 +118,7 @@ const Ecommerce = () => {
         {
           name,
           email,
-          message: `signup forms: ${isOneChecked}, custom email design: ${isTwoChecked}, email statistics: ${isThreeChecked}, email testing: ${isFourChecked}, email marketing automation: ${isFiveChecked}, list management: ${isSixChecked}, rich snippets: ${isSevenChecked}, eight: ${isEightChecked}, nine: ${isNineChecked}, ten: ${isTenChecked}, eleven: ${isElevenChecked}, twelve: ${isTwelveChecked}, thirteen: ${isThirteenChecked}, fourteen: ${isFourteenChecked}, fifteen: ${isFifteenChecked}, sixteen: ${isSixteenChecked}, seventeen: ${isSeventeenChecked}, eighteen: ${isEighteenChecked}`,
+          message: message.replace(/false/g, ``).replace(/0/, ''),
         }
       )
       if (response.data === 'SUbmitted') {
@@ -670,7 +690,7 @@ const Ecommerce = () => {
             </p>
           )}
           <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
-            {inputField ? (
+            {inputField && isFeatureSelected ? (
               <button
                 onClick={() => handleSubmit()}
                 className={styles.submitecom}

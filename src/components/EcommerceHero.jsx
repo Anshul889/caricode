@@ -23,7 +23,7 @@ const EcommerceHero = () => {
     back: async next => {
       await next({ backgroundColor: 'white' })
       await delay(3000)
-      await next({ backgroundColor: 'rgba(71, 46, 104, 0.9)' })
+      await next({ backgroundColor: '#7c759a' })
     },
     colorh: async next => {
       await next({ color: 'black' })
