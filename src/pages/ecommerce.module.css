@@ -9,20 +9,20 @@
   clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 95%);
   background-color: rgb(94, 173, 187);
   transform: translateY(-73px);
-  color: white
+  color: white;
 }
-.carouselcontainer h4{
+.carouselcontainer h4 {
   padding-top: 15px;
 }
 
 .ecomcarousel {
   display: grid;
-  grid-template-columns:  66% 66% 66% 66% 66% 66% 5px;
+  grid-template-columns: 66% 66% 66% 66% 66% 66% 5px;
   overflow: scroll;
   grid-gap: 30px;
 }
 
-.carouselitem{
+.carouselitem {
   transform: translateX(5%);
 }
 
@@ -30,7 +30,7 @@
   display: none;
 }
 
-.cardsection{
+.cardsection {
   transform: translateY(-23px);
   /* content-visibilty: auto; */
 }
@@ -69,20 +69,20 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 0px;
-  margin-bottom: 50px;
+  padding-bottom: 20px;
   width: 100%;
   padding-top: 58px;
 }
 
-.form h4{
+.form h4 {
   margin-top: 20px;
 }
 
-.formitem:nth-child(2n+1){
+.formitem:nth-child(2n + 1) {
   background-color: rgba(144, 144, 144, 0.15);
 }
 
-.formitem{
+.formitem {
   padding-top: 20px;
   padding-left: 5%;
   padding-right: 5%;
@@ -102,9 +102,14 @@
   margin-top: 30px;
 }
 
+.orderedupper {
+  border-top: 1px solid rgba(144, 144, 144, 0.15);
+}
+
 .ordereditems {
   margin: 0 auto;
   width: 90%;
+  padding-top: 30px;
 }
 
 .total {
@@ -123,7 +128,7 @@
   margin-bottom: 125px;
   margin-top: 20px;
 }
-.featureselected{
+.featureselected {
   background-color: white;
   width: 90%;
   margin: 0 auto;
@@ -133,9 +138,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
   place-content: center;
+  max-width: 1080px;
 }
 
-.featureupper{
+.featureupper {
   position: fixed;
   background-color: white;
   z-index: 99;
@@ -145,18 +151,23 @@
   width: 100%;
 }
 
-.checkout{
+.checkout {
   text-decoration: underline;
   font-weight: bold;
   justify-self: end;
+  cursor: pointer;
 }
 
-.mfeatures{
+.mfeatures {
   justify-self: start;
 }
 
-.mtotal{
+.mtotal {
   justify-self: center;
+}
+
+.dfeatureupper {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -166,11 +177,11 @@
     max-width: 1080px;
     width: 90%;
     margin: 0 auto;
-    row-gap: 50px;
+    row-gap: 25px;
   }
 
-  .formitem:nth-child(2n+1){
-    background-color: transparent
+  .formitem:nth-child(2n + 1) {
+    background-color: transparent;
   }
 
   .form h4 {
@@ -188,8 +199,8 @@
     margin: 35px auto;
   }
 
-  .cardsection h4{
-    grid-column: 1 / span 3
+  .cardsection h4 {
+    grid-column: 1 / span 3;
   }
 
   .card h4 {
@@ -206,7 +217,7 @@
     clip-path: polygon(100% 2.5%, 100% 100%, 0 100%, 0 0);
     padding-top: 35px;
   }
-  .ecomcarousel{
+  .ecomcarousel {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     max-width: 1080px;
     margin: 0 auto;
@@ -215,34 +226,44 @@
     overflow: visible;
     transform: translateX(0);
   }
-  .nothing{
+  .nothing {
     display: none;
   }
-  .carouselcontainer{
+  .carouselcontainer {
     padding: 55px 0;
     transform: translateY(-80px);
     clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
   }
-  .carouselcontainer h4{
+  .carouselcontainer h4 {
     margin-bottom: 38px;
   }
-  .ordereditems{
+  .ordereditems {
     max-width: 1080px;
     margin: 0 auto;
   }
-  .total{
+  .total {
     max-width: 1080px;
   }
-  .warning{
+  .warning {
     max-width: 1080px;
   }
-  .former{
+  .former {
     max-width: 1080px;
   }
-  .submitecom{
+  .submitecom {
     margin-left: 0px;
   }
-  .featureselected{
+  .featureupper {
     display: none;
+  }
+  .dfeatureupper {
+    display: block;
+    position: fixed;
+    background-color: white;
+    z-index: 99;
+    bottom: 50px;
+    border: 1px solid rgba(144, 144, 144, 0.15);
+    height: 50px;
+    width: 100%;
   }
 }
