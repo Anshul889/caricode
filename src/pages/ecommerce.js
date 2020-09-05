@@ -671,8 +671,8 @@ const Ecommerce = () => {
           {loading && (
             <p
               style={{
-                marginLeft: '5%',
-                marginBottom: '20px',
+                width: '90%',
+                margin: '0 auto',
                 maxWidth: '1080px',
               }}
             >
@@ -682,8 +682,8 @@ const Ecommerce = () => {
           {submitted && (
             <p
               style={{
-                marginLeft: '5%',
-                marginBottom: '20px',
+                width: '90%',
+                margin: '0 auto',
                 maxWidth: '1080px',
               }}
             >
