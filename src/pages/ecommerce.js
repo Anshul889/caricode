@@ -97,18 +97,18 @@ const Ecommerce = () => {
     (isFourChecked && `, email testing`) +
     (isFiveChecked && `, email marketing automation` + ` `) +
     (isSixChecked && `, list management` + ` `) +
-    (isSevenChecked && `, rich snippets`+ ` `) +
+    (isSevenChecked && `, rich snippets` + ` `) +
     (isEightChecked && `, google analytics` + ` `) +
     (isNineChecked && `, blog` + ` `) +
     (isTenChecked && `, review prompt` + ` `) +
     (isElevenChecked && `, wishlist`) +
-    (isTwelveChecked && `, one click upsell` +  ` `) +
+    (isTwelveChecked && `, one click upsell` + ` `) +
     (isThirteenChecked && `, related items` + ` `) +
     (isFourteenChecked && `, social login` + ` `) +
     (isFifteenChecked && `, loyalty program` + ` `) +
     (isSixteenChecked && `, referral program` + ` `) +
-    (isSeventeenChecked && `, countdown timer`  + ` `) +
-    (isEighteenChecked && `, social sharing`  + ` `)
+    (isSeventeenChecked && `, countdown timer` + ` `) +
+    (isEighteenChecked && `, social sharing` + ` `)
 
   const handleSubmit = async () => {
     try {
@@ -267,34 +267,32 @@ const Ecommerce = () => {
           <div className={styles.card}>
             <h4>Base Features</h4>
             <p>
-              Phasellus in ante vitae nibh porttitor tempus vitae ut ante.
-              Vestibulum blandit ex a elementum viverra. Sed quat diam, aliquet
-              tempus felis nisl at lacus.
+              Starter pack with base features including a responsive website to
+              feature unlimited products with payment support
             </p>
             <button>More</button>
           </div>
           <div className={styles.card}>
-            <h4>Choose the features</h4>
+            <h4>Choose Additional Features</h4>
             <p>
-              Phasellus in ante vitae nibh porttitor tempus vitae ut ante.
-              Vestibulum blandit ex a elementum viverra. Sed quat diam, aliquet
-              tempus felis nisl at lacus.
+              To take your ecommerce app to the next level choose from a range
+              from of features including Email Marketing, Search Engine
+              Optimization and Social
             </p>
             <button>More</button>
           </div>
           <div className={styles.card}>
             <h4>Hit Submit</h4>
             <p>
-              Phasellus in ante vitae nibh porttitor tempus vitae ut ante.
-              Vestibulum blandit ex a elementum viverra. Sed quat diam, aliquet
-              tempus felis nisl at lacus.
+              Confirm your order and we take care of the rest, providing end to
+              end support
             </p>
             <button>More</button>
           </div>
         </div>
         <div className={styles.formupper}>
           <div className={styles.form}>
-            <h4>Ecommerce Features at Rs 750 per month</h4>
+            <h4>Premium Additional Features Starting at Rs. 900 / month each</h4>
             <h4>Email Marketing</h4>
             <div className={styles.formitem}>
               <input
@@ -606,234 +604,237 @@ const Ecommerce = () => {
             </div>
           </div>
           <div className={styles.orderedupper}>
-          <div className={styles.ordereditems}>
-            {isOneChecked && <p>Signup forms</p>}
-            {isTwoChecked && <p>Custom Email Design</p>}
-            {isThreeChecked && <p>Email Statistics</p>}
-            {isFourChecked && <p> Email Testing</p>}
-            {isFiveChecked && <p> Email Marketing Automation</p>}
-            {isSixChecked && <p> List Management</p>}
-            {isSevenChecked && <p> Rich Snippets</p>}
-            {isEightChecked && <p> Google Analytics</p>}
-            {isNineChecked && <p> Blog</p>}
-            {isTenChecked && <p> Review Prompt</p>}
-            {isElevenChecked && <p> Wishlist</p>}
-            {isTwelveChecked && <p> One Click Upsell</p>}
-            {isThirteenChecked && <p> Related Items</p>}
-            {isFourteenChecked && <p> Social Login</p>}
-            {isFifteenChecked && <p> Loyalty Program</p>}
-            {isSixteenChecked && <p> Referral Program</p>}
-            {isSeventeenChecked && <p> Countdown Timer</p>}
-            {isEighteenChecked && <p> Social Sharing</p>}
-          </div>
-          <div className={styles.total}>
-            Total: Rs{' '}
-            {(isOneChecked && 750) +
-              (isTwoChecked && 750) +
-              (isThreeChecked && 750) +
-              (isFourChecked && 750) +
-              (isFiveChecked && 750) +
-              (isSixChecked && 750) +
-              (isSevenChecked && 750) +
-              (isEightChecked && 750) +
-              (isNineChecked && 750) +
-              (isTenChecked && 750) +
-              (isElevenChecked && 750) +
-              (isTwelveChecked && 750) +
-              (isThirteenChecked && 750) +
-              (isFourteenChecked && 750) +
-              (isFifteenChecked && 750) +
-              (isSixteenChecked && 750) +
-              (isSeventeenChecked && 750) +
-              (isEighteenChecked && 750)}
-            /mo
-          </div>
-          <p className={styles.warning}>
-            (You will only be charged once the site goes live)
-          </p>
-          <div
-            className="former"
-            style={{ width: '90%', margin: '0 auto', maxWidth: '1080px' }}
-          >
-            <label onSelect={() => setInputfield(true)}>
-              <div className="formitem">Name</div>
-              <input
-                type="text"
-                name="name"
-                autoComplete="name"
-                onChange={e => setName(e.target.value)}
-              />
-            </label>
-            <label onSelect={() => setInputfield(true)}>
-              <div className="formitem">Email</div>
-              <input
-                type="email"
-                name="email"
-                autoComplete="email"
-                onChange={e => setEmail(e.target.value)}
-              />
-            </label>
-          </div>
-          {loading && (
-            <p
-              style={{
-                width: '90%',
-                margin: '0 auto',
-                maxWidth: '1080px',
-              }}
-            >
-              Loading...
+            <div className={styles.ordereditems}>
+              {isOneChecked && <p>Signup forms</p>}
+              {isTwoChecked && <p>Custom Email Design</p>}
+              {isThreeChecked && <p>Email Statistics</p>}
+              {isFourChecked && <p> Email Testing</p>}
+              {isFiveChecked && <p> Email Marketing Automation</p>}
+              {isSixChecked && <p> List Management</p>}
+              {isSevenChecked && <p> Rich Snippets</p>}
+              {isEightChecked && <p> Google Analytics</p>}
+              {isNineChecked && <p> Blog</p>}
+              {isTenChecked && <p> Review Prompt</p>}
+              {isElevenChecked && <p> Wishlist</p>}
+              {isTwelveChecked && <p> One Click Upsell</p>}
+              {isThirteenChecked && <p> Related Items</p>}
+              {isFourteenChecked && <p> Social Login</p>}
+              {isFifteenChecked && <p> Loyalty Program</p>}
+              {isSixteenChecked && <p> Referral Program</p>}
+              {isSeventeenChecked && <p> Countdown Timer</p>}
+              {isEighteenChecked && <p> Social Sharing</p>}
+            </div>
+            <div className={styles.total}>
+              Total: Rs{' '}
+              {(isOneChecked && 750) +
+                (isTwoChecked && 750) +
+                (isThreeChecked && 750) +
+                (isFourChecked && 750) +
+                (isFiveChecked && 750) +
+                (isSixChecked && 750) +
+                (isSevenChecked && 750) +
+                (isEightChecked && 750) +
+                (isNineChecked && 750) +
+                (isTenChecked && 750) +
+                (isElevenChecked && 750) +
+                (isTwelveChecked && 750) +
+                (isThirteenChecked && 750) +
+                (isFourteenChecked && 750) +
+                (isFifteenChecked && 750) +
+                (isSixteenChecked && 750) +
+                (isSeventeenChecked && 750) +
+                (isEighteenChecked && 750)}
+              /mo
+            </div>
+            <p className={styles.warning}>
+              (You will only be charged once the site goes live)
             </p>
-          )}
-          {submitted && (
-            <p
-              style={{
-                width: '90%',
-                margin: '0 auto',
-                maxWidth: '1080px',
-              }}
+            <div
+              className="former"
+              style={{ width: '90%', margin: '0 auto', maxWidth: '1080px' }}
             >
-              Thank you! We will get back to you shortly
-            </p>
-          )}
-          <div style={{ maxWidth: '1080px', margin: '0 auto', width: '90%' }}>
-            {inputField && isFeatureSelected ? (
-              <button
-                onClick={() => handleSubmit()}
-                className={styles.submitecom}
+              <label onSelect={() => setInputfield(true)}>
+                <div className="formitem">Name</div>
+                <input
+                  type="text"
+                  name="name"
+                  autoComplete="name"
+                  onChange={e => setName(e.target.value)}
+                />
+              </label>
+              <label onSelect={() => setInputfield(true)}>
+                <div className="formitem">Email</div>
+                <input
+                  type="email"
+                  name="email"
+                  autoComplete="email"
+                  onChange={e => setEmail(e.target.value)}
+                />
+              </label>
+            </div>
+            {loading && (
+              <p
+                style={{
+                  width: '90%',
+                  margin: '0 auto',
+                  maxWidth: '1080px',
+                }}
               >
-                Submit
-              </button>
-            ) : (
-              <button className={styles.submitecom} style={{ opacity: '0.5' }}>
-                Submit
-              </button>
+                Loading...
+              </p>
+            )}
+            {submitted && (
+              <p
+                style={{
+                  width: '90%',
+                  margin: '0 auto',
+                  maxWidth: '1080px',
+                }}
+              >
+                Thank you! We will get back to you shortly
+              </p>
+            )}
+            <div style={{ maxWidth: '1080px', margin: '0 auto', width: '90%' }}>
+              {inputField && isFeatureSelected ? (
+                <button
+                  onClick={() => handleSubmit()}
+                  className={styles.submitecom}
+                >
+                  Submit
+                </button>
+              ) : (
+                <button
+                  className={styles.submitecom}
+                  style={{ opacity: '0.5' }}
+                >
+                  Submit
+                </button>
+              )}
+            </div>
+            {isFeatureSelected && (
+              <Spring from={{ bottom: 0 }} to={{ bottom: 50 }}>
+                {props => (
+                  <div className={styles.featureupper} style={props}>
+                    <div className={styles.featureselected}>
+                      <div className={styles.mfeatures}>
+                        Features :{' '}
+                        {(isOneChecked && 1) +
+                          (isTwoChecked && 1) +
+                          (isThreeChecked && 1) +
+                          (isFourChecked && 1) +
+                          (isFiveChecked && 1) +
+                          (isSixChecked && 1) +
+                          (isSevenChecked && 1) +
+                          (isEightChecked && 1) +
+                          (isNineChecked && 1) +
+                          (isTenChecked && 1) +
+                          (isElevenChecked && 1) +
+                          (isTwelveChecked && 1) +
+                          (isThirteenChecked && 1) +
+                          (isFourteenChecked && 1) +
+                          (isFifteenChecked && 1) +
+                          (isSixteenChecked && 1) +
+                          (isSeventeenChecked && 1) +
+                          (isEighteenChecked && 1)}
+                      </div>
+                      <div className={styles.mtotal}>
+                        Total: Rs{' '}
+                        {(isOneChecked && 750) +
+                          (isTwoChecked && 750) +
+                          (isThreeChecked && 750) +
+                          (isFourChecked && 750) +
+                          (isFiveChecked && 750) +
+                          (isSixChecked && 750) +
+                          (isSevenChecked && 750) +
+                          (isEightChecked && 750) +
+                          (isNineChecked && 750) +
+                          (isTenChecked && 750) +
+                          (isElevenChecked && 750) +
+                          (isTwelveChecked && 750) +
+                          (isThirteenChecked && 750) +
+                          (isFourteenChecked && 750) +
+                          (isFifteenChecked && 750) +
+                          (isSixteenChecked && 750) +
+                          (isSeventeenChecked && 750) +
+                          (isEighteenChecked && 750)}
+                        /mo
+                      </div>
+                      <div
+                        onClick={() =>
+                          window.scrollTo({ top: 9000, behavior: 'smooth' })
+                        }
+                        className={styles.checkout}
+                      >
+                        Checkout
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </Spring>
+            )}
+            {isFeatureSelected && (
+              <Spring from={{ bottom: -50 }} to={{ bottom: 0 }}>
+                {props => (
+                  <div className={styles.dfeatureupper} style={props}>
+                    <div className={styles.featureselected}>
+                      <div className={styles.mfeatures}>
+                        Features :{' '}
+                        {(isOneChecked && 1) +
+                          (isTwoChecked && 1) +
+                          (isThreeChecked && 1) +
+                          (isFourChecked && 1) +
+                          (isFiveChecked && 1) +
+                          (isSixChecked && 1) +
+                          (isSevenChecked && 1) +
+                          (isEightChecked && 1) +
+                          (isNineChecked && 1) +
+                          (isTenChecked && 1) +
+                          (isElevenChecked && 1) +
+                          (isTwelveChecked && 1) +
+                          (isThirteenChecked && 1) +
+                          (isFourteenChecked && 1) +
+                          (isFifteenChecked && 1) +
+                          (isSixteenChecked && 1) +
+                          (isSeventeenChecked && 1) +
+                          (isEighteenChecked && 1)}
+                      </div>
+                      <div className={styles.mtotal}>
+                        Total: Rs{' '}
+                        {(isOneChecked && 750) +
+                          (isTwoChecked && 750) +
+                          (isThreeChecked && 750) +
+                          (isFourChecked && 750) +
+                          (isFiveChecked && 750) +
+                          (isSixChecked && 750) +
+                          (isSevenChecked && 750) +
+                          (isEightChecked && 750) +
+                          (isNineChecked && 750) +
+                          (isTenChecked && 750) +
+                          (isElevenChecked && 750) +
+                          (isTwelveChecked && 750) +
+                          (isThirteenChecked && 750) +
+                          (isFourteenChecked && 750) +
+                          (isFifteenChecked && 750) +
+                          (isSixteenChecked && 750) +
+                          (isSeventeenChecked && 750) +
+                          (isEighteenChecked && 750)}
+                        /mo
+                      </div>
+                      <div
+                        onClick={() =>
+                          window.scrollTo({ top: 9000, behavior: 'smooth' })
+                        }
+                        className={styles.checkout}
+                      >
+                        Checkout
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </Spring>
             )}
           </div>
-          {isFeatureSelected && (
-            <Spring from={{ bottom: 0 }} to={{ bottom: 50 }}>
-              {props => (
-                <div className={styles.featureupper} style={props}>
-                  <div className={styles.featureselected}>
-                    <div className={styles.mfeatures}>
-                      Features :{' '}
-                      {(isOneChecked && 1) +
-                        (isTwoChecked && 1) +
-                        (isThreeChecked && 1) +
-                        (isFourChecked && 1) +
-                        (isFiveChecked && 1) +
-                        (isSixChecked && 1) +
-                        (isSevenChecked && 1) +
-                        (isEightChecked && 1) +
-                        (isNineChecked && 1) +
-                        (isTenChecked && 1) +
-                        (isElevenChecked && 1) +
-                        (isTwelveChecked && 1) +
-                        (isThirteenChecked && 1) +
-                        (isFourteenChecked && 1) +
-                        (isFifteenChecked && 1) +
-                        (isSixteenChecked && 1) +
-                        (isSeventeenChecked && 1) +
-                        (isEighteenChecked && 1)}
-                    </div>
-                    <div className={styles.mtotal}>
-                      Total: Rs{' '}
-                      {(isOneChecked && 750) +
-                        (isTwoChecked && 750) +
-                        (isThreeChecked && 750) +
-                        (isFourChecked && 750) +
-                        (isFiveChecked && 750) +
-                        (isSixChecked && 750) +
-                        (isSevenChecked && 750) +
-                        (isEightChecked && 750) +
-                        (isNineChecked && 750) +
-                        (isTenChecked && 750) +
-                        (isElevenChecked && 750) +
-                        (isTwelveChecked && 750) +
-                        (isThirteenChecked && 750) +
-                        (isFourteenChecked && 750) +
-                        (isFifteenChecked && 750) +
-                        (isSixteenChecked && 750) +
-                        (isSeventeenChecked && 750) +
-                        (isEighteenChecked && 750)}
-                      /mo
-                    </div>
-                    <div
-                      onClick={() =>
-                        window.scrollTo({ top: 9000, behavior: 'smooth' })
-                      }
-                      className={styles.checkout}
-                    >
-                      Checkout
-                    </div>
-                  </div>
-                </div>
-              )}
-            </Spring>
-          )}
-          {isFeatureSelected && (
-            <Spring from={{ bottom: -50 }} to={{ bottom: 0 }}>
-              {props => (
-                <div className={styles.dfeatureupper} style={props}>
-                  <div className={styles.featureselected}>
-                    <div className={styles.mfeatures}>
-                      Features :{' '}
-                      {(isOneChecked && 1) +
-                        (isTwoChecked && 1) +
-                        (isThreeChecked && 1) +
-                        (isFourChecked && 1) +
-                        (isFiveChecked && 1) +
-                        (isSixChecked && 1) +
-                        (isSevenChecked && 1) +
-                        (isEightChecked && 1) +
-                        (isNineChecked && 1) +
-                        (isTenChecked && 1) +
-                        (isElevenChecked && 1) +
-                        (isTwelveChecked && 1) +
-                        (isThirteenChecked && 1) +
-                        (isFourteenChecked && 1) +
-                        (isFifteenChecked && 1) +
-                        (isSixteenChecked && 1) +
-                        (isSeventeenChecked && 1) +
-                        (isEighteenChecked && 1)}
-                    </div>
-                    <div className={styles.mtotal}>
-                      Total: Rs{' '}
-                      {(isOneChecked && 750) +
-                        (isTwoChecked && 750) +
-                        (isThreeChecked && 750) +
-                        (isFourChecked && 750) +
-                        (isFiveChecked && 750) +
-                        (isSixChecked && 750) +
-                        (isSevenChecked && 750) +
-                        (isEightChecked && 750) +
-                        (isNineChecked && 750) +
-                        (isTenChecked && 750) +
-                        (isElevenChecked && 750) +
-                        (isTwelveChecked && 750) +
-                        (isThirteenChecked && 750) +
-                        (isFourteenChecked && 750) +
-                        (isFifteenChecked && 750) +
-                        (isSixteenChecked && 750) +
-                        (isSeventeenChecked && 750) +
-                        (isEighteenChecked && 750)}
-                      /mo
-                    </div>
-                    <div
-                      onClick={() =>
-                        window.scrollTo({ top: 9000, behavior: 'smooth' })
-                      }
-                      className={styles.checkout}
-                    >
-                      Checkout
-                    </div>
-                  </div>
-                </div>
-              )}
-            </Spring>
-          )}
         </div>
-      </div>
       </div>
     </Layout>
   )

@@ -55,9 +55,9 @@ const EcommerceHero = () => {
               <Container state="colorp">
                 {styles => (
                   <p style={styles}>
-                    Create an ecommerce website backed by powerful tools that
-                    help you find customers, drive sales, and manage your
-                    day-to-day.
+                    Digitally transform your enterprise. We create ecommerce web
+                    applications backed by robust, scalable technology to
+                    deliver customer engagement and return on your investment
                   </p>
                 )}
               </Container>
