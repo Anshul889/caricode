@@ -32,7 +32,6 @@
 
 .cardsection {
   transform: translateY(-23px);
-  content-visibilty: auto;
 }
 
 .card {
@@ -62,7 +61,6 @@
 .formupper {
   background-color: white;
   clip-path: polygon(100% 0.9%, 100% 100%, 0 100%, 0 0);
-  content-visibility: auto;
 }
 
 .form {
