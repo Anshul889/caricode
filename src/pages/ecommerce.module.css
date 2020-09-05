@@ -32,7 +32,7 @@
 
 .cardsection {
   transform: translateY(-23px);
-  /* content-visibilty: auto; */
+  content-visibilty: auto;
 }
 
 .card {
@@ -62,7 +62,7 @@
 .formupper {
   background-color: white;
   clip-path: polygon(100% 0.9%, 100% 100%, 0 100%, 0 0);
-  /* content-visibility: auto; */
+  content-visibility: auto;
 }
 
 .form {
@@ -255,6 +255,14 @@
   }
   .featureupper {
     display: none;
+  }
+
+  .orderedupper{
+    background-color: white;
+  }
+  .carouselimage:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
   }
   .dfeatureupper {
     display: block;

@@ -215,6 +215,7 @@ const Ecommerce = () => {
               <Image
                 fluid={data.fashion.childImageSharp.fluid}
                 style={{ borderRadius: '4px' }}
+                className={styles.carouselimage}
               />
               <p>Fashion</p>
             </div>
@@ -222,6 +223,7 @@ const Ecommerce = () => {
               <Image
                 fluid={data.jewellery.childImageSharp.fluid}
                 style={{ borderRadius: '4px' }}
+                className={styles.carouselimage}
               />
               <p>Jewellery</p>
             </div>
@@ -229,6 +231,7 @@ const Ecommerce = () => {
               <Image
                 fluid={data.beauty.childImageSharp.fluid}
                 style={{ borderRadius: '4px' }}
+                className={styles.carouselimage}
               />
               <p>Beauty</p>
             </div>
@@ -236,6 +239,7 @@ const Ecommerce = () => {
               <Image
                 fluid={data.food.childImageSharp.fluid}
                 style={{ borderRadius: '4px' }}
+                className={styles.carouselimage}
               />
               <p>Food</p>
             </div>
@@ -243,6 +247,7 @@ const Ecommerce = () => {
               <Image
                 fluid={data.home.childImageSharp.fluid}
                 style={{ borderRadius: '4px' }}
+                className={styles.carouselimage}
               />
               <p>Home</p>
             </div>
@@ -250,6 +255,7 @@ const Ecommerce = () => {
               <Image
                 fluid={data.sports.childImageSharp.fluid}
                 style={{ borderRadius: '4px' }}
+                className={styles.carouselimage}
               />
               <p>Sports</p>
             </div>
