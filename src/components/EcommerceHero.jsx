@@ -48,7 +48,7 @@ const EcommerceHero = () => {
               <Container state="colorh">
                 {styles => (
                   <h2 style={styles}>
-                    Build an online business—no matter what business you’re in
+                    Build, deploy and manage your online business
                   </h2>
                 )}
               </Container>

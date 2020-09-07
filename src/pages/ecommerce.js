@@ -209,7 +209,7 @@ const Ecommerce = () => {
       <div className={styles.ecombody}>
         <EcommerceHero />
         <div className={styles.carouselcontainer}>
-          <h4>Get a Pixel Perfect Website tailored to your needs</h4>
+          <h4>Deliver an amazing ecommerce experience to your customers. A small selection of our work</h4>
           <div className={styles.ecomcarousel}>
             <div className={styles.carouselitem}>
               <Image
