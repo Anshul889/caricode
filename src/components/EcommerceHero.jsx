@@ -21,7 +21,7 @@ const EcommerceHero = () => {
   // const data = useStaticQuery(getImages)
   const Container = Keyframes.Spring({
     back: async next => {
-      await next({ backgroundColor: 'white' })
+      await next({ backgroundColor: '#f4f7f9' })
       await delay(3000)
       await next({ backgroundColor: '#7c759a' })
     },

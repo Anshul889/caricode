@@ -4,7 +4,6 @@
 
 .banner {
   height: 60vh;
-  /* background-image: linear-gradient(to top, rgba(71, 46, 104, 0.9), rgba(71, 46, 104, 0.9)); */
   color: white;
   position: relative;
   display: grid;

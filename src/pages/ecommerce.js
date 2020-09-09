@@ -113,6 +113,7 @@ const Ecommerce = () => {
   const handleSubmit = async () => {
     try {
       setLoading(true)
+      setInputfield(false)
       const response = await axios.post(
         `https://us-central1-annies-recipes.cloudfunctions.net/app/api/caricode`,
         {
@@ -124,10 +125,11 @@ const Ecommerce = () => {
       if (response.data === 'SUbmitted') {
         setLoading(false)
         setSubmitted(true)
-        setInputfield(false)
+        setPopup(false);
       }
     } catch (e) {
-      console.log(e)
+      console.log(e);
+      setInputfield(true);
     }
   }
 
