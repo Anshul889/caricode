@@ -36,7 +36,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-124272763-1",
+        trackingId: 'UA-124272763-1',
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: true,
         // Setting this parameter is optional
@@ -48,20 +48,26 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          "/static": ["cache-control: public, max-age=31536000, immutable"],
-          "/images": ["cache-control: public, max-age=31536000, immutable"],
-          "/page-data": ["cache-control: public, max-age=0, must-revalidate"],
+          '/static': ['cache-control: public, max-age=31536000, immutable'],
+          '/images': ['cache-control: public, max-age=31536000, immutable'],
+          '/page-data': ['cache-control: public, max-age=0, must-revalidate'],
         },
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
+        // fonts: [
+        //   `source sans pro\:0` // you can also specify font weights and styles
+        // ],
         fonts: [
-          `source sans pro\:300,400,700,900` // you can also specify font weights and styles
+          {
+            family: 'source sans pro',
+            variants: [`300`, `400`, `700`, `900`],
+          },
         ],
-        display: 'swap'
-      }
+        display: 'swap',
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
