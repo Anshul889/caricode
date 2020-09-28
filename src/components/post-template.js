@@ -53,25 +53,25 @@ const Posttemplate = ({ data }) => {
               url={`https://www.caricode.co/${slug}`}
               style={{ height: "24px" }}
             >
-              <FacebookIcon size={24} round bgStyle={{ fill: "lightgray" }} />
+              <FacebookIcon size={24} round bgStyle={{ fill: " #484459" }} />
             </FacebookShareButton>
             <EmailShareButton
               url={`https://www.caricode.co/${slug}`}
               style={{ height: "24px" }}
             >
-              <EmailIcon size={24} round bgStyle={{ fill: "lightgray" }} />
+              <EmailIcon size={24} round bgStyle={{ fill: " #484459" }} />
             </EmailShareButton>
             <WhatsappShareButton
               url={`https://www.caricode.co/${slug}`}
               style={{ height: "24px" }}
             >
-              <WhatsappIcon size={24} round bgStyle={{ fill: "lightgray" }} />
+              <WhatsappIcon size={24} round bgStyle={{ fill: " #484459" }} />
             </WhatsappShareButton>
             <TwitterShareButton
               url={`https://www.caricode.co/${slug}`}
               style={{ height: "24px" }}
             >
-              <TwitterIcon size={24} round bgStyle={{ fill: "lightgray" }} />
+              <TwitterIcon size={24} round bgStyle={{ fill: " #484459" }} />
             </TwitterShareButton>
           </div>
           <div className={styles.tags}>

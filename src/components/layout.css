@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: rgb(29, 161, 242);
+  color: #484459;
 }
 
 h1,
@@ -304,7 +304,7 @@ button:hover {
   padding-top: 20px;
 }
 
-.infocontentdiv a{
+.infocontentdiv a {
   color: white;
 }
 
