@@ -17,7 +17,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
@@ -302,6 +302,10 @@ button:hover {
 
 .infocontentdiv h4 {
   padding-top: 20px;
+}
+
+.infocontentdiv a{
+  color: white;
 }
 
 .acontent {

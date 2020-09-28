@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState } from 'react'
 import { useTransition, animated, config } from 'react-spring'
 import './styles.css'
 import styles from '../pages/blogs.module.css'
@@ -8,7 +8,6 @@ import {
   FlexibleWidthXYPlot,
   XAxis,
   YAxis,
-  VerticalBarSeries,
 } from 'react-vis'
 
 const pages = [

@@ -246,18 +246,19 @@ const WebApplications = () => {
                       >
                         {props => (
                           <div className={styles.usercart} style={props}>
-                            <img src={user} />
+                            <img src={user} alt="" />
                             <img
                               className={styles.refcart}
                               src={shoppingcart}
+                              alt=""
                             />
                           </div>
                         )}
                       </Spring>
                     )}
                   </VisibilitySensor>
-                  <img className={styles.refcart} src={cashregister} />
-                  <img src={usertie} />
+                  <img className={styles.refcart} src={cashregister} alt="" />
+                  <img src={usertie} alt="" />
                 </div>
                 <h4>Loyalty</h4>
                 <VisibilitySensor>
@@ -290,7 +291,7 @@ const WebApplications = () => {
             <div className={styles.why}>
               <div className={styles.inner}>
                 <div className={styles.referralanimation}>
-                  <img src={users} />
+                  <img src={users} alt="" />
                   <VisibilitySensor offset={{ bottom: 250 }}>
                     {({ isVisible }) => (
                       <Spring
@@ -306,6 +307,7 @@ const WebApplications = () => {
                             className={styles.refthumb}
                             src={thumbs}
                             style={props}
+                            alt=""
                           />
                         )}
                       </Spring>
@@ -326,6 +328,7 @@ const WebApplications = () => {
                             src={comment}
                             style={props}
                             className={styles.comment}
+                            alt=""
                           />
                         )}
                       </Spring>
@@ -343,7 +346,7 @@ const WebApplications = () => {
                         config={config.molasses}
                         delay={500}
                       >
-                        {props => <img src={user} style={props} />}
+                        {props => <img src={user} style={props} alt="" />}
                       </Spring>
                     )}
                   </VisibilitySensor>
@@ -389,14 +392,17 @@ const WebApplications = () => {
           <div className={styles.inner}>Single case study of why</div>
         </h4>
         <div className={styles.secondheader}>
-          <h4>At CariCode we implement all the following features which are critical to customer retention taking your web app to the next level</h4>
+          <h4>
+            At CariCode we implement all the following features which are
+            critical to customer retention taking your web app to the next level
+          </h4>
         </div>
         <div className={styles.howcontainer}>
           <div className={styles.howinner}>
             <div className={styles.customerexperience}>
               <div className={styles.inner}>
                 <div className={styles.customerimage}>
-                  <img src={google} />
+                  <img src={google} alt="" />
                 </div>
                 <h4>Improve customer experience</h4>
                 <p>
@@ -410,7 +416,7 @@ const WebApplications = () => {
             <div className={styles.emailauto}>
               <div className={styles.inner}>
                 <div className={styles.emailimage}>
-                  <img src={sg} />
+                  <img src={sg} alt="" />
                 </div>
                 <h4>Email Automation</h4>
                 <p>
@@ -469,7 +475,10 @@ const WebApplications = () => {
                   </button>
                 </div>
                 <h4>Authentication</h4>
-                <p>We help you design and implement action points to incentivise your customers to login and keep coming back</p>
+                <p>
+                  We help you design and implement action points to incentivise
+                  your customers to login and keep coming back
+                </p>
               </div>
             </div>
             <div className={styles.emailauto}>

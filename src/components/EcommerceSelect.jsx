@@ -30,24 +30,24 @@ const EcommerceSelect = () => {
   const [email, setEmail] = useState('')
 
   let message =
-    (isOneChecked && `Sign up forms` + ` `) +
-    (isTwoChecked && `, custom email design` + ` `) +
-    (isThreeChecked && `, email statistics` + ` `) +
-    (isFourChecked && `, email testing`) +
-    (isFiveChecked && `, email marketing automation` + ` `) +
-    (isSixChecked && `, list management` + ` `) +
-    (isSevenChecked && `, rich snippets` + ` `) +
-    (isEightChecked && `, google analytics` + ` `) +
-    (isNineChecked && `, blog` + ` `) +
-    (isTenChecked && `, review prompt` + ` `) +
+    (isOneChecked && `Sign up forms `) +
+    (isTwoChecked && `, custom email design `) +
+    (isThreeChecked && `, email statistics `) +
+    (isFourChecked && `, email testing `) +
+    (isFiveChecked && `, email marketing automation `) +
+    (isSixChecked && `, list management `) +
+    (isSevenChecked && `, rich snippets `) +
+    (isEightChecked && `, google analytics `) +
+    (isNineChecked && `, blog `) +
+    (isTenChecked && `, review prompt `) +
     (isElevenChecked && `, wishlist`) +
-    (isTwelveChecked && `, one click upsell` + ` `) +
-    (isThirteenChecked && `, related items` + ` `) +
-    (isFourteenChecked && `, social login` + ` `) +
-    (isFifteenChecked && `, loyalty program` + ` `) +
-    (isSixteenChecked && `, referral program` + ` `) +
-    (isSeventeenChecked && `, countdown timer` + ` `) +
-    (isEighteenChecked && `, social sharing` + ` `)
+    (isTwelveChecked && `, one click upsell `) +
+    (isThirteenChecked && `, related items `) +
+    (isFourteenChecked && `, social login `) +
+    (isFifteenChecked && `, loyalty program `) +
+    (isSixteenChecked && `, referral program `) +
+    (isSeventeenChecked && `, countdown timer `) +
+    (isEighteenChecked && `, social sharing `)
 
   const handleSubmit = async () => {
     try {

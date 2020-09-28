@@ -51,10 +51,6 @@ const BlogBody = () => {
     { x: new Date('November 1 2020').getTime(), y: 32000 },
     { x: new Date('December 1 2020').getTime(), y: 32000 },
   ]
-  const myData = [
-    { angle: 1, label: 'Paid' },
-    { angle: 4, label: 'Organic' },
-  ]
   const mysearchData = [
     { angle: 1, label: 'Other' },
     { angle: 9, label: 'Search Engine' },
@@ -91,7 +87,7 @@ const BlogBody = () => {
       <div className={styles.firstheader}>
         <h4>Organic search is the golden ticket</h4>
         <div className={styles.searchbar}>
-          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" />
+          <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="" />
           <input placeholder="Search"></input>
         </div>
       </div>

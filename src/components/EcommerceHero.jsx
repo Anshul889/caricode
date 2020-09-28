@@ -1,24 +1,10 @@
 import React from 'react'
 import styles from './EcommerceHero.module.css'
-import { graphql, useStaticQuery, Link } from 'gatsby'
-import Image from 'gatsby-image'
-import { Keyframes, Spring, config } from 'react-spring/renderprops'
+import { Keyframes, Spring} from 'react-spring/renderprops'
 import delay from 'delay'
 
-// const getImages = graphql`
-//   {
-//     banner: file(relativePath: { eq: "ebanner.jpg" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 2000) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
 
 const EcommerceHero = () => {
-  // const data = useStaticQuery(getImages)
   const Container = Keyframes.Spring({
     back: async next => {
       await next({ backgroundColor: '#f4f7f9' })

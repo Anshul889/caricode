@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './Navbar.module.css'
 import { Link } from 'gatsby'
 import home from '../images/home.svg'
-import contact from '../images/contact.svg'
 import blog from '../images/blog.svg'
 import landingpage from '../images/landingpage.svg'
 import mobilenav from '../images/mobile-nav.svg'
@@ -23,26 +22,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={styles.dItem}>
-            <Link
-              activeStyle={{ color: '#7c759a' }}
-              to="/landing-pages/"
-            >
+            <Link activeStyle={{ color: '#7c759a' }} to="/landing-pages/">
               Landing Pages
             </Link>
           </li>
           <li className={styles.dItem}>
-            <Link
-              activeStyle={{ color: '#7c759a' }}
-              to="/web-applications/"
-            >
+            <Link activeStyle={{ color: '#7c759a' }} to="/web-applications/">
               Applications
             </Link>
           </li>
           <li className={styles.dItem}>
-            <Link
-              activeStyle={{ color: '#7c759a' }}
-              to="/ecommerce/"
-            >
+            <Link activeStyle={{ color: '#7c759a' }} to="/ecommerce/">
               Ecommerce
             </Link>
           </li>

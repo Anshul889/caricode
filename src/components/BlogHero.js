@@ -16,7 +16,7 @@ const BlogHero = () => {
           config={config.molasses}
           delay={800}
         >
-          {props => <img className={styles.usersvg} src={user} style={props} />}
+          {props => <img className={styles.usersvg} src={user} style={props} alt="" />}
         </Spring>
         <Spring
           from={{ transform: 'translate(0px, -50px)' }}
@@ -24,7 +24,7 @@ const BlogHero = () => {
           config={config.molasses}
           delay={800}
         >
-          {props => <img className={styles.usersvg} src={user} style={props} />}
+          {props => <img className={styles.usersvg} src={user} style={props} alt="" />}
         </Spring>
         <Spring
           from={{ transform: 'translate(30px, -30px)' }}
@@ -32,16 +32,16 @@ const BlogHero = () => {
           config={config.molasses}
           delay={800}
         >
-          {props => <img className={styles.usersvg} src={user} style={props} />}
+          {props => <img className={styles.usersvg} src={user} style={props} alt="" />}
         </Spring>
-        <img className={styles.windowsvg} src={window} />
+        <img className={styles.windowsvg} src={window} alt="" />
         <Spring
           from={{ transform: 'translate(-30px, 30px)' }}
           to={{ transform: 'translate(0, 0px)' }}
           config={config.molasses}
           delay={800}
         >
-          {props => <img className={styles.usersvg} src={user} style={props} />}
+          {props => <img className={styles.usersvg} src={user} style={props} alt="" />}
         </Spring>
         <Spring
           from={{ transform: 'translate(0px, 50px)' }}
@@ -49,7 +49,7 @@ const BlogHero = () => {
           config={config.molasses}
           delay={800}
         >
-          {props => <img className={styles.usersvg} src={user} style={props} />}
+          {props => <img className={styles.usersvg} src={user} style={props} alt="" />}
         </Spring>
         <Spring
           from={{ transform: 'translate(30px, 30px)' }}
@@ -57,7 +57,7 @@ const BlogHero = () => {
           config={config.molasses}
           delay={800}
         >
-          {props => <img className={styles.usersvg} src={user} style={props} />}
+          {props => <img className={styles.usersvg} src={user} style={props} alt="" />}
         </Spring>
       </div>
     </div>
