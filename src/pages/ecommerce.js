@@ -80,12 +80,14 @@ const Ecommerce = () => {
               <p>Fashion</p>
             </div>
             <div className={styles.carouselitem}>
+            <a href="https://canopy-caricode.web.app" target="_blank" rel="noreferrer">
               <Image
                 fluid={data.jewellery.childImageSharp.fluid}
                 style={{ borderRadius: '4px' }}
                 className={styles.carouselimage}
               />
               <p>Jewellery</p>
+              </a>
             </div>
             <div className={styles.carouselitem}>
               <Image
