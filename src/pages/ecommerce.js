@@ -86,8 +86,8 @@ const Ecommerce = () => {
                 style={{ borderRadius: '4px' }}
                 className={styles.carouselimage}
               />
-              <p>Jewellery</p>
               </a>
+              <p>Jewellery</p>
             </div>
             <div className={styles.carouselitem}>
               <Image

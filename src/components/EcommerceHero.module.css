@@ -1,14 +1,41 @@
 .upperbanner{
   height: 60vh;
+  animation-name: backchange;
+  background-color: white;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes backchange {
+  0%{
+    background-color: white;
+  }
+  100%{
+    background-color: #7c759a;
+  }
 }
 
 .banner {
   height: 60vh;
-  color: white;
+  color: black;
   position: relative;
   display: grid;
   margin-bottom: 38px;
   clip-path: polygon(100% 0, 100% 100%, 0 94%, 0 0);
+  animation-name: colorchange;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorchange {
+  0%{
+    color: black;
+  }
+  100%{
+    color: white;
+  }
 }
 
 .banner img {
@@ -25,6 +52,20 @@
 
 .getmbutton{
   display: block;
+  animation-name: buttonopac;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes buttonopac {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .getdbutton{
