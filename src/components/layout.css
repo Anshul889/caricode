@@ -188,9 +188,25 @@ button:hover {
 
 .hero-feature-border {
   height: 1px;
-  background-color: white;
+  background-color: rgba(144, 144, 144, 0.25);
+  width: 10px;
   margin-left: 1px;
+  animation: bordergrow;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
+
+@keyframes bordergrow {
+  0%{
+    width: 10px;
+  }
+  100%{
+    width: 100px;
+  }
+}
+
 
 .banner p {
   font-size: 0.7em;

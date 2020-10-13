@@ -25,33 +25,14 @@ const Banner = () => {
       />
       <div className="bannercontent">
         <h2>We Build, Deploy and Manage Progressive Web Apps</h2>
-        <Spring
-          from={{ width: '0px', marginBottom: '20px' }}
-          to={{ width: '100px', marginBottom: '20px' }}
-          config={config.slow}
-          delay={500}
-        >
-          {props => <div className="hero-feature-border" style={props}></div>}
-        </Spring>
-        <Spring
-          from={{ opacity: 0, transform: 'translateY(20px)', marginBottom: '20px' }}
-          to={{ opacity : 1,transform: 'translateY(0px)', marginBottom: '20px' }}
-          config={config.slow}
-          delay={1000}
-        >
-          {props => <p style={props}>
+        <div className="hero-feature-border" ></div>
+        <p>
           Take the online presence
           <br />
           of your business to the next level
-        </p>}
-        </Spring>
-        <Spring
-          from={{ opacity: 0, transform: 'translateY(10px)' }}
-          to={{ opacity : 1,transform: 'translateY(0px)' }}
-          delay={1200}
-        >
-          {props => <Link to="/#section2"><button style={props}>Get Started</button></Link>}
-        </Spring>
+        </p>
+       <Link to="/#section2"><button>Get Started</button></Link>
+       
       </div>
     </div>
   )
