@@ -44,6 +44,9 @@ const Posttemplate = ({ data }) => {
             <h1 className={styles.title}>{title}</h1>
             <div className={styles.date}>{date}</div>
           </div>
+          <div className={styles.imagecontainer}>
+           <img src='https://www.caricode.co/images/image3.jpg' style={{width: '100%'}}></img>
+          </div>
           <div className={styles.cardshare}>
             <div className={styles.cardshareshare}>Share:</div>
             <FacebookShareButton
