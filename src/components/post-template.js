@@ -45,7 +45,7 @@ const Posttemplate = ({ data }) => {
             <div className={styles.date}>{date}</div>
           </div>
           <div className={styles.imagecontainer}>
-           <img src='https://www.caricode.co/images/image3.jpg' style={{width: '100%'}}></img>
+           <img src='https://www.caricode.co/images/image3.jpg' style={{width: '100%', height:'190px', objectFit: 'cover'}}></img>
           </div>
           <div className={styles.cardshare}>
             <div className={styles.cardshareshare}>Share:</div>
