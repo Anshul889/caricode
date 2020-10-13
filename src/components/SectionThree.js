@@ -64,23 +64,6 @@ const SectionThree = () => {
             <h4>
               <Link to="/landing-pages/">Landing Pages</Link>
             </h4>
-            <VisibilitySensor>
-              {({ isVisible }) => (
-                <Spring
-                  from={{ width: '1px', marginBottom: '20px' }}
-                  to={{
-                    width: isVisible ? '50px' : '1px',
-                    marginBottom: '20px',
-                  }}
-                  config={config.slow}
-                  delay={500}
-                >
-                  {props => (
-                    <div className="hero-feature-border" style={props}></div>
-                  )}
-                </Spring>
-              )}
-            </VisibilitySensor>
             <p>
               Landing pages are critical in helping you to generate leads and
               convert them into prospects and customers. Studies show that
@@ -130,23 +113,6 @@ const SectionThree = () => {
             <h4>
               <Link to="/blogs/">Blogs</Link>
             </h4>
-            <VisibilitySensor>
-              {({ isVisible }) => (
-                <Spring
-                  from={{ width: '1px', marginBottom: '20px' }}
-                  to={{
-                    width: isVisible ? '50px' : '1px',
-                    marginBottom: '20px',
-                  }}
-                  config={config.slow}
-                  delay={500}
-                >
-                  {props => (
-                    <div className="hero-feature-border" style={props}></div>
-                  )}
-                </Spring>
-              )}
-            </VisibilitySensor>
             <p>
               Blogging helps business owners to engage with customers. Blogging
               connects similar thinkers and communities of people worldwide.
@@ -277,23 +243,6 @@ const SectionThree = () => {
               )}
             </VisibilitySensor>
             <h4>Web Applications</h4>
-            <VisibilitySensor>
-              {({ isVisible }) => (
-                <Spring
-                  from={{ width: '1px', marginBottom: '20px' }}
-                  to={{
-                    width: isVisible ? '50px' : '1px',
-                    marginBottom: '20px',
-                  }}
-                  config={config.slow}
-                  delay={500}
-                >
-                  {props => (
-                    <div className="hero-feature-border" style={props}></div>
-                  )}
-                </Spring>
-              )}
-            </VisibilitySensor>
             <p>
               Duis vulputate sit amet metus quis facilisis. Sed dapibus neque
               erat fringilla tincidunt. Nullam sapien et sapien, iaculis ac

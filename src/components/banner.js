@@ -32,7 +32,6 @@ const Banner = () => {
           of your business to the next level
         </p>
        <Link to="/#section2"><button>Get Started</button></Link>
-       
       </div>
     </div>
   )

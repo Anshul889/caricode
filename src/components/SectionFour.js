@@ -57,23 +57,6 @@ const SectionFour = () => {
     <div className="section4">
       <h4>
         ETIAM SED TELLUS
-        <VisibilitySensor>
-          {({ isVisible }) => (
-            <Spring
-              from={{ width: '1px', marginBottom: '20px', marginTop: '20px' }}
-              to={{
-                width: isVisible ? '50px' : '1px',
-                marginBottom: '20px',
-              }}
-              config={config.slow}
-              delay={800}
-            >
-              {props => (
-                <div className="hero-feature-border" style={props}></div>
-              )}
-            </Spring>
-          )}
-        </VisibilitySensor>
       </h4>
       <div className="inner">
         <div className="section4grid">
