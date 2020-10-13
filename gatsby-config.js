@@ -70,9 +70,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        // fonts: [
-        //   `source sans pro\:0` // you can also specify font weights and styles
-        // ],
         fonts: [
           {
             family: `Source Sans Pro`,
