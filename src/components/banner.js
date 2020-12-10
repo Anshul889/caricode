@@ -25,13 +25,38 @@ const Banner = () => {
       />
       <div className="bannercontent">
         <h2>We Build, Deploy and Manage Progressive Web Apps</h2>
-        <div className="hero-feature-border" ></div>
+        <div className="hero-feature-border"></div>
         <p>
           Take the online presence
           <br />
           of your business to the next level
         </p>
-       <Link to="/#section2"><button>Get Started</button></Link>
+        <div>
+          <button
+            onClick={() =>
+              window.scrollTo({
+                top: 700,
+                left: 0,
+                behavior: 'smooth',
+              })
+            }
+            className="getmbutton"
+          >
+            Get Started
+          </button>
+          <button
+            onClick={() =>
+              window.scrollTo({
+                top: 800,
+                left: 0,
+                behavior: 'smooth',
+              })
+            }
+            className='getdbutton'
+          >
+            Get Started
+          </button>
+        </div>
       </div>
     </div>
   )

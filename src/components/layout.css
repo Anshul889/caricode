@@ -519,6 +519,10 @@ textarea:focus {
   );
 }
 
+.getdbutton{
+  display: none;
+}
+
 .slopeBegin,
 .slopeEnd {
   position: absolute;
@@ -673,5 +677,11 @@ textarea:focus {
     font-size: 21.6333px;
     letter-spacing: 4.32667px;
     line-height: 32.45px;
+  }
+  .getmbutton{
+    display: none
+  }
+  .getdbutton{
+    display: block;
   }
 }
