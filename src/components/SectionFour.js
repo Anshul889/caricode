@@ -56,7 +56,7 @@ const SectionFour = () => {
   return (
     <div className="section4">
       <h4>
-        ETIAM SED TELLUS
+        Critical Features for a successful web application
       </h4>
       <div className="inner">
         <div className="section4grid">

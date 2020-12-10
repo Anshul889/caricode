@@ -488,6 +488,7 @@ const WebPerformance = () => {
               success of any online venture, as high performing sites engage and
               retain users better than poorly performing ones.
             </p>
+            <div>
             <FlexibleWidthXYPlot margin={{ left: 60, right: 30 }} height={300}>
               <XAxis title={'loading time(s)'} />
               <YAxis title={'%increase in Bounce Rate'} />
@@ -497,6 +498,7 @@ const WebPerformance = () => {
                 data={databounce}
               />
             </FlexibleWidthXYPlot>
+            </div>
             <p>
               Because business is highly competitive, we want you to be
               knowledgeable of how your competitors are doing online. In a

@@ -242,7 +242,7 @@ const SectionThree = () => {
                 </Spring>
               )}
             </VisibilitySensor>
-            <h4>Web Applications</h4>
+            <h4>Ecommerce</h4>
             <p>
               Duis vulputate sit amet metus quis facilisis. Sed dapibus neque
               erat fringilla tincidunt. Nullam sapien et sapien, iaculis ac
