@@ -154,7 +154,7 @@ const CleanDesign = () => {
             <div className="designimages" style={{width: '70%'}}>
               <Image
                 fluid={data.image13.childImageSharp.fluid}
-                style={{ marginBottom: '14px' }}
+                style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
               />
               <Image
                 fluid={data.image14.childImageSharp.fluid}
@@ -169,7 +169,7 @@ const CleanDesign = () => {
               <Link to="/customised-functionality">
                 <Image
                   fluid={data.image7.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 />
               </Link>
               <h3>

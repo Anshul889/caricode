@@ -114,7 +114,7 @@ const WebPerformance = () => {
                       <g class="fa-group">
                         <path
                           class="fa-secondary"
-                          fill="white"
+                          fill="black"
                           d="M0 384v80a48 48 0 0 0 48 48h224a48 48 0 0 0 48-48v-80zm160 96a32 32 0 1 1 32-32 32 32 0 0 1-32 32z"
                           opacity="0.4"
                         ></path>
@@ -198,7 +198,7 @@ const WebPerformance = () => {
                   <g class="fa-group">
                     <path
                       class="fa-secondary"
-                      fill="white"
+                      fill="black"
                       d="M0 384v80a48 48 0 0 0 48 48h224a48 48 0 0 0 48-48v-80zm160 96a32 32 0 1 1 32-32 32 32 0 0 1-32 32z"
                       opacity="0.4"
                     ></path>
@@ -212,7 +212,7 @@ const WebPerformance = () => {
                 <svg
                   style={{
                     margin: 'auto',
-                    background: '#e0e0e0',
+                    background: 'black',
                     display: 'block',
                     'shape-rendering': 'auto',
                     position: 'absolute',
@@ -232,7 +232,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -252,7 +252,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -272,7 +272,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -292,7 +292,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -312,7 +312,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -332,7 +332,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -352,7 +352,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -372,7 +372,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -392,7 +392,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -412,7 +412,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -432,7 +432,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -452,7 +452,7 @@ const WebPerformance = () => {
                       ry="6"
                       width="6"
                       height="12"
-                      fill="#fe718d"
+                      fill="rgb(18, 147, 154)"
                     >
                       <animate
                         attributeName="opacity"
@@ -481,7 +481,7 @@ const WebPerformance = () => {
               applications with slight delays that hinder users for only brief
               moments to completely inaccessible websites.
             </p>
-            <h3>Web Performance is key in retaining users</h3>
+            <h4>Web Performance is key in retaining users</h4>
             <p>
               At Caricode we want your users to interact meaningfully with what
               we build for you. Performance plays a significant role in the
@@ -557,7 +557,7 @@ const WebPerformance = () => {
               <Link to="/multi-device-support">
                 <Image
                   fluid={data.image4.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 />
               </Link>
               <h3>
@@ -572,7 +572,7 @@ const WebPerformance = () => {
               <Link to="/base-technologies">
                 <Image
                   fluid={data.image5.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 />
               </Link>
               <h3>

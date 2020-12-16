@@ -162,7 +162,7 @@ const ProgressiveWebApp = () => {
               <Link to="/multi-device-support">
                 <Image
                   fluid={data.image3.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 />
               </Link>
               <h3>
@@ -179,7 +179,7 @@ const ProgressiveWebApp = () => {
               <Link to="/base-technologies">
                 <Image
                   fluid={data.image4.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 />
               </Link>
               <h3>

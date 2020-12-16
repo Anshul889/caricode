@@ -242,7 +242,7 @@ const SectionThree = () => {
                 </Spring>
               )}
             </VisibilitySensor>
-            <h4>Ecommerce</h4>
+            <Link to='/ecommerce'><h4>Ecommerce</h4></Link>
             <p>
               Duis vulputate sit amet metus quis facilisis. Sed dapibus neque
               erat fringilla tincidunt. Nullam sapien et sapien, iaculis ac

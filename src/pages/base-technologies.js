@@ -153,7 +153,7 @@ const BaseTechnologies = () => {
               <Link to="/clean-design/">
                 <Image
                   fluid={data.image6.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 />
               </Link>
               <h3>
@@ -168,7 +168,7 @@ const BaseTechnologies = () => {
               <Link to="/customised-functionality">
                 <Image
                   fluid={data.image7.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 />
               </Link>
               <h3>
