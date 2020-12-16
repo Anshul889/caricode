@@ -117,6 +117,7 @@ const WebApplications = () => {
                     />
                   </FlexibleWidthXYPlot>
                   <h4 className={styles.costeffectiveh}>Cost Effective</h4>
+                  <div className={styles.mobileborder}>
                   <VisibilitySensor>
                     {({ isVisible }) => (
                       <Spring
@@ -137,6 +138,7 @@ const WebApplications = () => {
                       </Spring>
                     )}
                   </VisibilitySensor>
+                  </div>
                   <p>
                     It's{' '}
                     <a
@@ -194,6 +196,7 @@ const WebApplications = () => {
                   <LineSeries data={acquisitionrevenue} />
                 </FlexibleWidthXYPlot>
                 <h4>ROI</h4>
+                <div className={styles.mobileborder}>
                 <VisibilitySensor>
                   {({ isVisible }) => (
                     <Spring
@@ -214,6 +217,7 @@ const WebApplications = () => {
                     </Spring>
                   )}
                 </VisibilitySensor>
+                </div>
                 A{' '}
                 <a
                   href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers"
@@ -261,6 +265,7 @@ const WebApplications = () => {
                   <img src={usertie} alt="" />
                 </div>
                 <h4>Loyalty</h4>
+                <div className={styles.mobileborder}>
                 <VisibilitySensor>
                   {({ isVisible }) => (
                     <Spring
@@ -281,17 +286,19 @@ const WebApplications = () => {
                     </Spring>
                   )}
                 </VisibilitySensor>
+                </div>
                 <p>
                   Retained customers buy more often and spend more than newer
                   customers. They've learned the value of a product or service
                   and keep coming back, again and again.
                 </p>
-              </div>
+                </div>
             </div>
             <div className={styles.why}>
               <div className={styles.inner}>
                 <div className={styles.referralanimation}>
                   <img src={users} alt="" />
+
                   <VisibilitySensor offset={{ bottom: 250 }}>
                     {({ isVisible }) => (
                       <Spring
@@ -352,27 +359,28 @@ const WebApplications = () => {
                   </VisibilitySensor>
                 </div>
                 <h4>Referrals</h4>
-                <VisibilitySensor>
-                  {({ isVisible }) => (
-                    <Spring
-                      from={{ width: '1px', marginBottom: '20px' }}
-                      to={{
-                        width: isVisible ? '50px' : '1px',
-                        marginBottom: '20px',
-                      }}
-                      config={config.slow}
-                      delay={500}
-                    >
-                      {props => (
-                        <div
-                          className="hero-feature-border"
-                          style={props}
-                        ></div>
-                      )}
-                    </Spring>
-                  )}
-                </VisibilitySensor>
-
+                <div className={styles.mobileborder}>
+                  <VisibilitySensor>
+                    {({ isVisible }) => (
+                      <Spring
+                        from={{ width: '1px', marginBottom: '20px' }}
+                        to={{
+                          width: isVisible ? '50px' : '1px',
+                          marginBottom: '20px',
+                        }}
+                        config={config.slow}
+                        delay={500}
+                      >
+                        {props => (
+                          <div
+                            className="hero-feature-border"
+                            style={props}
+                          ></div>
+                        )}
+                      </Spring>
+                    )}
+                  </VisibilitySensor>
+                </div>
                 <p>
                   Satisfied, loyal customers are more likely to sing a company's
                   praises and refer their friends and family — bringing in new

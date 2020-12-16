@@ -285,6 +285,11 @@ img.pwaappicon {
     height: 90vh;
   }
 
+  .imagesharing{
+    width: 60%;
+    margin: 30px auto;
+  }
+
    .usersvg {
     height: 60px;
   }

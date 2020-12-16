@@ -777,10 +777,12 @@ const BlogBody = () => {
         <div className={styles.socialsharing}>
           <div className={styles.inner}>
             <h4>Importance of social sharing</h4>
+            <div className={styles.imagesharing}>
             <Image
               fluid={data.links.childImageSharp.fluid}
               style={{ marginBottom: '14px', borderRadius: '4px' }}
             />
+            </div>
             <p>
               Social media is built for mass sharing. That's how social media
               affects SEO because all of this sharing adds up to more visibility

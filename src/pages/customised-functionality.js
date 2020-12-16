@@ -47,7 +47,7 @@ const CustomidedFunctionality = () => {
           <div className="customfuncicon">
           </div>
           <div className="pees">
-            <h3>We want you to have a successful online presence which means more than just a website. We offer a range of additional solutions customised to suit your needs.</h3>
+            <p>We want you to have a successful online presence which means more than just a website. We offer a range of additional solutions customised to suit your needs.</p>
             <h4>Two of our key features are detailed below:</h4>
             <h5>Blogs</h5>
             <p>1. Blogging Helps Your Business to Compete: blogging is important to let consumers know how you are different.</p>
@@ -66,7 +66,7 @@ const CustomidedFunctionality = () => {
           <div className="side1">
             <Link to="/progressive-web-apps"><Image
                   fluid={data.image8.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 /></Link>
             <h3><Link to="/progressive-web-apps">Progressive Web Apps</Link></h3>
             <p>A high-quality Progressive Web App has incredible benefits, making it easy to delight your users, grow engagement and increase conversions.</p>
@@ -74,7 +74,7 @@ const CustomidedFunctionality = () => {
           <div className="side1">
             <Link to="/web-performance"><Image
                   fluid={data.image3.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 /></Link>
             <h3><Link to="/web-performance">Web Performance</Link></h3>
             <p>Performance plays a significant role in the success of any online venture, as highly performing sites engage and retain users better than poorly performing ones.</p>

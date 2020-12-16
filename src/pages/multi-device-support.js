@@ -115,7 +115,7 @@ const MultiDeviceSupport = () => {
               <Link to="/base_technologies">
                 <Image
                   fluid={data.image5.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 />
               </Link>
               <h3>
@@ -131,7 +131,7 @@ const MultiDeviceSupport = () => {
               <Link to="/clean-design">
                 <Image
                   fluid={data.image6.childImageSharp.fluid}
-                  style={{ marginBottom: '14px' }}
+                  style={{ marginBottom: '14px', borderRadius: '4px 4px 0 0' }}
                 />
               </Link>
               <h3>
