@@ -509,7 +509,7 @@ const WebPerformance = () => {
               with the competition, check out the Speed Scorecard tool.
             </p>
             <p>
-              <b>Web Performance is key to improving conversions.</b> Retaining
+              <i>Web Performance is key to improving conversions.</i> Retaining
               users is crucial to improving your conversions. If you run an
               online business, conversions are the goal and performance is very
               critical. The speed of your site has an impact on your revenue.

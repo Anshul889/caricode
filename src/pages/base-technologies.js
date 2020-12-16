@@ -49,7 +49,7 @@ const BaseTechnologies = () => {
               At CariCode, we build all our web applications with React JS, a
               scalable technology developed and maintained by Facebook.
             </p>
-            <h3>Advantages of Reactjs versus a CMS system like Wordpress</h3>
+            <h4>Advantages of Reactjs versus a CMS system like Wordpress</h4>
             <p>
               <b>Design:</b> With Wordpress you are constrained in the design
               and the way you organize your website. That is why all Wordpress
@@ -116,10 +116,10 @@ const BaseTechnologies = () => {
               on plugins. A lot of plugins. With a React JS sites, you can get
               lean and mean, with a tool that does exactly what you need it to
             </p>
-            <h3>
+            <h4>
               React JS is Used by all major technology firms including Uber,
               Twitter, Netflix and Airbnb.
-            </h3>
+            </h4>
             <h4>Examples of Companies Using React</h4>
             <h5>Netflix</h5>
             <p>

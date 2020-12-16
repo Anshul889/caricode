@@ -93,10 +93,10 @@ const CleanDesign = () => {
               goal-oriented. Speed is important and they expect to get what they
               need, instantaneously.
             </p>
-            <h3>
+            <h4>
               At CariCode every website we create is based on these important
               principles:
-            </h3>
+            </h4>
             <h4>1. Home page and site navigation</h4>
             <div className="designimages">
               <Image
