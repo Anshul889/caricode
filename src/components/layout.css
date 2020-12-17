@@ -66,6 +66,7 @@ dd{
   line-height: 29.12px;
   font-size: 19.9px;
   margin-bottom: 2em;
+  margin-inline-start: 20px;
 }
 
 .rv-discrete-color-legend-item {
@@ -577,6 +578,10 @@ textarea:focus {
 @media only screen and (min-width: 830px) {
   #section2 {
     margin-bottom: 50px;
+  }
+
+  dd{
+    margin-inline-start: 40px;
   }
 
   .inner {
