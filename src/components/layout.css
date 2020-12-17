@@ -54,6 +54,20 @@ p {
   line-height: 29.12px;
 }
 
+dt{
+  font-weight: 400;
+  line-height: 29.12px;
+  font-size: 19.9px;
+  margin-bottom: 1.2em;
+}
+
+dd{
+  font-weight: 300;
+  line-height: 29.12px;
+  font-size: 19.9px;
+  margin-bottom: 2em;
+}
+
 .rv-discrete-color-legend-item {
   color: lightgrey !important;
 }

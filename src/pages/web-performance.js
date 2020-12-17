@@ -523,33 +523,33 @@ const WebPerformance = () => {
                   of a website
                 </h4>
               </div>
-              <h5>Mobify</h5>
-              <p>
+              <dt>Mobify</dt>
+              <dd>
                 Every 100ms decrease in homepage load speed worked out to a
                 1.11% increase in session-based conversion, yielding an average
                 annual revenue increase of nearly $380,000. Additionally, a
                 100ms decrease in checkout page load speed amounted to a 1.55%
                 increase in session-based conversion, which in turn yielded an
                 average annual revenue increase of nearly $530,000.
-              </p>
+              </dd>
 
-              <h5>AutoAnything</h5>
-              <p>
+              <dt>AutoAnything</dt>
+              <dd>
                 When AutoAnything reduced page load time by half, they saw a
                 boost of 12-13% in sales.
-              </p>
-              <h5>Pinterest</h5>
-              <p>
+              </dd>
+              <dt>Pinterest</dt>
+              <dd>
                 Pinterest rebuilt their pages for performance realizing a 40%
                 reduction in perceived wait times, thus increasing both search
                 engine traffic and sign-ups by 15%.
-              </p>
-              <h5>COOK</h5>
-              <p>
+              </dd>
+              <dt>COOK</dt>
+              <dd>
                 By cutting average page load time by 850 milliseconds, COOK
                 found they were able to increase conversions by 7%, decrease
                 bounce rates by 7%, and increase pages per session by 10%.
-              </p>
+              </dd>
             </div>
           </div>
           <div className="sidebar">
