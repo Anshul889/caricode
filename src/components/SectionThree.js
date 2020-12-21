@@ -184,7 +184,7 @@ const SectionThree = () => {
                           className="fa-primary"
                           fill="black"
                           d="M0 384V48A48 48 0 0 1 48 0h224a48 48 0 0 1 48 48v336z"
-                          opacity='0.9'
+                          opacity="0.9"
                         ></path>
                         <line
                           x1="20"
@@ -242,11 +242,13 @@ const SectionThree = () => {
                 </Spring>
               )}
             </VisibilitySensor>
-            <Link to='/ecommerce'><h4>Ecommerce</h4></Link>
+            <Link to="/ecommerce">
+              <h4>Ecommerce</h4>
+            </Link>
             <p>
-              Duis vulputate sit amet metus quis facilisis. Sed dapibus neque
-              erat fringilla tincidunt. Nullam sapien et sapien, iaculis ac
-              varius ultrices nec metus. Aenean ultricies magna.
+              We build ecommerce apps that deliver an amazing experience to your
+              customers. Our apps are backed by robust, scalable technology to
+              deliver customer engagement and return on your investment
             </p>
           </div>
         </div>

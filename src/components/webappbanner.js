@@ -16,9 +16,12 @@ const Webappbanner = () => {
   // })
   return (
     <div className={styles.landinghero}>
-      <img src={browser} className={styles.browser} alt=""/>
+      <img src={browser} className={styles.browser} alt="" />
       <h1>Web applications</h1>
-      <p>(Line about retention using apps)</p>
+      <p>
+        At Caricode we build progressive web apps that deliver high performance,
+        engaging, native-like experience, and the ability to work offline.
+      </p>
       <Link to="#firstheader">
         <button>Get Started</button>
       </Link>

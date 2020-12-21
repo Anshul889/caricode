@@ -92,7 +92,7 @@ const LandingPages = () => {
 
         <ParallaxLayer offset={0.12} speed={0.5}>
           <div>
-            <img className={styles.windowsvg} src={window} alt=""/>
+            <img className={styles.windowsvg} src={window} alt="" />
             <div className={styles.userhappy}>
               <div className={styles.empty}></div>
               <Spring
@@ -101,7 +101,12 @@ const LandingPages = () => {
                 delay={800}
               >
                 {props => (
-                  <img className={styles.usersvg} src={user} style={props} alt=""/>
+                  <img
+                    className={styles.usersvg}
+                    src={user}
+                    style={props}
+                    alt=""
+                  />
                 )}
               </Spring>
               <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={1800}>
@@ -110,7 +115,7 @@ const LandingPages = () => {
                     className={styles.commentsvg}
                     src={commentsmile}
                     style={props}
-                    alt=''
+                    alt=""
                   />
                 )}
               </Spring>
@@ -119,7 +124,7 @@ const LandingPages = () => {
         </ParallaxLayer>
         <ParallaxLayer offset={0.6} speed={0.1}>
           <h4 className={styles.paragraph}>
-            Want to improve conversions on your website ?
+            Landing Pages built with a goal to drive call to action
           </h4>
         </ParallaxLayer>
 
@@ -128,7 +133,7 @@ const LandingPages = () => {
             <img src={product} alt="" />
             <img src={mobile} alt="" />
             <img src={tv} alt="" />
-            <img src={watch}  alt=""/>
+            <img src={watch} alt="" />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={1.35} speed={0.1}>
@@ -152,7 +157,7 @@ const LandingPages = () => {
           </VisibilitySensor>
         </ParallaxLayer>
         <ParallaxLayer offset={1.42} speed={0.1}>
-          <img src={user} className={styles.specificuser} alt=""/>
+          <img src={user} className={styles.specificuser} alt="" />
         </ParallaxLayer>
         <ParallaxLayer offset={1.58} speed={0}>
           <h4 className={`${styles.paragraph} ${styles.specific}`}>
@@ -252,7 +257,10 @@ const LandingPages = () => {
 
         <ParallaxLayer offset={3.2} speed={0.1}>
           <div className={styles.testimonial1}>
-            <img src="https://randomuser.me/api/portraits/women/71.jpg" alt=""/>
+            <img
+              src="https://randomuser.me/api/portraits/women/71.jpg"
+              alt=""
+            />
             <h4>Elaine Ryan</h4>
             <p>Great website ! The parallax effect is so good</p>
           </div>
