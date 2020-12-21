@@ -48,6 +48,7 @@
     "react-vis": "^1.11.7",
     "react-visibility-sensor": "^5.1.1",
     "react-with-gesture": "^4.0.8",
+    "typeface-source-sans-pro": "^1.1.13",
     "typist": "^0.1.0"
   },
   "devDependencies": {
