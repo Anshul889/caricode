@@ -610,10 +610,10 @@ const WebApplications = () => {
         </div>
       </div>
       <div>
-        <div className={styles.inner}>
+        {/* <div className={styles.inner}>
           <h4>Call to action</h4>
           <table></table>
-        </div>
+        </div> */}
       </div>
     </Layout>
   )
