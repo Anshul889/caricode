@@ -390,7 +390,7 @@ const WebApplications = () => {
             </div>
           </div>
         </div>
-        <h4
+        {/* <h4
           style={{
             textAlign: 'center',
             padding: '38px 0',
@@ -398,7 +398,7 @@ const WebApplications = () => {
           }}
         >
           <div className={styles.inner}>Single case study of why</div>
-        </h4>
+        </h4> */}
         <div className={styles.secondheader}>
           <h4>
             At CariCode we implement all the following features which are
