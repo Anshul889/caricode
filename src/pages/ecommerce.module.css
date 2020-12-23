@@ -192,12 +192,12 @@
   .cardsection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 470px;
     max-width: 1080px;
     margin: 0 auto;
     padding-bottom: 30px;
   }
   .card p {
-    width: 90%;
     margin: 35px auto;
   }
 
@@ -207,10 +207,16 @@
 
   .card h4 {
     padding-top: 30px;
+    grid-column: span 1;
+  }
+
+  .card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 200px 140px;
   }
 
   .card button {
-    margin: 35px auto;
     display: block;
     width: 80%;
     height: 45px;
