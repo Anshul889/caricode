@@ -667,7 +667,8 @@ textarea:focus {
   }
 
   .infopost:nth-child(5) h4 {
-    padding-top: 10px;
+    padding-top: 20px;
+    margin-bottom: 28px;
   }
   #firstheader h4 {
     padding: 30px;

@@ -213,7 +213,7 @@
   .card{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90px 200px 140px;
+    grid-template-rows: 75px 205px 100px;
   }
 
   .card button {
