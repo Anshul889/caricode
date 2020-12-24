@@ -54,19 +54,30 @@ p {
   line-height: 29.12px;
 }
 
-dt{
+dt {
   font-weight: 400;
   line-height: 29.12px;
   font-size: 19.9px;
   margin-bottom: 1.2em;
 }
 
-dd{
+dd {
   font-weight: 300;
   line-height: 29.12px;
   font-size: 19.9px;
   margin-bottom: 2em;
   margin-inline-start: 20px;
+}
+
+ul {
+  list-style: disc;
+  margin: 1.4em 0;
+  padding-left: 1.4em;
+}
+
+li {
+  font-size: 19.6px;
+  font-weight: 300;
 }
 
 .rv-discrete-color-legend-item {
@@ -213,14 +224,13 @@ button:hover {
 }
 
 @keyframes bordergrow {
-  0%{
+  0% {
     width: 10px;
   }
-  100%{
+  100% {
     width: 100px;
   }
 }
-
 
 .banner p {
   font-size: 0.7em;
@@ -302,8 +312,7 @@ button:hover {
 
 .section4 h4 {
   width: 90%;
-  margin: 14px auto 30px 
-  auto;
+  margin: 14px auto 30px auto;
   max-width: 1080px;
   color: white;
 }
@@ -533,7 +542,7 @@ textarea:focus {
   );
 }
 
-.getdbutton{
+.getdbutton {
   display: none;
 }
 
@@ -579,7 +588,7 @@ textarea:focus {
     margin-bottom: 50px;
   }
 
-  dd{
+  dd {
     margin-inline-start: 40px;
   }
 
@@ -614,6 +623,9 @@ textarea:focus {
 
   .postdiv {
     border-bottom: none;
+  }
+  .section4 {
+    padding-bottom: 50px;
   }
 
   .section4 h4 {
@@ -698,10 +710,10 @@ textarea:focus {
     letter-spacing: 4.32667px;
     line-height: 32.45px;
   }
-  .getmbutton{
-    display: none
+  .getmbutton {
+    display: none;
   }
-  .getdbutton{
+  .getdbutton {
     display: block;
   }
 }

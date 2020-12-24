@@ -49,7 +49,7 @@ const CustomidedFunctionality = () => {
           <div className="pees">
             <p>We want you to have a successful online presence which means more than just a website. We offer a range of additional solutions customised to suit your needs.</p>
             <h4>Two of our key features are detailed below:</h4>
-            <h5>Blogs</h5>
+            <dt>Blogs</dt>
             <p>1. Blogging Helps Your Business to Compete: blogging is important to let consumers know how you are different.</p>
             <p>2. Blogging is Statistically Proven to Help Businesses<br /><br/> The custom content from blogs warms prospective customers up to your business. Businesses that blog generate more leads than businesses that don’t. Blogging can sometimes be just as effective in promoting your company than through advertisements.</p>
             <p>3. A Blog Provides a Channel of Communication with Customers: Creates a two-way interaction with your target audience. You can personalize your content and create a conversation with your customer</p>
@@ -57,7 +57,7 @@ const CustomidedFunctionality = () => {
             <p>5. A Blog Can Improve Your SEO: Blogs improve your search engine ranking</p>
             <p>6. Blog Posts Provide Social Media Content</p>
             <p>7. A Business Blog Can Generate Leads: The blog layout we offer is optimized for actions that are important to your business.</p>
-            <h5>Offline Support</h5>
+            <dt>Offline Support</dt>
             <p>Offline support and reliable performance is a critical feature of all the websites we built. Progressive Web Apps offer the most reliable offline support. This provides a significantly better user experience no matter where your customer is accessing your website.</p>
             <p>The quality of a network connection can be affected by a number of factors. Our goal is to provide a good experience that lessens the impact of changes in connectivity.</p>
           </div>

@@ -121,32 +121,32 @@ const BaseTechnologies = () => {
               Twitter, Netflix and Airbnb.
             </h4>
             <h4>Examples of Companies Using React</h4>
-            <h5>Netflix</h5>
-            <p>
+            <dt>Netflix</dt>
+            <dd>
               There are two reasons why Netflix decided to go into React:
               performance, code simplicity and modularity. You can read about
               that in details on Netflix Techblog.
-            </p>
-            <h5>
+            </dd>
+            <dt>
               Atlassian - the creators of Jira, BitBucket, HipChat and many more
-            </h5>
-            <p>
+            </dt>
+            <dd>
               HipChat is one of the most popular team-communication tools in the
               World. Its team has been recently rebuilding their web version to
               React. Atlassian developers were deciding between Angular, Ember
               and React. After prototyping HipChat client in all of these
               technologies, they picked React. They summed up the main benefits
               of React in their blogpost using phrase from Tom Ochino’s talk
-            </p>
-            <h5>Khan Academy</h5>
-            <p>
+            </dd>
+            <dt>Khan Academy</dt>
+            <dd>
               Many parts of Khan Academy are working on React right now. Joel
               Burget, who was a developer in Khan Academy, shared his experience
               about migrating from Backbone to React. He mentions one of the
               most the best features of React - it manages how the elements on
               the page must change in the efficient way. React avoids
               unnecessary re-renders.
-            </p>
+            </dd>
           </div>
           <div className="sidebar">
             <div className="side1">
