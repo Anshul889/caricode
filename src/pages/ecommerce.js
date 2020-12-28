@@ -67,25 +67,46 @@ const Ecommerce = () => {
       <div className={styles.ecombody}>
         <EcommerceHero />
         <div className={styles.carouselcontainer}>
-          <h4>Deliver an amazing ecommerce experience to your customers. A small selection of our work</h4>
+          <h4>
+            Deliver an amazing ecommerce experience to your customers. A small
+            selection of our work
+          </h4>
           <div className={styles.ecomcarousel}>
             <div className={styles.carouselitem}>
-              <a href="https://luxxette.web.app" target="_blank" rel="noreferrer">
-              <Image
-                fluid={data.fashion.childImageSharp.fluid}
-                style={{ borderRadius: '4px' }}
-                className={styles.carouselimage}
-              />
+              <a
+                href="https://luxxette.web.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  fluid={data.fashion.childImageSharp.fluid}
+                  style={{ borderRadius: '4px' }}
+                  className={styles.carouselimage}
+                />
               </a>
               <p>Fashion</p>
             </div>
             <div className={styles.carouselitem}>
-            <a href="https://canopy-caricode.web.app" target="_blank" rel="noreferrer">
-              <Image
-                fluid={data.jewellery.childImageSharp.fluid}
-                style={{ borderRadius: '4px' }}
-                className={styles.carouselimage}
-              />
+              <a href="https://hola-bella.com" target="_blank" rel="noreferrer">
+                <Image
+                  fluid={data.sports.childImageSharp.fluid}
+                  style={{ borderRadius: '4px' }}
+                  className={styles.carouselimage}
+                />
+              </a>
+              <p>Jewellery</p>
+            </div>
+            <div className={styles.carouselitem}>
+              <a
+                href="https://canopy-caricode.web.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  fluid={data.jewellery.childImageSharp.fluid}
+                  style={{ borderRadius: '4px' }}
+                  className={styles.carouselimage}
+                />
               </a>
               <p>Jewellery</p>
             </div>
@@ -112,14 +133,6 @@ const Ecommerce = () => {
                 className={styles.carouselimage}
               />
               <p>Home</p>
-            </div>
-            <div className={styles.carouselitem}>
-              <Image
-                fluid={data.sports.childImageSharp.fluid}
-                style={{ borderRadius: '4px' }}
-                className={styles.carouselimage}
-              />
-              <p>Sports</p>
             </div>
             <div className={styles.nothing}></div>
           </div>
