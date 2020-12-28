@@ -111,11 +111,17 @@ const Ecommerce = () => {
               <p>Jewellery</p>
             </div>
             <div className={styles.carouselitem}>
+            <a
+                href="https://beauty-caricode.web.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
               <Image
                 fluid={data.beauty.childImageSharp.fluid}
                 style={{ borderRadius: '4px' }}
                 className={styles.carouselimage}
               />
+              </a>
               <p>Beauty</p>
             </div>
             <div className={styles.carouselitem}>
