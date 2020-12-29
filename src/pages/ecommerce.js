@@ -87,7 +87,7 @@ const Ecommerce = () => {
               <p>Fashion</p>
             </div>
             <div className={styles.carouselitem}>
-              <a href="https://hola-bella.com" target="_blank" rel="noreferrer">
+              <a href="https://hola-bella-adbaa.web.app/" target="_blank" rel="noreferrer">
                 <Image
                   fluid={data.sports.childImageSharp.fluid}
                   style={{ borderRadius: '4px' }}
